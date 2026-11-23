@@ -83,18 +83,17 @@ def _secrets_dir() -> Path:
 
 
 def cmd_bot(a, c):
-    """Long-running Telegram bot (owner chat only). Needs SEBASTIAN_ALLOW_LIVE=1, SEBASTIAN_OWNER_CHAT_ID, the bot token file."""
+    """Long-running bot on the configured channel (Telegram by default; owner only). Needs SEBASTIAN_ALLOW_LIVE=1, SEBASTIAN_OWNER_CHAT_ID, the bot token file."""
     from . import voice as voice_mod
     from .bot import build_bot, ConfigurationError
     from .service import CalendarHub
-    from .telegram import TelegramApi
+    from .bot import owner_from_env
+    from .channels.factory import make_channel
     _need_live(c)
-    token_file = _secrets_dir() / (c.telegram.token_file or "telegram.token")
-    if not token_file.exists():
-        raise SystemExit(f"Telegram token file not found: {token_file}")
+    channel = make_channel(c, _secrets_dir(), owner_from_env(os.environ))
     fetch, _ = build_live(c, dry_run=True)
     try:
-        bot = build_bot(c, os.environ, TelegramApi(token_file.read_text().strip()), CalendarHub(fetch.providers, fetch), fetch,
+        bot = build_bot(c, os.environ, channel, CalendarHub(fetch.providers, fetch), fetch,
                         build_mail_fetcher(c))
     except ConfigurationError as exc:
         raise SystemExit(str(exc))

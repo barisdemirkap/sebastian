@@ -23,6 +23,17 @@ class TelegramConfig:
 
 
 @dataclass(frozen=True)
+class ChannelConfig:
+    kind: str = "telegram"                       # telegram | slack | console
+    slack_user: str = ""                         # your Slack member id (U...), the only sender accepted
+    slack_bot_token_file: str = "slack-bot.token"
+    slack_app_token_file: str = "slack-app.token"
+
+
+CHANNEL_KINDS = ("telegram", "slack", "console")
+
+
+@dataclass(frozen=True)
 class Config:
     timezone: str
     morning: time
@@ -37,6 +48,7 @@ class Config:
     birthdays: bool = True               # also read Google's Birthdays calendar (read-only)
     db_path: Path = CONFIG_DIR / "sebastian.db"
     heartbeat_path: Path = CONFIG_DIR / "heartbeat"
+    channel: ChannelConfig = field(default_factory=ChannelConfig)
     owner_title: str = "Ahmet Bey"       # [persona] owner_title: how the assistant addresses you
     assistant_name: str = "Sebastian"    # [persona] assistant_name
 
@@ -47,6 +59,16 @@ def _t(s: str) -> time:
         return time(int(h), int(m))
     except (ValueError, AttributeError) as e:
         raise ConfigError(f"invalid time {s!r}, expected HH:MM") from e
+
+
+def _channel(raw: dict) -> ChannelConfig:
+    kind = str(raw.get("kind", "telegram")).lower()
+    if kind not in CHANNEL_KINDS:
+        raise ConfigError(f"unknown channel {kind!r}, expected one of {', '.join(CHANNEL_KINDS)}")
+    if kind == "slack" and not raw.get("slack_user"):
+        raise ConfigError("channel.slack_user (your Slack member id) is required for the slack channel")
+    return ChannelConfig(kind, str(raw.get("slack_user", "")), str(raw.get("slack_bot_token_file", "slack-bot.token")),
+                         str(raw.get("slack_app_token_file", "slack-app.token")))
 
 
 def parse(raw: dict) -> Config:
@@ -78,6 +100,7 @@ def parse(raw: dict) -> Config:
                   Path(raw.get("state_path", CONFIG_DIR / "state.json")),
                   _t(raw.get("plan", "22:00")), _t(rem.get("allday_at", "09:00")), bool(raw.get("birthdays", True)),
                   Path(raw.get("db_path", CONFIG_DIR / "sebastian.db")), Path(raw.get("heartbeat_path", CONFIG_DIR / "heartbeat")),
+                  _channel(raw.get("channel", {})),
                   str(raw.get("persona", {}).get("owner_title", "Ahmet Bey")), str(raw.get("persona", {}).get("assistant_name", "Sebastian")))
 
 

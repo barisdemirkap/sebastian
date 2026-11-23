@@ -39,3 +39,7 @@ token_file = "telegram.token"   # inside ~/.config/sebastian/secrets/
 [persona]
 owner_title = "Ahmet Bey"     # how the assistant addresses you
 assistant_name = "Sebastian"  # the name it uses for itself
+
+[channel]
+kind = "telegram"          # telegram | slack | console
+# slack_user = "U0123456"  # required for slack: your Slack member id (tokens live in the secrets dir)
