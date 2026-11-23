@@ -1,0 +1,19 @@
+# systemd unit for a Linux VM. Copy to /etc/systemd/system/sebastian.service, adjust User and paths, then:
+#   systemctl daemon-reload && systemctl enable --now sebastian
+[Unit]
+Description=Sebastian personal assistant
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=sebastian
+WorkingDirectory=/opt/sebastian
+EnvironmentFile=/etc/sebastian.env        # SEBASTIAN_ALLOW_LIVE=1, SEBASTIAN_OWNER_CHAT_ID=... (chmod 600)
+ExecStart=/opt/sebastian/.venv/bin/sebastian bot
+Restart=always
+RestartSec=5
+NoNewPrivileges=true
+ProtectSystem=full
+
+[Install]
+WantedBy=multi-user.target

@@ -106,6 +106,60 @@ def cmd_bot(a, c):
         pass
 
 
+def _config_path(a) -> Path:
+    return Path(a.config) if a.config else cfg.DEFAULT_PATH
+
+
+def cmd_init(a, c=None):
+    """Write a starter config (no accounts, console channel, nothing live) so a fresh fork runs offline right away."""
+    path = _config_path(a)
+    if path.exists() and not a.force:
+        raise SystemExit(f"{path} already exists (use --force to overwrite).")
+    path.parent.mkdir(parents=True, exist_ok=True, mode=0o700)
+    tz = a.timezone or "UTC"
+    path.write_text(STARTER.format(tz=tz, title=a.title, name=a.name))
+    path.chmod(0o600)
+    print(f"Wrote {path}. Try it now (offline, fixture calendar):  sebastian chat\nThen check your setup:  sebastian doctor")
+
+
+STARTER = """# Sebastian config. Secrets and tokens live in ~/.config/sebastian/secrets/, never here.
+timezone = "{tz}"
+morning = "08:30"
+evening = "20:00"
+
+[persona]
+owner_title = "{title}"
+assistant_name = "{name}"
+
+[channel]
+kind = "console"        # console | telegram | slack  (see README: Connect a channel)
+"""
+
+
+def cmd_doctor(a, c):
+    """Check the setup and say what to do next. Read-only: no network, nothing is changed."""
+    secrets = _secrets_dir()
+    rows = [("config", True, f"{_config_path(a)} loaded"), ("timezone", True, c.timezone)]
+    kind = c.channel.kind
+    rows.append(("channel", True, kind))
+    if kind == "telegram":
+        f = secrets / (c.telegram.token_file or "telegram.token")
+        rows.append(("telegram token", f.exists(), str(f) + ("" if f.exists() else "  <- put your bot token here (chmod 600)")))
+        rows.append(("owner chat id", bool(os.environ.get("SEBASTIAN_OWNER_CHAT_ID")), "env SEBASTIAN_OWNER_CHAT_ID"))
+    if kind == "slack":
+        for n, fn in (("slack bot token", c.channel.slack_bot_token_file), ("slack app token", c.channel.slack_app_token_file)):
+            rows.append((n, (secrets / fn).exists(), str(secrets / fn)))
+        rows.append(("slack user", bool(c.channel.slack_user), "channel.slack_user"))
+    live = os.environ.get("SEBASTIAN_ALLOW_LIVE") == "1"
+    rows.append(("live access", live, "SEBASTIAN_ALLOW_LIVE=1 is needed for real accounts and channels (off = offline only)"))
+    rows.append(("accounts", True, f"{sum(1 for x in c.accounts if x.enabled)} enabled of {len(c.accounts)}"))
+    bad = 0
+    for name, ok, note in rows:
+        print(f"[{'ok' if ok else '--'}] {name}: {note}")
+        bad += (not ok and name != "live access")
+    print("All set." if not bad else f"{bad} item(s) to fix before 'sebastian bot'.")
+
+
 def cmd_chat(a, c):
     """Talk to the assistant in the terminal with a fixture calendar and an in-memory store: no network, no Telegram."""
     from zoneinfo import ZoneInfo
@@ -250,6 +304,10 @@ def main(argv=None) -> None:
     p = argparse.ArgumentParser(prog="sebastian")
     p.add_argument("--config", help="config path (default ~/.config/sebastian/config.toml)")
     sub = p.add_subparsers(dest="cmd", required=True)
+    ini = sub.add_parser("init", help="write a starter config so a fresh fork runs offline")
+    ini.add_argument("--timezone"); ini.add_argument("--title", default="Ahmet Bey"); ini.add_argument("--name", default="Sebastian")
+    ini.add_argument("--force", action="store_true"); ini.set_defaults(fn=cmd_init, no_config=True)
+    sub.add_parser("doctor", help="check the setup and print what is missing").set_defaults(fn=cmd_doctor)
     sub.add_parser("accounts").set_defaults(fn=cmd_accounts)
     d = sub.add_parser("demo", help="print a digest from fixture data (no network)")
     d.add_argument("kind", choices=["morning", "evening"]); d.set_defaults(fn=cmd_demo)
@@ -274,10 +332,15 @@ def main(argv=None) -> None:
     la.add_argument("list"); la.add_argument("items", nargs="+"); la.add_argument("--send", action="store_true", help="also push the preview to the owner chat (live)")
     la.add_argument("--ttl-minutes", type=int, default=1440); la.set_defaults(fn=cmd_list_add)
     a = p.parse_args(argv)
+    if getattr(a, "no_config", False):
+        return a.fn(a)
     try:
         c = _load(a)
     except FileNotFoundError:
-        raise SystemExit("Config not found. Copy config.example.toml to ~/.config/sebastian/config.toml")
+        if a.fn is cmd_chat:                                  # a fresh fork can try the assistant before writing any config
+            i18n.configure()
+            return a.fn(a, cfg.parse({}))
+        raise SystemExit("Config not found. Run `sebastian init` (or copy config.example.toml to ~/.config/sebastian/config.toml).")
     a.fn(a, c)
 
 

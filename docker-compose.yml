@@ -1,0 +1,9 @@
+services:
+  sebastian:
+    build: .
+    restart: unless-stopped
+    volumes:
+      - ./data:/data                       # holds .config/sebastian/{config.toml,secrets/,sebastian.db}
+    environment:
+      SEBASTIAN_ALLOW_LIVE: "1"
+      SEBASTIAN_OWNER_CHAT_ID: "${SEBASTIAN_OWNER_CHAT_ID}"

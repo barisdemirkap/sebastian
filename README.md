@@ -4,6 +4,16 @@ A personal AI assistant for **one person**. Fork it, run it on your own machine,
 
 Status: early. Sebastian grows out of a private assistant ("Sebastian"); the generic core is being extracted step by step.
 
+## Quickstart (about a minute, offline)
+```
+git clone https://github.com/barisdemirkap/sebastian && cd sebastian
+python -m venv .venv && .venv/bin/pip install -e .
+.venv/bin/sebastian chat          # talk to it now: fixture calendar, no accounts, nothing saved
+.venv/bin/sebastian init          # write your own config (timezone, how it addresses you)
+.venv/bin/sebastian doctor        # what is missing before connecting a channel
+```
+Connect a channel (Telegram, Slack or the console) in `[channel]` of your config; run on a VM with [docs/VM.md](docs/VM.md).
+
 ## Principles
 - **Single user, local first.** No hosted multi-user service. Your data, your secrets, your machine.
 - **You stay in control.** Anything that writes (calendar, tasks, messages) is shown as a preview and needs your explicit confirmation. Nothing is sent to a third party without it.
