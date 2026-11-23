@@ -1,0 +1,23 @@
+{
+  "name": "'kapilar takildi, kedilere mama verildi, bugun X duzenlenecek, Y yikanacak...': two completions of existing entries plus plain chores for today. Completions close the existing entries (never 'not found'); chores become TASKS due today, never new events; nothing is deleted",
+  "incident": "2026-11-23 08:50. Sebastian said it found no open record for the two completions (they were calendar entries saved the night before), drafted four all-day EVENTS for the chores, then the owner said they are tasks and Sebastian drafted a delete of an event instead of adding tasks while claiming it had added them.",
+  "setup": {
+    "provider": "rules",
+    "now": "2026-11-23T08:50",
+    "seed": [
+      {"title": "Kapılar takılacak", "start": "2026-11-23T00:00", "end": "2026-11-23T23:59", "all_day": true},
+      {"title": "Kedilere mama ver", "start": "2026-11-23T08:00", "end": "2026-11-23T08:15"}
+    ],
+    "tasks": ["Annemlerin odası düzenlenecek"]
+  },
+  "steps": [
+    {
+      "say": "kapilar takildi kedilere mama verildi bugun annemlerin odasi duzenlenecek camasirlar yikanacak ust kat temizlenecek teras toparlanacak alt kat toparlanacak",
+      "kind": "free",
+      "not_contains": ["bulamadım", "SİLMEMİ", "evet sil"],
+      "tasks_open_has": ["Çamaşırlar", "Üst kat", "Teras", "Alt kat", "Annemlerin"],
+      "tasks_open_count": 5,
+      "preview": false
+    }
+  ]
+}

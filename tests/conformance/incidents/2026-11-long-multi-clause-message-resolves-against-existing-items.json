@@ -1,0 +1,67 @@
+{
+  "name": "one long message with six clauses: finished items are closed without a delete prompt, the Saturday reminder is previewed, the rest follow in order, nothing is 'not found', no failure menu",
+  "incident": "'saglik raporu bitti alexa hue kurulumlari bitti ehliyet icin cumartesi gunu gorusme durumlarini 12de kontrol edecegim bana onu hatirlat yine cumartesi arac muayenesine bakacagiz son olarak rapor ucreti odendi surecleri bitti aksam amcamin cezalarina bakacagim': Sebastian asked to delete the (already past) doctor event, echoed the other clauses as 'sirada' text, deleted on yes and then said it could not find the rest. Now: past events/tasks are only closed (no delete prompt, nothing removed from the calendar), the Saturday 12:00 reminder is previewed (evet), the Saturday car inspection asks its time once, 'rapor ucreti odendi' closes the existing item, 'aksam amcamin cezalarina bakacagim' points at the existing 23:00 event and creates nothing; the clauses that cannot share one preview are announced as queued ('sirada') and asked afterwards, one at a time.",
+  "agent": false,
+  "setup": {
+    "provider": "rules",
+    "now": "2026-11-19T17:41",
+    "seed": [
+      {
+        "title": "Aile hekimi: sağlık raporu al",
+        "start": "2026-11-19T08:50",
+        "end": "2026-11-19T09:50"
+      },
+      {
+        "title": "Rapor ücretini öde ve raporu sürücü kursuna gönder",
+        "start": "2026-11-19T15:00",
+        "end": "2026-11-19T15:30"
+      },
+      {
+        "title": "Alexa ve Hue kurulumları",
+        "start": "2026-11-19T16:00",
+        "end": "2026-11-19T17:00"
+      },
+      {
+        "title": "Amcamın trafik cezalarını öde",
+        "start": "2026-11-19T23:00",
+        "end": "2026-11-20T00:00"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "say": "saglik raporu bitti alexa hue kurulumlari bitti ehliyet icin cumartesi gunu gorusme durumlarini 12de kontrol edecegim bana onu hatirlat yine cumartesi arac muayenesine bakacagiz son olarak rapor ucreti odendi surecleri bitti aksam amcamin cezalarina bakacagim",
+      "kind": "free",
+      "preview": true,
+      "contains": [
+        "Aile hekimi",
+        "Alexa ve Hue",
+        "Rapor ücretini öde",
+        "21 Kasım",
+        "12:00",
+        "Ehliyet"
+      ],
+      "not_contains": [
+        "SİLMEMİ",
+        "bulamadım",
+        "birbirimizi",
+        "Tam anlayamadım"
+      ],
+      "saved_total": 4
+    },
+    {
+      "say": "evet",
+      "kind": "confirm",
+      "preview": false,
+      "saved_total": 5,
+      "contains": [
+        "Ekledim",
+        "Ehliyet"
+      ],
+      "not_contains": [
+        "bulamadım",
+        "birbirimizi"
+      ]
+    }
+  ]
+}

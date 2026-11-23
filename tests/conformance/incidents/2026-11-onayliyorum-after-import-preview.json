@@ -1,0 +1,37 @@
+{
+  "name": "'onayliyorum' after a pending import preview, then 'evet'",
+  "incident": "Live failure of 2026-11-18 (ADR 0006): 'onayliyorum' on an import preview was unrecognised, closed the preview, and the next 'evet' saved nothing. All events must be saved exactly once.",
+  "setup": {
+    "provider": "rules",
+    "import": 3
+  },
+  "steps": [
+    {
+      "say": "bir dakika",
+      "kind": "neutral",
+      "preview": true,
+      "saved_total": 0
+    },
+    {
+      "say": "asdfgh",
+      "kind": "neutral",
+      "preview": true,
+      "saved_total": 0
+    },
+    {
+      "say": "onayliyorum",
+      "kind": "confirm",
+      "contains": [
+        "Emredersiniz, efendim. 3 etkinlik ekledim."
+      ],
+      "saved_total": 3,
+      "preview": false
+    },
+    {
+      "say": "evet",
+      "kind": "confirm",
+      "saved_total": 3,
+      "preview": false
+    }
+  ]
+}

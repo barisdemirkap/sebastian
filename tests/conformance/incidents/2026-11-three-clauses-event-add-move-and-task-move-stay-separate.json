@@ -1,0 +1,66 @@
+{
+  "name": "'duş ve kişisel bakım öğlen 12de olacak, cezaları öde 12.30a kaysın, acme cumartesiye kaysın': add, move the event, move the TASK; the task move never touches the fines event",
+  "incident": "2026-11-20 11:23. Three clauses: shower 12:00 added; the fines event moved to 12:30; the Acme TASK moved to Saturday. Sebastian moved the wrong thing (the fines) for the last clause. Tasks, events and lists are separate domains; a move naming a task changes the task's day only.",
+  "setup": {
+    "provider": "rules",
+    "now": "2026-11-20T11:23",
+    "seed": [
+      {
+        "title": "Cezaları öde",
+        "start": "2026-11-20T12:00",
+        "end": "2026-11-20T12:30"
+      }
+    ],
+    "tasks": [
+      {
+        "title": "Acme",
+        "due": "2026-11-20"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "say": "dus ve kisisel bakim oglen 12de olacak cezalari ode 12.30a kaysin acme cumartesiye kaysin",
+      "kind": "free",
+      "preview": true,
+      "contains": [
+        "Dus ve kisisel bakim",
+        "12:00",
+        "Acme: Cumartesi"
+      ],
+      "saved_total": 1,
+      "tasks_due": {
+        "Acme": "2026-11-21"
+      },
+      "not_contains": [
+        "Dus ve kisisel bakim 12de"
+      ]
+    },
+    {
+      "say": "evet",
+      "kind": "confirm",
+      "preview": true,
+      "contains": [
+        "Ekledim",
+        "Cezaları öde",
+        "12:30-13:00"
+      ],
+      "saved_total": 2
+    },
+    {
+      "say": "evet",
+      "kind": "confirm",
+      "saved_total": 2,
+      "tasks_open_has": [
+        "Acme"
+      ],
+      "contains": [
+        "Değiştirdim",
+        "Cezaları öde"
+      ],
+      "tasks_due": {
+        "Acme": "2026-11-21"
+      }
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "name": "a bare yes on a delete preview only gives a hint",
+  "incident": "ADR 0006 decision 2: deletes stay strict. evet / tamam are refused with the 'evet sil' hint; 'evet sil', 'sil' or 'onaylıyorum' delete.",
+  "setup": {
+    "provider": "rules",
+    "seed": [
+      [
+        "Demo toplantı",
+        14
+      ]
+    ]
+  },
+  "steps": [
+    {
+      "say": "demo toplantıyı sil",
+      "kind": "free",
+      "preview": true,
+      "saved_total": 1
+    },
+    {
+      "say": "evet",
+      "kind": "confirm",
+      "contains": [
+        "evet sil"
+      ],
+      "preview": true,
+      "saved_total": 1
+    },
+    {
+      "say": "tamam",
+      "kind": "confirm",
+      "contains": [
+        "evet sil"
+      ],
+      "preview": true,
+      "saved_total": 1
+    },
+    {
+      "say": "👍",
+      "kind": "confirm",
+      "preview": true,
+      "saved_total": 1
+    },
+    {
+      "say": "onaylıyorum",
+      "kind": "confirm",
+      "contains": [
+        "Sildim"
+      ],
+      "preview": false,
+      "saved_total": 0
+    }
+  ]
+}

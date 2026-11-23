@@ -1,0 +1,76 @@
+{
+  "name": "yarin, obur gun, haftaya persembe and bu persembe resolve correctly and show weekday + full date",
+  "incident": "ADR 0012: on Thursday 19 Nov, 'bu persembe' is today (no question: 'bu' is explicit), 'haftaya persembe' is the 26th, 'yarin' the 20th, 'obur gun' the 21st. Every preview shows weekday and full date.",
+  "setup": {
+    "provider": "rules",
+    "now": "2026-11-19T05:01"
+  },
+  "steps": [
+    {
+      "say": "bu perşembe 10'da berber ekle",
+      "kind": "free",
+      "preview": true,
+      "contains": [
+        "Perşembe 19 Kasım 2026 10:00"
+      ]
+    },
+    {
+      "say": "hayır",
+      "kind": "cancel",
+      "preview": false
+    },
+    {
+      "say": "haftaya perşembe 10'da berber ekle",
+      "kind": "free",
+      "preview": true,
+      "contains": [
+        "Perşembe 26 Kasım 2026 10:00"
+      ]
+    },
+    {
+      "say": "hayır",
+      "kind": "cancel",
+      "preview": false
+    },
+    {
+      "say": "yarın 10'da berber ekle",
+      "kind": "free",
+      "preview": true,
+      "contains": [
+        "Cuma 20 Kasım 2026 10:00"
+      ]
+    },
+    {
+      "say": "hayır",
+      "kind": "cancel",
+      "preview": false
+    },
+    {
+      "say": "öbür gün 10'da berber ekle",
+      "kind": "free",
+      "preview": true,
+      "contains": [
+        "Cumartesi 21 Kasım 2026 10:00"
+      ]
+    },
+    {
+      "say": "hayır",
+      "kind": "cancel",
+      "preview": false
+    },
+    {
+      "say": "cuma 10'da berber ekle",
+      "kind": "free",
+      "preview": true,
+      "contains": [
+        "Cuma 20 Kasım 2026 10:00"
+      ]
+    },
+    {
+      "say": "hayır",
+      "kind": "cancel",
+      "preview": false,
+      "saved_total": 0
+    }
+  ]
+}

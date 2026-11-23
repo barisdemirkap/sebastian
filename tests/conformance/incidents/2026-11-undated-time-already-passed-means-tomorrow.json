@@ -1,0 +1,37 @@
+{
+  "name": "an undated time that has passed today means tomorrow",
+  "incident": "Part of the 2026-11-19 smart-default fix (ADR 0014): at 08:00 'sabah 7.30' is tomorrow 07:30, 'akşam 7.30' is today 19:30.",
+  "setup": {
+    "provider": "rules",
+    "now": "2026-11-19T08:00"
+  },
+  "steps": [
+    {
+      "say": "sabah 7.30 çöpü çıkar ekle",
+      "kind": "free",
+      "preview": true,
+      "contains": [
+        "Yarın Cuma 20 Kasım 2026 07:30-07:45"
+      ],
+      "not_contains": [
+        "Hangi gün"
+      ]
+    },
+    {
+      "say": "hayır",
+      "kind": "cancel",
+      "preview": false
+    },
+    {
+      "say": "akşam 7.30 çöpü çıkar ekle",
+      "kind": "free",
+      "preview": true,
+      "contains": [
+        "Bugün Perşembe 19 Kasım 2026 19:30-19:45"
+      ],
+      "not_contains": [
+        "Hangi gün"
+      ]
+    }
+  ]
+}

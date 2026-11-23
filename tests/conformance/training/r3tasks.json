@@ -1,0 +1,147 @@
+[
+ {
+  "name": "forgot-then-day-answer-weekday",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Faturaları öde",
+    "Pencereleri sil",
+    "Dolabı düzenle",
+    "Rapor taslağını yaz"
+   ]
+  },
+  "steps": [
+   {
+    "say": "faturalari odemeyi unuttum",
+    "kind": "free",
+    "contains": [
+     "akşama mı"
+    ]
+   },
+   {
+    "say": "cumartesiye",
+    "kind": "free",
+    "tasks_due": {
+     "Fatura": "2026-11-21"
+    },
+    "not_contains": [
+     "bulamadım",
+     "Numarasını"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "forgot-then-new-request-drops-question",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Faturaları öde",
+    "Pencereleri sil",
+    "Dolabı düzenle",
+    "Rapor taslağını yaz"
+   ]
+  },
+  "steps": [
+   {
+    "say": "faturalari odemeyi unuttum",
+    "kind": "free",
+    "contains": [
+     "akşama mı"
+    ]
+   },
+   {
+    "say": "dolabi duzenledim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Dolab"
+    ],
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "plan-existing-with-weekday-sets-due",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Faturaları öde",
+    "Pencereleri sil",
+    "Dolabı düzenle",
+    "Rapor taslağını yaz"
+   ]
+  },
+  "steps": [
+   {
+    "say": "rapor taslagini pazartesi yazacagim",
+    "kind": "free",
+    "tasks_due": {
+     "Rapor": "2026-11-23"
+    },
+    "tasks_open_count": 4,
+    "not_contains": [
+     "Görev ekledim"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "add-then-done-same-day",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00"
+  },
+  "steps": [
+   {
+    "say": "gorev ekle camlari sil",
+    "kind": "free",
+    "tasks_open_has": [
+     "cam"
+    ]
+   },
+   {
+    "say": "camlari sildim",
+    "kind": "free",
+    "tasks_done_has": [
+     "cam"
+    ],
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "done-with-trailing-comment",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Faturaları öde",
+    "Pencereleri sil",
+    "Dolabı düzenle",
+    "Rapor taslağını yaz"
+   ]
+  },
+  "steps": [
+   {
+    "say": "faturalari odedim cok yoruldum",
+    "kind": "free",
+    "tasks_done_has": [
+     "Fatura"
+    ],
+    "not_contains": [
+     "Tam anlayamadım"
+    ]
+   }
+  ]
+ }
+]

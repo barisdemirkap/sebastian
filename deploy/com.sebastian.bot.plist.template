@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- TEMPLATE ONLY. Never installed by any script or agent. The owner copies it to ~/Library/LaunchAgents/com.sebastian.bot.plist,
+     replaces __REPO_DIR__ and __HOME__, and loads it (docs/deploy.md). Secrets and SEBASTIAN_* flags live in
+     __HOME__/.config/sebastian/env (chmod 600, see deploy/sebastian.env.example), NEVER in this file. -->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.sebastian.bot</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>__REPO_DIR__/scripts/run-bot.sh</string>
+  </array>
+  <key>WorkingDirectory</key><string>__REPO_DIR__</string>
+  <key>RunAtLoad</key><true/>
+  <key>KeepAlive</key><true/>
+  <key>ThrottleInterval</key><integer>30</integer>
+  <key>StandardOutPath</key><string>__HOME__/Library/Logs/sebastian-bot.log</string>
+  <key>StandardErrorPath</key><string>__HOME__/Library/Logs/sebastian-bot.err.log</string>
+</dict>
+</plist>

@@ -1,0 +1,34 @@
+{
+  "name": "an utterance about an existing 'Diş hekimi' is an edit and reminder before an add",
+  "incident": "ADR 0017 rule 4: any utterance that mentions an existing event's subject on that day is an edit or reminder candidate before an add.",
+  "setup": {
+    "provider": "rules",
+    "now": "2026-11-19T06:27",
+    "seed": [
+      {
+        "title": "Diş hekimi",
+        "start": "2026-11-19T16:00",
+        "end": "2026-11-19T16:30"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "say": "dis hekimi randevusu 16.30 olmus, 16.00da hazir olalim",
+      "kind": "free",
+      "preview": true,
+      "contains": [
+        "Şunu şöyle değiştiriyorum",
+        "Önce: Diş hekimi",
+        "Sonra: Diş hekimi",
+        "16:30-17:00",
+        "30 dk önce"
+      ],
+      "not_contains": [
+        "Şunu takvime işliyorum",
+        "Dikkat"
+      ],
+      "saved_total": 1
+    }
+  ]
+}

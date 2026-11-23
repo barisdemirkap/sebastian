@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- TEMPLATE ONLY. Not installed by any script. The owner copies it, fills the placeholders, and loads it.
+     See docs/deploy.md. Keep SEBASTIAN_ALLOW_LIVE out of this file until the owner has approved live access. -->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.sebastian.scheduler</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>__REPO_DIR__/.venv/bin/python</string>
+    <string>-m</string><string>sebastian.cli</string>
+    <string>run</string>
+    <string>--dry-run</string>   <!-- remove --dry-run only when the owner approves real delivery -->
+  </array>
+  <key>WorkingDirectory</key><string>__REPO_DIR__</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PYTHONPATH</key><string>__REPO_DIR__/src</string>
+    <!-- Owner adds when approved:
+    <key>SEBASTIAN_ALLOW_LIVE</key><string>1</string> -->
+  </dict>
+  <key>RunAtLoad</key><true/>
+  <key>KeepAlive</key><true/>
+  <key>ThrottleInterval</key><integer>30</integer>
+  <key>StandardOutPath</key><string>__HOME__/Library/Logs/sebastian.log</string>
+  <key>StandardErrorPath</key><string>__HOME__/Library/Logs/sebastian.err.log</string>
+</dict>
+</plist>

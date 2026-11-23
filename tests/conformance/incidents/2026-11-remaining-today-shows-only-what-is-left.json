@@ -1,0 +1,72 @@
+{
+  "name": "'what is left today' shows only the not-yet-finished items and the open tasks, and never opens an event preview",
+  "incident": "'bugun yapilmasi gereken neler kaldi?' returned the whole day (or an all-day event draft). It must list only events that have not ended yet plus the open tasks.",
+  "setup": {
+    "provider": "rules",
+    "now": "2026-11-19T14:00",
+    "seed": [
+      {
+        "title": "Çöpü çıkar",
+        "start": "2026-11-19T07:30",
+        "end": "2026-11-19T07:45"
+      },
+      {
+        "title": "Aile hekimi: sağlık raporu al",
+        "start": "2026-11-19T08:50",
+        "end": "2026-11-19T09:50"
+      },
+      {
+        "title": "Metin kontrolü",
+        "start": "2026-11-19T12:30",
+        "end": "2026-11-19T13:00"
+      },
+      {
+        "title": "Araç muayenesi için randevu al",
+        "start": "2026-11-19T15:00",
+        "end": "2026-11-19T15:15"
+      },
+      {
+        "title": "Alexa ve Hue kurulumları",
+        "start": "2026-11-19T16:00",
+        "end": "2026-11-19T17:00"
+      }
+    ],
+    "tasks": [
+      "Çöpü akşam çıkar",
+      "Metin kontrolü",
+      "Araç muayenesi için randevu al",
+      "Alexa ve Hue kurulumları"
+    ]
+  },
+  "steps": [
+    {
+      "say": "bugun yapilmasi gereken neler kaldi?",
+      "kind": "free",
+      "preview": false,
+      "saved_total": 5,
+      "contains": [
+        "Araç muayenesi",
+        "Alexa",
+        "Görev"
+      ],
+      "not_contains": [
+        "Aile hekimi",
+        "07:30",
+        "12:30",
+        "tüm gün"
+      ]
+    },
+    {
+      "say": "neler kaldi",
+      "kind": "free",
+      "preview": false,
+      "repeat_ok": true,
+      "contains": [
+        "Alexa"
+      ],
+      "not_contains": [
+        "Aile hekimi"
+      ]
+    }
+  ]
+}

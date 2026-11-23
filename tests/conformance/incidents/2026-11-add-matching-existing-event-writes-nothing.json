@@ -1,0 +1,31 @@
+{
+  "name": "an add that matches an existing event at the same time writes nothing and opens no preview",
+  "incident": "Incident F (ADR 0015): the same chore at the same time as an existing event is answered with 'Zaten takvimde', never a second event.",
+  "setup": {
+    "provider": "rules",
+    "now": "2026-11-19T06:30",
+    "seed": [
+      {
+        "title": "Çöpü çıkar",
+        "start": "2026-11-19T07:30",
+        "end": "2026-11-19T07:45",
+        "reminder": 30
+      }
+    ]
+  },
+  "steps": [
+    {
+      "say": "çöpü sabah 7.30'a ekle",
+      "kind": "free",
+      "preview": false,
+      "saved_total": 1,
+      "contains": [
+        "Zaten takvimde: Çöpü çıkar",
+        "Hatırlatma 30 dk önce gelecek"
+      ],
+      "not_contains": [
+        "ekleyeyim"
+      ]
+    }
+  ]
+}

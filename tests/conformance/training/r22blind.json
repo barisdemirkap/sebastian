@@ -1,0 +1,2160 @@
+[
+ {
+  "name": "b22-01",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-20T10:00",
+   "tasks": [
+    "Duş ve kişisel bakım",
+    "Acme Türkçe metin kontrolü",
+    {
+     "title": "Araç muayenesi için randevu al",
+     "due": "2026-11-20"
+    },
+    {
+     "title": "Çorap çekmecesi düzenlenecek",
+     "due": "2026-11-17"
+    },
+    {
+     "title": "Vergi beyannamesi hazırla",
+     "due": "2026-12-05"
+    }
+   ],
+   "seed": [
+    {
+     "title": "Takım toplantısı",
+     "start": "2026-11-20T11:00",
+     "end": "2026-11-20T12:00"
+    },
+    {
+     "title": "Diş hekimi randevusu",
+     "start": "2026-11-20T16:00",
+     "end": "2026-11-20T17:00"
+    },
+    {
+     "title": "Annemin ilaçlarını al",
+     "start": "2026-11-20T19:00",
+     "end": "2026-11-20T19:30"
+    },
+    {
+     "title": "Faturaları öde",
+     "start": "2026-11-21T09:00",
+     "end": "2026-11-21T10:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "bugunku planim",
+    "kind": "free",
+    "contains": [
+     "Görevler:",
+     "Duş ve kişisel bakım",
+     "Acme",
+     "Araç muayenesi",
+     "Çorap çekmecesi",
+     "Takım toplantısı",
+     "Diş hekimi"
+    ],
+    "not_contains": [
+     "Vergi beyannamesi",
+     "Numarasını",
+     "kastediyorsun",
+     "Tam anlayamadım"
+    ],
+    "saved_total": 4
+   }
+  ]
+ },
+ {
+  "name": "b22-02",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-20T10:00",
+   "tasks": [
+    "Duş ve kişisel bakım",
+    "Acme Türkçe metin kontrolü",
+    {
+     "title": "Araç muayenesi için randevu al",
+     "due": "2026-11-20"
+    },
+    {
+     "title": "Çorap çekmecesi düzenlenecek",
+     "due": "2026-11-17"
+    },
+    {
+     "title": "Vergi beyannamesi hazırla",
+     "due": "2026-12-05"
+    }
+   ],
+   "seed": [
+    {
+     "title": "Takım toplantısı",
+     "start": "2026-11-20T11:00",
+     "end": "2026-11-20T12:00"
+    },
+    {
+     "title": "Diş hekimi randevusu",
+     "start": "2026-11-20T16:00",
+     "end": "2026-11-20T17:00"
+    },
+    {
+     "title": "Annemin ilaçlarını al",
+     "start": "2026-11-20T19:00",
+     "end": "2026-11-20T19:30"
+    },
+    {
+     "title": "Faturaları öde",
+     "start": "2026-11-21T09:00",
+     "end": "2026-11-21T10:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "bugun plani goster",
+    "kind": "free",
+    "contains": [
+     "Görevler:",
+     "Duş ve kişisel bakım",
+     "Acme",
+     "Araç muayenesi",
+     "Çorap çekmecesi",
+     "Takım toplantısı"
+    ],
+    "not_contains": [
+     "Vergi beyannamesi",
+     "Numarasını",
+     "kastediyorsun",
+     "Tam anlayamadım"
+    ],
+    "saved_total": 4
+   }
+  ]
+ },
+ {
+  "name": "b22-03",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-20T10:00",
+   "tasks": [
+    "Duş ve kişisel bakım",
+    "Acme Türkçe metin kontrolü",
+    {
+     "title": "Araç muayenesi için randevu al",
+     "due": "2026-11-20"
+    },
+    {
+     "title": "Çorap çekmecesi düzenlenecek",
+     "due": "2026-11-17"
+    },
+    {
+     "title": "Vergi beyannamesi hazırla",
+     "due": "2026-12-05"
+    }
+   ],
+   "seed": [
+    {
+     "title": "Takım toplantısı",
+     "start": "2026-11-20T11:00",
+     "end": "2026-11-20T12:00"
+    },
+    {
+     "title": "Diş hekimi randevusu",
+     "start": "2026-11-20T16:00",
+     "end": "2026-11-20T17:00"
+    },
+    {
+     "title": "Annemin ilaçlarını al",
+     "start": "2026-11-20T19:00",
+     "end": "2026-11-20T19:30"
+    },
+    {
+     "title": "Faturaları öde",
+     "start": "2026-11-21T09:00",
+     "end": "2026-11-21T10:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "bugun neler var",
+    "kind": "free",
+    "contains": [
+     "Görevler:",
+     "Duş ve kişisel bakım",
+     "Acme",
+     "Araç muayenesi",
+     "Çorap çekmecesi",
+     "Takım toplantısı"
+    ],
+    "not_contains": [
+     "Vergi beyannamesi",
+     "Numarasını",
+     "kastediyorsun",
+     "Tam anlayamadım"
+    ],
+    "saved_total": 4
+   }
+  ]
+ },
+ {
+  "name": "b22-04",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-20T10:00",
+   "tasks": [
+    "Duş ve kişisel bakım",
+    "Acme Türkçe metin kontrolü",
+    {
+     "title": "Araç muayenesi için randevu al",
+     "due": "2026-11-20"
+    },
+    {
+     "title": "Çorap çekmecesi düzenlenecek",
+     "due": "2026-11-17"
+    },
+    {
+     "title": "Vergi beyannamesi hazırla",
+     "due": "2026-12-05"
+    }
+   ],
+   "seed": [
+    {
+     "title": "Takım toplantısı",
+     "start": "2026-11-20T11:00",
+     "end": "2026-11-20T12:00"
+    },
+    {
+     "title": "Diş hekimi randevusu",
+     "start": "2026-11-20T16:00",
+     "end": "2026-11-20T17:00"
+    },
+    {
+     "title": "Annemin ilaçlarını al",
+     "start": "2026-11-20T19:00",
+     "end": "2026-11-20T19:30"
+    },
+    {
+     "title": "Faturaları öde",
+     "start": "2026-11-21T09:00",
+     "end": "2026-11-21T10:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "bugunun programi nedir",
+    "kind": "free",
+    "contains": [
+     "Görevler:",
+     "Duş ve kişisel bakım",
+     "Acme",
+     "Araç muayenesi",
+     "Çorap çekmecesi",
+     "Diş hekimi"
+    ],
+    "not_contains": [
+     "Vergi beyannamesi",
+     "Numarasını",
+     "kastediyorsun",
+     "Tam anlayamadım"
+    ],
+    "saved_total": 4
+   }
+  ]
+ },
+ {
+  "name": "b22-05",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-20T10:00",
+   "tasks": [
+    "Duş ve kişisel bakım",
+    "Acme Türkçe metin kontrolü",
+    {
+     "title": "Araç muayenesi için randevu al",
+     "due": "2026-11-20"
+    },
+    {
+     "title": "Çorap çekmecesi düzenlenecek",
+     "due": "2026-11-17"
+    },
+    {
+     "title": "Vergi beyannamesi hazırla",
+     "due": "2026-12-05"
+    }
+   ],
+   "seed": [
+    {
+     "title": "Takım toplantısı",
+     "start": "2026-11-20T11:00",
+     "end": "2026-11-20T12:00"
+    },
+    {
+     "title": "Diş hekimi randevusu",
+     "start": "2026-11-20T16:00",
+     "end": "2026-11-20T17:00"
+    },
+    {
+     "title": "Annemin ilaçlarını al",
+     "start": "2026-11-20T19:00",
+     "end": "2026-11-20T19:30"
+    },
+    {
+     "title": "Faturaları öde",
+     "start": "2026-11-21T09:00",
+     "end": "2026-11-21T10:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "bugun programim nasil",
+    "kind": "free",
+    "contains": [
+     "Görevler:",
+     "Duş ve kişisel bakım",
+     "Acme",
+     "Araç muayenesi",
+     "Çorap çekmecesi",
+     "Annemin ilaç"
+    ],
+    "not_contains": [
+     "Vergi beyannamesi",
+     "Numarasını",
+     "kastediyorsun",
+     "Tam anlayamadım"
+    ],
+    "saved_total": 4
+   }
+  ]
+ },
+ {
+  "name": "b22-06",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-20T10:00",
+   "tasks": [
+    "Duş ve kişisel bakım",
+    "Acme Türkçe metin kontrolü",
+    {
+     "title": "Araç muayenesi için randevu al",
+     "due": "2026-11-20"
+    },
+    {
+     "title": "Çorap çekmecesi düzenlenecek",
+     "due": "2026-11-17"
+    },
+    {
+     "title": "Vergi beyannamesi hazırla",
+     "due": "2026-12-05"
+    }
+   ],
+   "seed": [
+    {
+     "title": "Takım toplantısı",
+     "start": "2026-11-20T11:00",
+     "end": "2026-11-20T12:00"
+    },
+    {
+     "title": "Diş hekimi randevusu",
+     "start": "2026-11-20T16:00",
+     "end": "2026-11-20T17:00"
+    },
+    {
+     "title": "Annemin ilaçlarını al",
+     "start": "2026-11-20T19:00",
+     "end": "2026-11-20T19:30"
+    },
+    {
+     "title": "Faturaları öde",
+     "start": "2026-11-21T09:00",
+     "end": "2026-11-21T10:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "bugünkü plan ne",
+    "kind": "free",
+    "contains": [
+     "Görevler:",
+     "Duş ve kişisel bakım",
+     "Acme",
+     "Araç muayenesi",
+     "Çorap çekmecesi",
+     "Takım toplantısı"
+    ],
+    "not_contains": [
+     "Vergi beyannamesi",
+     "Numarasını",
+     "kastediyorsun",
+     "Tam anlayamadım"
+    ],
+    "saved_total": 4
+   }
+  ]
+ },
+ {
+  "name": "b22-07",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-20T10:00",
+   "tasks": [
+    "Duş ve kişisel bakım",
+    "Acme Türkçe metin kontrolü",
+    {
+     "title": "Araç muayenesi için randevu al",
+     "due": "2026-11-20"
+    },
+    {
+     "title": "Çorap çekmecesi düzenlenecek",
+     "due": "2026-11-17"
+    },
+    {
+     "title": "Vergi beyannamesi hazırla",
+     "due": "2026-12-05"
+    }
+   ],
+   "seed": []
+  },
+  "steps": [
+   {
+    "say": "bugunku plan",
+    "kind": "free",
+    "contains": [
+     "Görevler:",
+     "Duş ve kişisel bakım",
+     "Acme",
+     "Araç muayenesi",
+     "Çorap çekmecesi",
+     "Görevler:"
+    ],
+    "not_contains": [
+     "Vergi beyannamesi",
+     "Numarasını",
+     "kastediyorsun",
+     "Tam anlayamadım"
+    ],
+    "saved_total": 0
+   }
+  ]
+ },
+ {
+  "name": "b22-08",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-20T10:00",
+   "tasks": [
+    "Duş ve kişisel bakım",
+    "Acme Türkçe metin kontrolü",
+    {
+     "title": "Araç muayenesi için randevu al",
+     "due": "2026-11-20"
+    },
+    {
+     "title": "Çorap çekmecesi düzenlenecek",
+     "due": "2026-11-17"
+    },
+    {
+     "title": "Vergi beyannamesi hazırla",
+     "due": "2026-12-05"
+    }
+   ],
+   "seed": [
+    {
+     "title": "Takım toplantısı",
+     "start": "2026-11-20T11:00",
+     "end": "2026-11-20T12:00"
+    },
+    {
+     "title": "Diş hekimi randevusu",
+     "start": "2026-11-20T16:00",
+     "end": "2026-11-20T17:00"
+    },
+    {
+     "title": "Annemin ilaçlarını al",
+     "start": "2026-11-20T19:00",
+     "end": "2026-11-20T19:30"
+    },
+    {
+     "title": "Faturaları öde",
+     "start": "2026-11-21T09:00",
+     "end": "2026-11-21T10:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "gorevlerim planda gorunmuyor niye",
+    "kind": "free",
+    "contains": [
+     "Görevler:",
+     "Duş ve kişisel bakım",
+     "Acme",
+     "Araç muayenesi",
+     "Çorap çekmecesi",
+     "Takım toplantısı"
+    ],
+    "not_contains": [
+     "Vergi beyannamesi",
+     "Numarasını",
+     "kastediyorsun",
+     "Tam anlayamadım"
+    ],
+    "saved_total": 4
+   }
+  ]
+ },
+ {
+  "name": "b22-09",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-20T10:00",
+   "tasks": [
+    "Duş ve kişisel bakım",
+    "Acme Türkçe metin kontrolü",
+    {
+     "title": "Araç muayenesi için randevu al",
+     "due": "2026-11-20"
+    },
+    {
+     "title": "Çorap çekmecesi düzenlenecek",
+     "due": "2026-11-17"
+    },
+    {
+     "title": "Vergi beyannamesi hazırla",
+     "due": "2026-12-05"
+    }
+   ],
+   "seed": [
+    {
+     "title": "Takım toplantısı",
+     "start": "2026-11-20T11:00",
+     "end": "2026-11-20T12:00"
+    },
+    {
+     "title": "Diş hekimi randevusu",
+     "start": "2026-11-20T16:00",
+     "end": "2026-11-20T17:00"
+    },
+    {
+     "title": "Annemin ilaçlarını al",
+     "start": "2026-11-20T19:00",
+     "end": "2026-11-20T19:30"
+    },
+    {
+     "title": "Faturaları öde",
+     "start": "2026-11-21T09:00",
+     "end": "2026-11-21T10:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "planimda gorevlerim yok neden",
+    "kind": "free",
+    "contains": [
+     "Görevler:",
+     "Duş ve kişisel bakım",
+     "Acme",
+     "Araç muayenesi",
+     "Çorap çekmecesi",
+     "Diş hekimi"
+    ],
+    "not_contains": [
+     "Vergi beyannamesi",
+     "Numarasını",
+     "kastediyorsun",
+     "Tam anlayamadım"
+    ],
+    "saved_total": 4
+   }
+  ]
+ },
+ {
+  "name": "b22-10",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-20T10:00",
+   "tasks": [
+    "Duş ve kişisel bakım",
+    "Acme Türkçe metin kontrolü",
+    {
+     "title": "Araç muayenesi için randevu al",
+     "due": "2026-11-20"
+    },
+    {
+     "title": "Çorap çekmecesi düzenlenecek",
+     "due": "2026-11-17"
+    },
+    {
+     "title": "Vergi beyannamesi hazırla",
+     "due": "2026-12-05"
+    }
+   ],
+   "seed": [
+    {
+     "title": "Takım toplantısı",
+     "start": "2026-11-20T11:00",
+     "end": "2026-11-20T12:00"
+    },
+    {
+     "title": "Diş hekimi randevusu",
+     "start": "2026-11-20T16:00",
+     "end": "2026-11-20T17:00"
+    },
+    {
+     "title": "Annemin ilaçlarını al",
+     "start": "2026-11-20T19:00",
+     "end": "2026-11-20T19:30"
+    },
+    {
+     "title": "Faturaları öde",
+     "start": "2026-11-21T09:00",
+     "end": "2026-11-21T10:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "neden diger goervlerim bugunku planda yok",
+    "kind": "free",
+    "contains": [
+     "Görevler:",
+     "Duş ve kişisel bakım",
+     "Acme",
+     "Araç muayenesi",
+     "Çorap çekmecesi",
+     "Takım toplantısı"
+    ],
+    "not_contains": [
+     "Vergi beyannamesi",
+     "Numarasını",
+     "kastediyorsun",
+     "Tam anlayamadım"
+    ],
+    "saved_total": 4
+   }
+  ]
+ },
+ {
+  "name": "b22-11",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-20T10:00",
+   "tasks": [
+    "Duş ve kişisel bakım",
+    "Acme Türkçe metin kontrolü",
+    {
+     "title": "Araç muayenesi için randevu al",
+     "due": "2026-11-20"
+    },
+    {
+     "title": "Çorap çekmecesi düzenlenecek",
+     "due": "2026-11-17"
+    },
+    {
+     "title": "Vergi beyannamesi hazırla",
+     "due": "2026-12-05"
+    }
+   ],
+   "seed": [
+    {
+     "title": "Takım toplantısı",
+     "start": "2026-11-20T11:00",
+     "end": "2026-11-20T12:00"
+    },
+    {
+     "title": "Diş hekimi randevusu",
+     "start": "2026-11-20T16:00",
+     "end": "2026-11-20T17:00"
+    },
+    {
+     "title": "Annemin ilaçlarını al",
+     "start": "2026-11-20T19:00",
+     "end": "2026-11-20T19:30"
+    },
+    {
+     "title": "Faturaları öde",
+     "start": "2026-11-21T09:00",
+     "end": "2026-11-21T10:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "bugn planim nasil",
+    "kind": "free",
+    "contains": [
+     "Görevler:",
+     "Duş ve kişisel bakım",
+     "Acme",
+     "Araç muayenesi",
+     "Çorap çekmecesi",
+     "Takım toplantısı"
+    ],
+    "not_contains": [
+     "Vergi beyannamesi",
+     "Numarasını",
+     "kastediyorsun",
+     "Tam anlayamadım"
+    ],
+    "saved_total": 4
+   }
+  ]
+ },
+ {
+  "name": "b22-12",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-20T10:00",
+   "tasks": [
+    "Duş ve kişisel bakım",
+    "Acme Türkçe metin kontrolü",
+    {
+     "title": "Araç muayenesi için randevu al",
+     "due": "2026-11-20"
+    },
+    {
+     "title": "Çorap çekmecesi düzenlenecek",
+     "due": "2026-11-17"
+    },
+    {
+     "title": "Vergi beyannamesi hazırla",
+     "due": "2026-12-05"
+    }
+   ],
+   "seed": [
+    {
+     "title": "Takım toplantısı",
+     "start": "2026-11-20T11:00",
+     "end": "2026-11-20T12:00"
+    },
+    {
+     "title": "Diş hekimi randevusu",
+     "start": "2026-11-20T16:00",
+     "end": "2026-11-20T17:00"
+    },
+    {
+     "title": "Annemin ilaçlarını al",
+     "start": "2026-11-20T19:00",
+     "end": "2026-11-20T19:30"
+    },
+    {
+     "title": "Faturaları öde",
+     "start": "2026-11-21T09:00",
+     "end": "2026-11-21T10:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "digr gorevlerim",
+    "kind": "free",
+    "contains": [
+     "Duş ve kişisel bakım",
+     "Acme"
+    ],
+    "not_contains": [
+     "kastediyorsun",
+     "Tam anlayamadım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b22-13",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-20T10:00",
+   "tasks": [
+    "Duş ve kişisel bakım",
+    "Acme Türkçe metin kontrolü",
+    {
+     "title": "Araç muayenesi için randevu al",
+     "due": "2026-11-20"
+    },
+    {
+     "title": "Çorap çekmecesi düzenlenecek",
+     "due": "2026-11-17"
+    },
+    {
+     "title": "Vergi beyannamesi hazırla",
+     "due": "2026-12-05"
+    }
+   ],
+   "seed": [
+    {
+     "title": "Takım toplantısı",
+     "start": "2026-11-20T11:00",
+     "end": "2026-11-20T12:00"
+    },
+    {
+     "title": "Diş hekimi randevusu",
+     "start": "2026-11-20T16:00",
+     "end": "2026-11-20T17:00"
+    },
+    {
+     "title": "Annemin ilaçlarını al",
+     "start": "2026-11-20T19:00",
+     "end": "2026-11-20T19:30"
+    },
+    {
+     "title": "Faturaları öde",
+     "start": "2026-11-21T09:00",
+     "end": "2026-11-21T10:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "acik gorevlerim neler",
+    "kind": "free",
+    "contains": [
+     "Duş ve kişisel bakım",
+     "Acme"
+    ],
+    "not_contains": [
+     "kastediyorsun"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b22-14",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-20T10:00",
+   "tasks": [
+    "Duş ve kişisel bakım",
+    "Acme Türkçe metin kontrolü",
+    {
+     "title": "Araç muayenesi için randevu al",
+     "due": "2026-11-20"
+    },
+    {
+     "title": "Çorap çekmecesi düzenlenecek",
+     "due": "2026-11-17"
+    },
+    {
+     "title": "Vergi beyannamesi hazırla",
+     "due": "2026-12-05"
+    }
+   ],
+   "seed": [
+    {
+     "title": "Takım toplantısı",
+     "start": "2026-11-20T11:00",
+     "end": "2026-11-20T12:00"
+    },
+    {
+     "title": "Diş hekimi randevusu",
+     "start": "2026-11-20T16:00",
+     "end": "2026-11-20T17:00"
+    },
+    {
+     "title": "Annemin ilaçlarını al",
+     "start": "2026-11-20T19:00",
+     "end": "2026-11-20T19:30"
+    },
+    {
+     "title": "Faturaları öde",
+     "start": "2026-11-21T09:00",
+     "end": "2026-11-21T10:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "doger gorevlerim neler",
+    "kind": "free",
+    "contains": [
+     "Duş ve kişisel bakım"
+    ],
+    "not_contains": [
+     "kastediyorsun",
+     "Tam anlayamadım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b22-15",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-20T10:00",
+   "tasks": [
+    "Duş ve kişisel bakım",
+    "Acme Türkçe metin kontrolü",
+    {
+     "title": "Araç muayenesi için randevu al",
+     "due": "2026-11-20"
+    },
+    {
+     "title": "Çorap çekmecesi düzenlenecek",
+     "due": "2026-11-17"
+    },
+    {
+     "title": "Vergi beyannamesi hazırla",
+     "due": "2026-12-05"
+    }
+   ],
+   "seed": [
+    {
+     "title": "Takım toplantısı",
+     "start": "2026-11-20T11:00",
+     "end": "2026-11-20T12:00"
+    },
+    {
+     "title": "Diş hekimi randevusu",
+     "start": "2026-11-20T16:00",
+     "end": "2026-11-20T17:00"
+    },
+    {
+     "title": "Annemin ilaçlarını al",
+     "start": "2026-11-20T19:00",
+     "end": "2026-11-20T19:30"
+    },
+    {
+     "title": "Faturaları öde",
+     "start": "2026-11-21T09:00",
+     "end": "2026-11-21T10:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "yarin 10da toplanti plani yap",
+    "kind": "free",
+    "not_contains": [
+     "Görevler:",
+     "Haklısınız"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b22-16",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-20T10:00",
+   "tasks": [],
+   "seed": [
+    {
+     "title": "Kızımın okul taksitini öde",
+     "start": "2026-11-20T14:00",
+     "end": "2026-11-20T15:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "sabah 11de kizimin ve oglumun okul taksitlerini odeyecegim",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Takvimde zaten",
+     "14:00",
+     "Taşıyayım mı"
+    ],
+    "not_contains": [],
+    "saved_total": 1
+   }
+  ]
+ },
+ {
+  "name": "b22-17",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-20T10:00",
+   "tasks": [],
+   "seed": [
+    {
+     "title": "Diş hekimi randevusu",
+     "start": "2026-11-20T16:00",
+     "end": "2026-11-20T17:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "bugun 14te dis hekimi randevusu al",
+    "kind": "free",
+    "preview": false,
+    "contains": [
+     "Zaten o gün"
+    ],
+    "not_contains": [],
+    "saved_total": 1
+   }
+  ]
+ },
+ {
+  "name": "b22-18",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-20T10:00",
+   "tasks": [],
+   "seed": [
+    {
+     "title": "Annemin ilaçlarını al",
+     "start": "2026-11-20T19:00",
+     "end": "2026-11-20T19:30"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "bugun 19:00 annemin ilaclarini al",
+    "kind": "free",
+    "preview": false,
+    "contains": [
+     "Zaten o gün"
+    ],
+    "not_contains": [
+     "Taşıyayım"
+    ],
+    "saved_total": 1
+   }
+  ]
+ },
+ {
+  "name": "b22-19",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-20T10:00",
+   "tasks": [],
+   "seed": [
+    {
+     "title": "Takım toplantısı",
+     "start": "2026-11-20T11:00",
+     "end": "2026-11-20T12:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "bugun saat 14te toplanti",
+    "kind": "free",
+    "preview": true,
+    "contains": [],
+    "not_contains": [
+     "Takvimde zaten"
+    ],
+    "saved_total": 1
+   }
+  ]
+ },
+ {
+  "name": "b22-20",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-20T10:00",
+   "tasks": [],
+   "seed": [
+    {
+     "title": "Annemin ilaçlarını al",
+     "start": "2026-11-20T19:00",
+     "end": "2026-11-20T19:30"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "yarin 15te annemin ilaclarini al",
+    "kind": "free",
+    "preview": true,
+    "contains": [],
+    "not_contains": [
+     "Takvimde zaten"
+    ],
+    "saved_total": 1
+   }
+  ]
+ },
+ {
+  "name": "b22-21",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-20T10:00",
+   "tasks": [],
+   "seed": [
+    {
+     "title": "Annemin ilaçlarını al",
+     "start": "2026-11-20T19:00",
+     "end": "2026-11-20T19:30"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "bugun 17de acme metin kontrolu yapacagim",
+    "kind": "free",
+    "preview": true,
+    "contains": [],
+    "not_contains": [
+     "Takvimde zaten"
+    ],
+    "saved_total": 1
+   }
+  ]
+ },
+ {
+  "name": "b22-22",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-20T10:00",
+   "tasks": [],
+   "seed": [
+    {
+     "title": "Kızımın okul taksitini öde",
+     "start": "2026-11-20T14:00",
+     "end": "2026-11-20T15:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "ogle 12de kizimin ve oglumun okul taksitlerini odeyecegim",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Takvimde zaten"
+    ],
+    "not_contains": [],
+    "saved_total": 1
+   },
+   {
+    "say": "hayir",
+    "kind": "cancel",
+    "preview": false,
+    "saved_total": 1
+   }
+  ]
+ },
+ {
+  "name": "b22-23",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-20T10:00",
+   "tasks": [],
+   "seed": [
+    {
+     "title": "Kızımın okul taksitini öde",
+     "start": "2026-11-20T14:00",
+     "end": "2026-11-20T15:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "sabah 11de kizimin ve oglumun okul taksitlerini odeyecegim",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Takvimde zaten"
+    ],
+    "not_contains": [],
+    "saved_total": 1
+   },
+   {
+    "say": "evet",
+    "kind": "confirm",
+    "preview": false,
+    "saved_total": 2
+   }
+  ]
+ },
+ {
+  "name": "b22-24",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-20T10:00",
+   "tasks": [
+    "Duş ve kişisel bakım",
+    "Acme Türkçe metin kontrolü",
+    {
+     "title": "Araç muayenesi için randevu al",
+     "due": "2026-11-20"
+    },
+    {
+     "title": "Çorap çekmecesi düzenlenecek",
+     "due": "2026-11-17"
+    },
+    {
+     "title": "Vergi beyannamesi hazırla",
+     "due": "2026-12-05"
+    }
+   ],
+   "seed": [
+    {
+     "title": "Takım toplantısı",
+     "start": "2026-11-20T11:00",
+     "end": "2026-11-20T12:00"
+    },
+    {
+     "title": "Diş hekimi randevusu",
+     "start": "2026-11-20T16:00",
+     "end": "2026-11-20T17:00"
+    },
+    {
+     "title": "Annemin ilaçlarını al",
+     "start": "2026-11-20T19:00",
+     "end": "2026-11-20T19:30"
+    },
+    {
+     "title": "Faturaları öde",
+     "start": "2026-11-21T09:00",
+     "end": "2026-11-21T10:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "takim toplantisini 3e al",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Önce",
+     "Sonra",
+     "15:00"
+    ],
+    "saved_total": 4
+   }
+  ]
+ },
+ {
+  "name": "b22-25",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-20T10:00",
+   "tasks": [
+    "Duş ve kişisel bakım",
+    "Acme Türkçe metin kontrolü",
+    {
+     "title": "Araç muayenesi için randevu al",
+     "due": "2026-11-20"
+    },
+    {
+     "title": "Çorap çekmecesi düzenlenecek",
+     "due": "2026-11-17"
+    },
+    {
+     "title": "Vergi beyannamesi hazırla",
+     "due": "2026-12-05"
+    }
+   ],
+   "seed": [
+    {
+     "title": "Takım toplantısı",
+     "start": "2026-11-20T11:00",
+     "end": "2026-11-20T12:00"
+    },
+    {
+     "title": "Diş hekimi randevusu",
+     "start": "2026-11-20T16:00",
+     "end": "2026-11-20T17:00"
+    },
+    {
+     "title": "Annemin ilaçlarını al",
+     "start": "2026-11-20T19:00",
+     "end": "2026-11-20T19:30"
+    },
+    {
+     "title": "Faturaları öde",
+     "start": "2026-11-21T09:00",
+     "end": "2026-11-21T10:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "dis hekimini yarina at",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Önce",
+     "Sonra",
+     "21 Kasım"
+    ],
+    "saved_total": 4
+   }
+  ]
+ },
+ {
+  "name": "b22-26",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-20T10:00",
+   "tasks": [
+    "Duş ve kişisel bakım",
+    "Acme Türkçe metin kontrolü",
+    {
+     "title": "Araç muayenesi için randevu al",
+     "due": "2026-11-20"
+    },
+    {
+     "title": "Çorap çekmecesi düzenlenecek",
+     "due": "2026-11-17"
+    },
+    {
+     "title": "Vergi beyannamesi hazırla",
+     "due": "2026-12-05"
+    }
+   ],
+   "seed": [
+    {
+     "title": "Takım toplantısı",
+     "start": "2026-11-20T11:00",
+     "end": "2026-11-20T12:00"
+    },
+    {
+     "title": "Diş hekimi randevusu",
+     "start": "2026-11-20T16:00",
+     "end": "2026-11-20T17:00"
+    },
+    {
+     "title": "Annemin ilaçlarını al",
+     "start": "2026-11-20T19:00",
+     "end": "2026-11-20T19:30"
+    },
+    {
+     "title": "Faturaları öde",
+     "start": "2026-11-21T09:00",
+     "end": "2026-11-21T10:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "acme metin kontrolunu yarina birak",
+    "kind": "free",
+    "tasks_due": {
+     "Acme": "2026-11-21"
+    },
+    "tasks_done_not": [
+     "Acme"
+    ],
+    "preview": false
+   }
+  ]
+ },
+ {
+  "name": "b22-27",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-20T10:00",
+   "tasks": [
+    "Duş ve kişisel bakım",
+    "Acme Türkçe metin kontrolü",
+    {
+     "title": "Araç muayenesi için randevu al",
+     "due": "2026-11-20"
+    },
+    {
+     "title": "Çorap çekmecesi düzenlenecek",
+     "due": "2026-11-17"
+    },
+    {
+     "title": "Vergi beyannamesi hazırla",
+     "due": "2026-12-05"
+    }
+   ],
+   "seed": [
+    {
+     "title": "Takım toplantısı",
+     "start": "2026-11-20T11:00",
+     "end": "2026-11-20T12:00"
+    },
+    {
+     "title": "Diş hekimi randevusu",
+     "start": "2026-11-20T16:00",
+     "end": "2026-11-20T17:00"
+    },
+    {
+     "title": "Annemin ilaçlarını al",
+     "start": "2026-11-20T19:00",
+     "end": "2026-11-20T19:30"
+    },
+    {
+     "title": "Faturaları öde",
+     "start": "2026-11-21T09:00",
+     "end": "2026-11-21T10:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "takim toplantisini iptal et",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "SİLMEMİ",
+     "evet sil"
+    ],
+    "saved_total": 4
+   },
+   {
+    "say": "evet",
+    "kind": "neutral",
+    "preview": true,
+    "saved_total": 4
+   }
+  ]
+ },
+ {
+  "name": "b22-28",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-20T10:00",
+   "tasks": [
+    "Duş ve kişisel bakım",
+    "Acme Türkçe metin kontrolü",
+    {
+     "title": "Araç muayenesi için randevu al",
+     "due": "2026-11-20"
+    },
+    {
+     "title": "Çorap çekmecesi düzenlenecek",
+     "due": "2026-11-17"
+    },
+    {
+     "title": "Vergi beyannamesi hazırla",
+     "due": "2026-12-05"
+    }
+   ],
+   "seed": [
+    {
+     "title": "Takım toplantısı",
+     "start": "2026-11-20T11:00",
+     "end": "2026-11-20T12:00"
+    },
+    {
+     "title": "Diş hekimi randevusu",
+     "start": "2026-11-20T16:00",
+     "end": "2026-11-20T17:00"
+    },
+    {
+     "title": "Annemin ilaçlarını al",
+     "start": "2026-11-20T19:00",
+     "end": "2026-11-20T19:30"
+    },
+    {
+     "title": "Faturaları öde",
+     "start": "2026-11-21T09:00",
+     "end": "2026-11-21T10:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "takim toplantisini iptal et",
+    "kind": "free",
+    "preview": true,
+    "saved_total": 4
+   },
+   {
+    "say": "hayir",
+    "kind": "cancel",
+    "preview": false,
+    "saved_total": 4
+   }
+  ]
+ },
+ {
+  "name": "b22-29",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-20T10:00",
+   "tasks": [
+    "Duş ve kişisel bakım",
+    "Acme Türkçe metin kontrolü",
+    {
+     "title": "Araç muayenesi için randevu al",
+     "due": "2026-11-20"
+    },
+    {
+     "title": "Çorap çekmecesi düzenlenecek",
+     "due": "2026-11-17"
+    },
+    {
+     "title": "Vergi beyannamesi hazırla",
+     "due": "2026-12-05"
+    }
+   ],
+   "seed": [
+    {
+     "title": "Takım toplantısı",
+     "start": "2026-11-20T11:00",
+     "end": "2026-11-20T12:00"
+    },
+    {
+     "title": "Diş hekimi randevusu",
+     "start": "2026-11-20T16:00",
+     "end": "2026-11-20T17:00"
+    },
+    {
+     "title": "Annemin ilaçlarını al",
+     "start": "2026-11-20T19:00",
+     "end": "2026-11-20T19:30"
+    },
+    {
+     "title": "Faturaları öde",
+     "start": "2026-11-21T09:00",
+     "end": "2026-11-21T10:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "duş ve kisisel bakimi yaptim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Duş"
+    ],
+    "tasks_removed_not_has": [
+     "Duş"
+    ],
+    "not_contains": [
+     "SİLMEMİ"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b22-30",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-20T10:00",
+   "tasks": [
+    "Duş ve kişisel bakım",
+    "Acme Türkçe metin kontrolü",
+    {
+     "title": "Araç muayenesi için randevu al",
+     "due": "2026-11-20"
+    },
+    {
+     "title": "Çorap çekmecesi düzenlenecek",
+     "due": "2026-11-17"
+    },
+    {
+     "title": "Vergi beyannamesi hazırla",
+     "due": "2026-12-05"
+    }
+   ],
+   "seed": [
+    {
+     "title": "Takım toplantısı",
+     "start": "2026-11-20T11:00",
+     "end": "2026-11-20T12:00"
+    },
+    {
+     "title": "Diş hekimi randevusu",
+     "start": "2026-11-20T16:00",
+     "end": "2026-11-20T17:00"
+    },
+    {
+     "title": "Annemin ilaçlarını al",
+     "start": "2026-11-20T19:00",
+     "end": "2026-11-20T19:30"
+    },
+    {
+     "title": "Faturaları öde",
+     "start": "2026-11-21T09:00",
+     "end": "2026-11-21T10:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "araç muayenesi randevusunu yarina ertele",
+    "kind": "free",
+    "tasks_due": {
+     "Araç muayenesi": "2026-11-21"
+    },
+    "tasks_done_not": [
+     "Araç"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b22-31",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-20T10:00",
+   "tasks": [
+    "Duş ve kişisel bakım",
+    "Acme Türkçe metin kontrolü",
+    {
+     "title": "Araç muayenesi için randevu al",
+     "due": "2026-11-20"
+    },
+    {
+     "title": "Çorap çekmecesi düzenlenecek",
+     "due": "2026-11-17"
+    },
+    {
+     "title": "Vergi beyannamesi hazırla",
+     "due": "2026-12-05"
+    }
+   ],
+   "seed": [
+    {
+     "title": "Takım toplantısı",
+     "start": "2026-11-20T11:00",
+     "end": "2026-11-20T12:00"
+    },
+    {
+     "title": "Diş hekimi randevusu",
+     "start": "2026-11-20T16:00",
+     "end": "2026-11-20T17:00"
+    },
+    {
+     "title": "Annemin ilaçlarını al",
+     "start": "2026-11-20T19:00",
+     "end": "2026-11-20T19:30"
+    },
+    {
+     "title": "Faturaları öde",
+     "start": "2026-11-21T09:00",
+     "end": "2026-11-21T10:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "ilaclari 8e al",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Önce",
+     "Sonra",
+     "20:00"
+    ],
+    "saved_total": 4
+   }
+  ]
+ },
+ {
+  "name": "b22-32",
+  "setup": {
+   "provider": "claude_like",
+   "now": "2026-11-20T10:00",
+   "tasks": [],
+   "seed": [
+    {
+     "title": "Market alışverişi",
+     "start": "2026-11-20T12:00",
+     "end": "2026-11-20T13:00"
+    },
+    {
+     "title": "Market siparişini al",
+     "start": "2026-11-20T18:00",
+     "end": "2026-11-20T18:30"
+    }
+   ],
+   "model_intent": {
+    "intent": "delete_event",
+    "match": "market",
+    "date": null,
+    "scope": "this"
+   }
+  },
+  "steps": [
+   {
+    "say": "marketi iptal et",
+    "kind": "free",
+    "contains": [
+     "Hangisi?",
+     "1)",
+     "2)"
+    ],
+    "saved_total": 2
+   },
+   {
+    "say": "2",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "SİLMEMİ",
+     "Market siparişini"
+    ],
+    "saved_total": 2
+   },
+   {
+    "say": "evet sil",
+    "kind": "confirm",
+    "saved_total": 1
+   }
+  ]
+ },
+ {
+  "name": "b22-33",
+  "setup": {
+   "provider": "claude_like",
+   "now": "2026-11-20T10:00",
+   "tasks": [],
+   "seed": [
+    {
+     "title": "Market alışverişi",
+     "start": "2026-11-20T12:00",
+     "end": "2026-11-20T13:00"
+    },
+    {
+     "title": "Market siparişini al",
+     "start": "2026-11-20T18:00",
+     "end": "2026-11-20T18:30"
+    }
+   ],
+   "model_intent": {
+    "intent": "delete_event",
+    "match": "market",
+    "date": null,
+    "scope": "this"
+   }
+  },
+  "steps": [
+   {
+    "say": "marketi iptal et",
+    "kind": "free",
+    "contains": [
+     "Hangisi?"
+    ],
+    "saved_total": 2
+   },
+   {
+    "say": "1",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Market alışverişi"
+    ],
+    "saved_total": 2
+   },
+   {
+    "say": "hayir",
+    "kind": "cancel",
+    "preview": false,
+    "saved_total": 2
+   }
+  ]
+ },
+ {
+  "name": "b22-34",
+  "setup": {
+   "provider": "claude_like",
+   "now": "2026-11-20T10:00",
+   "tasks": [],
+   "seed": [
+    {
+     "title": "Market alışverişi",
+     "start": "2026-11-20T12:00",
+     "end": "2026-11-20T13:00"
+    },
+    {
+     "title": "Market siparişini al",
+     "start": "2026-11-20T18:00",
+     "end": "2026-11-20T18:30"
+    }
+   ],
+   "model_intent": {
+    "intent": "delete_event",
+    "match": "market",
+    "date": null,
+    "scope": "this"
+   }
+  },
+  "steps": [
+   {
+    "say": "marketi iptal et",
+    "kind": "free",
+    "contains": [
+     "Hangisi?"
+    ],
+    "saved_total": 2
+   },
+   {
+    "say": "2",
+    "kind": "free",
+    "preview": true,
+    "saved_total": 2
+   },
+   {
+    "say": "tamam",
+    "kind": "neutral",
+    "preview": true,
+    "saved_total": 2
+   }
+  ]
+ },
+ {
+  "name": "b22-35",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-20T10:00",
+   "tasks": [
+    "Duş ve kişisel bakım",
+    "Acme Türkçe metin kontrolü",
+    {
+     "title": "Araç muayenesi için randevu al",
+     "due": "2026-11-20"
+    },
+    {
+     "title": "Çorap çekmecesi düzenlenecek",
+     "due": "2026-11-17"
+    },
+    {
+     "title": "Vergi beyannamesi hazırla",
+     "due": "2026-12-05"
+    }
+   ],
+   "seed": [
+    {
+     "title": "Takım toplantısı",
+     "start": "2026-11-20T11:00",
+     "end": "2026-11-20T12:00"
+    },
+    {
+     "title": "Diş hekimi randevusu",
+     "start": "2026-11-20T16:00",
+     "end": "2026-11-20T17:00"
+    },
+    {
+     "title": "Annemin ilaçlarını al",
+     "start": "2026-11-20T19:00",
+     "end": "2026-11-20T19:30"
+    },
+    {
+     "title": "Faturaları öde",
+     "start": "2026-11-21T09:00",
+     "end": "2026-11-21T10:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "bugun planim nasil",
+    "kind": "free",
+    "contains": [
+     "Görevler:"
+    ]
+   },
+   {
+    "say": "1",
+    "kind": "free",
+    "not_contains": [
+     "SİLMEMİ"
+    ],
+    "saved_total": 4
+   }
+  ]
+ },
+ {
+  "name": "b22-36",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-20T10:00",
+   "tasks": [
+    "Duş ve kişisel bakım",
+    "Acme Türkçe metin kontrolü",
+    {
+     "title": "Araç muayenesi için randevu al",
+     "due": "2026-11-20"
+    },
+    {
+     "title": "Çorap çekmecesi düzenlenecek",
+     "due": "2026-11-17"
+    },
+    {
+     "title": "Vergi beyannamesi hazırla",
+     "due": "2026-12-05"
+    }
+   ],
+   "seed": [
+    {
+     "title": "Takım toplantısı",
+     "start": "2026-11-20T11:00",
+     "end": "2026-11-20T12:00"
+    },
+    {
+     "title": "Diş hekimi randevusu",
+     "start": "2026-11-20T16:00",
+     "end": "2026-11-20T17:00"
+    },
+    {
+     "title": "Annemin ilaçlarını al",
+     "start": "2026-11-20T19:00",
+     "end": "2026-11-20T19:30"
+    },
+    {
+     "title": "Faturaları öde",
+     "start": "2026-11-21T09:00",
+     "end": "2026-11-21T10:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "gorevlerim",
+    "kind": "free",
+    "contains": [
+     "1. Duş"
+    ]
+   },
+   {
+    "say": "2 yapildi",
+    "kind": "free",
+    "tasks_done_has": [
+     "Acme"
+    ],
+    "tasks_removed_not_has": [
+     "Acme"
+    ],
+    "not_contains": [
+     "SİLMEMİ"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b22-37",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-20T10:00",
+   "tasks": [
+    "Duş ve kişisel bakım",
+    "Acme Türkçe metin kontrolü",
+    {
+     "title": "Araç muayenesi için randevu al",
+     "due": "2026-11-20"
+    },
+    {
+     "title": "Çorap çekmecesi düzenlenecek",
+     "due": "2026-11-17"
+    },
+    {
+     "title": "Vergi beyannamesi hazırla",
+     "due": "2026-12-05"
+    }
+   ],
+   "seed": [
+    {
+     "title": "Takım toplantısı",
+     "start": "2026-11-20T11:00",
+     "end": "2026-11-20T12:00"
+    },
+    {
+     "title": "Diş hekimi randevusu",
+     "start": "2026-11-20T16:00",
+     "end": "2026-11-20T17:00"
+    },
+    {
+     "title": "Annemin ilaçlarını al",
+     "start": "2026-11-20T19:00",
+     "end": "2026-11-20T19:30"
+    },
+    {
+     "title": "Faturaları öde",
+     "start": "2026-11-21T09:00",
+     "end": "2026-11-21T10:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "gorevlerim neler",
+    "kind": "free",
+    "contains": [
+     "Duş"
+    ]
+   },
+   {
+    "say": "1 i yarina ertele",
+    "kind": "free",
+    "tasks_due": {
+     "Duş": "2026-11-21"
+    },
+    "tasks_done_not": [
+     "Duş"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b22-38",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-20T10:00",
+   "tasks": [
+    "Duş ve kişisel bakım",
+    "Acme Türkçe metin kontrolü",
+    {
+     "title": "Araç muayenesi için randevu al",
+     "due": "2026-11-20"
+    },
+    {
+     "title": "Çorap çekmecesi düzenlenecek",
+     "due": "2026-11-17"
+    },
+    {
+     "title": "Vergi beyannamesi hazırla",
+     "due": "2026-12-05"
+    }
+   ],
+   "seed": [
+    {
+     "title": "Takım toplantısı",
+     "start": "2026-11-20T11:00",
+     "end": "2026-11-20T12:00"
+    },
+    {
+     "title": "Diş hekimi randevusu",
+     "start": "2026-11-20T16:00",
+     "end": "2026-11-20T17:00"
+    },
+    {
+     "title": "Annemin ilaçlarını al",
+     "start": "2026-11-20T19:00",
+     "end": "2026-11-20T19:30"
+    },
+    {
+     "title": "Faturaları öde",
+     "start": "2026-11-21T09:00",
+     "end": "2026-11-21T10:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "bugun ne var",
+    "kind": "free",
+    "contains": [
+     "Takım toplantısı",
+     "Görevler:",
+     "Çorap çekmecesi"
+    ],
+    "not_contains": [
+     "Vergi beyannamesi"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b22-39",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-20T10:00",
+   "tasks": [
+    "Duş ve kişisel bakım",
+    "Acme Türkçe metin kontrolü",
+    {
+     "title": "Araç muayenesi için randevu al",
+     "due": "2026-11-20"
+    },
+    {
+     "title": "Çorap çekmecesi düzenlenecek",
+     "due": "2026-11-17"
+    },
+    {
+     "title": "Vergi beyannamesi hazırla",
+     "due": "2026-12-05"
+    }
+   ],
+   "seed": [
+    {
+     "title": "Takım toplantısı",
+     "start": "2026-11-20T11:00",
+     "end": "2026-11-20T12:00"
+    },
+    {
+     "title": "Diş hekimi randevusu",
+     "start": "2026-11-20T16:00",
+     "end": "2026-11-20T17:00"
+    },
+    {
+     "title": "Annemin ilaçlarını al",
+     "start": "2026-11-20T19:00",
+     "end": "2026-11-20T19:30"
+    },
+    {
+     "title": "Faturaları öde",
+     "start": "2026-11-21T09:00",
+     "end": "2026-11-21T10:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "yarin ne var",
+    "kind": "free",
+    "contains": [
+     "Faturaları öde"
+    ],
+    "not_contains": [
+     "Görevler:"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b22-40",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-20T10:00",
+   "tasks": [
+    "Duş ve kişisel bakım",
+    "Acme Türkçe metin kontrolü",
+    {
+     "title": "Araç muayenesi için randevu al",
+     "due": "2026-11-20"
+    },
+    {
+     "title": "Çorap çekmecesi düzenlenecek",
+     "due": "2026-11-17"
+    },
+    {
+     "title": "Vergi beyannamesi hazırla",
+     "due": "2026-12-05"
+    }
+   ],
+   "seed": [
+    {
+     "title": "Takım toplantısı",
+     "start": "2026-11-20T11:00",
+     "end": "2026-11-20T12:00"
+    },
+    {
+     "title": "Diş hekimi randevusu",
+     "start": "2026-11-20T16:00",
+     "end": "2026-11-20T17:00"
+    },
+    {
+     "title": "Annemin ilaçlarını al",
+     "start": "2026-11-20T19:00",
+     "end": "2026-11-20T19:30"
+    },
+    {
+     "title": "Faturaları öde",
+     "start": "2026-11-21T09:00",
+     "end": "2026-11-21T10:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "yarinki planim",
+    "kind": "free",
+    "contains": [
+     "Faturaları öde"
+    ],
+    "not_contains": [
+     "Görevler:",
+     "Takım toplantısı"
+    ]
+   }
+  ]
+ }
+]

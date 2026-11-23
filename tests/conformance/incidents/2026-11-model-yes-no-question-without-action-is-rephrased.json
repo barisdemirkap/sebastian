@@ -1,0 +1,31 @@
+{
+  "name": "a yes/no model question that maps to no action is rephrased as an open question",
+  "incident": "Live failure of 2026-11-19 (invariant I10): 'camasir bitti' got 'do you want me to add a reminder or event?' with nothing stored behind it. A yes/no offer with no action behind it is never sent; it becomes an open question with a clarification state, and 'evet' is answered with that question, never with 'nothing pending'.",
+  "setup": {
+    "provider": "claude_like",
+    "model_intent": {
+      "intent": "unclear",
+      "question": "Bir hatırlatıcı ya da etkinlik ekleyeyim mi?"
+    }
+  },
+  "steps": [
+    {
+      "say": "şu iş ne olacak acaba",
+      "kind": "free",
+      "not_contains": [
+        "ekleyeyim mi"
+      ],
+      "preview": false,
+      "saved_total": 0
+    },
+    {
+      "say": "evet",
+      "kind": "neutral",
+      "not_contains": [
+        "Onay bekleyen"
+      ],
+      "preview": false,
+      "saved_total": 0
+    }
+  ]
+}

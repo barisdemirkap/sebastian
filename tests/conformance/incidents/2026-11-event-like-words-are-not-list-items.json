@@ -1,0 +1,36 @@
+{
+  "name": "a doctor appointment or meeting with purchase-like words stays a calendar matter",
+  "incident": "ADR 0017: items that look like events (randevu, toplantı, a clock time) are not list items.",
+  "setup": {
+    "provider": "rules",
+    "now": "2026-11-19T06:27"
+  },
+  "steps": [
+    {
+      "say": "yarın 15:00 doktor randevusu alınacak",
+      "kind": "free",
+      "contains": [
+        "Şunu takvime işliyorum"
+      ],
+      "not_contains": [
+        "Alınacaklar listesine ekledim"
+      ],
+      "preview": true,
+      "saved_total": 0
+    },
+    {
+      "say": "hayır",
+      "kind": "cancel",
+      "preview": false,
+      "saved_total": 0
+    },
+    {
+      "say": "toplantı lazım",
+      "kind": "free",
+      "not_contains": [
+        "Alınacaklar listesine ekledim"
+      ],
+      "saved_total": 0
+    }
+  ]
+}

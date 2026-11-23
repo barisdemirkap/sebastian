@@ -1,0 +1,242 @@
+[
+ {
+  "name": "done-kitaplari-topladim",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kitapları topla",
+    "Başka iş"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kitaplari topladim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Kitap"
+    ],
+    "tasks_removed_not_has": [
+     "Kitap"
+    ],
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil",
+     "Hangi gün"
+    ],
+    "preview": false
+   }
+  ]
+ },
+ {
+  "name": "done-arabayi-yikadim",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Arabayı yıka",
+    "Başka iş"
+   ]
+  },
+  "steps": [
+   {
+    "say": "arabayi yikadim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Araba"
+    ],
+    "tasks_removed_not_has": [
+     "Araba"
+    ],
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil",
+     "Hangi gün"
+    ],
+    "preview": false
+   }
+  ]
+ },
+ {
+  "name": "done-dilekceyi-verdim",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Dilekçeyi ver",
+    "Başka iş"
+   ]
+  },
+  "steps": [
+   {
+    "say": "dilekceyi verdim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Dilek"
+    ],
+    "tasks_removed_not_has": [
+     "Dilek"
+    ],
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil",
+     "Hangi gün"
+    ],
+    "preview": false
+   }
+  ]
+ },
+ {
+  "name": "done-tamir-isi-halloldu",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Tamir işini hallet",
+    "Başka iş"
+   ]
+  },
+  "steps": [
+   {
+    "say": "tamir isi halloldu",
+    "kind": "free",
+    "tasks_done_has": [
+     "Tamir"
+    ],
+    "tasks_removed_not_has": [
+     "Tamir"
+    ],
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil",
+     "Hangi gün"
+    ],
+    "preview": false
+   }
+  ]
+ },
+ {
+  "name": "done-aboneligi-iptal-ettim",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Aboneliği iptal et",
+    "Başka iş"
+   ]
+  },
+  "steps": [
+   {
+    "say": "aboneligi iptal ettim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Abone"
+    ],
+    "tasks_removed_not_has": [
+     "Abone"
+    ],
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil",
+     "Hangi gün"
+    ],
+    "preview": false
+   }
+  ]
+ },
+ {
+  "name": "done-cicekleri-suladim",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çiçekleri sula",
+    "Başka iş"
+   ]
+  },
+  "steps": [
+   {
+    "say": "cicekleri suladim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Çiçek"
+    ],
+    "tasks_removed_not_has": [
+     "Çiçek"
+    ],
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil",
+     "Hangi gün"
+    ],
+    "preview": false
+   }
+  ]
+ },
+ {
+  "name": "done-yemegi-hazirladim",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Yemeği hazırla",
+    "Başka iş"
+   ]
+  },
+  "steps": [
+   {
+    "say": "yemegi hazirladim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Yem"
+    ],
+    "tasks_removed_not_has": [
+     "Yem"
+    ],
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil",
+     "Hangi gün"
+    ],
+    "preview": false
+   }
+  ]
+ },
+ {
+  "name": "done-mail-gonderildi",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Mail gönder",
+    "Başka iş"
+   ]
+  },
+  "steps": [
+   {
+    "say": "mail gonderildi",
+    "kind": "free",
+    "tasks_done_has": [
+     "Mail"
+    ],
+    "tasks_removed_not_has": [
+     "Mail"
+    ],
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil",
+     "Hangi gün"
+    ],
+    "preview": false
+   }
+  ]
+ }
+]

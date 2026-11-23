@@ -1,0 +1,16 @@
+{
+  "name": "a clock time for a subject matching two events asks which one",
+  "incident": "Ambiguous reference: ask a short question with numbered choices, never guess and never create.",
+  "setup": {
+    "provider": "rules",
+    "now": "2026-11-19T10:00",
+    "seed": [
+      {"title": "Çöpü çıkar", "start": "2026-11-19T07:30", "end": "2026-11-19T07:45"},
+      {"title": "Çöp poşeti al", "start": "2026-11-19T12:00", "end": "2026-11-19T12:15"}
+    ]
+  },
+  "steps": [
+    {"say": "çöp 18.30da", "kind": "free", "preview": false,
+     "contains": ["1)", "2)"], "not_contains": ["Şunu takvime işliyorum"], "saved_total": 2}
+  ]
+}

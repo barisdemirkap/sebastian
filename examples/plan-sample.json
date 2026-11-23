@@ -1,0 +1,12 @@
+{
+  "_comment": "Fictional sample for `sebastian import-plan`. Dates are ISO; time is optional (omit for an all-day item); reminder is minutes or '30m' / '1h' / '1d'.",
+  "items": [
+    {"date": "2026-11-18", "time": "18:00", "title": "Çamaşır yıkama", "reminder": "30m"},
+    {"date": "2026-11-19", "time": "09:30", "title": "Doktor randevusu", "reminder": "1h", "duration_min": 45, "notes": "Kimlik ve rapor"},
+    {"date": "2026-11-19", "time": null, "title": "Alışveriş listesini hazırla"},
+    {"date": "2026-11-20", "time": "17:00", "title": "Market alışverişi", "reminder": "30m"},
+    {"date": "2026-11-21", "time": "11:00", "title": "Salonu topla"},
+    {"date": "2026-11-21", "time": "12:00", "title": "Odayı süpür"},
+    {"date": "2026-11-21", "time": "20:30", "title": "Akşam planı", "reminder": "1h"}
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "one ready-by time with an event of that subject only sets the reminder",
+  "incident": "ADR 0017: 'toplantı için 14.40ta hazır olalım' is a reminder lead on the existing meeting (start 15:00 -> 20 min), never a new event.",
+  "setup": {
+    "provider": "rules",
+    "now": "2026-11-19T06:27",
+    "seed": [
+      {
+        "title": "Proje toplantısı",
+        "start": "2026-11-19T15:00",
+        "end": "2026-11-19T16:00"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "say": "toplanti icin 14.40ta hazir olalim",
+      "kind": "free",
+      "preview": true,
+      "contains": [
+        "Şunu şöyle değiştiriyorum",
+        "Hatırlatma: 20 dk önce"
+      ],
+      "not_contains": [
+        "Şunu takvime işliyorum",
+        "Önce: Proje toplantısı, Bugün Perşembe 19 Kasım 2026 15:00-16:00\nSonra: Proje toplantısı, Bugün Perşembe 19 Kasım 2026 14:40"
+      ],
+      "saved_total": 1
+    }
+  ]
+}

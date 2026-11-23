@@ -1,0 +1,48 @@
+{
+  "name": "date and time slot loops never repeat verbatim",
+  "incident": "Class of bug seen in another bot: the day question asked again and again and an answer already given was asked once more.",
+  "setup": {
+    "provider": "rules"
+  },
+  "steps": [
+    {
+      "say": "toplantı ekle",
+      "kind": "free",
+      "contains": [
+        "Hangi gün"
+      ],
+      "preview": false
+    },
+    {
+      "say": "cuma",
+      "kind": "free",
+      "facts": [
+        {
+          "name": "day already given",
+          "asks": "Hangi (gün|güne|tarih)"
+        }
+      ],
+      "preview": false
+    },
+    {
+      "say": "hmm",
+      "kind": "free"
+    },
+    {
+      "say": "asdf",
+      "kind": "free"
+    },
+    {
+      "say": "15:00",
+      "kind": "free",
+      "preview": true,
+      "saved_total": 0
+    },
+    {
+      "say": "evet",
+      "kind": "confirm",
+      "saved_total": 1,
+      "preview": false
+    }
+  ]
+}

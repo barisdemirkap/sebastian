@@ -1,0 +1,205 @@
+[
+ {
+  "name": "defer-kitaplar-yarina-kalsin",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kitapları topla",
+    "Başka iş"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kitaplar yarina kalsin",
+    "kind": "free",
+    "tasks_due": {
+     "Kitap": "2026-11-20"
+    },
+    "tasks_done_not": [
+     "Kitap"
+    ],
+    "tasks_open_count": 2,
+    "not_contains": [
+     "Görev ekledim",
+     "Numarasını",
+     "Hangisi?"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "defer-arabayi-cumartesiye-birakalim",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Arabayı yıka",
+    "Başka iş"
+   ]
+  },
+  "steps": [
+   {
+    "say": "arabayi cumartesiye birakalim",
+    "kind": "free",
+    "tasks_due": {
+     "Araba": "2026-11-21"
+    },
+    "tasks_done_not": [
+     "Araba"
+    ],
+    "tasks_open_count": 2,
+    "not_contains": [
+     "Görev ekledim",
+     "Numarasını",
+     "Hangisi?"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "defer-dilekceyi-pazartesiye-tasiyalim",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Dilekçeyi ver",
+    "Başka iş"
+   ]
+  },
+  "steps": [
+   {
+    "say": "dilekceyi pazartesiye tasiyalim",
+    "kind": "free",
+    "tasks_due": {
+     "Dilek": "2026-11-23"
+    },
+    "tasks_done_not": [
+     "Dilek"
+    ],
+    "tasks_open_count": 2,
+    "not_contains": [
+     "Görev ekledim",
+     "Numarasını",
+     "Hangisi?"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "defer-tamiri-bu-yarina",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Tamir işini hallet",
+    "Başka iş"
+   ]
+  },
+  "steps": [
+   {
+    "say": "tamiri bu yarina",
+    "kind": "free",
+    "tasks_due": {
+     "Tamir": "2026-11-20"
+    },
+    "tasks_done_not": [
+     "Tamir"
+    ],
+    "tasks_open_count": 2,
+    "not_contains": [
+     "Görev ekledim",
+     "Numarasını",
+     "Hangisi?"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "defer-cicekleri-sali-gunune-ertele",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çiçekleri sula",
+    "Başka iş"
+   ]
+  },
+  "steps": [
+   {
+    "say": "cicekleri sali gunune ertele",
+    "kind": "free",
+    "tasks_due": {
+     "Çiçek": "2026-11-24"
+    },
+    "tasks_done_not": [
+     "Çiçek"
+    ],
+    "tasks_open_count": 2,
+    "not_contains": [
+     "Görev ekledim",
+     "Numarasını",
+     "Hangisi?"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "defer-yemek-yarina-kaldi",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Yemeği hazırla",
+    "Başka iş"
+   ]
+  },
+  "steps": [
+   {
+    "say": "yemek yarina kaldi",
+    "kind": "free",
+    "tasks_due": {
+     "Yem": "2026-11-20"
+    },
+    "tasks_done_not": [
+     "Yem"
+    ],
+    "tasks_open_count": 2,
+    "not_contains": [
+     "Görev ekledim",
+     "Numarasını",
+     "Hangisi?"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "defer-maili-pazara-at",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Mail gönder",
+    "Başka iş"
+   ]
+  },
+  "steps": [
+   {
+    "say": "maili pazara at",
+    "kind": "free",
+    "tasks_due": {
+     "Mail": "2026-11-22"
+    },
+    "tasks_done_not": [
+     "Mail"
+    ],
+    "tasks_open_count": 2,
+    "not_contains": [
+     "Görev ekledim",
+     "Numarasını",
+     "Hangisi?"
+    ]
+   }
+  ]
+ }
+]

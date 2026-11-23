@@ -1,0 +1,217 @@
+[
+ {
+  "name": "add-to-shopping-list",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00"
+  },
+  "steps": [
+   {
+    "say": "alinacaklar listesine sut ekle",
+    "kind": "free",
+    "contains": [
+     "Sut"
+    ],
+    "saved_total": 0
+   }
+  ]
+ },
+ {
+  "name": "multi-items",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00"
+  },
+  "steps": [
+   {
+    "say": "alinacaklar listesine sut, yumurta ve ekmek ekle",
+    "kind": "free",
+    "contains": [
+     "Sut",
+     "Yumurta",
+     "Ekmek"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "show-list-after-add",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00"
+  },
+  "steps": [
+   {
+    "say": "alinacaklar listesine sut ekle",
+    "kind": "free"
+   },
+   {
+    "say": "alinacaklar",
+    "kind": "free",
+    "contains": [
+     "Sut"
+    ],
+    "not_contains": [
+     "Numarasını"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "check-item-off",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00"
+  },
+  "steps": [
+   {
+    "say": "alinacaklar listesine sut ekle",
+    "kind": "free"
+   },
+   {
+    "say": "sut aldim",
+    "kind": "free",
+    "contains": [
+     "Sut",
+     "işaretledim"
+    ],
+    "not_contains": [
+     "Hangi gün",
+     "Merhaba",
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "shopping-wording",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00"
+  },
+  "steps": [
+   {
+    "say": "sut ve yumurta almam lazim",
+    "kind": "free",
+    "contains": [
+     "Sut",
+     "Yumurta"
+    ],
+    "not_contains": [
+     "Hangi gün"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "ran-out-wording",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00"
+  },
+  "steps": [
+   {
+    "say": "ekmek bitti",
+    "kind": "free",
+    "contains": [
+     "Ekmek"
+    ],
+    "not_contains": [
+     "Hangi gün"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "duplicate-list-item-is-not-added-twice",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00"
+  },
+  "steps": [
+   {
+    "say": "alinacaklar listesine sut ekle",
+    "kind": "free"
+   },
+   {
+    "say": "alinacaklar listesine sut ekle",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını"
+    ],
+    "contains": [
+     "Zaten"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "clear-is-a-question-with-an-answer",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00"
+  },
+  "steps": [
+   {
+    "say": "alinacaklar listesine sut ekle",
+    "kind": "free"
+   },
+   {
+    "say": "alinacaklar listesini temizle",
+    "kind": "free",
+    "contains": [
+     "Sut"
+    ]
+   },
+   {
+    "say": "hayır",
+    "kind": "cancel",
+    "preview": false
+   }
+  ]
+ },
+ {
+  "name": "item-not-in-list-is-not-a-guess",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00"
+  },
+  "steps": [
+   {
+    "say": "sut aldim",
+    "kind": "free",
+    "not_contains": [
+     "Hangi gün",
+     "Merhaba",
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil"
+    ],
+    "saved_total": 0,
+    "preview": false
+   }
+  ]
+ },
+ {
+  "name": "two-bare-wordings-do-not-ask-a-day",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00"
+  },
+  "steps": [
+   {
+    "say": "ekmek alinacak domates alinacak",
+    "kind": "free",
+    "contains": [
+     "Ekmek",
+     "Domates"
+    ],
+    "not_contains": [
+     "Hangi gün"
+    ]
+   }
+  ]
+ }
+]

@@ -2,7 +2,7 @@
 
 A personal AI assistant for **one person**. Fork it, run it on your own machine, configure it, extend it, and stay in control.
 
-Status: early. Sebastian grows out of a private assistant ("Alfred"); the generic core is being extracted step by step.
+Status: early. Sebastian grows out of a private assistant ("Sebastian"); the generic core is being extracted step by step.
 
 ## Principles
 - **Single user, local first.** No hosted multi-user service. Your data, your secrets, your machine.
@@ -16,3 +16,6 @@ See [docs/ROADMAP.md](docs/ROADMAP.md) and the decisions in [docs/adr](docs/adr)
 
 ## License
 MIT. See [LICENSE](LICENSE).
+
+## Current state
+The first code drop is an anonymized copy of the generic parts of a private assistant (calendar with preview-gated writes, tasks, lists, reminders, digests, Telegram, optional model agent mode, ~3900 offline tests). Names and identifiers in the test data are fictional. Next: one config file for persona and language, then channel adapters (ADR 0002). Design notes from the private assistant are in `docs/legacy/`.

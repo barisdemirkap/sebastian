@@ -1,0 +1,18 @@
+{
+  "name": "an undated hour 1-6 with only one reading still ahead picks it",
+  "incident": "ADR 0014: at 05:24 04:00 has passed today, so 'saat 4' means 16:00 today; no question.",
+  "setup": {
+    "provider": "rules",
+    "now": "2026-11-19T05:24"
+  },
+  "steps": [
+    {
+      "say": "saat 4 çöpü çıkar ekle",
+      "kind": "free",
+      "preview": true,
+      "contains": [
+        "Bugün Perşembe 19 Kasım 2026 16:00-16:15"
+      ]
+    }
+  ]
+}

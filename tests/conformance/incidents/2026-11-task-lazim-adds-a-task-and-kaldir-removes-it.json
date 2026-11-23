@@ -1,0 +1,43 @@
+{
+  "name": "'X yapmam lazim' adds a task; 'X'i kaldir' removes the task when no event matches",
+  "incident": "ADR 0013: tasks are added by 'gorev ekle X' or 'X yapmam lazim', completed by 'X bitti/yaptim', removed by 'X'i kaldir' (explicit 'gorev' always means the task list). Removing a task changes only Sebastian's own list.",
+  "setup": {
+    "provider": "rules"
+  },
+  "steps": [
+    {
+      "say": "vergi dairesine gitmem lazım",
+      "kind": "free",
+      "contains": [
+        "Emredersiniz, efendim. Görev ekledim: Vergi dairesine git"
+      ],
+      "saved_total": 0
+    },
+    {
+      "say": "vergi dairesi görevini kaldır",
+      "kind": "free",
+      "contains": [
+        "Vergi dairesine git",
+        "(evet / hayır)"
+      ],
+      "saved_total": 0
+    },
+    {
+      "say": "evet",
+      "kind": "free",
+      "contains": [
+        "Kaldırdım"
+      ],
+      "preview": false,
+      "saved_total": 0
+    },
+    {
+      "say": "görevlerim",
+      "kind": "free",
+      "contains": [
+        "Açık göreviniz yok"
+      ],
+      "saved_total": 0
+    }
+  ]
+}

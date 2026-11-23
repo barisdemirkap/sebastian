@@ -1,0 +1,30 @@
+{
+  "name": "a frustration phrase restates what was understood and never repeats the question word for word",
+  "incident": "ADR 0014: after 'dedim ya', 'tekrar tekrar' or 'yine' the bot says in one line what it understood and asks only the single missing item.",
+  "setup": {
+    "provider": "rules",
+    "now": "2026-11-19T05:24"
+  },
+  "steps": [
+    {
+      "say": "çöp ekle",
+      "kind": "free",
+      "preview": false,
+      "contains": [
+        "Hangi gün?"
+      ]
+    },
+    {
+      "say": "yine mi aynı soru dedim ya",
+      "kind": "free",
+      "preview": false,
+      "contains": [
+        "Şöyle anladım: Çöp.",
+        "Hangi"
+      ],
+      "not_contains": [
+        "Takıldık"
+      ]
+    }
+  ]
+}

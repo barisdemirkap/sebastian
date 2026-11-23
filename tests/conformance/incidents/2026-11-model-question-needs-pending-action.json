@@ -1,0 +1,51 @@
+{
+  "name": "a model question 'Silmemi ister misin?' always has a pending delete behind it",
+  "incident": "Live failure of 2026-11-19 (ADR 0011, invariant I10): the owner asked whether the laundry was removed from Thursday; the bot answered in prose 'Silmemi ister misin?' but stored no pending action, so 'evet' got 'Onay bekleyen bir islem yok'. The question must come with a pending delete preview.",
+  "setup": {
+    "provider": "claude_like",
+    "model_intent": {
+      "intent": "unclear",
+      "question": "Perşembe (19 Kasım) günündeki \"İkinci çamaşır turu\" etkinliği hâlâ duruyor. Silmemi ister misin?"
+    },
+    "seed": [
+      [
+        "İkinci çamaşır turu",
+        10,
+        "2026-11-19"
+      ]
+    ]
+  },
+  "steps": [
+    {
+      "say": "camasiri persembe gununden kaldirdin mi?",
+      "kind": "free",
+      "preview": true,
+      "contains": [
+        "SİLMEMİ",
+        "İkinci çamaşır turu"
+      ],
+      "saved_total": 1
+    },
+    {
+      "say": "evet",
+      "kind": "confirm",
+      "contains": [
+        "evet sil"
+      ],
+      "not_contains": [
+        "Onay bekleyen"
+      ],
+      "preview": true,
+      "saved_total": 1
+    },
+    {
+      "say": "evet sil",
+      "kind": "confirm",
+      "contains": [
+        "Sildim"
+      ],
+      "preview": false,
+      "saved_total": 0
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+[
+ {
+  "name": "defer-faturalari-yarina-erteleyelim",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Faturaları öde",
+    "Pencereleri sil",
+    "Dolabı düzenle",
+    "Rapor taslağını yaz"
+   ]
+  },
+  "steps": [
+   {
+    "say": "faturalari yarina erteleyelim",
+    "kind": "free",
+    "tasks_due": {
+     "Fatura": "2026-11-20"
+    },
+    "tasks_done_not": [
+     "Fatura"
+    ],
+    "tasks_open_count": 4,
+    "not_contains": [
+     "Görev ekledim",
+     "Numarasını",
+     "Hangisi?"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "defer-dolabi-pazartesiye-kaydir",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Faturaları öde",
+    "Pencereleri sil",
+    "Dolabı düzenle",
+    "Rapor taslağını yaz"
+   ]
+  },
+  "steps": [
+   {
+    "say": "dolabi pazartesiye kaydir",
+    "kind": "free",
+    "tasks_due": {
+     "Dolab": "2026-11-23"
+    },
+    "tasks_done_not": [
+     "Dolab"
+    ],
+    "tasks_open_count": 4,
+    "not_contains": [
+     "Görev ekledim",
+     "Numarasını",
+     "Hangisi?"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "defer-rapor-taslagi-cumaya-kalsin",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Faturaları öde",
+    "Pencereleri sil",
+    "Dolabı düzenle",
+    "Rapor taslağını yaz"
+   ]
+  },
+  "steps": [
+   {
+    "say": "rapor taslagi cumaya kalsin",
+    "kind": "free",
+    "tasks_due": {
+     "Rapor": "2026-11-20"
+    },
+    "tasks_done_not": [
+     "Rapor"
+    ],
+    "tasks_open_count": 4,
+    "not_contains": [
+     "Görev ekledim",
+     "Numarasını",
+     "Hangisi?"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "defer-pencereleri-bu-yarina",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Faturaları öde",
+    "Pencereleri sil",
+    "Dolabı düzenle",
+    "Rapor taslağını yaz"
+   ]
+  },
+  "steps": [
+   {
+    "say": "pencereleri bu yarina",
+    "kind": "free",
+    "tasks_due": {
+     "Pencere": "2026-11-20"
+    },
+    "tasks_done_not": [
+     "Pencere"
+    ],
+    "tasks_open_count": 4,
+    "not_contains": [
+     "Görev ekledim",
+     "Numarasını",
+     "Hangisi?"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "defer-faturalar-cumartesiye",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Faturaları öde",
+    "Pencereleri sil",
+    "Dolabı düzenle",
+    "Rapor taslağını yaz"
+   ]
+  },
+  "steps": [
+   {
+    "say": "faturalar cumartesiye",
+    "kind": "free",
+    "tasks_due": {
+     "Fatura": "2026-11-21"
+    },
+    "tasks_done_not": [
+     "Fatura"
+    ],
+    "tasks_open_count": 4,
+    "not_contains": [
+     "Görev ekledim",
+     "Numarasını",
+     "Hangisi?"
+    ]
+   }
+  ]
+ }
+]

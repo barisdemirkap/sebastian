@@ -1,0 +1,1538 @@
+[
+ {
+  "name": "b6-01",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Diş macunu al",
+    "Kombi servisini ara",
+    "Vergi beyannamesini hazırla",
+    "Halıyı yıkamaya ver",
+    "Ödev kontrol et",
+    "Arabayı yıkat",
+    "Mektupları postala",
+    "Çiçekleri sula"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kombi servisini aradim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Kombi"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b6-02",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Diş macunu al",
+    "Kombi servisini ara",
+    "Vergi beyannamesini hazırla",
+    "Halıyı yıkamaya ver",
+    "Ödev kontrol et",
+    "Arabayı yıkat",
+    "Mektupları postala",
+    "Çiçekleri sula"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kombiciyi aradim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Kombi"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b6-03",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Diş macunu al",
+    "Kombi servisini ara",
+    "Vergi beyannamesini hazırla",
+    "Halıyı yıkamaya ver",
+    "Ödev kontrol et",
+    "Arabayı yıkat",
+    "Mektupları postala",
+    "Çiçekleri sula"
+   ]
+  },
+  "steps": [
+   {
+    "say": "vergi beyannamesi tamamdir",
+    "kind": "free",
+    "tasks_done_has": [
+     "Vergi"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b6-04",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Diş macunu al",
+    "Kombi servisini ara",
+    "Vergi beyannamesini hazırla",
+    "Halıyı yıkamaya ver",
+    "Ödev kontrol et",
+    "Arabayı yıkat",
+    "Mektupları postala",
+    "Çiçekleri sula"
+   ]
+  },
+  "steps": [
+   {
+    "say": "hali yikamaya verildi",
+    "kind": "free",
+    "tasks_done_has": [
+     "Halı"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b6-05",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Diş macunu al",
+    "Kombi servisini ara",
+    "Vergi beyannamesini hazırla",
+    "Halıyı yıkamaya ver",
+    "Ödev kontrol et",
+    "Arabayı yıkat",
+    "Mektupları postala",
+    "Çiçekleri sula"
+   ]
+  },
+  "steps": [
+   {
+    "say": "araba yikandi",
+    "kind": "free"
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_done_has": [
+     "Araba"
+    ],
+    "tasks_open_has": [
+     "Halı"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b6-06",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Diş macunu al",
+    "Kombi servisini ara",
+    "Vergi beyannamesini hazırla",
+    "Halıyı yıkamaya ver",
+    "Ödev kontrol et",
+    "Arabayı yıkat",
+    "Mektupları postala",
+    "Çiçekleri sula"
+   ]
+  },
+  "steps": [
+   {
+    "say": "halıyı yikamaya verdim arabayi da yikattim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Halı",
+     "Araba"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b6-07",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Diş macunu al",
+    "Kombi servisini ara",
+    "Vergi beyannamesini hazırla",
+    "Halıyı yıkamaya ver",
+    "Ödev kontrol et",
+    "Arabayı yıkat",
+    "Mektupları postala",
+    "Çiçekleri sula"
+   ]
+  },
+  "steps": [
+   {
+    "say": "odevleri kontrol ettim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Ödev"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b6-08",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Diş macunu al",
+    "Kombi servisini ara",
+    "Vergi beyannamesini hazırla",
+    "Halıyı yıkamaya ver",
+    "Ödev kontrol et",
+    "Arabayı yıkat",
+    "Mektupları postala",
+    "Çiçekleri sula"
+   ]
+  },
+  "steps": [
+   {
+    "say": "mektuplari postaladim cicekleri suladim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Mektup",
+     "Çiçek"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b6-09",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Diş macunu al",
+    "Kombi servisini ara",
+    "Vergi beyannamesini hazırla",
+    "Halıyı yıkamaya ver",
+    "Ödev kontrol et",
+    "Arabayı yıkat",
+    "Mektupları postala",
+    "Çiçekleri sula"
+   ]
+  },
+  "steps": [
+   {
+    "say": "dis macunu aldim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Diş macunu"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b6-10",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Diş macunu al",
+    "Kombi servisini ara",
+    "Vergi beyannamesini hazırla",
+    "Halıyı yıkamaya ver",
+    "Ödev kontrol et",
+    "Arabayı yıkat",
+    "Mektupları postala",
+    "Çiçekleri sula"
+   ]
+  },
+  "steps": [
+   {
+    "say": "vergi isi yarina kalsin",
+    "kind": "free",
+    "tasks_due": {
+     "Vergi": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b6-11",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Diş macunu al",
+    "Kombi servisini ara",
+    "Vergi beyannamesini hazırla",
+    "Halıyı yıkamaya ver",
+    "Ödev kontrol et",
+    "Arabayı yıkat",
+    "Mektupları postala",
+    "Çiçekleri sula"
+   ]
+  },
+  "steps": [
+   {
+    "say": "vergi beyannamesini pazartesi hazirlarim",
+    "kind": "free",
+    "tasks_due": {
+     "Vergi": "2026-11-23"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b6-12",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Diş macunu al",
+    "Kombi servisini ara",
+    "Vergi beyannamesini hazırla",
+    "Halıyı yıkamaya ver",
+    "Ödev kontrol et",
+    "Arabayı yıkat",
+    "Mektupları postala",
+    "Çiçekleri sula"
+   ]
+  },
+  "steps": [
+   {
+    "say": "arabayi cumartesi yikatacagim",
+    "kind": "free",
+    "tasks_due": {
+     "Araba": "2026-11-21"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b6-13",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Diş macunu al",
+    "Kombi servisini ara",
+    "Vergi beyannamesini hazırla",
+    "Halıyı yıkamaya ver",
+    "Ödev kontrol et",
+    "Arabayı yıkat",
+    "Mektupları postala",
+    "Çiçekleri sula"
+   ]
+  },
+  "steps": [
+   {
+    "say": "hali yarina araba cumaya",
+    "kind": "free"
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_due": {
+     "Halı": "2026-11-20",
+     "Araba": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b6-14",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Diş macunu al",
+    "Kombi servisini ara",
+    "Vergi beyannamesini hazırla",
+    "Halıyı yıkamaya ver",
+    "Ödev kontrol et",
+    "Arabayı yıkat",
+    "Mektupları postala",
+    "Çiçekleri sula"
+   ]
+  },
+  "steps": [
+   {
+    "say": "cicekleri sulamayi unuttum",
+    "kind": "free",
+    "contains": [
+     "akşama mı"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b6-15",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Diş macunu al",
+    "Kombi servisini ara",
+    "Vergi beyannamesini hazırla",
+    "Halıyı yıkamaya ver",
+    "Ödev kontrol et",
+    "Arabayı yıkat",
+    "Mektupları postala",
+    "Çiçekleri sula"
+   ]
+  },
+  "steps": [
+   {
+    "say": "mektuplari postalamayi unuttum",
+    "kind": "free"
+   },
+   {
+    "say": "aksama",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Mektup": "2026-11-19"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b6-16",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Diş macunu al",
+    "Kombi servisini ara",
+    "Vergi beyannamesini hazırla",
+    "Halıyı yıkamaya ver",
+    "Ödev kontrol et",
+    "Arabayı yıkat",
+    "Mektupları postala",
+    "Çiçekleri sula"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kombiyi aramayi unuttum",
+    "kind": "free"
+   },
+   {
+    "say": "pazartesi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Kombi": "2026-11-23"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b6-17",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Diş macunu al",
+    "Kombi servisini ara",
+    "Vergi beyannamesini hazırla",
+    "Halıyı yıkamaya ver",
+    "Ödev kontrol et",
+    "Arabayı yıkat",
+    "Mektupları postala",
+    "Çiçekleri sula"
+   ]
+  },
+  "steps": [
+   {
+    "say": "hepsi bitti",
+    "kind": "free"
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_open_count": 0
+   }
+  ]
+ },
+ {
+  "name": "b6-18",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Diş macunu al",
+    "Kombi servisini ara",
+    "Vergi beyannamesini hazırla",
+    "Halıyı yıkamaya ver",
+    "Ödev kontrol et",
+    "Arabayı yıkat",
+    "Mektupları postala",
+    "Çiçekleri sula"
+   ]
+  },
+  "steps": [
+   {
+    "say": "hepsini bu yarina",
+    "kind": "free"
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_due": {
+     "Diş": "2026-11-20",
+     "Kombi": "2026-11-20",
+     "Vergi": "2026-11-20",
+     "Halı": "2026-11-20",
+     "Ödev": "2026-11-20",
+     "Araba": "2026-11-20",
+     "Mektup": "2026-11-20",
+     "Çiçek": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b6-19",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Diş macunu al",
+    "Kombi servisini ara",
+    "Vergi beyannamesini hazırla",
+    "Halıyı yıkamaya ver",
+    "Ödev kontrol et",
+    "Arabayı yıkat",
+    "Mektupları postala",
+    "Çiçekleri sula"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kombi aradim, vergi yarina, mektup bitti, odev cumartesiye",
+    "kind": "free",
+    "tasks_done_has": [
+     "Kombi",
+     "Mektup"
+    ],
+    "tasks_due": {
+     "Vergi": "2026-11-20",
+     "Ödev": "2026-11-21"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b6-20",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Diş macunu al",
+    "Kombi servisini ara",
+    "Vergi beyannamesini hazırla",
+    "Halıyı yıkamaya ver",
+    "Ödev kontrol et",
+    "Arabayı yıkat",
+    "Mektupları postala",
+    "Çiçekleri sula"
+   ]
+  },
+  "steps": [
+   {
+    "say": "diş macununu aldım digerlerini cumaya birak",
+    "kind": "free"
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_done_has": [
+     "Diş macunu"
+    ],
+    "tasks_due": {
+     "Kombi": "2026-11-20",
+     "Çiçek": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b6-21",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Diş macunu al",
+    "Kombi servisini ara",
+    "Vergi beyannamesini hazırla",
+    "Halıyı yıkamaya ver",
+    "Ödev kontrol et",
+    "Arabayı yıkat",
+    "Mektupları postala",
+    "Çiçekleri sula"
+   ]
+  },
+  "steps": [
+   {
+    "say": "vallahi cicekleri suladim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Çiçek"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b6-22",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Diş macunu al",
+    "Kombi servisini ara",
+    "Vergi beyannamesini hazırla",
+    "Halıyı yıkamaya ver",
+    "Ödev kontrol et",
+    "Arabayı yıkat",
+    "Mektupları postala",
+    "Çiçekleri sula"
+   ]
+  },
+  "steps": [
+   {
+    "say": "mektuplar postalandi yaw",
+    "kind": "free",
+    "tasks_done_has": [
+     "Mektup"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b6-23",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Diş macunu al",
+    "Kombi servisini ara",
+    "Vergi beyannamesini hazırla",
+    "Halıyı yıkamaya ver",
+    "Ödev kontrol et",
+    "Arabayı yıkat",
+    "Mektupları postala",
+    "Çiçekleri sula"
+   ]
+  },
+  "steps": [
+   {
+    "say": "ödev kontrolü bu yarına",
+    "kind": "free",
+    "tasks_due": {
+     "Ödev": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b6-24",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Diş macunu al",
+    "Kombi servisini ara",
+    "Vergi beyannamesini hazırla",
+    "Halıyı yıkamaya ver",
+    "Ödev kontrol et",
+    "Arabayı yıkat",
+    "Mektupları postala",
+    "Çiçekleri sula"
+   ]
+  },
+  "steps": [
+   {
+    "say": "KOMBI SERVISINI ARADIM",
+    "kind": "free",
+    "tasks_done_has": [
+     "Kombi"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b6-25",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Diş macunu al",
+    "Kombi servisini ara",
+    "Vergi beyannamesini hazırla",
+    "Halıyı yıkamaya ver",
+    "Ödev kontrol et",
+    "Arabayı yıkat",
+    "Mektupları postala",
+    "Çiçekleri sula"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kombi servisini aradim, sonra vergi beyannamesini de hazirladim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Kombi",
+     "Vergi"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b6-26",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Diş macunu al",
+    "Kombi servisini ara",
+    "Vergi beyannamesini hazırla",
+    "Halıyı yıkamaya ver",
+    "Ödev kontrol et",
+    "Arabayı yıkat",
+    "Mektupları postala",
+    "Çiçekleri sula"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kombiyi aradim",
+    "kind": "free"
+   },
+   {
+    "say": "vergi de",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Kombi",
+     "Vergi"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b6-27",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Diş macunu al",
+    "Kombi servisini ara",
+    "Vergi beyannamesini hazırla",
+    "Halıyı yıkamaya ver",
+    "Ödev kontrol et",
+    "Arabayı yıkat",
+    "Mektupları postala",
+    "Çiçekleri sula"
+   ]
+  },
+  "steps": [
+   {
+    "say": "mektuplar yarina",
+    "kind": "free"
+   },
+   {
+    "say": "cicekler de",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Mektup": "2026-11-20",
+     "Çiçek": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b6-28",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Diş macunu al",
+    "Kombi servisini ara",
+    "Vergi beyannamesini hazırla",
+    "Halıyı yıkamaya ver",
+    "Ödev kontrol et",
+    "Arabayı yıkat",
+    "Mektupları postala",
+    "Çiçekleri sula"
+   ]
+  },
+  "steps": [
+   {
+    "say": "araba yikatmak bu aksama kalsin",
+    "kind": "free",
+    "tasks_due": {
+     "Araba": "2026-11-19"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b6-29",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Diş macunu al",
+    "Kombi servisini ara",
+    "Vergi beyannamesini hazırla",
+    "Halıyı yıkamaya ver",
+    "Ödev kontrol et",
+    "Arabayı yıkat",
+    "Mektupları postala",
+    "Çiçekleri sula"
+   ]
+  },
+  "steps": [
+   {
+    "say": "halının yıkaması yarına",
+    "kind": "free",
+    "tasks_due": {
+     "Halı": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b6-30",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Diş macunu al",
+    "Kombi servisini ara",
+    "Vergi beyannamesini hazırla",
+    "Halıyı yıkamaya ver",
+    "Ödev kontrol et",
+    "Arabayı yıkat",
+    "Mektupları postala",
+    "Çiçekleri sula"
+   ]
+  },
+  "steps": [
+   {
+    "say": "odev bitmedi yarin bitiririm",
+    "kind": "free",
+    "tasks_due": {
+     "Ödev": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b6-31",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T09:30",
+   "seed": [
+    {
+     "title": "Pilates",
+     "start": "2026-11-19T08:00",
+     "end": "2026-11-19T09:00"
+    },
+    {
+     "title": "Müşteri görüşmesi",
+     "start": "2026-11-19T14:00",
+     "end": "2026-11-19T15:00"
+    },
+    {
+     "title": "Kuaför",
+     "start": "2026-11-20T12:00",
+     "end": "2026-11-20T13:00"
+    },
+    {
+     "title": "Okul gezisi",
+     "start": "2026-11-20T09:00",
+     "end": "2026-11-20T15:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "pilates bitti",
+    "kind": "free",
+    "contains": [
+     "Pilates"
+    ],
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım",
+     "silinsin"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b6-32",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T15:30",
+   "seed": [
+    {
+     "title": "Pilates",
+     "start": "2026-11-19T08:00",
+     "end": "2026-11-19T09:00"
+    },
+    {
+     "title": "Müşteri görüşmesi",
+     "start": "2026-11-19T14:00",
+     "end": "2026-11-19T15:00"
+    },
+    {
+     "title": "Kuaför",
+     "start": "2026-11-20T12:00",
+     "end": "2026-11-20T13:00"
+    },
+    {
+     "title": "Okul gezisi",
+     "start": "2026-11-20T09:00",
+     "end": "2026-11-20T15:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "musteri gorusmesi bitti kuafor yarina kalsin",
+    "kind": "free",
+    "preview": false,
+    "contains": [
+     "Müşteri"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b6-33",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Pilates",
+     "start": "2026-11-19T08:00",
+     "end": "2026-11-19T09:00"
+    },
+    {
+     "title": "Müşteri görüşmesi",
+     "start": "2026-11-19T14:00",
+     "end": "2026-11-19T15:00"
+    },
+    {
+     "title": "Kuaför",
+     "start": "2026-11-20T12:00",
+     "end": "2026-11-20T13:00"
+    },
+    {
+     "title": "Okul gezisi",
+     "start": "2026-11-20T09:00",
+     "end": "2026-11-20T15:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "kuaforu cumaya tasi",
+    "kind": "free",
+    "preview": false,
+    "contains": [
+     "Zaten"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b6-34",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Pilates",
+     "start": "2026-11-19T08:00",
+     "end": "2026-11-19T09:00"
+    },
+    {
+     "title": "Müşteri görüşmesi",
+     "start": "2026-11-19T14:00",
+     "end": "2026-11-19T15:00"
+    },
+    {
+     "title": "Kuaför",
+     "start": "2026-11-20T12:00",
+     "end": "2026-11-20T13:00"
+    },
+    {
+     "title": "Okul gezisi",
+     "start": "2026-11-20T09:00",
+     "end": "2026-11-20T15:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "kuafor cumartesiye",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "21 Kasım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b6-35",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Pilates",
+     "start": "2026-11-19T08:00",
+     "end": "2026-11-19T09:00"
+    },
+    {
+     "title": "Müşteri görüşmesi",
+     "start": "2026-11-19T14:00",
+     "end": "2026-11-19T15:00"
+    },
+    {
+     "title": "Kuaför",
+     "start": "2026-11-20T12:00",
+     "end": "2026-11-20T13:00"
+    },
+    {
+     "title": "Okul gezisi",
+     "start": "2026-11-20T09:00",
+     "end": "2026-11-20T15:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "okul gezisini sil",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Okul"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b6-36",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Pilates",
+     "start": "2026-11-19T08:00",
+     "end": "2026-11-19T09:00"
+    },
+    {
+     "title": "Müşteri görüşmesi",
+     "start": "2026-11-19T14:00",
+     "end": "2026-11-19T15:00"
+    },
+    {
+     "title": "Kuaför",
+     "start": "2026-11-20T12:00",
+     "end": "2026-11-20T13:00"
+    },
+    {
+     "title": "Okul gezisi",
+     "start": "2026-11-20T09:00",
+     "end": "2026-11-20T15:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "yarin neler var",
+    "kind": "free",
+    "contains": [
+     "Kuaför",
+     "Okul"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b6-37",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Pilates",
+     "start": "2026-11-19T08:00",
+     "end": "2026-11-19T09:00"
+    },
+    {
+     "title": "Müşteri görüşmesi",
+     "start": "2026-11-19T14:00",
+     "end": "2026-11-19T15:00"
+    },
+    {
+     "title": "Kuaför",
+     "start": "2026-11-20T12:00",
+     "end": "2026-11-20T13:00"
+    },
+    {
+     "title": "Okul gezisi",
+     "start": "2026-11-20T09:00",
+     "end": "2026-11-20T15:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "bugun ne kaldi bir de yarinin programi",
+    "kind": "free",
+    "contains": [
+     "Müşteri",
+     "Kuaför"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b6-38",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Pilates",
+     "start": "2026-11-19T08:00",
+     "end": "2026-11-19T09:00"
+    },
+    {
+     "title": "Müşteri görüşmesi",
+     "start": "2026-11-19T14:00",
+     "end": "2026-11-19T15:00"
+    },
+    {
+     "title": "Kuaför",
+     "start": "2026-11-20T12:00",
+     "end": "2026-11-20T13:00"
+    },
+    {
+     "title": "Okul gezisi",
+     "start": "2026-11-20T09:00",
+     "end": "2026-11-20T15:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "musteri gorusmesini iptal et",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Müşteri"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b6-39",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T09:15",
+   "seed": [
+    {
+     "title": "Pilates",
+     "start": "2026-11-19T08:00",
+     "end": "2026-11-19T09:00"
+    },
+    {
+     "title": "Müşteri görüşmesi",
+     "start": "2026-11-19T14:00",
+     "end": "2026-11-19T15:00"
+    },
+    {
+     "title": "Kuaför",
+     "start": "2026-11-20T12:00",
+     "end": "2026-11-20T13:00"
+    },
+    {
+     "title": "Okul gezisi",
+     "start": "2026-11-20T09:00",
+     "end": "2026-11-20T15:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "pilates yapildi",
+    "kind": "free",
+    "contains": [
+     "Pilates"
+    ],
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım",
+     "silinsin"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b6-40",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Pilates",
+     "start": "2026-11-19T08:00",
+     "end": "2026-11-19T09:00"
+    },
+    {
+     "title": "Müşteri görüşmesi",
+     "start": "2026-11-19T14:00",
+     "end": "2026-11-19T15:00"
+    },
+    {
+     "title": "Kuaför",
+     "start": "2026-11-20T12:00",
+     "end": "2026-11-20T13:00"
+    },
+    {
+     "title": "Okul gezisi",
+     "start": "2026-11-20T09:00",
+     "end": "2026-11-20T15:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "kuafor bu yarina",
+    "kind": "free",
+    "preview": false,
+    "contains": [
+     "Zaten"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b6-41",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Diş macunu al",
+    "Kombi servisini ara",
+    "Vergi beyannamesini hazırla",
+    "Halıyı yıkamaya ver",
+    "Ödev kontrol et",
+    "Arabayı yıkat",
+    "Mektupları postala",
+    "Çiçekleri sula"
+   ]
+  },
+  "steps": [
+   {
+    "say": "diş macunu ve kombi isi tamam",
+    "kind": "free",
+    "tasks_done_has": [
+     "Diş macunu",
+     "Kombi"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b6-42",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Diş macunu al",
+    "Kombi servisini ara",
+    "Vergi beyannamesini hazırla",
+    "Halıyı yıkamaya ver",
+    "Ödev kontrol et",
+    "Arabayı yıkat",
+    "Mektupları postala",
+    "Çiçekleri sula"
+   ]
+  },
+  "steps": [
+   {
+    "say": "ya cicekleri suladim iste",
+    "kind": "free",
+    "tasks_done_has": [
+     "Çiçek"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b6-43",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Diş macunu al",
+    "Kombi servisini ara",
+    "Vergi beyannamesini hazırla",
+    "Halıyı yıkamaya ver",
+    "Ödev kontrol et",
+    "Arabayı yıkat",
+    "Mektupları postala",
+    "Çiçekleri sula"
+   ]
+  },
+  "steps": [
+   {
+    "say": "cicekleri suldim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Çiçek"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b6-44",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Diş macunu al",
+    "Kombi servisini ara",
+    "Vergi beyannamesini hazırla",
+    "Halıyı yıkamaya ver",
+    "Ödev kontrol et",
+    "Arabayı yıkat",
+    "Mektupları postala",
+    "Çiçekleri sula"
+   ]
+  },
+  "steps": [
+   {
+    "say": "vergi beyanamsi bitti",
+    "kind": "free",
+    "tasks_done_has": [
+     "Vergi"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b6-45",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Diş macunu al",
+    "Kombi servisini ara",
+    "Vergi beyannamesini hazırla",
+    "Halıyı yıkamaya ver",
+    "Ödev kontrol et",
+    "Arabayı yıkat",
+    "Mektupları postala",
+    "Çiçekleri sula"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kombi servisi yarin olsun",
+    "kind": "free",
+    "tasks_due": {
+     "Kombi": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b6-46",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Diş macunu al",
+    "Kombi servisini ara",
+    "Vergi beyannamesini hazırla",
+    "Halıyı yıkamaya ver",
+    "Ödev kontrol et",
+    "Arabayı yıkat",
+    "Mektupları postala",
+    "Çiçekleri sula"
+   ]
+  },
+  "steps": [
+   {
+    "say": "hali cumartesi yarina degil",
+    "kind": "free",
+    "tasks_open_has": [
+     "Halı"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b6-47",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Diş macunu al",
+    "Kombi servisini ara",
+    "Vergi beyannamesini hazırla",
+    "Halıyı yıkamaya ver",
+    "Ödev kontrol et",
+    "Arabayı yıkat",
+    "Mektupları postala",
+    "Çiçekleri sula"
+   ]
+  },
+  "steps": [
+   {
+    "say": "odev kontrolunu bitirdim, arabayi yikattim, geriye mektup kaldi",
+    "kind": "free",
+    "tasks_done_has": [
+     "Ödev",
+     "Araba"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b6-48",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Diş macunu al",
+    "Kombi servisini ara",
+    "Vergi beyannamesini hazırla",
+    "Halıyı yıkamaya ver",
+    "Ödev kontrol et",
+    "Arabayı yıkat",
+    "Mektupları postala",
+    "Çiçekleri sula"
+   ]
+  },
+  "steps": [
+   {
+    "say": "araba yikama ve hali yikama ertelendi yarina",
+    "kind": "free",
+    "tasks_due": {
+     "Araba": "2026-11-20",
+     "Halı": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b6-49",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Diş macunu al",
+    "Kombi servisini ara",
+    "Vergi beyannamesini hazırla",
+    "Halıyı yıkamaya ver",
+    "Ödev kontrol et",
+    "Arabayı yıkat",
+    "Mektupları postala",
+    "Çiçekleri sula"
+   ]
+  },
+  "steps": [
+   {
+    "say": "artik kombi isi yok iptal",
+    "kind": "free"
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_open_count": 7
+   }
+  ]
+ },
+ {
+  "name": "b6-50",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Diş macunu al",
+    "Kombi servisini ara",
+    "Vergi beyannamesini hazırla",
+    "Halıyı yıkamaya ver",
+    "Ödev kontrol et",
+    "Arabayı yıkat",
+    "Mektupları postala",
+    "Çiçekleri sula"
+   ]
+  },
+  "steps": [
+   {
+    "say": "mektup bitti yani postaladim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Mektup"
+    ]
+   }
+  ]
+ }
+]

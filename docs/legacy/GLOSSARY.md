@@ -1,0 +1,56 @@
+# Glossary
+
+- **Owner**: the single human Alfred works for; sole approver of every gate.
+- **Account**: provider-agnostic record (provider, address, label, scopes, enabled).
+- **Provider**: a connector to Google or Microsoft Graph behind `CalendarProvider` and `MailProvider`.
+- **Transport**: injected HTTP layer; the real one refuses to run without `ALFRED_ALLOW_LIVE=1`.
+- **Digest**: scheduled summary at 08:30 (morning) and 20:00 (evening), local time.
+- **Conflict**: overlapping events across accounts; **back-to-back**: no gap between events.
+- **Approval gate**: step needing explicit owner approval: OAuth consent, third-party send, spend.
+- **Live access**: any real network call to a real account; off by default.
+- **Notifier**: delivery interface; `StubNotifier` by default, `TelegramNotifier` to the owner chat only.
+- **Needs reply**: a mail thread (or WhatsApp chat) whose last message is from someone else and waits on the owner's answer.
+- **Meeting prep**: digest notes listing recent threads with an event's attendees or title keywords.
+- **MailProvider**: read-only mail reader interface (Gmail, Graph); metadata only, no bodies.
+- **WhatsAppReader**: read-only Phase 3 interface fed by webhooks; has no send method.
+- **(owner)**: roadmap marker for items only the owner can do.
+- **Pending action**: a stored write (add, edit, delete) with its args hash and 10-minute TTL; only an explicit confirmation (broad words such as `evet`, `tamam`, `onaylıyorum`, or the Kaydet button; deletes need `evet sil`/`sil`/`onaylıyorum` or the Sil button) runs the stored arguments (ADR 0004, 0006, 0007). An unrecognised message never closes it.
+- **Preview**: the code-rendered text of a pending action, ending in `(evet / hayır)`; deletes end with the stronger `evet sil`.
+- **Evet gate**: the rule that no calendar write happens without the owner's exact confirmation word in the owner chat.
+- **Write gate**: `ALFRED_ALLOW_LIVE=1` plus `ALFRED_ALLOW_WRITE=1` (and the `calendar.events` scope) before any write reaches Google (ADR 0002).
+- **Intent**: the strict-schema JSON a language model (or the rules parser) returns; it only classifies, code acts.
+- **Ask-until-sure**: one short clarifying question at a time for a missing or ambiguous date, time, title or event; never guessed.
+- **Consent flag**: `ALFRED_NL_CONSENT=1`, the owner's opt-in to send messages to the model provider; with a daily cap.
+- **Own reminder**: a Telegram message Alfred sends for an event (default 30 min before; all-day at 09:00; per-event override).
+- **Plan digest**: the 22:00 "tomorrow morning plan" message.
+- **Birthday event**: an event from Google's Birthdays calendar or an owner-added all-day yearly event tagged `birthday`.
+- **Heartbeat**: the epoch-seconds file the bot writes each loop; `scripts/watchdog.sh` restarts the bot when it goes stale.
+- **Message log**: SQLite log of the owner chat, 30-day retention; basis of update_id dedupe and startup recovery.
+- **Dialogue manager**: while a preview is pending, every message becomes validated operations on the draft (model when NL is on, rules otherwise); code applies them and re-renders the preview (ADR 0006).
+- **Operation**: one strict, validated change to a draft (`set_field`, `shift_dates`, `remove_item`, `add_items`, ...). A model can propose operations; it can never confirm.
+- **Parking**: a new write request while a preview is pending; the owner is asked whether to cancel the old preview first.
+- **Debounce**: plain texts within 4 seconds merge into one turn; confirm, cancel, commands, voice and button taps never merge.
+- **Preview button**: inline Telegram button under a preview; its callback data is `<k|e|x|d>:<pending id>:<hash8>` and is verified against the stored current preview (ADR 0007).
+- **Task**: an owner to-do kept in Alfred's own list (not a calendar event); finishing one only offers removal of a matching event (ADR 0013).
+- **I10**: conformance invariant: a yes/no style question from the bot always has a pending preview or open clarification behind it, so "evet" is never "nothing pending" (ADR 0011).
+- **Day pick**: the question "bugün mü, haftaya mı?" asked when the owner names today's weekday bare (ADR 0012).
+- **Read back**: quoting a message the bot sent (digest, reminder, preview) from the message log on "az önce ne dediydin" (ADR 0010).
+- **Smart default**: a value Alfred fills in itself instead of asking (an undated time means its next occurrence; duration is estimated from the title, 30 min by default, chores 15 min) and shows in the preview so one edit fixes a wrong guess (ADR 0014).
+- **List**: a named per-owner list in Alfred's own store (first: Alınacaklar, aliases alışveriş listesi, market listesi); adds and check-offs are immediate, removal and clearing are previews; shown numbered with ☐/✔ and `[Tümü alındı] [Temizle]` buttons (ADR 0016).
+- **Fuzzy time**: a rough time or range ("öğleden sonra 4-5 gibi", "akşama doğru") read by `fuzzytime.py` and always shown back in the preview (ADR 0015).
+- **No-op guard**: no preview for an add or edit that equals what the calendar already has, and no write when the stored change equals the current state (ADR 0015).
+- **Purchase wording**: a sentence that means "add to the shopping list" (`X alınacak`, `X lazım`, `X bitti`, `market: X`); read by `purchase.py` before the event path, never an event; with a day or time next to it Alfred shows two numbered readings (ADR 0017).
+- **Ready-by time**: the clock time the owner wants to be ready (`hazır olalım`); turned into a reminder lead on the existing event (event start minus ready time), not a new event (ADR 0017).
+- **Reading**: one of two numbered interpretations of an ambiguous message shown in a single question; the owner's pick becomes the normal preview (ADR 0017).
+- **Persona block**: the part of `i18n.py` that gives Alfred the voice of a dignified, deferential butler: formal "siz", a form of address that rotates once per message (`efendim`, `Ahmet Bey`, now and then `Sir` or `Master`, at most one per message), acknowledgements on receipts, digest greeting and closing. Obedience never bypasses the preview and confirm gates (ADR 0018).
+- **Agent mode**: the owner-only pilot (`ALFRED_NL=agent`) in which a persistent `claude -p --resume` session understands the owner and calls Alfred's typed tools; the dialogue manager stays the default and the fallback; `/ajan kapat` is the instant rollback (ADR 0019).
+- **Draft** (agent mode): the open pending action as the model sees it, with a version (the pending id); write tools only create or change a draft, and the preview is rendered by code.
+- **Grant**: a single-use permission minted by CODE for one exact draft version after the owner's latest message was a pure affirmative and the last bot message was that version's preview; `commit_draft` refuses without it. An edit, another bot message or the end of the turn kills it.
+- **Tool** (agent mode): one of the 19 typed functions the model may call (`calendar_range`, `propose_add_event`, `commit_draft`, `note_set`, ...); none takes a chat id; they run in the bot process behind a private unix-socket bridge and a stdlib MCP stdio server.
+- **Note**: a fact or preference the owner told Alfred (`çöp = 15 dk iş`, the usual reminder lead), kept in the DB so it survives session rotation.
+- **Circuit breaker**: after three consecutive agent failures agent mode is skipped for 10 minutes and the dialogue manager answers.
+- **Scripted model**: the deterministic fake used in CI; its tool calls are derived from what the dialogue manager does on each incident fixture (ADR 0020).
+- **Outage**: the language model is configured but the whole chain failed (usage limit, network); told to the owner once and ended by the next successful model call (ADR 0021).
+- **Simple mode**: what Alfred does during an outage: only high-confidence, single-event messages and plain reads or commands are answered by the rules; the rest is queued (ADR 0021).
+- **Complex message**: during an outage, a message with several times, subjects or clauses, leftover words or more than about 12 words; never guessed, stored in the retry queue (ADR 0021).
+- **Retry queue**: table `retry_queue`; complex messages kept while the model is away, replayed oldest first with their own preview and confirmation when it returns; `/bekleyenler` shows or clears it (ADR 0021).

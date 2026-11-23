@@ -1,0 +1,1323 @@
+[
+ {
+  "name": "b16-01",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşırları yıka",
+    "Mutfak dolabını düzenle",
+    "Balkonu süpür",
+    "Çiçekleri sula",
+    "Halıyı yıkamaya ver",
+    "Ekmek fırınını temizle",
+    "Kediyi veterinere götür"
+   ]
+  },
+  "steps": [
+   {
+    "say": "camasirlar yikandi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Çamaşır"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b16-02",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşırları yıka",
+    "Mutfak dolabını düzenle",
+    "Balkonu süpür",
+    "Çiçekleri sula",
+    "Halıyı yıkamaya ver",
+    "Ekmek fırınını temizle",
+    "Kediyi veterinere götür"
+   ]
+  },
+  "steps": [
+   {
+    "say": "mutfak dolabini duzenledim sonunda",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Mutfak"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b16-03",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşırları yıka",
+    "Mutfak dolabını düzenle",
+    "Balkonu süpür",
+    "Çiçekleri sula",
+    "Halıyı yıkamaya ver",
+    "Ekmek fırınını temizle",
+    "Kediyi veterinere götür"
+   ]
+  },
+  "steps": [
+   {
+    "say": "balkonu suprudum",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Balkon"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b16-04",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşırları yıka",
+    "Mutfak dolabını düzenle",
+    "Balkonu süpür",
+    "Çiçekleri sula",
+    "Halıyı yıkamaya ver",
+    "Ekmek fırınını temizle",
+    "Kediyi veterinere götür"
+   ]
+  },
+  "steps": [
+   {
+    "say": "cicekler sulanmis zaten",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Çiçek"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b16-05",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşırları yıka",
+    "Mutfak dolabını düzenle",
+    "Balkonu süpür",
+    "Çiçekleri sula",
+    "Halıyı yıkamaya ver",
+    "Ekmek fırınını temizle",
+    "Kediyi veterinere götür"
+   ]
+  },
+  "steps": [
+   {
+    "say": "hali yarin goturecegim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Halı": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b16-06",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşırları yıka",
+    "Mutfak dolabını düzenle",
+    "Balkonu süpür",
+    "Çiçekleri sula",
+    "Halıyı yıkamaya ver",
+    "Ekmek fırınını temizle",
+    "Kediyi veterinere götür"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kediyi veterinere pazartesi goturuyorum",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Kedi": "2026-11-23"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b16-07",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşırları yıka",
+    "Mutfak dolabını düzenle",
+    "Balkonu süpür",
+    "Çiçekleri sula",
+    "Halıyı yıkamaya ver",
+    "Ekmek fırınını temizle",
+    "Kediyi veterinere götür"
+   ]
+  },
+  "steps": [
+   {
+    "say": "ekmek firinini temizleyemedim yarina kalsin",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Ekmek": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b16-08",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşırları yıka",
+    "Mutfak dolabını düzenle",
+    "Balkonu süpür",
+    "Çiçekleri sula",
+    "Halıyı yıkamaya ver",
+    "Ekmek fırınını temizle",
+    "Kediyi veterinere götür"
+   ]
+  },
+  "steps": [
+   {
+    "say": "balkon isi cumartesiye kalsin",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Balkon": "2026-11-21"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b16-09",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşırları yıka",
+    "Mutfak dolabını düzenle",
+    "Balkonu süpür",
+    "Çiçekleri sula",
+    "Halıyı yıkamaya ver",
+    "Ekmek fırınını temizle",
+    "Kediyi veterinere götür"
+   ]
+  },
+  "steps": [
+   {
+    "say": "camasir bitti, cicekleri de suladim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Çamaşır",
+     "Çiçek"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b16-10",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşırları yıka",
+    "Mutfak dolabını düzenle",
+    "Balkonu süpür",
+    "Çiçekleri sula",
+    "Halıyı yıkamaya ver",
+    "Ekmek fırınını temizle",
+    "Kediyi veterinere götür"
+   ]
+  },
+  "steps": [
+   {
+    "say": "mutfak dolabi ve balkon bugun olmaz pazara",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Mutfak": "2026-11-22",
+     "Balkon": "2026-11-22"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b16-11",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşırları yıka",
+    "Mutfak dolabını düzenle",
+    "Balkonu süpür",
+    "Çiçekleri sula",
+    "Halıyı yıkamaya ver",
+    "Ekmek fırınını temizle",
+    "Kediyi veterinere götür"
+   ]
+  },
+  "steps": [
+   {
+    "say": "hali yikamaya verdim, cicekleri de yarin suluyorum",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Halı"
+    ],
+    "tasks_due": {
+     "Çiçek": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b16-12",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşırları yıka",
+    "Mutfak dolabını düzenle",
+    "Balkonu süpür",
+    "Çiçekleri sula",
+    "Halıyı yıkamaya ver",
+    "Ekmek fırınını temizle",
+    "Kediyi veterinere götür"
+   ]
+  },
+  "steps": [
+   {
+    "say": "bugunluk bu kadar kalanlar yarina",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ]
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_due": {
+     "Çamaşır": "2026-11-20",
+     "Mutfak": "2026-11-20",
+     "Balkon": "2026-11-20",
+     "Çiçek": "2026-11-20",
+     "Halı": "2026-11-20",
+     "Ekmek": "2026-11-20",
+     "Kedi": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b16-13",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşırları yıka",
+    "Mutfak dolabını düzenle",
+    "Balkonu süpür",
+    "Çiçekleri sula",
+    "Halıyı yıkamaya ver",
+    "Ekmek fırınını temizle",
+    "Kediyi veterinere götür"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kedinin veteriner isi halloldu",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Kedi"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b16-14",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşırları yıka",
+    "Mutfak dolabını düzenle",
+    "Balkonu süpür",
+    "Çiçekleri sula",
+    "Halıyı yıkamaya ver",
+    "Ekmek fırınını temizle",
+    "Kediyi veterinere götür"
+   ]
+  },
+  "steps": [
+   {
+    "say": "balkonu yarin suprerim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Balkon": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b16-15",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Vergi beyannamesini ver",
+    "Telefon faturasını öde",
+    "Pasaport randevusu al",
+    "Banka dekontunu gönder",
+    "Sigorta poliçesini yenile",
+    "Kira sözleşmesini imzala",
+    "Noterden vekalet al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "vergi beyannamesini verdim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Vergi"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b16-16",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Vergi beyannamesini ver",
+    "Telefon faturasını öde",
+    "Pasaport randevusu al",
+    "Banka dekontunu gönder",
+    "Sigorta poliçesini yenile",
+    "Kira sözleşmesini imzala",
+    "Noterden vekalet al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "telefon faturasi odenmis",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Telefon"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b16-17",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Vergi beyannamesini ver",
+    "Telefon faturasını öde",
+    "Pasaport randevusu al",
+    "Banka dekontunu gönder",
+    "Sigorta poliçesini yenile",
+    "Kira sözleşmesini imzala",
+    "Noterden vekalet al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "pasaport randevusunu aldim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Pasaport"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b16-18",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Vergi beyannamesini ver",
+    "Telefon faturasını öde",
+    "Pasaport randevusu al",
+    "Banka dekontunu gönder",
+    "Sigorta poliçesini yenile",
+    "Kira sözleşmesini imzala",
+    "Noterden vekalet al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "dekontu gonderdim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Banka"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b16-19",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Vergi beyannamesini ver",
+    "Telefon faturasını öde",
+    "Pasaport randevusu al",
+    "Banka dekontunu gönder",
+    "Sigorta poliçesini yenile",
+    "Kira sözleşmesini imzala",
+    "Noterden vekalet al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "sigortayi yenileyemedim pazartesiye",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Sigorta": "2026-11-23"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b16-20",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Vergi beyannamesini ver",
+    "Telefon faturasını öde",
+    "Pasaport randevusu al",
+    "Banka dekontunu gönder",
+    "Sigorta poliçesini yenile",
+    "Kira sözleşmesini imzala",
+    "Noterden vekalet al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kira sozlesmesi cuma imzalanacak",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Kira": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b16-21",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Vergi beyannamesini ver",
+    "Telefon faturasını öde",
+    "Pasaport randevusu al",
+    "Banka dekontunu gönder",
+    "Sigorta poliçesini yenile",
+    "Kira sözleşmesini imzala",
+    "Noterden vekalet al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "noter isi bugun yetismedi yarina",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Noter": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b16-22",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Vergi beyannamesini ver",
+    "Telefon faturasını öde",
+    "Pasaport randevusu al",
+    "Banka dekontunu gönder",
+    "Sigorta poliçesini yenile",
+    "Kira sözleşmesini imzala",
+    "Noterden vekalet al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "vergi ve sigorta ikisi de bitti",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Vergi",
+     "Sigorta"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b16-23",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Vergi beyannamesini ver",
+    "Telefon faturasını öde",
+    "Pasaport randevusu al",
+    "Banka dekontunu gönder",
+    "Sigorta poliçesini yenile",
+    "Kira sözleşmesini imzala",
+    "Noterden vekalet al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "telefon faturasini odedim, noter isi cumartesiye kalsin",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Telefon"
+    ],
+    "tasks_due": {
+     "Noter": "2026-11-21"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b16-24",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Vergi beyannamesini ver",
+    "Telefon faturasını öde",
+    "Pasaport randevusu al",
+    "Banka dekontunu gönder",
+    "Sigorta poliçesini yenile",
+    "Kira sözleşmesini imzala",
+    "Noterden vekalet al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "pasaport randevusu iptal",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ]
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_open_count": 6,
+    "tasks_open_not_has": [
+     "Pasaport"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b16-25",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Vergi beyannamesini ver",
+    "Telefon faturasını öde",
+    "Pasaport randevusu al",
+    "Banka dekontunu gönder",
+    "Sigorta poliçesini yenile",
+    "Kira sözleşmesini imzala",
+    "Noterden vekalet al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kira sozlesmesini bugun imzalayamadim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_open_count": 7,
+    "contains": [
+     "taşıyayım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b16-26",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Vergi beyannamesini ver",
+    "Telefon faturasını öde",
+    "Pasaport randevusu al",
+    "Banka dekontunu gönder",
+    "Sigorta poliçesini yenile",
+    "Kira sözleşmesini imzala",
+    "Noterden vekalet al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "banka isi tamam gerisi yarina kalsin",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ]
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_done_has": [
+     "Banka"
+    ],
+    "tasks_due": {
+     "Vergi": "2026-11-20",
+     "Telefon": "2026-11-20",
+     "Pasaport": "2026-11-20",
+     "Sigorta": "2026-11-20",
+     "Kira": "2026-11-20",
+     "Noter": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b16-27",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Vergi beyannamesini ver",
+    "Telefon faturasını öde",
+    "Pasaport randevusu al",
+    "Banka dekontunu gönder",
+    "Sigorta poliçesini yenile",
+    "Kira sözleşmesini imzala",
+    "Noterden vekalet al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "bugun neler kaldi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_open_count": 7,
+    "contains": [
+     "Vergi"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b16-28",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Vergi beyannamesini ver",
+    "Telefon faturasını öde",
+    "Pasaport randevusu al",
+    "Banka dekontunu gönder",
+    "Sigorta poliçesini yenile",
+    "Kira sözleşmesini imzala",
+    "Noterden vekalet al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "dekont gonderildi sigorta da yarina",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Banka"
+    ],
+    "tasks_due": {
+     "Sigorta": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b16-29",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Sunumu hazırla",
+    "Haftalık raporu yaz",
+    "Müşteriye teklif gönder",
+    "Toplantı notlarını paylaş",
+    "Sunucu yedeğini kontrol et",
+    "Fatura PDF'lerini arşivle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "sunumu hazirladim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Sunum"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b16-30",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Sunumu hazırla",
+    "Haftalık raporu yaz",
+    "Müşteriye teklif gönder",
+    "Toplantı notlarını paylaş",
+    "Sunucu yedeğini kontrol et",
+    "Fatura PDF'lerini arşivle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "haftalik rapor yazildi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Haftalık"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b16-31",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Sunumu hazırla",
+    "Haftalık raporu yaz",
+    "Müşteriye teklif gönder",
+    "Toplantı notlarını paylaş",
+    "Sunucu yedeğini kontrol et",
+    "Fatura PDF'lerini arşivle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "musteriye teklifi gonderdim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Müşteri"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b16-32",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Sunumu hazırla",
+    "Haftalık raporu yaz",
+    "Müşteriye teklif gönder",
+    "Toplantı notlarını paylaş",
+    "Sunucu yedeğini kontrol et",
+    "Fatura PDF'lerini arşivle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "toplanti notlari paylasildi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Toplantı"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b16-33",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Sunumu hazırla",
+    "Haftalık raporu yaz",
+    "Müşteriye teklif gönder",
+    "Toplantı notlarını paylaş",
+    "Sunucu yedeğini kontrol et",
+    "Fatura PDF'lerini arşivle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "sunucu yedegini kontrol ettim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Sunucu"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b16-34",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Sunumu hazırla",
+    "Haftalık raporu yaz",
+    "Müşteriye teklif gönder",
+    "Toplantı notlarını paylaş",
+    "Sunucu yedeğini kontrol et",
+    "Fatura PDF'lerini arşivle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "arsiv isi yarina kalsin",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Fatura": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b16-35",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Sunumu hazırla",
+    "Haftalık raporu yaz",
+    "Müşteriye teklif gönder",
+    "Toplantı notlarını paylaş",
+    "Sunucu yedeğini kontrol et",
+    "Fatura PDF'lerini arşivle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "rapor ve sunum cumaya",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Haftalık": "2026-11-20",
+     "Sunum": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b16-36",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Sunumu hazırla",
+    "Haftalık raporu yaz",
+    "Müşteriye teklif gönder",
+    "Toplantı notlarını paylaş",
+    "Sunucu yedeğini kontrol et",
+    "Fatura PDF'lerini arşivle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "teklifi bugun gonderemedim pazartesiye",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Müşteri": "2026-11-23"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b16-37",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Sunumu hazırla",
+    "Haftalık raporu yaz",
+    "Müşteriye teklif gönder",
+    "Toplantı notlarını paylaş",
+    "Sunucu yedeğini kontrol et",
+    "Fatura PDF'lerini arşivle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "sunumu bitirdim, rapor yarina kalsin",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Sunum"
+    ],
+    "tasks_due": {
+     "Haftalık": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b16-38",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Sunumu hazırla",
+    "Haftalık raporu yaz",
+    "Müşteriye teklif gönder",
+    "Toplantı notlarını paylaş",
+    "Sunucu yedeğini kontrol et",
+    "Fatura PDF'lerini arşivle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "yedek kontrolu bugun yetisemedi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_open_count": 6,
+    "contains": [
+     "taşıyayım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b16-39",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Sunumu hazırla",
+    "Haftalık raporu yaz",
+    "Müşteriye teklif gönder",
+    "Toplantı notlarını paylaş",
+    "Sunucu yedeğini kontrol et",
+    "Fatura PDF'lerini arşivle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "hepsi bitti",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ]
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_open_count": 0
+   }
+  ]
+ },
+ {
+  "name": "b16-40",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Sunumu hazırla",
+    "Haftalık raporu yaz",
+    "Müşteriye teklif gönder",
+    "Toplantı notlarını paylaş",
+    "Sunucu yedeğini kontrol et",
+    "Fatura PDF'lerini arşivle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "toplanti notlarini ve arsivleme isini yarina birakalim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ]
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_due": {
+     "Toplantı": "2026-11-20",
+     "Fatura": "2026-11-20"
+    }
+   }
+  ]
+ }
+]

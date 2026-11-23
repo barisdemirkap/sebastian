@@ -1,0 +1,17 @@
+{
+  "name": "list mode: open the Alınacaklar list, add an item, check off several; nothing becomes an event or a task",
+  "incident": "2026-11-20 (commit 523a81b): 'alincaklar listesini guncelleyelim' (typo) opens the list, 'soguk silikon ekle' adds to it, 'kahve ekmek ve domates alindi' checks off three items in one message. Lists are their own domain: no calendar write, no task.",
+  "setup": {"provider": "rules", "now": "2026-11-20T11:30"},
+  "steps": [
+    {"say": "alınacaklara kahve, ekmek ve domates ekle", "kind": "free", "saved_total": 0},
+    {"say": "alincaklar listesini guncelleyelim", "kind": "free", "saved_total": 0, "contains": ["Alınacaklar"]},
+    {"say": "soguk silikon ekle", "kind": "free", "saved_total": 0, "contains": ["Soguk silikon"]},
+    {
+      "say": "kahve ekmek ve domates alindi",
+      "kind": "free",
+      "saved_total": 0,
+      "contains": ["✔ Kahve", "✔ Ekmek", "✔ Domates", "☐ Soguk silikon"],
+      "tasks_open_count": 0
+    }
+  ]
+}

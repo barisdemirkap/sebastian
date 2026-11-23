@@ -1,0 +1,29 @@
+{
+  "name": "an expired question is dropped without a notice",
+  "incident": "Live failure of 2026-11-19 05:23 (ADR 0014): 'Önceki soru zaman aşımına uğradı, yeni isteğin olarak aldım.' confused the owner. A stale question is just dropped and the new request starts.",
+  "setup": {
+    "provider": "rules",
+    "now": "2026-11-19T05:24"
+  },
+  "steps": [
+    {
+      "say": "toplantı ekle",
+      "kind": "free",
+      "contains": [
+        "Hangi gün?"
+      ]
+    },
+    {
+      "advance_minutes": 16
+    },
+    {
+      "say": "yarın saat 15:00 berber ekle",
+      "kind": "free",
+      "preview": true,
+      "not_contains": [
+        "zaman aşımı",
+        "Önceki soru"
+      ]
+    }
+  ]
+}

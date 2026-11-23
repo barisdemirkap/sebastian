@@ -1,0 +1,68 @@
+[
+ {
+  "name": "no-diacritics-upper-mixed",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Faturaları öde",
+    "Pencereleri sil",
+    "Dolabı düzenle",
+    "Rapor taslağını yaz"
+   ]
+  },
+  "steps": [
+   {
+    "say": "Dolabi Duzenledim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Dolab"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "double-spaces-and-trailing-dot",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Faturaları öde",
+    "Pencereleri sil",
+    "Dolabı düzenle",
+    "Rapor taslağını yaz"
+   ]
+  },
+  "steps": [
+   {
+    "say": "faturalari  odedim .",
+    "kind": "free",
+    "tasks_done_has": [
+     "Fatura"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "yarina-with-apostrophe-variant",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Faturaları öde",
+    "Pencereleri sil",
+    "Dolabı düzenle",
+    "Rapor taslağını yaz"
+   ]
+  },
+  "steps": [
+   {
+    "say": "dolap yarin'a kalsin",
+    "kind": "free",
+    "tasks_due": {
+     "Dolab": "2026-11-20"
+    }
+   }
+  ]
+ }
+]

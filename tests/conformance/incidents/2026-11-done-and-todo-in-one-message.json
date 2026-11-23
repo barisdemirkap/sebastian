@@ -1,0 +1,29 @@
+{
+  "name": "'X done, Y this evening' in one message: both clauses answered, never 'did not understand'",
+  "incident": "'aile hekimi yapildi cop aksam cikacak' got 'Tam anlayamadim'. Each clause is handled: the done one offers the calendar removal, the to-do one is a task.",
+  "setup": {
+    "provider": "rules",
+    "now": "2026-11-19T14:00",
+    "seed": [
+      {
+        "title": "Aile hekimi: sağlık raporu al",
+        "start": "2026-11-19T08:50",
+        "end": "2026-11-19T09:50"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "say": "aile hekimi yapildi cöp aksam cikacak",
+      "kind": "free",
+      "contains": [
+        "Aile hekimi",
+        "Görev ekledim"
+      ],
+      "not_contains": [
+        "Tam anlayamadım",
+        "birbirimizi"
+      ]
+    }
+  ]
+}

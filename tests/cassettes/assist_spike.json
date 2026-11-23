@@ -1,0 +1,946 @@
+{
+"{\"message\": \"pencereleri sildim yaa\", \"tasks\": [{\"id\": \"T1\", \"title\": \"Faturaları öde\"}, {\"id\": \"T2\", \"title\": \"Pencereleri sil\"}, {\"id\": \"T3\", \"title\": \"Dolabı düzenle\"}, {\"id\": \"T4\", \"title\": \"Rapor taslağını yaz\"}], \"events\": [], \"rules_said\": \"done:pencereleri; other:\"}": [
+{
+"clauses": [
+{
+"span": "pencereleri sildim yaa",
+"kind": "done",
+"ids": [
+"T2"
+],
+"scope": "none"
+}
+]
+},
+{
+"ms": 2275,
+"cost_usd": 0.00037731000000000006,
+"model": "claude-haiku-5-5",
+"raw": ""
+}
+],
+"{\"message\": \"raporu bitiremedim yarına kalsın\", \"tasks\": [{\"id\": \"T1\", \"title\": \"Faturaları öde\"}, {\"id\": \"T2\", \"title\": \"Pencereleri sil\"}, {\"id\": \"T3\", \"title\": \"Dolabı düzenle\"}, {\"id\": \"T4\", \"title\": \"Rapor taslağını yaz\"}], \"events\": [], \"rules_said\": \"forgot:raporu bitiremedim; defer:\"}": [
+{
+"clauses": [
+{
+"span": "raporu bitiremedim yarına kalsın",
+"kind": "defer",
+"ids": [
+"T4"
+],
+"scope": "none"
+}
+]
+},
+{
+"ms": 4899,
+"cost_usd": 0.00061477,
+"model": "claude-haiku-5-5",
+"raw": ""
+}
+],
+"{\"message\": \"rapor icin ne kaldi\", \"tasks\": [{\"id\": \"T1\", \"title\": \"Faturaları öde\"}, {\"id\": \"T2\", \"title\": \"Pencereleri sil\"}, {\"id\": \"T3\", \"title\": \"Dolabı düzenle\"}, {\"id\": \"T4\", \"title\": \"Rapor taslağını yaz\"}], \"events\": [], \"rules_said\": \"other:\"}": [
+{
+"clauses": [
+{
+"span": "rapor icin ne kaldi",
+"kind": "read",
+"ids": [],
+"scope": "none"
+}
+]
+},
+{
+"ms": 2777,
+"cost_usd": 0.0002719,
+"model": "claude-haiku-5-5",
+"raw": ""
+}
+],
+"{\"message\": \"anneme telefon actim\", \"tasks\": [{\"id\": \"T1\", \"title\": \"Çamaşırları yıka\"}, {\"id\": \"T2\", \"title\": \"Annemi ara\"}, {\"id\": \"T3\", \"title\": \"Kargoyu postaneden al\"}, {\"id\": \"T4\", \"title\": \"Diş fırçası al\"}, {\"id\": \"T5\", \"title\": \"Araba muayenesi için randevu al\"}, {\"id\": \"T6\", \"title\": \"Market alışverişi\"}], \"events\": [], \"rules_said\": \"done:anneme telefon\"}": [
+{
+"clauses": [
+{
+"span": "anneme telefon actim",
+"kind": "done",
+"ids": [
+"T2"
+],
+"scope": "none"
+}
+]
+},
+{
+"ms": 4264,
+"cost_usd": 0.00045958,
+"model": "claude-haiku-5-5",
+"raw": ""
+}
+],
+"{\"message\": \"kargo hala bitmedi yarina kalsin\", \"tasks\": [{\"id\": \"T1\", \"title\": \"Çamaşırları yıka\"}, {\"id\": \"T2\", \"title\": \"Annemi ara\"}, {\"id\": \"T3\", \"title\": \"Kargoyu postaneden al\"}, {\"id\": \"T4\", \"title\": \"Diş fırçası al\"}, {\"id\": \"T5\", \"title\": \"Araba muayenesi için randevu al\"}, {\"id\": \"T6\", \"title\": \"Market alışverişi\"}], \"events\": [], \"rules_said\": \"defer:kargo bitmedi\"}": [
+{
+"clauses": [
+{
+"span": "kargo hala bitmedi yarina kalsin",
+"kind": "defer",
+"ids": [
+"T3"
+],
+"scope": "none"
+}
+]
+},
+{
+"ms": 3792,
+"cost_usd": 0.00047372,
+"model": "claude-haiku-5-5",
+"raw": ""
+}
+],
+"{\"message\": \"pencerelrei silmedim yarina\", \"tasks\": [{\"id\": \"T1\", \"title\": \"Faturaları öde\"}, {\"id\": \"T2\", \"title\": \"Pencereleri sil\"}, {\"id\": \"T3\", \"title\": \"Dolabı düzenle\"}, {\"id\": \"T4\", \"title\": \"Rapor taslağını yaz\"}], \"events\": [], \"rules_said\": \"forgot:pencerelrei silmedim; defer:\"}": [
+{
+"clauses": [
+{
+"span": "pencerelrei silmedim yarina",
+"kind": "defer",
+"ids": [
+"T2"
+],
+"scope": "none"
+}
+]
+},
+{
+"ms": 3915,
+"cost_usd": 0.00048114,
+"model": "claude-haiku-5-5",
+"raw": ""
+}
+],
+"{\"message\": \"hadi be rapor yarina kalsin artik\", \"tasks\": [{\"id\": \"T1\", \"title\": \"Faturaları öde\"}, {\"id\": \"T2\", \"title\": \"Pencereleri sil\"}, {\"id\": \"T3\", \"title\": \"Dolabı düzenle\"}, {\"id\": \"T4\", \"title\": \"Rapor taslağını yaz\"}], \"events\": [], \"rules_said\": \"defer:hadi be rapor\"}": [
+{
+"clauses": [
+{
+"span": "hadi be rapor yarina kalsin artik",
+"kind": "defer",
+"ids": [
+"T4"
+],
+"scope": "none"
+}
+]
+},
+{
+"ms": 4277,
+"cost_usd": 0.00049379,
+"model": "claude-haiku-5-5",
+"raw": ""
+}
+],
+"{\"message\": \"spor cantam hazir\", \"tasks\": [{\"id\": \"T1\", \"title\": \"Elektrik faturasını öde\"}, {\"id\": \"T2\", \"title\": \"Su faturasını öde\"}, {\"id\": \"T3\", \"title\": \"Kütüphaneye kitap iade et\"}, {\"id\": \"T4\", \"title\": \"Bahçeyi sula\"}, {\"id\": \"T5\", \"title\": \"Spor çantasını hazırla\"}, {\"id\": \"T6\", \"title\": \"Doğalgaz sayacını oku\"}, {\"id\": \"T7\", \"title\": \"Ayşe'ye doğum günü hediyesi al\"}], \"events\": [], \"rules_said\": \"other:\"}": [
+{
+"clauses": [
+{
+"span": "spor cantam hazir",
+"kind": "done",
+"ids": [
+"T5"
+],
+"scope": "none"
+}
+]
+},
+{
+"ms": 2237,
+"cost_usd": 0.00039261,
+"model": "claude-haiku-5-5",
+"raw": ""
+}
+],
+"{\"message\": \"sayac isi bitti gec oldu\", \"tasks\": [{\"id\": \"T1\", \"title\": \"Elektrik faturasını öde\"}, {\"id\": \"T2\", \"title\": \"Su faturasını öde\"}, {\"id\": \"T3\", \"title\": \"Kütüphaneye kitap iade et\"}, {\"id\": \"T4\", \"title\": \"Bahçeyi sula\"}, {\"id\": \"T5\", \"title\": \"Spor çantasını hazırla\"}, {\"id\": \"T6\", \"title\": \"Doğalgaz sayacını oku\"}, {\"id\": \"T7\", \"title\": \"Ayşe'ye doğum günü hediyesi al\"}], \"events\": [], \"rules_said\": \"done:sayac isi; done:gec\"}": [
+{
+"clauses": [
+{
+"span": "sayac isi bitti",
+"kind": "done",
+"ids": [
+"T6"
+],
+"scope": "none"
+},
+{
+"span": "gec oldu",
+"kind": "info",
+"ids": [],
+"scope": "none"
+}
+]
+},
+{
+"ms": 3291,
+"cost_usd": 0.00034770000000000005,
+"model": "claude-haiku-5-5",
+"raw": ""
+}
+],
+"{\"message\": \"bi dakika bahceyi suladim aslinda\", \"tasks\": [{\"id\": \"T1\", \"title\": \"Elektrik faturasını öde\"}, {\"id\": \"T2\", \"title\": \"Su faturasını öde\"}, {\"id\": \"T3\", \"title\": \"Kütüphaneye kitap iade et\"}, {\"id\": \"T4\", \"title\": \"Bahçeyi sula\"}, {\"id\": \"T5\", \"title\": \"Spor çantasını hazırla\"}, {\"id\": \"T6\", \"title\": \"Doğalgaz sayacını oku\"}, {\"id\": \"T7\", \"title\": \"Ayşe'ye doğum günü hediyesi al\"}], \"events\": [], \"rules_said\": \"done:bi dakika bahceyi; other:\"}": [
+{
+"clauses": [
+{
+"span": "bahceyi suladim",
+"kind": "done",
+"ids": [
+"T4"
+],
+"scope": "none"
+}
+]
+},
+{
+"ms": 3974,
+"cost_usd": 0.0004747,
+"model": "claude-haiku-5-5",
+"raw": ""
+}
+],
+"{\"message\": \"vallahi cicekleri suladim\", \"tasks\": [{\"id\": \"T1\", \"title\": \"Diş macunu al\"}, {\"id\": \"T2\", \"title\": \"Kombi servisini ara\"}, {\"id\": \"T3\", \"title\": \"Vergi beyannamesini hazırla\"}, {\"id\": \"T4\", \"title\": \"Halıyı yıkamaya ver\"}, {\"id\": \"T5\", \"title\": \"Ödev kontrol et\"}, {\"id\": \"T6\", \"title\": \"Arabayı yıkat\"}, {\"id\": \"T7\", \"title\": \"Mektupları postala\"}, {\"id\": \"T8\", \"title\": \"Çiçekleri sula\"}], \"events\": [], \"rules_said\": \"done:vallahi cicekleri\"}": [
+{
+"clauses": [
+{
+"span": "vallahi cicekleri suladim",
+"kind": "done",
+"ids": [
+"T8"
+],
+"scope": "none"
+}
+]
+},
+{
+"ms": 2223,
+"cost_usd": 0.00039881,
+"model": "claude-haiku-5-5",
+"raw": ""
+}
+],
+"{\"message\": \"mektuplar postalandi yaw\", \"tasks\": [{\"id\": \"T1\", \"title\": \"Diş macunu al\"}, {\"id\": \"T2\", \"title\": \"Kombi servisini ara\"}, {\"id\": \"T3\", \"title\": \"Vergi beyannamesini hazırla\"}, {\"id\": \"T4\", \"title\": \"Halıyı yıkamaya ver\"}, {\"id\": \"T5\", \"title\": \"Ödev kontrol et\"}, {\"id\": \"T6\", \"title\": \"Arabayı yıkat\"}, {\"id\": \"T7\", \"title\": \"Mektupları postala\"}, {\"id\": \"T8\", \"title\": \"Çiçekleri sula\"}], \"events\": [], \"rules_said\": \"done:mektuplar; other:\"}": [
+{
+"clauses": [
+{
+"span": "mektuplar postalandi",
+"kind": "done",
+"ids": [
+"T7"
+],
+"scope": "none"
+},
+{
+"span": "yaw",
+"kind": "info",
+"ids": [],
+"scope": "none"
+}
+]
+},
+{
+"ms": 4368,
+"cost_usd": 0.0005015800000000001,
+"model": "claude-haiku-5-5",
+"raw": ""
+}
+],
+"{\"message\": \"odev kontrolunu bitirdim, arabayi yikattim, geriye mektup kaldi\", \"tasks\": [{\"id\": \"T1\", \"title\": \"Diş macunu al\"}, {\"id\": \"T2\", \"title\": \"Kombi servisini ara\"}, {\"id\": \"T3\", \"title\": \"Vergi beyannamesini hazırla\"}, {\"id\": \"T4\", \"title\": \"Halıyı yıkamaya ver\"}, {\"id\": \"T5\", \"title\": \"Ödev kontrol et\"}, {\"id\": \"T6\", \"title\": \"Arabayı yıkat\"}, {\"id\": \"T7\", \"title\": \"Mektupları postala\"}, {\"id\": \"T8\", \"title\": \"Çiçekleri sula\"}], \"events\": [], \"rules_said\": \"done:odev kontrolunu; done:arabayi; other:\"}": [
+{
+"clauses": [
+{
+"span": "odev kontrolunu bitirdim",
+"kind": "done",
+"ids": [
+"T5"
+],
+"scope": "none"
+},
+{
+"span": "arabayi yikattim",
+"kind": "done",
+"ids": [
+"T6"
+],
+"scope": "none"
+},
+{
+"span": "geriye mektup kaldi",
+"kind": "keep",
+"ids": [
+"T7"
+],
+"scope": "none"
+}
+]
+},
+{
+"ms": 4551,
+"cost_usd": 0.0006427900000000001,
+"model": "claude-haiku-5-5",
+"raw": ""
+}
+],
+"{\"message\": \"araba yikama ve hali yikama ertelendi yarina\", \"tasks\": [{\"id\": \"T1\", \"title\": \"Diş macunu al\"}, {\"id\": \"T2\", \"title\": \"Kombi servisini ara\"}, {\"id\": \"T3\", \"title\": \"Vergi beyannamesini hazırla\"}, {\"id\": \"T4\", \"title\": \"Halıyı yıkamaya ver\"}, {\"id\": \"T5\", \"title\": \"Ödev kontrol et\"}, {\"id\": \"T6\", \"title\": \"Arabayı yıkat\"}, {\"id\": \"T7\", \"title\": \"Mektupları postala\"}, {\"id\": \"T8\", \"title\": \"Çiçekleri sula\"}], \"events\": [], \"rules_said\": \"done:araba yikama ve hali yikama; defer:\"}": [
+{
+"clauses": [
+{
+"span": "araba yikama ve hali yikama ertelendi yarina",
+"kind": "defer",
+"ids": [
+"T6",
+"T4"
+],
+"scope": "none"
+}
+]
+},
+{
+"ms": 5262,
+"cost_usd": 0.0006908400000000001,
+"model": "claude-haiku-5-5",
+"raw": ""
+}
+],
+"{\"message\": \"artik kombi isi yok iptal\", \"tasks\": [{\"id\": \"T1\", \"title\": \"Diş macunu al\"}, {\"id\": \"T2\", \"title\": \"Kombi servisini ara\"}, {\"id\": \"T3\", \"title\": \"Vergi beyannamesini hazırla\"}, {\"id\": \"T4\", \"title\": \"Halıyı yıkamaya ver\"}, {\"id\": \"T5\", \"title\": \"Ödev kontrol et\"}, {\"id\": \"T6\", \"title\": \"Arabayı yıkat\"}, {\"id\": \"T7\", \"title\": \"Mektupları postala\"}, {\"id\": \"T8\", \"title\": \"Çiçekleri sula\"}], \"events\": [], \"rules_said\": \"delete:kombi isi\"}": [
+{
+"clauses": [
+{
+"span": "artik kombi isi yok iptal",
+"kind": "delete",
+"ids": [
+"T2"
+],
+"scope": "none"
+}
+]
+},
+{
+"ms": 4914,
+"cost_usd": 0.00060966,
+"model": "claude-haiku-5-5",
+"raw": ""
+}
+],
+"{\"message\": \"mektup bitti yani postaladim\", \"tasks\": [{\"id\": \"T1\", \"title\": \"Diş macunu al\"}, {\"id\": \"T2\", \"title\": \"Kombi servisini ara\"}, {\"id\": \"T3\", \"title\": \"Vergi beyannamesini hazırla\"}, {\"id\": \"T4\", \"title\": \"Halıyı yıkamaya ver\"}, {\"id\": \"T5\", \"title\": \"Ödev kontrol et\"}, {\"id\": \"T6\", \"title\": \"Arabayı yıkat\"}, {\"id\": \"T7\", \"title\": \"Mektupları postala\"}, {\"id\": \"T8\", \"title\": \"Çiçekleri sula\"}], \"events\": [], \"rules_said\": \"done:mektup; done:\"}": [
+{
+"clauses": [
+{
+"span": "mektup bitti yani postaladim",
+"kind": "done",
+"ids": [
+"T7"
+],
+"scope": "none"
+}
+]
+},
+{
+"ms": 2819,
+"cost_usd": 0.0003057,
+"model": "claude-haiku-5-5",
+"raw": ""
+}
+],
+"{\"message\": \"servise gittim yag degisti\", \"tasks\": [{\"id\": \"T1\", \"title\": \"Dilekçeyi imzala\"}, {\"id\": \"T2\", \"title\": \"Yağ değişimi için servise git\"}, {\"id\": \"T3\", \"title\": \"Çocukların ayakkabılarını al\"}, {\"id\": \"T4\", \"title\": \"Pasaport randevusu al\"}, {\"id\": \"T5\", \"title\": \"Bulaşık makinesini boşalt\"}, {\"id\": \"T6\", \"title\": \"Fotoğrafları yedekle\"}, {\"id\": \"T7\", \"title\": \"Kedi kumunu al\"}], \"events\": [], \"rules_said\": \"done:servise; other:\"}": [
+{
+"clauses": [
+{
+"span": "servise gittim yag degisti",
+"kind": "done",
+"ids": [
+"T2"
+],
+"scope": "none"
+}
+]
+},
+{
+"ms": 3731,
+"cost_usd": 0.00061054,
+"model": "claude-haiku-5-5",
+"raw": ""
+}
+],
+"{\"message\": \"yaa dilekceyi imzaladim sonunda\", \"tasks\": [{\"id\": \"T1\", \"title\": \"Dilekçeyi imzala\"}, {\"id\": \"T2\", \"title\": \"Yağ değişimi için servise git\"}, {\"id\": \"T3\", \"title\": \"Çocukların ayakkabılarını al\"}, {\"id\": \"T4\", \"title\": \"Pasaport randevusu al\"}, {\"id\": \"T5\", \"title\": \"Bulaşık makinesini boşalt\"}, {\"id\": \"T6\", \"title\": \"Fotoğrafları yedekle\"}, {\"id\": \"T7\", \"title\": \"Kedi kumunu al\"}], \"events\": [], \"rules_said\": \"done:dilekceyi; other:\"}": [
+{
+"clauses": [
+{
+"span": "yaa dilekceyi imzaladim sonunda",
+"kind": "done",
+"ids": [
+"T1"
+],
+"scope": "none"
+}
+]
+},
+{
+"ms": 2324,
+"cost_usd": 0.0002378,
+"model": "claude-haiku-5-5",
+"raw": ""
+}
+],
+"{\"message\": \"dilekceyi imzaladim, pasaport randevusunu da aldim, ayakkabi kaldi\", \"tasks\": [{\"id\": \"T1\", \"title\": \"Dilekçeyi imzala\"}, {\"id\": \"T2\", \"title\": \"Yağ değişimi için servise git\"}, {\"id\": \"T3\", \"title\": \"Çocukların ayakkabılarını al\"}, {\"id\": \"T4\", \"title\": \"Pasaport randevusu al\"}, {\"id\": \"T5\", \"title\": \"Bulaşık makinesini boşalt\"}, {\"id\": \"T6\", \"title\": \"Fotoğrafları yedekle\"}, {\"id\": \"T7\", \"title\": \"Kedi kumunu al\"}], \"events\": [], \"rules_said\": \"done:dilekceyi; done:pasaport randevusunu; other:\"}": [
+{
+"clauses": [
+{
+"span": "dilekçeyi imzaladım",
+"kind": "done",
+"ids": [
+"T1"
+],
+"scope": "none"
+},
+{
+"span": "pasaport randevusunu da aldım",
+"kind": "done",
+"ids": [
+"T4"
+],
+"scope": "none"
+},
+{
+"span": "ayakkabı kaldı",
+"kind": "keep",
+"ids": [
+"T3"
+],
+"scope": "none"
+}
+]
+},
+{
+"ms": 3207,
+"cost_usd": 0.0003936,
+"model": "claude-haiku-5-5",
+"raw": ""
+}
+],
+"{\"message\": \"kirayi gonderdim dekont da gitti\", \"tasks\": [{\"id\": \"T1\", \"title\": \"Banka kartını yenile\"}, {\"id\": \"T2\", \"title\": \"Lastikleri kontrol ettir\"}, {\"id\": \"T3\", \"title\": \"Doğum günü pastası sipariş et\"}, {\"id\": \"T4\", \"title\": \"Kira dekontunu gönder\"}, {\"id\": \"T5\", \"title\": \"İlaçları eczaneden al\"}, {\"id\": \"T6\", \"title\": \"Terziye pantolon bırak\"}, {\"id\": \"T7\", \"title\": \"Muhasebeciyi ara\"}, {\"id\": \"T8\", \"title\": \"Balkonu temizle\"}], \"events\": [], \"rules_said\": \"done:kirayi; other:\"}": [
+{
+"clauses": [
+{
+"span": "kirayi gonderdim",
+"kind": "done",
+"ids": [
+"T4"
+],
+"scope": "none"
+},
+{
+"span": "dekont da gitti",
+"kind": "done",
+"ids": [
+"T4"
+],
+"scope": "none"
+}
+]
+},
+{
+"ms": 3159,
+"cost_usd": 0.0003565,
+"model": "claude-haiku-5-5",
+"raw": ""
+}
+],
+"{\"message\": \"kart yenilendi lastikler tamam balkon yarina\", \"tasks\": [{\"id\": \"T1\", \"title\": \"Banka kartını yenile\"}, {\"id\": \"T2\", \"title\": \"Lastikleri kontrol ettir\"}, {\"id\": \"T3\", \"title\": \"Doğum günü pastası sipariş et\"}, {\"id\": \"T4\", \"title\": \"Kira dekontunu gönder\"}, {\"id\": \"T5\", \"title\": \"İlaçları eczaneden al\"}, {\"id\": \"T6\", \"title\": \"Terziye pantolon bırak\"}, {\"id\": \"T7\", \"title\": \"Muhasebeciyi ara\"}, {\"id\": \"T8\", \"title\": \"Balkonu temizle\"}], \"events\": [], \"rules_said\": \"done:kart; defer:lastikler balkon\"}": [
+{
+"clauses": [
+{
+"span": "kart yenilendi",
+"kind": "done",
+"ids": [
+"T1"
+],
+"scope": "none"
+},
+{
+"span": "lastikler tamam",
+"kind": "done",
+"ids": [
+"T2"
+],
+"scope": "none"
+},
+{
+"span": "balkon yarina",
+"kind": "defer",
+"ids": [
+"T8"
+],
+"scope": "none"
+}
+]
+},
+{
+"ms": 4585,
+"cost_usd": 0.00062652,
+"model": "claude-haiku-5-5",
+"raw": ""
+}
+],
+"{\"message\": \"balkon temizlendi ama lastik kontrolu hala duruyor\", \"tasks\": [{\"id\": \"T1\", \"title\": \"Banka kartını yenile\"}, {\"id\": \"T2\", \"title\": \"Lastikleri kontrol ettir\"}, {\"id\": \"T3\", \"title\": \"Doğum günü pastası sipariş et\"}, {\"id\": \"T4\", \"title\": \"Kira dekontunu gönder\"}, {\"id\": \"T5\", \"title\": \"İlaçları eczaneden al\"}, {\"id\": \"T6\", \"title\": \"Terziye pantolon bırak\"}, {\"id\": \"T7\", \"title\": \"Muhasebeciyi ara\"}, {\"id\": \"T8\", \"title\": \"Balkonu temizle\"}], \"events\": [], \"rules_said\": \"done:balkon; done:; keep:kontrolu\"}": [
+{
+"clauses": [
+{
+"span": "balkon temizlendi",
+"kind": "done",
+"ids": [
+"T8"
+],
+"scope": "none"
+},
+{
+"span": "lastik kontrolu hala duruyor",
+"kind": "keep",
+"ids": [
+"T2"
+],
+"scope": "none"
+}
+]
+},
+{
+"ms": 3241,
+"cost_usd": 0.00038120000000000005,
+"model": "claude-haiku-5-5",
+"raw": ""
+}
+],
+"{\"message\": \"tapuya gittim, karneyi imzaladim, geri kalan yarina\", \"tasks\": [{\"id\": \"T1\", \"title\": \"Tapuya git\"}, {\"id\": \"T2\", \"title\": \"Ev sahibinden kira makbuzu iste\"}, {\"id\": \"T3\", \"title\": \"Çocuğun karnesini imzala\"}, {\"id\": \"T4\", \"title\": \"Kombi bakımı için randevu al\"}, {\"id\": \"T5\", \"title\": \"Perdeleri yıka\"}, {\"id\": \"T6\", \"title\": \"Koşu ayakkabısı sipariş et\"}, {\"id\": \"T7\", \"title\": \"Anneye çiçek gönder\"}, {\"id\": \"T8\", \"title\": \"Yedek anahtar yaptır\"}], \"events\": [], \"rules_said\": \"done:tapuya; done:karneyi; defer:geri kalan\"}": [
+{
+"clauses": [
+{
+"span": "tapuya gittim",
+"kind": "done",
+"ids": [
+"T1"
+],
+"scope": "none"
+},
+{
+"span": "karneyi imzaladim",
+"kind": "done",
+"ids": [
+"T3"
+],
+"scope": "none"
+},
+{
+"span": "geri kalan yarina",
+"kind": "defer",
+"ids": [
+"T2",
+"T4",
+"T5",
+"T6",
+"T7",
+"T8"
+],
+"scope": "others"
+}
+]
+},
+{
+"ms": 3920,
+"cost_usd": 0.0004601,
+"model": "claude-haiku-5-5",
+"raw": ""
+}
+],
+"{\"message\": \"anneye cicek gonderdim mi hatirlamiyorum\", \"tasks\": [{\"id\": \"T1\", \"title\": \"Tapuya git\"}, {\"id\": \"T2\", \"title\": \"Ev sahibinden kira makbuzu iste\"}, {\"id\": \"T3\", \"title\": \"Çocuğun karnesini imzala\"}, {\"id\": \"T4\", \"title\": \"Kombi bakımı için randevu al\"}, {\"id\": \"T5\", \"title\": \"Perdeleri yıka\"}, {\"id\": \"T6\", \"title\": \"Koşu ayakkabısı sipariş et\"}, {\"id\": \"T7\", \"title\": \"Anneye çiçek gönder\"}, {\"id\": \"T8\", \"title\": \"Yedek anahtar yaptır\"}], \"events\": [], \"rules_said\": \"done:anneye cicek mi; other:\"}": [
+{
+"clauses": [
+{
+"span": "anneye cicek gonderdim mi hatirlamiyorum",
+"kind": "read",
+"ids": [],
+"scope": "none"
+}
+]
+},
+{
+"ms": 5976,
+"cost_usd": 0.0007794099999999999,
+"model": "claude-haiku-5-5",
+"raw": ""
+}
+],
+"{\"message\": \"dugun saat 6ya kalsin\", \"tasks\": [], \"events\": [{\"id\": \"E1\", \"title\": \"Yıllık değerlendirme\", \"when\": \"2026-11-19 15:30\"}, {\"id\": \"E2\", \"title\": \"Veteriner\", \"when\": \"2026-11-20 11:00\"}, {\"id\": \"E3\", \"title\": \"Düğün\", \"when\": \"2026-11-21 17:00\"}, {\"id\": \"E4\", \"title\": \"Konser\", \"when\": \"2026-11-22 21:00\"}], \"rules_said\": \"keep:dugun\"}": [
+{
+"clauses": [
+{
+"span": "dugun saat 6ya kalsin",
+"kind": "keep",
+"ids": [
+"E3"
+],
+"scope": "none"
+}
+]
+},
+{
+"ms": 4796,
+"cost_usd": 0.00053371,
+"model": "claude-haiku-5-5",
+"raw": ""
+}
+],
+"{\"message\": \"sigorta yenilendi tamamdir\", \"tasks\": [{\"id\": \"T1\", \"title\": \"Veli toplantısı için not hazırla\"}, {\"id\": \"T2\", \"title\": \"Fidanları dik\"}, {\"id\": \"T3\", \"title\": \"Telefon faturasını öde\"}, {\"id\": \"T4\", \"title\": \"Sigorta poliçesini yenile\"}, {\"id\": \"T5\", \"title\": \"Yatak odasını boya\"}, {\"id\": \"T6\", \"title\": \"Köpeği aşıya götür\"}, {\"id\": \"T7\", \"title\": \"Vitaminleri sipariş et\"}, {\"id\": \"T8\", \"title\": \"Dolap raflarını sil\"}], \"events\": [], \"rules_said\": \"done:sigorta; done:\"}": [
+{
+"clauses": [
+{
+"span": "sigorta yenilendi tamamdir",
+"kind": "done",
+"ids": [
+"T4"
+],
+"scope": "none"
+}
+]
+},
+{
+"ms": 2232,
+"cost_usd": 0.00023820000000000002,
+"model": "claude-haiku-5-5",
+"raw": ""
+}
+],
+"{\"message\": \"kitaplar koliye kondu\", \"tasks\": [{\"id\": \"T1\", \"title\": \"Oto yıkamaya git\"}, {\"id\": \"T2\", \"title\": \"Kütüphane kartını yenile\"}, {\"id\": \"T3\", \"title\": \"Ayakkabıları boyat\"}, {\"id\": \"T4\", \"title\": \"Su sayacını bildir\"}, {\"id\": \"T5\", \"title\": \"Tohum al\"}, {\"id\": \"T6\", \"title\": \"Bebek aşı kartını bul\"}, {\"id\": \"T7\", \"title\": \"Kitapları koliye koy\"}, {\"id\": \"T8\", \"title\": \"Kargo iadesi yap\"}], \"events\": [], \"rules_said\": \"other:\"}": [
+{
+"clauses": [
+{
+"span": "kitaplar koliye kondu",
+"kind": "done",
+"ids": [
+"T7"
+],
+"scope": "none"
+}
+]
+},
+{
+"ms": 3439,
+"cost_usd": 0.00041702000000000004,
+"model": "claude-haiku-5-5",
+"raw": ""
+}
+],
+"{\"message\": \"kutuphane kartini yenilemdim yarina\", \"tasks\": [{\"id\": \"T1\", \"title\": \"Oto yıkamaya git\"}, {\"id\": \"T2\", \"title\": \"Kütüphane kartını yenile\"}, {\"id\": \"T3\", \"title\": \"Ayakkabıları boyat\"}, {\"id\": \"T4\", \"title\": \"Su sayacını bildir\"}, {\"id\": \"T5\", \"title\": \"Tohum al\"}, {\"id\": \"T6\", \"title\": \"Bebek aşı kartını bul\"}, {\"id\": \"T7\", \"title\": \"Kitapları koliye koy\"}, {\"id\": \"T8\", \"title\": \"Kargo iadesi yap\"}], \"events\": [], \"rules_said\": \"done:kutuphane kartini; defer:\"}": [
+{
+"clauses": [
+{
+"span": "kutuphane kartini yenilemdim yarina",
+"kind": "defer",
+"ids": [
+"T2"
+],
+"scope": "none"
+}
+]
+},
+{
+"ms": 8112,
+"cost_usd": 0.0005003900000000001,
+"model": "claude-haiku-5-5",
+"raw": ""
+}
+],
+"{\"message\": \"valla camasir makinesini temizledim bi sey kalmadi\", \"tasks\": [{\"id\": \"T1\", \"title\": \"Çamaşır makinesini temizle\"}, {\"id\": \"T2\", \"title\": \"Annemin ilaçlarını eczaneden getir\"}, {\"id\": \"T3\", \"title\": \"Sigorta evraklarını tara\"}, {\"id\": \"T4\", \"title\": \"Hesap makinesi bataryasını değiştir\"}, {\"id\": \"T5\", \"title\": \"Balkon masasını boya\"}, {\"id\": \"T6\", \"title\": \"Yeğenin doğum günü hediyesini bul\"}, {\"id\": \"T7\", \"title\": \"Garaj kapısını yağla\"}, {\"id\": \"T8\", \"title\": \"Pazartesi toplantısı için slayt hazırla\"}], \"events\": [], \"rules_said\": \"done:camasir makinesini; other:\"}": [
+{
+"clauses": [
+{
+"span": "valla camasir makinesini temizledim",
+"kind": "done",
+"ids": [
+"T1"
+],
+"scope": "none"
+},
+{
+"span": "bi sey kalmadi",
+"kind": "info",
+"ids": [],
+"scope": "none"
+}
+]
+},
+{
+"ms": 3848,
+"cost_usd": 0.0004303,
+"model": "claude-haiku-5-5",
+"raw": ""
+}
+],
+"{\"message\": \"sigorta evraklari taranmis zaten, gerek kalmadi\", \"tasks\": [{\"id\": \"T1\", \"title\": \"Çamaşır makinesini temizle\"}, {\"id\": \"T2\", \"title\": \"Annemin ilaçlarını eczaneden getir\"}, {\"id\": \"T3\", \"title\": \"Sigorta evraklarını tara\"}, {\"id\": \"T4\", \"title\": \"Hesap makinesi bataryasını değiştir\"}, {\"id\": \"T5\", \"title\": \"Balkon masasını boya\"}, {\"id\": \"T6\", \"title\": \"Yeğenin doğum günü hediyesini bul\"}, {\"id\": \"T7\", \"title\": \"Garaj kapısını yağla\"}, {\"id\": \"T8\", \"title\": \"Pazartesi toplantısı için slayt hazırla\"}], \"events\": [], \"rules_said\": \"done:sigorta evraklari; other:\"}": [
+{
+"clauses": [
+{
+"span": "sigorta evraklari taranmis zaten",
+"kind": "done",
+"ids": [
+"T3"
+],
+"scope": "none"
+},
+{
+"span": "gerek kalmadi",
+"kind": "done",
+"ids": [
+"T3"
+],
+"scope": "none"
+}
+]
+},
+{
+"ms": 2886,
+"cost_usd": 0.0003406,
+"model": "claude-haiku-5-5",
+"raw": ""
+}
+],
+"{\"message\": \"yegenin hediyesini buldum aldim da\", \"tasks\": [{\"id\": \"T1\", \"title\": \"Çamaşır makinesini temizle\"}, {\"id\": \"T2\", \"title\": \"Annemin ilaçlarını eczaneden getir\"}, {\"id\": \"T3\", \"title\": \"Sigorta evraklarını tara\"}, {\"id\": \"T4\", \"title\": \"Hesap makinesi bataryasını değiştir\"}, {\"id\": \"T5\", \"title\": \"Balkon masasını boya\"}, {\"id\": \"T6\", \"title\": \"Yeğenin doğum günü hediyesini bul\"}, {\"id\": \"T7\", \"title\": \"Garaj kapısını yağla\"}, {\"id\": \"T8\", \"title\": \"Pazartesi toplantısı için slayt hazırla\"}], \"events\": [], \"rules_said\": \"done:yegenin hediyesini; done:\"}": [
+{
+"clauses": [
+{
+"span": "yegenin hediyesini buldum aldim da",
+"kind": "done",
+"ids": [
+"T6"
+],
+"scope": "none"
+}
+]
+},
+{
+"ms": 2185,
+"cost_usd": 0.00024680000000000004,
+"model": "claude-haiku-5-5",
+"raw": ""
+}
+],
+"{\"message\": \"slaytlar bitti mi diye bakmistim bitmis zaten\", \"tasks\": [{\"id\": \"T1\", \"title\": \"Çamaşır makinesini temizle\"}, {\"id\": \"T2\", \"title\": \"Annemin ilaçlarını eczaneden getir\"}, {\"id\": \"T3\", \"title\": \"Sigorta evraklarını tara\"}, {\"id\": \"T4\", \"title\": \"Hesap makinesi bataryasını değiştir\"}, {\"id\": \"T5\", \"title\": \"Balkon masasını boya\"}, {\"id\": \"T6\", \"title\": \"Yeğenin doğum günü hediyesini bul\"}, {\"id\": \"T7\", \"title\": \"Garaj kapısını yağla\"}, {\"id\": \"T8\", \"title\": \"Pazartesi toplantısı için slayt hazırla\"}], \"events\": [], \"rules_said\": \"done:slaytlar mi; done:diye; done:\"}": [
+{
+"clauses": [
+{
+"span": "slaytlar bitti mi diye bakmistim bitmis zaten",
+"kind": "done",
+"ids": [
+"T8"
+],
+"scope": "none"
+}
+]
+},
+{
+"ms": 4495,
+"cost_usd": 0.00057585,
+"model": "claude-haiku-5-5",
+"raw": ""
+}
+],
+"{\"message\": \"yegenin hediyesi hallolmus bu arada\", \"tasks\": [{\"id\": \"T1\", \"title\": \"Çamaşır makinesini temizle\"}, {\"id\": \"T2\", \"title\": \"Annemin ilaçlarını eczaneden getir\"}, {\"id\": \"T3\", \"title\": \"Sigorta evraklarını tara\"}, {\"id\": \"T4\", \"title\": \"Hesap makinesi bataryasını değiştir\"}, {\"id\": \"T5\", \"title\": \"Balkon masasını boya\"}, {\"id\": \"T6\", \"title\": \"Yeğenin doğum günü hediyesini bul\"}, {\"id\": \"T7\", \"title\": \"Garaj kapısını yağla\"}, {\"id\": \"T8\", \"title\": \"Pazartesi toplantısı için slayt hazırla\"}], \"events\": [], \"rules_said\": \"done:yegenin hediyesi; other:\"}": [
+{
+"clauses": [
+{
+"span": "yegenin hediyesi hallolmus",
+"kind": "done",
+"ids": [
+"T6"
+],
+"scope": "none"
+},
+{
+"span": "bu arada",
+"kind": "info",
+"ids": [],
+"scope": "none"
+}
+]
+},
+{
+"ms": 4116,
+"cost_usd": 0.00052148,
+"model": "claude-haiku-5-5",
+"raw": ""
+}
+],
+"{\"message\": \"kombinin filtresini degistirdim, artik sorun yok\", \"tasks\": [{\"id\": \"T1\", \"title\": \"Kombinin filtresini değiştir\"}, {\"id\": \"T2\", \"title\": \"Bisikletin lastiğini şişir\"}, {\"id\": \"T3\", \"title\": \"Teyzeye doğum günü kartı yolla\"}, {\"id\": \"T4\", \"title\": \"Noter randevusu al\"}, {\"id\": \"T5\", \"title\": \"Yazıcıya kağıt koy\"}, {\"id\": \"T6\", \"title\": \"Ödeme planını gözden geçir\"}, {\"id\": \"T7\", \"title\": \"Balkon çiçeklerini içeri al\"}, {\"id\": \"T8\", \"title\": \"Kütüphaneden roman getir\"}], \"events\": [], \"rules_said\": \"done:kombinin filtresini; other:\"}": [
+{
+"clauses": [
+{
+"span": "kombinin filtresini degistirdim",
+"kind": "done",
+"ids": [
+"T1"
+],
+"scope": "none"
+},
+{
+"span": "artik sorun yok",
+"kind": "info",
+"ids": [],
+"scope": "none"
+}
+]
+},
+{
+"ms": 2370,
+"cost_usd": 0.0002616,
+"model": "claude-haiku-5-5",
+"raw": ""
+}
+],
+"{\"message\": \"noter randevusu alinmis zaten, bir sey yapmama gerek yok\", \"tasks\": [{\"id\": \"T1\", \"title\": \"Kombinin filtresini değiştir\"}, {\"id\": \"T2\", \"title\": \"Bisikletin lastiğini şişir\"}, {\"id\": \"T3\", \"title\": \"Teyzeye doğum günü kartı yolla\"}, {\"id\": \"T4\", \"title\": \"Noter randevusu al\"}, {\"id\": \"T5\", \"title\": \"Yazıcıya kağıt koy\"}, {\"id\": \"T6\", \"title\": \"Ödeme planını gözden geçir\"}, {\"id\": \"T7\", \"title\": \"Balkon çiçeklerini içeri al\"}, {\"id\": \"T8\", \"title\": \"Kütüphaneden roman getir\"}], \"events\": [], \"rules_said\": \"other:; other:\"}": [
+{
+"clauses": [
+{
+"span": "noter randevusu alinmis zaten",
+"kind": "done",
+"ids": [
+"T4"
+],
+"scope": "none"
+},
+{
+"span": "bir sey yapmama gerek yok",
+"kind": "info",
+"ids": [],
+"scope": "none"
+}
+]
+},
+{
+"ms": 3831,
+"cost_usd": 0.0004467,
+"model": "claude-haiku-5-5",
+"raw": ""
+}
+],
+"{\"message\": \"yaziciya kagit koydum cok sukur\", \"tasks\": [{\"id\": \"T1\", \"title\": \"Kombinin filtresini değiştir\"}, {\"id\": \"T2\", \"title\": \"Bisikletin lastiğini şişir\"}, {\"id\": \"T3\", \"title\": \"Teyzeye doğum günü kartı yolla\"}, {\"id\": \"T4\", \"title\": \"Noter randevusu al\"}, {\"id\": \"T5\", \"title\": \"Yazıcıya kağıt koy\"}, {\"id\": \"T6\", \"title\": \"Ödeme planını gözden geçir\"}, {\"id\": \"T7\", \"title\": \"Balkon çiçeklerini içeri al\"}, {\"id\": \"T8\", \"title\": \"Kütüphaneden roman getir\"}], \"events\": [], \"rules_said\": \"done:yaziciya kagit; other:\"}": [
+{
+"clauses": [
+{
+"span": "yaziciya kagit koydum",
+"kind": "done",
+"ids": [
+"T5"
+],
+"scope": "none"
+},
+{
+"span": "cok sukur",
+"kind": "info",
+"ids": [],
+"scope": "none"
+}
+]
+},
+{
+"ms": 2295,
+"cost_usd": 0.0002582,
+"model": "claude-haiku-5-5",
+"raw": ""
+}
+],
+"{\"message\": \"cicekleri iceri aldim hava sogudu\", \"tasks\": [{\"id\": \"T1\", \"title\": \"Kombinin filtresini değiştir\"}, {\"id\": \"T2\", \"title\": \"Bisikletin lastiğini şişir\"}, {\"id\": \"T3\", \"title\": \"Teyzeye doğum günü kartı yolla\"}, {\"id\": \"T4\", \"title\": \"Noter randevusu al\"}, {\"id\": \"T5\", \"title\": \"Yazıcıya kağıt koy\"}, {\"id\": \"T6\", \"title\": \"Ödeme planını gözden geçir\"}, {\"id\": \"T7\", \"title\": \"Balkon çiçeklerini içeri al\"}, {\"id\": \"T8\", \"title\": \"Kütüphaneden roman getir\"}], \"events\": [], \"rules_said\": \"done:cicekleri iceri; other:\"}": [
+{
+"clauses": [
+{
+"span": "cicekleri iceri aldim",
+"kind": "done",
+"ids": [
+"T7"
+],
+"scope": "none"
+},
+{
+"span": "hava sogudu",
+"kind": "info",
+"ids": [],
+"scope": "none"
+}
+]
+},
+{
+"ms": 2676,
+"cost_usd": 0.00030960000000000004,
+"model": "claude-haiku-5-5",
+"raw": ""
+}
+],
+"{\"message\": \"romani getirdim kutuphaneden\", \"tasks\": [{\"id\": \"T1\", \"title\": \"Kombinin filtresini değiştir\"}, {\"id\": \"T2\", \"title\": \"Bisikletin lastiğini şişir\"}, {\"id\": \"T3\", \"title\": \"Teyzeye doğum günü kartı yolla\"}, {\"id\": \"T4\", \"title\": \"Noter randevusu al\"}, {\"id\": \"T5\", \"title\": \"Yazıcıya kağıt koy\"}, {\"id\": \"T6\", \"title\": \"Ödeme planını gözden geçir\"}, {\"id\": \"T7\", \"title\": \"Balkon çiçeklerini içeri al\"}, {\"id\": \"T8\", \"title\": \"Kütüphaneden roman getir\"}], \"events\": [], \"rules_said\": \"done:romani; other:\"}": [
+{
+"clauses": [
+{
+"span": "romani getirdim kutuphaneden",
+"kind": "done",
+"ids": [
+"T8"
+],
+"scope": "none"
+}
+]
+},
+{
+"ms": 3703,
+"cost_usd": 0.00043354000000000005,
+"model": "claude-haiku-5-5",
+"raw": ""
+}
+],
+"{\"message\": \"partiyi pazartesiye tasiyalim\", \"tasks\": [], \"events\": [{\"id\": \"E1\", \"title\": \"Muhasebe toplantısı\", \"when\": \"2026-11-19 11:00\"}, {\"id\": \"E2\", \"title\": \"Pazar yeri\", \"when\": \"2026-11-20 09:00\"}, {\"id\": \"E3\", \"title\": \"Sinema günü\", \"when\": \"2026-11-22 20:00\"}], \"rules_said\": \"defer:partiyi\"}": [
+{
+"clauses": [
+{
+"span": "partiyi pazartesiye tasiyalim",
+"kind": "other",
+"ids": [],
+"scope": "none"
+}
+]
+},
+{
+"ms": 3345,
+"cost_usd": 0.00034770000000000005,
+"model": "claude-haiku-5-5",
+"raw": ""
+}
+],
+"{\"message\": \"romani aldim ama kombi filtresi icin vaktim kalmadi yarina\", \"tasks\": [{\"id\": \"T1\", \"title\": \"Kombinin filtresini değiştir\"}, {\"id\": \"T2\", \"title\": \"Bisikletin lastiğini şişir\"}, {\"id\": \"T3\", \"title\": \"Teyzeye doğum günü kartı yolla\"}, {\"id\": \"T4\", \"title\": \"Noter randevusu al\"}, {\"id\": \"T5\", \"title\": \"Yazıcıya kağıt koy\"}, {\"id\": \"T6\", \"title\": \"Ödeme planını gözden geçir\"}, {\"id\": \"T7\", \"title\": \"Balkon çiçeklerini içeri al\"}, {\"id\": \"T8\", \"title\": \"Kütüphaneden roman getir\"}], \"events\": [], \"rules_said\": \"done:romani; info:; defer:\"}": [
+{
+"clauses": [
+{
+"span": "romani aldim",
+"kind": "done",
+"ids": [
+"T8"
+],
+"scope": "none"
+},
+{
+"span": "kombi filtresi icin vaktim kalmadi yarina",
+"kind": "defer",
+"ids": [
+"T1"
+],
+"scope": "none"
+}
+]
+},
+{
+"ms": 3091,
+"cost_usd": 0.0003595,
+"model": "claude-haiku-5-5",
+"raw": ""
+}
+]
+}

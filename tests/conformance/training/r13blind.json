@@ -1,0 +1,1535 @@
+[
+ {
+  "name": "b13-01",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe musluğunu tamir et",
+    "Kış lastiğini taktır",
+    "Pilates kartını yükle",
+    "Okul servisini ara",
+    "Nüfus cüzdanını yenile",
+    "Eski gazeteleri at",
+    "Yılbaşı hediyelerini al",
+    "Çocuk doktoru randevusu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "musluk tamir edildi",
+    "kind": "free",
+    "tasks_done_has": [
+     "Bahçe"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b13-02",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe musluğunu tamir et",
+    "Kış lastiğini taktır",
+    "Pilates kartını yükle",
+    "Okul servisini ara",
+    "Nüfus cüzdanını yenile",
+    "Eski gazeteleri at",
+    "Yılbaşı hediyelerini al",
+    "Çocuk doktoru randevusu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kis lastigini taktirdim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Kış"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b13-03",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe musluğunu tamir et",
+    "Kış lastiğini taktır",
+    "Pilates kartını yükle",
+    "Okul servisini ara",
+    "Nüfus cüzdanını yenile",
+    "Eski gazeteleri at",
+    "Yılbaşı hediyelerini al",
+    "Çocuk doktoru randevusu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "pilates kartina yukledim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Pilates"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b13-04",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe musluğunu tamir et",
+    "Kış lastiğini taktır",
+    "Pilates kartını yükle",
+    "Okul servisini ara",
+    "Nüfus cüzdanını yenile",
+    "Eski gazeteleri at",
+    "Yılbaşı hediyelerini al",
+    "Çocuk doktoru randevusu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "servisi aradim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Okul"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b13-05",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe musluğunu tamir et",
+    "Kış lastiğini taktır",
+    "Pilates kartını yükle",
+    "Okul servisini ara",
+    "Nüfus cüzdanını yenile",
+    "Eski gazeteleri at",
+    "Yılbaşı hediyelerini al",
+    "Çocuk doktoru randevusu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "nufus cuzdanini yeniledim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Nüfus"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b13-06",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe musluğunu tamir et",
+    "Kış lastiğini taktır",
+    "Pilates kartını yükle",
+    "Okul servisini ara",
+    "Nüfus cüzdanını yenile",
+    "Eski gazeteleri at",
+    "Yılbaşı hediyelerini al",
+    "Çocuk doktoru randevusu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "gazeteler atildi",
+    "kind": "free",
+    "tasks_done_has": [
+     "gazete"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b13-07",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe musluğunu tamir et",
+    "Kış lastiğini taktır",
+    "Pilates kartını yükle",
+    "Okul servisini ara",
+    "Nüfus cüzdanını yenile",
+    "Eski gazeteleri at",
+    "Yılbaşı hediyelerini al",
+    "Çocuk doktoru randevusu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "yilbasi hediyelerini aldim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Yılbaşı"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b13-08",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe musluğunu tamir et",
+    "Kış lastiğini taktır",
+    "Pilates kartını yükle",
+    "Okul servisini ara",
+    "Nüfus cüzdanını yenile",
+    "Eski gazeteleri at",
+    "Yılbaşı hediyelerini al",
+    "Çocuk doktoru randevusu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "cocuk doktoruna randevu aldim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Çocuk"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b13-09",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe musluğunu tamir et",
+    "Kış lastiğini taktır",
+    "Pilates kartını yükle",
+    "Okul servisini ara",
+    "Nüfus cüzdanını yenile",
+    "Eski gazeteleri at",
+    "Yılbaşı hediyelerini al",
+    "Çocuk doktoru randevusu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "musluk isi yarina kalsin",
+    "kind": "free",
+    "tasks_due": {
+     "Bahçe": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b13-10",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe musluğunu tamir et",
+    "Kış lastiğini taktır",
+    "Pilates kartını yükle",
+    "Okul servisini ara",
+    "Nüfus cüzdanını yenile",
+    "Eski gazeteleri at",
+    "Yılbaşı hediyelerini al",
+    "Çocuk doktoru randevusu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "nufus cuzdanini cumartesi yenilerim",
+    "kind": "free",
+    "tasks_due": {
+     "Nüfus": "2026-11-21"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b13-11",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe musluğunu tamir et",
+    "Kış lastiğini taktır",
+    "Pilates kartını yükle",
+    "Okul servisini ara",
+    "Nüfus cüzdanını yenile",
+    "Eski gazeteleri at",
+    "Yılbaşı hediyelerini al",
+    "Çocuk doktoru randevusu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "hediyeleri pazartesi alacagim",
+    "kind": "free",
+    "tasks_due": {
+     "Yılbaşı": "2026-11-23"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b13-12",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe musluğunu tamir et",
+    "Kış lastiğini taktır",
+    "Pilates kartını yükle",
+    "Okul servisini ara",
+    "Nüfus cüzdanını yenile",
+    "Eski gazeteleri at",
+    "Yılbaşı hediyelerini al",
+    "Çocuk doktoru randevusu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "pilates kartini bu yarina",
+    "kind": "free",
+    "tasks_due": {
+     "Pilates": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b13-13",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe musluğunu tamir et",
+    "Kış lastiğini taktır",
+    "Pilates kartını yükle",
+    "Okul servisini ara",
+    "Nüfus cüzdanını yenile",
+    "Eski gazeteleri at",
+    "Yılbaşı hediyelerini al",
+    "Çocuk doktoru randevusu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "gazeteleri atmayi unuttum",
+    "kind": "free",
+    "contains": [
+     "akşama mı"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b13-14",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe musluğunu tamir et",
+    "Kış lastiğini taktır",
+    "Pilates kartını yükle",
+    "Okul servisini ara",
+    "Nüfus cüzdanını yenile",
+    "Eski gazeteleri at",
+    "Yılbaşı hediyelerini al",
+    "Çocuk doktoru randevusu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "servisi aramayi unuttum",
+    "kind": "free"
+   },
+   {
+    "say": "yarina",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Okul": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b13-15",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe musluğunu tamir et",
+    "Kış lastiğini taktır",
+    "Pilates kartını yükle",
+    "Okul servisini ara",
+    "Nüfus cüzdanını yenile",
+    "Eski gazeteleri at",
+    "Yılbaşı hediyelerini al",
+    "Çocuk doktoru randevusu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kis lastigini taktirmayi unuttum",
+    "kind": "free"
+   },
+   {
+    "say": "aksama",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Kış": "2026-11-19"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b13-16",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe musluğunu tamir et",
+    "Kış lastiğini taktır",
+    "Pilates kartını yükle",
+    "Okul servisini ara",
+    "Nüfus cüzdanını yenile",
+    "Eski gazeteleri at",
+    "Yılbaşı hediyelerini al",
+    "Çocuk doktoru randevusu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "musluk bitti, pilates yarina, gazete cuma",
+    "kind": "free",
+    "tasks_done_has": [
+     "Bahçe"
+    ],
+    "tasks_due": {
+     "Pilates": "2026-11-20",
+     "gazete": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b13-17",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe musluğunu tamir et",
+    "Kış lastiğini taktır",
+    "Pilates kartını yükle",
+    "Okul servisini ara",
+    "Nüfus cüzdanını yenile",
+    "Eski gazeteleri at",
+    "Yılbaşı hediyelerini al",
+    "Çocuk doktoru randevusu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "hepsini pazara birak",
+    "kind": "free"
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_due": {
+     "Bahçe": "2026-11-22",
+     "Kış": "2026-11-22",
+     "Çocuk": "2026-11-22"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b13-18",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe musluğunu tamir et",
+    "Kış lastiğini taktır",
+    "Pilates kartını yükle",
+    "Okul servisini ara",
+    "Nüfus cüzdanını yenile",
+    "Eski gazeteleri at",
+    "Yılbaşı hediyelerini al",
+    "Çocuk doktoru randevusu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "servisi aradim gerisi yarina kalsin",
+    "kind": "free"
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_done_has": [
+     "Okul"
+    ],
+    "tasks_due": {
+     "Bahçe": "2026-11-20",
+     "Pilates": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b13-19",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe musluğunu tamir et",
+    "Kış lastiğini taktır",
+    "Pilates kartını yükle",
+    "Okul servisini ara",
+    "Nüfus cüzdanını yenile",
+    "Eski gazeteleri at",
+    "Yılbaşı hediyelerini al",
+    "Çocuk doktoru randevusu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "heh nufus cuzdani halloldu",
+    "kind": "free",
+    "tasks_done_has": [
+     "Nüfus"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b13-20",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe musluğunu tamir et",
+    "Kış lastiğini taktır",
+    "Pilates kartını yükle",
+    "Okul servisini ara",
+    "Nüfus cüzdanını yenile",
+    "Eski gazeteleri at",
+    "Yılbaşı hediyelerini al",
+    "Çocuk doktoru randevusu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "gazete isi tamamdir",
+    "kind": "free",
+    "tasks_done_has": [
+     "gazete"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b13-21",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe musluğunu tamir et",
+    "Kış lastiğini taktır",
+    "Pilates kartını yükle",
+    "Okul servisini ara",
+    "Nüfus cüzdanını yenile",
+    "Eski gazeteleri at",
+    "Yılbaşı hediyelerini al",
+    "Çocuk doktoru randevusu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "doktor randevusunu ayarladim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Çocuk"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b13-22",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe musluğunu tamir et",
+    "Kış lastiğini taktır",
+    "Pilates kartını yükle",
+    "Okul servisini ara",
+    "Nüfus cüzdanını yenile",
+    "Eski gazeteleri at",
+    "Yılbaşı hediyelerini al",
+    "Çocuk doktoru randevusu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "lastikler takildi",
+    "kind": "free",
+    "tasks_done_has": [
+     "Kış"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b13-23",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe musluğunu tamir et",
+    "Kış lastiğini taktır",
+    "Pilates kartını yükle",
+    "Okul servisini ara",
+    "Nüfus cüzdanını yenile",
+    "Eski gazeteleri at",
+    "Yılbaşı hediyelerini al",
+    "Çocuk doktoru randevusu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "hediyeler alindi kart yuklendi",
+    "kind": "free",
+    "tasks_done_has": [
+     "Yılbaşı",
+     "Pilates"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b13-24",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe musluğunu tamir et",
+    "Kış lastiğini taktır",
+    "Pilates kartını yükle",
+    "Okul servisini ara",
+    "Nüfus cüzdanını yenile",
+    "Eski gazeteleri at",
+    "Yılbaşı hediyelerini al",
+    "Çocuk doktoru randevusu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "musluk tamir edildi",
+    "kind": "free"
+   },
+   {
+    "say": "servis de",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Bahçe",
+     "Okul"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b13-25",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe musluğunu tamir et",
+    "Kış lastiğini taktır",
+    "Pilates kartını yükle",
+    "Okul servisini ara",
+    "Nüfus cüzdanını yenile",
+    "Eski gazeteleri at",
+    "Yılbaşı hediyelerini al",
+    "Çocuk doktoru randevusu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "hediyeler yarina",
+    "kind": "free"
+   },
+   {
+    "say": "gazete de",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Yılbaşı": "2026-11-20",
+     "gazete": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b13-26",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe musluğunu tamir et",
+    "Kış lastiğini taktır",
+    "Pilates kartını yükle",
+    "Okul servisini ara",
+    "Nüfus cüzdanını yenile",
+    "Eski gazeteleri at",
+    "Yılbaşı hediyelerini al",
+    "Çocuk doktoru randevusu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "MUSLUK TAMIR EDILDI",
+    "kind": "free",
+    "tasks_done_has": [
+     "Bahçe"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b13-27",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe musluğunu tamir et",
+    "Kış lastiğini taktır",
+    "Pilates kartını yükle",
+    "Okul servisini ara",
+    "Nüfus cüzdanını yenile",
+    "Eski gazeteleri at",
+    "Yılbaşı hediyelerini al",
+    "Çocuk doktoru randevusu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "pilates kartini yuklemdim yarina",
+    "kind": "free",
+    "tasks_due": {
+     "Pilates": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b13-28",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe musluğunu tamir et",
+    "Kış lastiğini taktır",
+    "Pilates kartını yükle",
+    "Okul servisini ara",
+    "Nüfus cüzdanını yenile",
+    "Eski gazeteleri at",
+    "Yılbaşı hediyelerini al",
+    "Çocuk doktoru randevusu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "musluk ve gazete isi bugun olmaz cumaya",
+    "kind": "free",
+    "tasks_due": {
+     "Bahçe": "2026-11-20",
+     "gazete": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b13-29",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe musluğunu tamir et",
+    "Kış lastiğini taktır",
+    "Pilates kartını yükle",
+    "Okul servisini ara",
+    "Nüfus cüzdanını yenile",
+    "Eski gazeteleri at",
+    "Yılbaşı hediyelerini al",
+    "Çocuk doktoru randevusu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "okul servisi icin bugun ulasamadim yarin ararim",
+    "kind": "free",
+    "tasks_due": {
+     "Okul": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b13-30",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe musluğunu tamir et",
+    "Kış lastiğini taktır",
+    "Pilates kartını yükle",
+    "Okul servisini ara",
+    "Nüfus cüzdanını yenile",
+    "Eski gazeteleri at",
+    "Yılbaşı hediyelerini al",
+    "Çocuk doktoru randevusu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "cocuk doktoru randevusu yarina kaldi",
+    "kind": "free",
+    "tasks_due": {
+     "Çocuk": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b13-31",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T16:40",
+   "seed": [
+    {
+     "title": "Veli görüşmesi",
+     "start": "2026-11-19T16:00",
+     "end": "2026-11-19T16:30"
+    },
+    {
+     "title": "Çay daveti",
+     "start": "2026-11-20T17:00",
+     "end": "2026-11-20T18:30"
+    },
+    {
+     "title": "Maç",
+     "start": "2026-11-21T19:00",
+     "end": "2026-11-21T21:00"
+    },
+    {
+     "title": "Gezi",
+     "start": "2026-11-22T09:00",
+     "end": "2026-11-22T17:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "veli gorusmesi bitti",
+    "kind": "free",
+    "contains": [
+     "Veli"
+    ],
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım",
+     "silinsin"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b13-32",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Veli görüşmesi",
+     "start": "2026-11-19T16:00",
+     "end": "2026-11-19T16:30"
+    },
+    {
+     "title": "Çay daveti",
+     "start": "2026-11-20T17:00",
+     "end": "2026-11-20T18:30"
+    },
+    {
+     "title": "Maç",
+     "start": "2026-11-21T19:00",
+     "end": "2026-11-21T21:00"
+    },
+    {
+     "title": "Gezi",
+     "start": "2026-11-22T09:00",
+     "end": "2026-11-22T17:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "cay davetini cumartesiye al",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "21 Kasım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b13-33",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Veli görüşmesi",
+     "start": "2026-11-19T16:00",
+     "end": "2026-11-19T16:30"
+    },
+    {
+     "title": "Çay daveti",
+     "start": "2026-11-20T17:00",
+     "end": "2026-11-20T18:30"
+    },
+    {
+     "title": "Maç",
+     "start": "2026-11-21T19:00",
+     "end": "2026-11-21T21:00"
+    },
+    {
+     "title": "Gezi",
+     "start": "2026-11-22T09:00",
+     "end": "2026-11-22T17:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "maci pazara tasi",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "22 Kasım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b13-34",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Veli görüşmesi",
+     "start": "2026-11-19T16:00",
+     "end": "2026-11-19T16:30"
+    },
+    {
+     "title": "Çay daveti",
+     "start": "2026-11-20T17:00",
+     "end": "2026-11-20T18:30"
+    },
+    {
+     "title": "Maç",
+     "start": "2026-11-21T19:00",
+     "end": "2026-11-21T21:00"
+    },
+    {
+     "title": "Gezi",
+     "start": "2026-11-22T09:00",
+     "end": "2026-11-22T17:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "geziyi iptal et",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Gezi"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b13-35",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Veli görüşmesi",
+     "start": "2026-11-19T16:00",
+     "end": "2026-11-19T16:30"
+    },
+    {
+     "title": "Çay daveti",
+     "start": "2026-11-20T17:00",
+     "end": "2026-11-20T18:30"
+    },
+    {
+     "title": "Maç",
+     "start": "2026-11-21T19:00",
+     "end": "2026-11-21T21:00"
+    },
+    {
+     "title": "Gezi",
+     "start": "2026-11-22T09:00",
+     "end": "2026-11-22T17:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "yarin ne var",
+    "kind": "free",
+    "contains": [
+     "Çay"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b13-36",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Veli görüşmesi",
+     "start": "2026-11-19T16:00",
+     "end": "2026-11-19T16:30"
+    },
+    {
+     "title": "Çay daveti",
+     "start": "2026-11-20T17:00",
+     "end": "2026-11-20T18:30"
+    },
+    {
+     "title": "Maç",
+     "start": "2026-11-21T19:00",
+     "end": "2026-11-21T21:00"
+    },
+    {
+     "title": "Gezi",
+     "start": "2026-11-22T09:00",
+     "end": "2026-11-22T17:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "bugun ne kaldi",
+    "kind": "free",
+    "contains": [
+     "Veli"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b13-37",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T16:40",
+   "seed": [
+    {
+     "title": "Veli görüşmesi",
+     "start": "2026-11-19T16:00",
+     "end": "2026-11-19T16:30"
+    },
+    {
+     "title": "Çay daveti",
+     "start": "2026-11-20T17:00",
+     "end": "2026-11-20T18:30"
+    },
+    {
+     "title": "Maç",
+     "start": "2026-11-21T19:00",
+     "end": "2026-11-21T21:00"
+    },
+    {
+     "title": "Gezi",
+     "start": "2026-11-22T09:00",
+     "end": "2026-11-22T17:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "veli gorusmesi bitti mac pazartesiye kalsin",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Maç",
+     "23 Kasım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b13-38",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T16:45",
+   "seed": [
+    {
+     "title": "Veli görüşmesi",
+     "start": "2026-11-19T16:00",
+     "end": "2026-11-19T16:30"
+    },
+    {
+     "title": "Çay daveti",
+     "start": "2026-11-20T17:00",
+     "end": "2026-11-20T18:30"
+    },
+    {
+     "title": "Maç",
+     "start": "2026-11-21T19:00",
+     "end": "2026-11-21T21:00"
+    },
+    {
+     "title": "Gezi",
+     "start": "2026-11-22T09:00",
+     "end": "2026-11-22T17:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "veli gorusmesi yapildi",
+    "kind": "free",
+    "contains": [
+     "Veli"
+    ],
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım",
+     "silinsin"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b13-39",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Veli görüşmesi",
+     "start": "2026-11-19T16:00",
+     "end": "2026-11-19T16:30"
+    },
+    {
+     "title": "Çay daveti",
+     "start": "2026-11-20T17:00",
+     "end": "2026-11-20T18:30"
+    },
+    {
+     "title": "Maç",
+     "start": "2026-11-21T19:00",
+     "end": "2026-11-21T21:00"
+    },
+    {
+     "title": "Gezi",
+     "start": "2026-11-22T09:00",
+     "end": "2026-11-22T17:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "gezi pazar degil cumartesi",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "21 Kasım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b13-40",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Veli görüşmesi",
+     "start": "2026-11-19T16:00",
+     "end": "2026-11-19T16:30"
+    },
+    {
+     "title": "Çay daveti",
+     "start": "2026-11-20T17:00",
+     "end": "2026-11-20T18:30"
+    },
+    {
+     "title": "Maç",
+     "start": "2026-11-21T19:00",
+     "end": "2026-11-21T21:00"
+    },
+    {
+     "title": "Gezi",
+     "start": "2026-11-22T09:00",
+     "end": "2026-11-22T17:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "cay davetini sil",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Çay"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b13-41",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe musluğunu tamir et",
+    "Kış lastiğini taktır",
+    "Pilates kartını yükle",
+    "Okul servisini ara",
+    "Nüfus cüzdanını yenile",
+    "Eski gazeteleri at",
+    "Yılbaşı hediyelerini al",
+    "Çocuk doktoru randevusu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "hediyeleri cumartesi sabah 10da alacagim",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Yılbaşı",
+     "10:00",
+     "21 Kasım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b13-42",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe musluğunu tamir et",
+    "Kış lastiğini taktır",
+    "Pilates kartını yükle",
+    "Okul servisini ara",
+    "Nüfus cüzdanını yenile",
+    "Eski gazeteleri at",
+    "Yılbaşı hediyelerini al",
+    "Çocuk doktoru randevusu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "pilates kartini yarin 11 gibi hatirlat",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Pilates",
+     "11:00"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b13-43",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe musluğunu tamir et",
+    "Kış lastiğini taktır",
+    "Pilates kartını yükle",
+    "Okul servisini ara",
+    "Nüfus cüzdanını yenile",
+    "Eski gazeteleri at",
+    "Yılbaşı hediyelerini al",
+    "Çocuk doktoru randevusu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "servisi yarina birak",
+    "kind": "free"
+   },
+   {
+    "say": "bunu cuma sabah 10da hatirlat",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Okul",
+     "10:00"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b13-44",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe musluğunu tamir et",
+    "Kış lastiğini taktır",
+    "Pilates kartını yükle",
+    "Okul servisini ara",
+    "Nüfus cüzdanını yenile",
+    "Eski gazeteleri at",
+    "Yılbaşı hediyelerini al",
+    "Çocuk doktoru randevusu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "gazeteleri aksam 9da atacagim",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "gazete",
+     "21:00"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b13-45",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe musluğunu tamir et",
+    "Kış lastiğini taktır",
+    "Pilates kartını yükle",
+    "Okul servisini ara",
+    "Nüfus cüzdanını yenile",
+    "Eski gazeteleri at",
+    "Yılbaşı hediyelerini al",
+    "Çocuk doktoru randevusu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "musluk ve lastik isi cumartesiye lutfen",
+    "kind": "free",
+    "tasks_due": {
+     "Bahçe": "2026-11-21",
+     "Kış": "2026-11-21"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b13-46",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe musluğunu tamir et",
+    "Kış lastiğini taktır",
+    "Pilates kartını yükle",
+    "Okul servisini ara",
+    "Nüfus cüzdanını yenile",
+    "Eski gazeteleri at",
+    "Yılbaşı hediyelerini al",
+    "Çocuk doktoru randevusu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "musluk bitti, servis yarin, gazete pazar, hediye cuma",
+    "kind": "free",
+    "tasks_done_has": [
+     "Bahçe"
+    ],
+    "tasks_due": {
+     "Okul": "2026-11-20",
+     "gazete": "2026-11-22",
+     "Yılbaşı": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b13-47",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe musluğunu tamir et",
+    "Kış lastiğini taktır",
+    "Pilates kartını yükle",
+    "Okul servisini ara",
+    "Nüfus cüzdanını yenile",
+    "Eski gazeteleri at",
+    "Yılbaşı hediyelerini al",
+    "Çocuk doktoru randevusu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "nufus isi icin hic vaktim yok yarina",
+    "kind": "free",
+    "tasks_due": {
+     "Nüfus": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b13-48",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe musluğunu tamir et",
+    "Kış lastiğini taktır",
+    "Pilates kartını yükle",
+    "Okul servisini ara",
+    "Nüfus cüzdanını yenile",
+    "Eski gazeteleri at",
+    "Yılbaşı hediyelerini al",
+    "Çocuk doktoru randevusu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "gazete isi bitti ama servis hala duruyor",
+    "kind": "free",
+    "tasks_done_has": [
+     "gazete"
+    ],
+    "tasks_open_has": [
+     "Okul"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b13-49",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe musluğunu tamir et",
+    "Kış lastiğini taktır",
+    "Pilates kartını yükle",
+    "Okul servisini ara",
+    "Nüfus cüzdanını yenile",
+    "Eski gazeteleri at",
+    "Yılbaşı hediyelerini al",
+    "Çocuk doktoru randevusu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "hediye alma iptal",
+    "kind": "free"
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_open_count": 7
+   }
+  ]
+ },
+ {
+  "name": "b13-50",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe musluğunu tamir et",
+    "Kış lastiğini taktır",
+    "Pilates kartını yükle",
+    "Okul servisini ara",
+    "Nüfus cüzdanını yenile",
+    "Eski gazeteleri at",
+    "Yılbaşı hediyelerini al",
+    "Çocuk doktoru randevusu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "pilates tamam sonunda yaa",
+    "kind": "free",
+    "tasks_done_has": [
+     "Pilates"
+    ]
+   }
+  ]
+ }
+]

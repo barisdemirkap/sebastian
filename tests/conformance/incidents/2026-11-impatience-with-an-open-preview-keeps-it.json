@@ -1,0 +1,27 @@
+{
+  "name": "'orda misin' while a preview is open answers 'Buradayım, efendim.' and keeps the preview",
+  "incident": "ADR 0014: an impatient message never closes a preview.",
+  "setup": {
+    "provider": "rules",
+    "now": "2026-11-19T05:24"
+  },
+  "steps": [
+    {
+      "say": "yarın saat 15:00 berber ekle",
+      "kind": "free",
+      "preview": true
+    },
+    {
+      "say": "orda misin",
+      "kind": "neutral",
+      "preview": true,
+      "contains": [
+        "Buradayım, efendim.",
+        "(evet / hayır)"
+      ],
+      "not_contains": [
+        "Tam anlamadım"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1434 @@
+[
+ {
+  "name": "b7-01",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Dilekçeyi imzala",
+    "Yağ değişimi için servise git",
+    "Çocukların ayakkabılarını al",
+    "Pasaport randevusu al",
+    "Bulaşık makinesini boşalt",
+    "Fotoğrafları yedekle",
+    "Kedi kumunu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "dilekceyi imzaladim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Dilekçe"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b7-02",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Dilekçeyi imzala",
+    "Yağ değişimi için servise git",
+    "Çocukların ayakkabılarını al",
+    "Pasaport randevusu al",
+    "Bulaşık makinesini boşalt",
+    "Fotoğrafları yedekle",
+    "Kedi kumunu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "servise gittim yag degisti",
+    "kind": "free",
+    "tasks_done_has": [
+     "Yağ"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b7-03",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Dilekçeyi imzala",
+    "Yağ değişimi için servise git",
+    "Çocukların ayakkabılarını al",
+    "Pasaport randevusu al",
+    "Bulaşık makinesini boşalt",
+    "Fotoğrafları yedekle",
+    "Kedi kumunu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "cocuklarin ayakkabilarini aldim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Çocuk"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b7-04",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Dilekçeyi imzala",
+    "Yağ değişimi için servise git",
+    "Çocukların ayakkabılarını al",
+    "Pasaport randevusu al",
+    "Bulaşık makinesini boşalt",
+    "Fotoğrafları yedekle",
+    "Kedi kumunu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "pasaport randevusunu aldim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Pasaport"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b7-05",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Dilekçeyi imzala",
+    "Yağ değişimi için servise git",
+    "Çocukların ayakkabılarını al",
+    "Pasaport randevusu al",
+    "Bulaşık makinesini boşalt",
+    "Fotoğrafları yedekle",
+    "Kedi kumunu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "bulasik makinesi bosaltildi",
+    "kind": "free",
+    "tasks_done_has": [
+     "Bulaşık"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b7-06",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Dilekçeyi imzala",
+    "Yağ değişimi için servise git",
+    "Çocukların ayakkabılarını al",
+    "Pasaport randevusu al",
+    "Bulaşık makinesini boşalt",
+    "Fotoğrafları yedekle",
+    "Kedi kumunu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "fotolari yedekledim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Fotoğraf"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b7-07",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Dilekçeyi imzala",
+    "Yağ değişimi için servise git",
+    "Çocukların ayakkabılarını al",
+    "Pasaport randevusu al",
+    "Bulaşık makinesini boşalt",
+    "Fotoğrafları yedekle",
+    "Kedi kumunu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kedi kumu geldi aldim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Kedi"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b7-08",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Dilekçeyi imzala",
+    "Yağ değişimi için servise git",
+    "Çocukların ayakkabılarını al",
+    "Pasaport randevusu al",
+    "Bulaşık makinesini boşalt",
+    "Fotoğrafları yedekle",
+    "Kedi kumunu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "pasaport isi pazartesiye kalsin",
+    "kind": "free",
+    "tasks_due": {
+     "Pasaport": "2026-11-23"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b7-09",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Dilekçeyi imzala",
+    "Yağ değişimi için servise git",
+    "Çocukların ayakkabılarını al",
+    "Pasaport randevusu al",
+    "Bulaşık makinesini boşalt",
+    "Fotoğrafları yedekle",
+    "Kedi kumunu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "yag degisimi bu yarina",
+    "kind": "free",
+    "tasks_due": {
+     "Yağ": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b7-10",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Dilekçeyi imzala",
+    "Yağ değişimi için servise git",
+    "Çocukların ayakkabılarını al",
+    "Pasaport randevusu al",
+    "Bulaşık makinesini boşalt",
+    "Fotoğrafları yedekle",
+    "Kedi kumunu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "ayakkabilar cumartesiye",
+    "kind": "free",
+    "tasks_due": {
+     "Çocuk": "2026-11-21"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b7-11",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Dilekçeyi imzala",
+    "Yağ değişimi için servise git",
+    "Çocukların ayakkabılarını al",
+    "Pasaport randevusu al",
+    "Bulaşık makinesini boşalt",
+    "Fotoğrafları yedekle",
+    "Kedi kumunu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "dilekce hala imzalanmadi yarina",
+    "kind": "free",
+    "tasks_due": {
+     "Dilekçe": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b7-12",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Dilekçeyi imzala",
+    "Yağ değişimi için servise git",
+    "Çocukların ayakkabılarını al",
+    "Pasaport randevusu al",
+    "Bulaşık makinesini boşalt",
+    "Fotoğrafları yedekle",
+    "Kedi kumunu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "fotograflari sali gunu yedeklerim",
+    "kind": "free",
+    "tasks_due": {
+     "Fotoğraf": "2026-11-24"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b7-13",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Dilekçeyi imzala",
+    "Yağ değişimi için servise git",
+    "Çocukların ayakkabılarını al",
+    "Pasaport randevusu al",
+    "Bulaşık makinesini boşalt",
+    "Fotoğrafları yedekle",
+    "Kedi kumunu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "bulasik makinesini bosaltmayi unuttum",
+    "kind": "free",
+    "contains": [
+     "akşama mı"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b7-14",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Dilekçeyi imzala",
+    "Yağ değişimi için servise git",
+    "Çocukların ayakkabılarını al",
+    "Pasaport randevusu al",
+    "Bulaşık makinesini boşalt",
+    "Fotoğrafları yedekle",
+    "Kedi kumunu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "pasaport randevusu icin aramayi unuttum",
+    "kind": "free"
+   },
+   {
+    "say": "pazartesi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Pasaport": "2026-11-23"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b7-15",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Dilekçeyi imzala",
+    "Yağ değişimi için servise git",
+    "Çocukların ayakkabılarını al",
+    "Pasaport randevusu al",
+    "Bulaşık makinesini boşalt",
+    "Fotoğrafları yedekle",
+    "Kedi kumunu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "dilekce imzalandi, ayakkabilar tamam, foto yedekleme yarina",
+    "kind": "free",
+    "tasks_done_has": [
+     "Dilekçe",
+     "Çocuk"
+    ],
+    "tasks_due": {
+     "Fotoğraf": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b7-16",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Dilekçeyi imzala",
+    "Yağ değişimi için servise git",
+    "Çocukların ayakkabılarını al",
+    "Pasaport randevusu al",
+    "Bulaşık makinesini boşalt",
+    "Fotoğrafları yedekle",
+    "Kedi kumunu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "hepsi yarin olsun",
+    "kind": "free"
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_due": {
+     "Dilekçe": "2026-11-20",
+     "Yağ": "2026-11-20",
+     "Kedi": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b7-17",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Dilekçeyi imzala",
+    "Yağ değişimi için servise git",
+    "Çocukların ayakkabılarını al",
+    "Pasaport randevusu al",
+    "Bulaşık makinesini boşalt",
+    "Fotoğrafları yedekle",
+    "Kedi kumunu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kedi kumunu aldim gerisini yarina birak",
+    "kind": "free"
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_done_has": [
+     "Kedi"
+    ],
+    "tasks_due": {
+     "Dilekçe": "2026-11-20",
+     "Pasaport": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b7-18",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Dilekçeyi imzala",
+    "Yağ değişimi için servise git",
+    "Çocukların ayakkabılarını al",
+    "Pasaport randevusu al",
+    "Bulaşık makinesini boşalt",
+    "Fotoğrafları yedekle",
+    "Kedi kumunu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "servise gittim ama pasaport yarina kaldi",
+    "kind": "free",
+    "tasks_done_has": [
+     "Yağ"
+    ],
+    "tasks_due": {
+     "Pasaport": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b7-19",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Dilekçeyi imzala",
+    "Yağ değişimi için servise git",
+    "Çocukların ayakkabılarını al",
+    "Pasaport randevusu al",
+    "Bulaşık makinesini boşalt",
+    "Fotoğrafları yedekle",
+    "Kedi kumunu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "yaa dilekceyi imzaladim sonunda",
+    "kind": "free",
+    "tasks_done_has": [
+     "Dilekçe"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b7-20",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Dilekçeyi imzala",
+    "Yağ değişimi için servise git",
+    "Çocukların ayakkabılarını al",
+    "Pasaport randevusu al",
+    "Bulaşık makinesini boşalt",
+    "Fotoğrafları yedekle",
+    "Kedi kumunu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "foto yedekleme tamamdir",
+    "kind": "free",
+    "tasks_done_has": [
+     "Fotoğraf"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b7-21",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Ali'yi ara",
+    "Ali'ye mesaj at",
+    "Alışveriş listesini hazırla",
+    "Alışverişe çık"
+   ]
+  },
+  "steps": [
+   {
+    "say": "ali'yi aradim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Ali'yi"
+    ],
+    "tasks_open_has": [
+     "mesaj"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b7-22",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Ali'yi ara",
+    "Ali'ye mesaj at",
+    "Alışveriş listesini hazırla",
+    "Alışverişe çık"
+   ]
+  },
+  "steps": [
+   {
+    "say": "alinin mesajina cevap yazdim",
+    "kind": "free",
+    "tasks_done_has": [
+     "mesaj"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b7-23",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Ali'yi ara",
+    "Ali'ye mesaj at",
+    "Alışveriş listesini hazırla",
+    "Alışverişe çık"
+   ]
+  },
+  "steps": [
+   {
+    "say": "ali'ye mesaj attim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Ali'ye mesaj"
+    ],
+    "tasks_open_has": [
+     "Ali'yi ara"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b7-24",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Ali'yi ara",
+    "Ali'ye mesaj at",
+    "Alışveriş listesini hazırla",
+    "Alışverişe çık"
+   ]
+  },
+  "steps": [
+   {
+    "say": "alisveris listesi hazir",
+    "kind": "free",
+    "tasks_done_has": [
+     "listesini"
+    ],
+    "tasks_open_has": [
+     "Alışverişe"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b7-25",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Ali'yi ara",
+    "Ali'ye mesaj at",
+    "Alışveriş listesini hazırla",
+    "Alışverişe çık"
+   ]
+  },
+  "steps": [
+   {
+    "say": "alisverise ciktim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Alışverişe"
+    ],
+    "tasks_open_has": [
+     "listesini"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b7-26",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Ali'yi ara",
+    "Ali'ye mesaj at",
+    "Alışveriş listesini hazırla",
+    "Alışverişe çık"
+   ]
+  },
+  "steps": [
+   {
+    "say": "alisverise cikmak yarina kalsin",
+    "kind": "free",
+    "tasks_due": {
+     "Alışverişe": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b7-27",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Ali'yi ara",
+    "Ali'ye mesaj at",
+    "Alışveriş listesini hazırla",
+    "Alışverişe çık"
+   ]
+  },
+  "steps": [
+   {
+    "say": "alisveris listesi cumartesiye",
+    "kind": "free",
+    "tasks_due": {
+     "listesini": "2026-11-21"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b7-28",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Ali'yi ara",
+    "Ali'ye mesaj at",
+    "Alışveriş listesini hazırla",
+    "Alışverişe çık"
+   ]
+  },
+  "steps": [
+   {
+    "say": "ali'yi aradim mesaj da yarina kalsin",
+    "kind": "free",
+    "tasks_done_has": [
+     "Ali'yi"
+    ],
+    "tasks_due": {
+     "mesaj": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b7-29",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Ali'yi ara",
+    "Ali'ye mesaj at",
+    "Alışveriş listesini hazırla",
+    "Alışverişe çık"
+   ]
+  },
+  "steps": [
+   {
+    "say": "listeyi hazirladim sonra alisverise ciktim",
+    "kind": "free",
+    "tasks_done_has": [
+     "listesini",
+     "Alışverişe"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b7-31",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T17:15",
+   "seed": [
+    {
+     "title": "Fizik tedavi",
+     "start": "2026-11-19T16:00",
+     "end": "2026-11-19T17:00"
+    },
+    {
+     "title": "Aile yemeği",
+     "start": "2026-11-21T19:00",
+     "end": "2026-11-21T21:00"
+    },
+    {
+     "title": "Diş kontrolü",
+     "start": "2026-11-23T09:30",
+     "end": "2026-11-23T10:00"
+    },
+    {
+     "title": "Proje sunumu",
+     "start": "2026-11-20T14:00",
+     "end": "2026-11-20T15:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "fizik tedavi bitti",
+    "kind": "free",
+    "contains": [
+     "Fizik"
+    ],
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım",
+     "silinsin"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b7-32",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T17:15",
+   "seed": [
+    {
+     "title": "Fizik tedavi",
+     "start": "2026-11-19T16:00",
+     "end": "2026-11-19T17:00"
+    },
+    {
+     "title": "Aile yemeği",
+     "start": "2026-11-21T19:00",
+     "end": "2026-11-21T21:00"
+    },
+    {
+     "title": "Diş kontrolü",
+     "start": "2026-11-23T09:30",
+     "end": "2026-11-23T10:00"
+    },
+    {
+     "title": "Proje sunumu",
+     "start": "2026-11-20T14:00",
+     "end": "2026-11-20T15:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "fizik tedaviye gittim",
+    "kind": "free",
+    "contains": [
+     "Fizik"
+    ],
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım",
+     "silinsin"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b7-33",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Fizik tedavi",
+     "start": "2026-11-19T16:00",
+     "end": "2026-11-19T17:00"
+    },
+    {
+     "title": "Aile yemeği",
+     "start": "2026-11-21T19:00",
+     "end": "2026-11-21T21:00"
+    },
+    {
+     "title": "Diş kontrolü",
+     "start": "2026-11-23T09:30",
+     "end": "2026-11-23T10:00"
+    },
+    {
+     "title": "Proje sunumu",
+     "start": "2026-11-20T14:00",
+     "end": "2026-11-20T15:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "aile yemegini pazara al",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "22 Kasım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b7-34",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Fizik tedavi",
+     "start": "2026-11-19T16:00",
+     "end": "2026-11-19T17:00"
+    },
+    {
+     "title": "Aile yemeği",
+     "start": "2026-11-21T19:00",
+     "end": "2026-11-21T21:00"
+    },
+    {
+     "title": "Diş kontrolü",
+     "start": "2026-11-23T09:30",
+     "end": "2026-11-23T10:00"
+    },
+    {
+     "title": "Proje sunumu",
+     "start": "2026-11-20T14:00",
+     "end": "2026-11-20T15:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "dis kontrolu bu yarina",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "20 Kasım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b7-35",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Fizik tedavi",
+     "start": "2026-11-19T16:00",
+     "end": "2026-11-19T17:00"
+    },
+    {
+     "title": "Aile yemeği",
+     "start": "2026-11-21T19:00",
+     "end": "2026-11-21T21:00"
+    },
+    {
+     "title": "Diş kontrolü",
+     "start": "2026-11-23T09:30",
+     "end": "2026-11-23T10:00"
+    },
+    {
+     "title": "Proje sunumu",
+     "start": "2026-11-20T14:00",
+     "end": "2026-11-20T15:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "proje sunumunu cumartesiye tasi",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "21 Kasım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b7-36",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Fizik tedavi",
+     "start": "2026-11-19T16:00",
+     "end": "2026-11-19T17:00"
+    },
+    {
+     "title": "Aile yemeği",
+     "start": "2026-11-21T19:00",
+     "end": "2026-11-21T21:00"
+    },
+    {
+     "title": "Diş kontrolü",
+     "start": "2026-11-23T09:30",
+     "end": "2026-11-23T10:00"
+    },
+    {
+     "title": "Proje sunumu",
+     "start": "2026-11-20T14:00",
+     "end": "2026-11-20T15:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "hafta sonu ne var",
+    "kind": "free",
+    "contains": [
+     "Aile"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b7-37",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T12:00",
+   "seed": [
+    {
+     "title": "Fizik tedavi",
+     "start": "2026-11-19T16:00",
+     "end": "2026-11-19T17:00"
+    },
+    {
+     "title": "Aile yemeği",
+     "start": "2026-11-21T19:00",
+     "end": "2026-11-21T21:00"
+    },
+    {
+     "title": "Diş kontrolü",
+     "start": "2026-11-23T09:30",
+     "end": "2026-11-23T10:00"
+    },
+    {
+     "title": "Proje sunumu",
+     "start": "2026-11-20T14:00",
+     "end": "2026-11-20T15:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "yarin neler var, bugun ne kaldi",
+    "kind": "free",
+    "contains": [
+     "Proje",
+     "Fizik"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b7-38",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Fizik tedavi",
+     "start": "2026-11-19T16:00",
+     "end": "2026-11-19T17:00"
+    },
+    {
+     "title": "Aile yemeği",
+     "start": "2026-11-21T19:00",
+     "end": "2026-11-21T21:00"
+    },
+    {
+     "title": "Diş kontrolü",
+     "start": "2026-11-23T09:30",
+     "end": "2026-11-23T10:00"
+    },
+    {
+     "title": "Proje sunumu",
+     "start": "2026-11-20T14:00",
+     "end": "2026-11-20T15:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "aile yemegini iptal et",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Aile"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b7-39",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T17:15",
+   "seed": [
+    {
+     "title": "Fizik tedavi",
+     "start": "2026-11-19T16:00",
+     "end": "2026-11-19T17:00"
+    },
+    {
+     "title": "Aile yemeği",
+     "start": "2026-11-21T19:00",
+     "end": "2026-11-21T21:00"
+    },
+    {
+     "title": "Diş kontrolü",
+     "start": "2026-11-23T09:30",
+     "end": "2026-11-23T10:00"
+    },
+    {
+     "title": "Proje sunumu",
+     "start": "2026-11-20T14:00",
+     "end": "2026-11-20T15:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "fizik tedavi bitti proje sunumu pazartesiye kalsin",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Proje"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b7-40",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Fizik tedavi",
+     "start": "2026-11-19T16:00",
+     "end": "2026-11-19T17:00"
+    },
+    {
+     "title": "Aile yemeği",
+     "start": "2026-11-21T19:00",
+     "end": "2026-11-21T21:00"
+    },
+    {
+     "title": "Diş kontrolü",
+     "start": "2026-11-23T09:30",
+     "end": "2026-11-23T10:00"
+    },
+    {
+     "title": "Proje sunumu",
+     "start": "2026-11-20T14:00",
+     "end": "2026-11-20T15:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "dis kontrolunu sil",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Diş"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b7-41",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Dilekçeyi imzala",
+    "Yağ değişimi için servise git",
+    "Çocukların ayakkabılarını al",
+    "Pasaport randevusu al",
+    "Bulaşık makinesini boşalt",
+    "Fotoğrafları yedekle",
+    "Kedi kumunu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "DILEKCE IMZALANDI!!!",
+    "kind": "free",
+    "tasks_done_has": [
+     "Dilekçe"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b7-42",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Dilekçeyi imzala",
+    "Yağ değişimi için servise git",
+    "Çocukların ayakkabılarını al",
+    "Pasaport randevusu al",
+    "Bulaşık makinesini boşalt",
+    "Fotoğrafları yedekle",
+    "Kedi kumunu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "dilekcyi imzaldim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Dilekçe"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b7-43",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Dilekçeyi imzala",
+    "Yağ değişimi için servise git",
+    "Çocukların ayakkabılarını al",
+    "Pasaport randevusu al",
+    "Bulaşık makinesini boşalt",
+    "Fotoğrafları yedekle",
+    "Kedi kumunu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "pasaprt randevusu yarina kalsin",
+    "kind": "free",
+    "tasks_due": {
+     "Pasaport": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b7-44",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Dilekçeyi imzala",
+    "Yağ değişimi için servise git",
+    "Çocukların ayakkabılarını al",
+    "Pasaport randevusu al",
+    "Bulaşık makinesini boşalt",
+    "Fotoğrafları yedekle",
+    "Kedi kumunu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "dilekce ve pasaport ikisi birden yarina",
+    "kind": "free",
+    "tasks_due": {
+     "Dilekçe": "2026-11-20",
+     "Pasaport": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b7-45",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Dilekçeyi imzala",
+    "Yağ değişimi için servise git",
+    "Çocukların ayakkabılarını al",
+    "Pasaport randevusu al",
+    "Bulaşık makinesini boşalt",
+    "Fotoğrafları yedekle",
+    "Kedi kumunu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "dilekceyi imzaladim",
+    "kind": "free"
+   },
+   {
+    "say": "pasaport da",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Dilekçe",
+     "Pasaport"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b7-46",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Dilekçeyi imzala",
+    "Yağ değişimi için servise git",
+    "Çocukların ayakkabılarını al",
+    "Pasaport randevusu al",
+    "Bulaşık makinesini boşalt",
+    "Fotoğrafları yedekle",
+    "Kedi kumunu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "servis isi yarina",
+    "kind": "free"
+   },
+   {
+    "say": "bulasik da",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Yağ": "2026-11-20",
+     "Bulaşık": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b7-47",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Dilekçeyi imzala",
+    "Yağ değişimi için servise git",
+    "Çocukların ayakkabılarını al",
+    "Pasaport randevusu al",
+    "Bulaşık makinesini boşalt",
+    "Fotoğrafları yedekle",
+    "Kedi kumunu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kedi kumu icin bugun ugrayamadim yarin alirim",
+    "kind": "free",
+    "tasks_due": {
+     "Kedi": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b7-48",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Dilekçeyi imzala",
+    "Yağ değişimi için servise git",
+    "Çocukların ayakkabılarını al",
+    "Pasaport randevusu al",
+    "Bulaşık makinesini boşalt",
+    "Fotoğrafları yedekle",
+    "Kedi kumunu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "dilekceyi imzaladim, pasaport randevusunu da aldim, ayakkabi kaldi",
+    "kind": "free",
+    "tasks_done_has": [
+     "Dilekçe",
+     "Pasaport"
+    ],
+    "tasks_open_has": [
+     "ayakkab"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b7-49",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Dilekçeyi imzala",
+    "Yağ değişimi için servise git",
+    "Çocukların ayakkabılarını al",
+    "Pasaport randevusu al",
+    "Bulaşık makinesini boşalt",
+    "Fotoğrafları yedekle",
+    "Kedi kumunu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "ya su bulasik isini yarina atalim",
+    "kind": "free",
+    "tasks_due": {
+     "Bulaşık": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b7-50",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Dilekçeyi imzala",
+    "Yağ değişimi için servise git",
+    "Çocukların ayakkabılarını al",
+    "Pasaport randevusu al",
+    "Bulaşık makinesini boşalt",
+    "Fotoğrafları yedekle",
+    "Kedi kumunu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "yag degisimi bitti kedi kumu yarina fotograflar cuma",
+    "kind": "free",
+    "tasks_done_has": [
+     "Yağ"
+    ],
+    "tasks_due": {
+     "Kedi": "2026-11-20",
+     "Fotoğraf": "2026-11-20"
+    }
+   }
+  ]
+ }
+]

@@ -1,0 +1,42 @@
+{
+  "name": "the day question offers numbered choices and accepts the number",
+  "incident": "ADR 0014: a slot question that is really needed is answerable in one tap or word: 1 Bugün, 2 Yarın, 3 Başka gün (then a free date).",
+  "setup": {
+    "provider": "rules",
+    "now": "2026-11-19T05:24"
+  },
+  "steps": [
+    {
+      "say": "toplantı ekle",
+      "kind": "free",
+      "preview": false,
+      "contains": [
+        "1) Bugün",
+        "2) Yarın",
+        "3) Başka gün"
+      ]
+    },
+    {
+      "say": "2",
+      "kind": "free",
+      "preview": false,
+      "contains": [
+        "Saat kaçta"
+      ],
+      "facts": [
+        {
+          "name": "day already chosen",
+          "asks": "Hangi (gün|güne|tarih)"
+        }
+      ]
+    },
+    {
+      "say": "15:00",
+      "kind": "free",
+      "preview": true,
+      "contains": [
+        "Yarın Cuma 20 Kasım 2026 15:00-16:00"
+      ]
+    }
+  ]
+}

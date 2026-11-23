@@ -1,0 +1,22 @@
+# 0021. Simple mode and the retry queue when the language model is unavailable
+
+Status: accepted (board requirement, 2026-11-19, incident J).
+
+## Context
+Incident J (2026-11-19 07:02): the model hit its usage limit, the chain fell to the rules parser (audit `provider=rules`, 12959 ms, health signal S5) and 'copu evden cikarken ... bugun 10da initech toplantim var 11de de cto ile toplantim var' (three facts) became ONE garbled preview ('Copu evden cikarken cikartacagim initech toplantim 11de cto ile toplantim', 10:00-10:15) plus the way-out menu. The rules parser was written as a best guess; a best guess on a message that holds several things is wrong and unsafe. The only fallback when the model is unavailable is a deterministic safe mode.
+
+## Decisions
+1. **Outage** means: a model is configured and consented (`NLService.enabled`) and the whole chain failed without a schema error. With no model configured (`ALFRED_NL=off`) nothing changes: the plain rules keep working as before.
+2. **Simple mode** (`rules.safe`): during an outage a message is accepted only when the rules read it with high confidence as exactly ONE thing: one subject, at most one time and one date, no clause words (`ve`, `ayrıca`, `sonra`, ...), at most one `var` and one add verb, no newline or semicolon, at most 12 words, a title of at most 6 words with no leftover digits, and a title plus a date or time for an add. Reads (`bugün ne var`), simple commands and the deterministic task and list wordings (which run before the model anyway) stay available. Everything else is **complex**.
+3. **Complex messages are queued, not guessed.** The reply is the persona line 'Mesajınızı kaydettim, hiçbir şey eklemedim; model döndüğünde yeniden okuyup önünüze getireceğim. (Bekleyen: n)'; nothing is previewed or written. Storage: table `retry_queue` (schema 4), created idempotently, with the usual pre-migration backup (`<db>.pre-retry.bak`, once, mode 0600). The same text is stored once. Rows older than the 30-day retention are purged.
+4. **Once per outage** the owner is told that Alfred is in simple mode and why (usage limit, network, or no reason) with the expected recovery when the provider said when the limit lifts (`ProviderError.reason`/`.reset`, `NLResult.reason`/`.reset`). Meta keys `outage_since`, `outage_notified`, `outage_checked`, `outage_why`; a successful model call (or schema error, which proves the model answered) ends the outage, so the next one is told again.
+5. **No way-out menu because of an outage.** The S5 signal is recorded once per outage (detail `outage`), and while an outage is active `_incident` returns without the 'Takıldık galiba' menu. Repeated outage replies differ (the pending count), so the repeat guard does not fire.
+6. **Probe, not a wait per message.** While an outage is active the model is not called for every message (the live failure took 13 s each); it is tried again at most every 2 minutes (`PROBE_GAP`), by the next owner message or by the bot loop when the queue is non-empty. The probe is a real queued message, not an extra model call.
+7. **Replay** (`Assistant.retry_tick`, called from `Bot.step`): when the queue is non-empty, no preview or question is open, and the model answers, the OLDEST queued message goes through the normal path (`_new`) and the owner gets 'Efendim, daha önce ilettiğiniz şu mesajı şimdi okudum: ...' followed by the normal preview or question. One message at a time, each with its own confirmation; nothing is written automatically (ADR 0002, 0004). A message that fails again stays queued. The queue is an Alfred feature of the dialogue manager's fallback chain; agent mode keeps its own session and falls back to the manager.
+8. **/bekleyenler** lists the queue; **/bekleyenler temizle** drops it (nothing is added).
+9. **Titles in the rule-based single-event path** are the subject phrase only: dangling conjunctions and filler at the edges are stripped ('yarın 15:00 diş hekimi' gives 'Diş hekimi', 'bugün 10da toplantım var' gives 'Toplantım').
+
+## Consequences
+- A burst of several facts during an outage costs the owner nothing but a wait; it is never turned into a wrong preview.
+- Fixtures: `2026-11-outage-*` (complex message, simple message, repeated messages, recovery with replay); the recovery fixture is marked `"agent": false` (manager only) and skipped by the agent replay.
+- Not done: an extra lightweight health probe call (the real message is the probe) and splitting a multi-fact message into several previews in simple mode (the model does that after recovery).

@@ -1,0 +1,98 @@
+[
+ {
+  "name": "typo-yarna",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kitapları topla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kitaplar yarina kalsn",
+    "kind": "free",
+    "tasks_due": {
+     "Kitap": "2026-11-20"
+    },
+    "tasks_open_count": 1
+   }
+  ]
+ },
+ {
+  "name": "typo-bitti-spaces",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kitapları topla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "  kitaplari   topladim  ",
+    "kind": "free",
+    "tasks_done_has": [
+     "Kitap"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "uppercase-turkish",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kitapları topla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "KİTAPLARI TOPLADIM",
+    "kind": "free",
+    "tasks_done_has": [
+     "Kitap"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "english-i-dotless",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kitapları topla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "Kitapları topladım",
+    "kind": "free",
+    "tasks_done_has": [
+     "Kitap"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "with-emoji-and-punctuation",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kitapları topla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kitapları topladım!! 🎉",
+    "kind": "free",
+    "tasks_done_has": [
+     "Kitap"
+    ]
+   }
+  ]
+ }
+]

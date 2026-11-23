@@ -1,0 +1,1395 @@
+[
+ {
+  "name": "b5-01",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Elektrik faturasını öde",
+    "Su faturasını öde",
+    "Kütüphaneye kitap iade et",
+    "Bahçeyi sula",
+    "Spor çantasını hazırla",
+    "Doğalgaz sayacını oku",
+    "Ayşe'ye doğum günü hediyesi al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "elektrik faturasini odedim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Elektrik"
+    ],
+    "tasks_open_has": [
+     "Su fatura"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b5-02",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Elektrik faturasını öde",
+    "Su faturasını öde",
+    "Kütüphaneye kitap iade et",
+    "Bahçeyi sula",
+    "Spor çantasını hazırla",
+    "Doğalgaz sayacını oku",
+    "Ayşe'ye doğum günü hediyesi al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "su faturası ödendi",
+    "kind": "free",
+    "tasks_done_has": [
+     "Su fatura"
+    ],
+    "tasks_open_has": [
+     "Elektrik"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b5-03",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Elektrik faturasını öde",
+    "Su faturasını öde",
+    "Kütüphaneye kitap iade et",
+    "Bahçeyi sula",
+    "Spor çantasını hazırla",
+    "Doğalgaz sayacını oku",
+    "Ayşe'ye doğum günü hediyesi al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kitabi iade ettim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Kütüphane"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b5-04",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Elektrik faturasını öde",
+    "Su faturasını öde",
+    "Kütüphaneye kitap iade et",
+    "Bahçeyi sula",
+    "Spor çantasını hazırla",
+    "Doğalgaz sayacını oku",
+    "Ayşe'ye doğum günü hediyesi al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "bahce sulandi",
+    "kind": "free",
+    "tasks_done_has": [
+     "Bahçe"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b5-05",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Elektrik faturasını öde",
+    "Su faturasını öde",
+    "Kütüphaneye kitap iade et",
+    "Bahçeyi sula",
+    "Spor çantasını hazırla",
+    "Doğalgaz sayacını oku",
+    "Ayşe'ye doğum günü hediyesi al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "spor cantam hazir",
+    "kind": "free",
+    "tasks_done_has": [
+     "Spor"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b5-06",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Elektrik faturasını öde",
+    "Su faturasını öde",
+    "Kütüphaneye kitap iade et",
+    "Bahçeyi sula",
+    "Spor çantasını hazırla",
+    "Doğalgaz sayacını oku",
+    "Ayşe'ye doğum günü hediyesi al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "sayaci okudum",
+    "kind": "free",
+    "tasks_done_has": [
+     "Doğalgaz"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b5-07",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Elektrik faturasını öde",
+    "Su faturasını öde",
+    "Kütüphaneye kitap iade et",
+    "Bahçeyi sula",
+    "Spor çantasını hazırla",
+    "Doğalgaz sayacını oku",
+    "Ayşe'ye doğum günü hediyesi al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "ayseye hediyeyi aldim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Ayşe"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b5-08",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Elektrik faturasını öde",
+    "Su faturasını öde",
+    "Kütüphaneye kitap iade et",
+    "Bahçeyi sula",
+    "Spor çantasını hazırla",
+    "Doğalgaz sayacını oku",
+    "Ayşe'ye doğum günü hediyesi al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "hediye cumartesiye kalsin",
+    "kind": "free",
+    "tasks_due": {
+     "Ayşe": "2026-11-21"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b5-09",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Elektrik faturasını öde",
+    "Su faturasını öde",
+    "Kütüphaneye kitap iade et",
+    "Bahçeyi sula",
+    "Spor çantasını hazırla",
+    "Doğalgaz sayacını oku",
+    "Ayşe'ye doğum günü hediyesi al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "bahceyi yarin sularim",
+    "kind": "free",
+    "tasks_due": {
+     "Bahçe": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b5-10",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Elektrik faturasını öde",
+    "Su faturasını öde",
+    "Kütüphaneye kitap iade et",
+    "Bahçeyi sula",
+    "Spor çantasını hazırla",
+    "Doğalgaz sayacını oku",
+    "Ayşe'ye doğum günü hediyesi al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "elektrik faturasi bu yarina su faturasi pazartesiye",
+    "kind": "free",
+    "tasks_due": {
+     "Elektrik": "2026-11-20",
+     "Su fatura": "2026-11-23"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b5-11",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Elektrik faturasını öde",
+    "Su faturasını öde",
+    "Kütüphaneye kitap iade et",
+    "Bahçeyi sula",
+    "Spor çantasını hazırla",
+    "Doğalgaz sayacını oku",
+    "Ayşe'ye doğum günü hediyesi al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kitap iadesini unuttum",
+    "kind": "free",
+    "contains": [
+     "akşama mı"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b5-12",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Elektrik faturasını öde",
+    "Su faturasını öde",
+    "Kütüphaneye kitap iade et",
+    "Bahçeyi sula",
+    "Spor çantasını hazırla",
+    "Doğalgaz sayacını oku",
+    "Ayşe'ye doğum günü hediyesi al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kitap iadesini unuttum",
+    "kind": "free"
+   },
+   {
+    "say": "yarina",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Kütüphane": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b5-13",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Elektrik faturasını öde",
+    "Su faturasını öde",
+    "Kütüphaneye kitap iade et",
+    "Bahçeyi sula",
+    "Spor çantasını hazırla",
+    "Doğalgaz sayacını oku",
+    "Ayşe'ye doğum günü hediyesi al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "spor cantasi bitti ayseye hediye de yarina kalsin",
+    "kind": "free",
+    "tasks_done_has": [
+     "Spor"
+    ],
+    "tasks_due": {
+     "Ayşe": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b5-14",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Elektrik faturasını öde",
+    "Su faturasını öde",
+    "Kütüphaneye kitap iade et",
+    "Bahçeyi sula",
+    "Spor çantasını hazırla",
+    "Doğalgaz sayacını oku",
+    "Ayşe'ye doğum günü hediyesi al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "bahceyi suladim sayaci okudum kitabi iade ettim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Bahçe",
+     "Doğalgaz",
+     "Kütüphane"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b5-15",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Elektrik faturasını öde",
+    "Su faturasını öde",
+    "Kütüphaneye kitap iade et",
+    "Bahçeyi sula",
+    "Spor çantasını hazırla",
+    "Doğalgaz sayacını oku",
+    "Ayşe'ye doğum günü hediyesi al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "hepsini yaptim",
+    "kind": "free"
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_open_count": 0
+   }
+  ]
+ },
+ {
+  "name": "b5-16",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Elektrik faturasını öde",
+    "Su faturasını öde",
+    "Kütüphaneye kitap iade et",
+    "Bahçeyi sula",
+    "Spor çantasını hazırla",
+    "Doğalgaz sayacını oku",
+    "Ayşe'ye doğum günü hediyesi al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "hepsi cumaya",
+    "kind": "free"
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_due": {
+     "Bahçe": "2026-11-20",
+     "Spor": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b5-17",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Elektrik faturasını öde",
+    "Su faturasını öde",
+    "Kütüphaneye kitap iade et",
+    "Bahçeyi sula",
+    "Spor çantasını hazırla",
+    "Doğalgaz sayacını oku",
+    "Ayşe'ye doğum günü hediyesi al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "elektrik faturasini odedim digerlerini yarina at",
+    "kind": "free"
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_done_has": [
+     "Elektrik"
+    ],
+    "tasks_due": {
+     "Su fatura": "2026-11-20",
+     "Bahçe": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b5-18",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Elektrik faturasını öde",
+    "Su faturasını öde",
+    "Kütüphaneye kitap iade et",
+    "Bahçeyi sula",
+    "Spor çantasını hazırla",
+    "Doğalgaz sayacını oku",
+    "Ayşe'ye doğum günü hediyesi al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "sayac isi bitti gec oldu",
+    "kind": "free",
+    "tasks_done_has": [
+     "Doğalgaz"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b5-19",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Elektrik faturasını öde",
+    "Su faturasını öde",
+    "Kütüphaneye kitap iade et",
+    "Bahçeyi sula",
+    "Spor çantasını hazırla",
+    "Doğalgaz sayacını oku",
+    "Ayşe'ye doğum günü hediyesi al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "bi dakika bahceyi suladim aslinda",
+    "kind": "free",
+    "tasks_done_has": [
+     "Bahçe"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b5-20",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Elektrik faturasını öde",
+    "Su faturasını öde",
+    "Kütüphaneye kitap iade et",
+    "Bahçeyi sula",
+    "Spor çantasını hazırla",
+    "Doğalgaz sayacını oku",
+    "Ayşe'ye doğum günü hediyesi al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "aysenin hediyesi icin disari cikacagim yarin",
+    "kind": "free",
+    "tasks_due": {
+     "Ayşe": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b5-21",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Toplantı notlarını gönder",
+    "Toplantı salonunu ayarla",
+    "Sunum hazırla",
+    "Bütçe tablosunu güncelle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "toplanti notlarini gonderdim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Toplantı notları"
+    ],
+    "tasks_open_has": [
+     "Toplantı salonu"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b5-22",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Toplantı notlarını gönder",
+    "Toplantı salonunu ayarla",
+    "Sunum hazırla",
+    "Bütçe tablosunu güncelle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "salonu ayarladim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Toplantı salonu"
+    ],
+    "tasks_open_has": [
+     "Toplantı notları"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b5-23",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Toplantı notlarını gönder",
+    "Toplantı salonunu ayarla",
+    "Sunum hazırla",
+    "Bütçe tablosunu güncelle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "sunum hazir",
+    "kind": "free",
+    "tasks_done_has": [
+     "Sunum"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b5-24",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Toplantı notlarını gönder",
+    "Toplantı salonunu ayarla",
+    "Sunum hazırla",
+    "Bütçe tablosunu güncelle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "butce tablosu yarina kalsin",
+    "kind": "free",
+    "tasks_due": {
+     "Bütçe": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b5-25",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Toplantı notlarını gönder",
+    "Toplantı salonunu ayarla",
+    "Sunum hazırla",
+    "Bütçe tablosunu güncelle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "sunumu hazirladim butceyi guncelledim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Sunum",
+     "Bütçe"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b5-26",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Toplantı notlarını gönder",
+    "Toplantı salonunu ayarla",
+    "Sunum hazırla",
+    "Bütçe tablosunu güncelle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "toplanti salonu cumaya",
+    "kind": "free",
+    "tasks_due": {
+     "Toplantı salonu": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b5-27",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Toplantı notlarını gönder",
+    "Toplantı salonunu ayarla",
+    "Sunum hazırla",
+    "Bütçe tablosunu güncelle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "notlari gonderdim salon yarina",
+    "kind": "free",
+    "tasks_done_has": [
+     "Toplantı notları"
+    ],
+    "tasks_due": {
+     "Toplantı salonu": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b5-28",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Toplantı notlarını gönder",
+    "Toplantı salonunu ayarla",
+    "Sunum hazırla",
+    "Bütçe tablosunu güncelle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "sunum ve butce yarina birak",
+    "kind": "free",
+    "tasks_due": {
+     "Sunum": "2026-11-20",
+     "Bütçe": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b5-29",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Toplantı notlarını gönder",
+    "Toplantı salonunu ayarla",
+    "Sunum hazırla",
+    "Bütçe tablosunu güncelle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "butce tablosunu guncellemeyi unuttum aksam yaparim",
+    "kind": "free",
+    "contains": [
+     "akşama"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b5-30",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Toplantı notlarını gönder",
+    "Toplantı salonunu ayarla",
+    "Sunum hazırla",
+    "Bütçe tablosunu güncelle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "toplanti notlari bitti, sunum pazartesiye kaldi",
+    "kind": "free",
+    "tasks_done_has": [
+     "Toplantı notları"
+    ],
+    "tasks_due": {
+     "Sunum": "2026-11-23"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b5-31",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T16:00",
+   "seed": [
+    {
+     "title": "Doktor randevusu",
+     "start": "2026-11-19T15:00",
+     "end": "2026-11-19T15:30"
+    },
+    {
+     "title": "Yoga",
+     "start": "2026-11-20T19:00",
+     "end": "2026-11-20T20:00"
+    },
+    {
+     "title": "Veli toplantısı",
+     "start": "2026-11-21T10:00",
+     "end": "2026-11-21T11:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "doktor randevusu bitti",
+    "kind": "free",
+    "contains": [
+     "Doktor"
+    ],
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım",
+     "silinsin"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b5-32",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Doktor randevusu",
+     "start": "2026-11-19T15:00",
+     "end": "2026-11-19T15:30"
+    },
+    {
+     "title": "Yoga",
+     "start": "2026-11-20T19:00",
+     "end": "2026-11-20T20:00"
+    },
+    {
+     "title": "Veli toplantısı",
+     "start": "2026-11-21T10:00",
+     "end": "2026-11-21T11:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "doktoru yarina tasi",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "20 Kasım",
+     "15:00"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b5-33",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Doktor randevusu",
+     "start": "2026-11-19T15:00",
+     "end": "2026-11-19T15:30"
+    },
+    {
+     "title": "Yoga",
+     "start": "2026-11-20T19:00",
+     "end": "2026-11-20T20:00"
+    },
+    {
+     "title": "Veli toplantısı",
+     "start": "2026-11-21T10:00",
+     "end": "2026-11-21T11:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "yoga cumartesiye kalsin",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "21 Kasım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b5-34",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Doktor randevusu",
+     "start": "2026-11-19T15:00",
+     "end": "2026-11-19T15:30"
+    },
+    {
+     "title": "Yoga",
+     "start": "2026-11-20T19:00",
+     "end": "2026-11-20T20:00"
+    },
+    {
+     "title": "Veli toplantısı",
+     "start": "2026-11-21T10:00",
+     "end": "2026-11-21T11:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "yoga bu yarina degil pazartesi",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "23 Kasım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b5-35",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Doktor randevusu",
+     "start": "2026-11-19T15:00",
+     "end": "2026-11-19T15:30"
+    },
+    {
+     "title": "Yoga",
+     "start": "2026-11-20T19:00",
+     "end": "2026-11-20T20:00"
+    },
+    {
+     "title": "Veli toplantısı",
+     "start": "2026-11-21T10:00",
+     "end": "2026-11-21T11:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "veli toplantisini sil",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Veli"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b5-36",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Doktor randevusu",
+     "start": "2026-11-19T15:00",
+     "end": "2026-11-19T15:30"
+    },
+    {
+     "title": "Yoga",
+     "start": "2026-11-20T19:00",
+     "end": "2026-11-20T20:00"
+    },
+    {
+     "title": "Veli toplantısı",
+     "start": "2026-11-21T10:00",
+     "end": "2026-11-21T11:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "yarin ne var",
+    "kind": "free",
+    "contains": [
+     "Yoga"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b5-37",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T12:00",
+   "seed": [
+    {
+     "title": "Doktor randevusu",
+     "start": "2026-11-19T15:00",
+     "end": "2026-11-19T15:30"
+    },
+    {
+     "title": "Yoga",
+     "start": "2026-11-20T19:00",
+     "end": "2026-11-20T20:00"
+    },
+    {
+     "title": "Veli toplantısı",
+     "start": "2026-11-21T10:00",
+     "end": "2026-11-21T11:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "bugun neler kaldi",
+    "kind": "free",
+    "contains": [
+     "Doktor"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b5-38",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T16:00",
+   "seed": [
+    {
+     "title": "Doktor randevusu",
+     "start": "2026-11-19T15:00",
+     "end": "2026-11-19T15:30"
+    },
+    {
+     "title": "Yoga",
+     "start": "2026-11-20T19:00",
+     "end": "2026-11-20T20:00"
+    },
+    {
+     "title": "Veli toplantısı",
+     "start": "2026-11-21T10:00",
+     "end": "2026-11-21T11:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "doktora gittim yoga yarina",
+    "kind": "free",
+    "preview": false,
+    "contains": [
+     "Doktor"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b5-39",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Doktor randevusu",
+     "start": "2026-11-19T15:00",
+     "end": "2026-11-19T15:30"
+    },
+    {
+     "title": "Yoga",
+     "start": "2026-11-20T19:00",
+     "end": "2026-11-20T20:00"
+    },
+    {
+     "title": "Veli toplantısı",
+     "start": "2026-11-21T10:00",
+     "end": "2026-11-21T11:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "yogayi iptal et",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Yoga"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b5-40",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Doktor randevusu",
+     "start": "2026-11-19T15:00",
+     "end": "2026-11-19T15:30"
+    },
+    {
+     "title": "Yoga",
+     "start": "2026-11-20T19:00",
+     "end": "2026-11-20T20:00"
+    },
+    {
+     "title": "Veli toplantısı",
+     "start": "2026-11-21T10:00",
+     "end": "2026-11-21T11:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "yoga yarina",
+    "kind": "free"
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "saved_total": 3
+   }
+  ]
+ },
+ {
+  "name": "b5-41",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Elektrik faturasını öde",
+    "Su faturasını öde",
+    "Kütüphaneye kitap iade et",
+    "Bahçeyi sula",
+    "Spor çantasını hazırla",
+    "Doğalgaz sayacını oku",
+    "Ayşe'ye doğum günü hediyesi al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "BAHCEYI SULADIM",
+    "kind": "free",
+    "tasks_done_has": [
+     "Bahçe"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b5-42",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Elektrik faturasını öde",
+    "Su faturasını öde",
+    "Kütüphaneye kitap iade et",
+    "Bahçeyi sula",
+    "Spor çantasını hazırla",
+    "Doğalgaz sayacını oku",
+    "Ayşe'ye doğum günü hediyesi al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "bahceyi suladim.",
+    "kind": "free",
+    "tasks_done_has": [
+     "Bahçe"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b5-43",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Elektrik faturasını öde",
+    "Su faturasını öde",
+    "Kütüphaneye kitap iade et",
+    "Bahçeyi sula",
+    "Spor çantasını hazırla",
+    "Doğalgaz sayacını oku",
+    "Ayşe'ye doğum günü hediyesi al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "bahceyi suladm",
+    "kind": "free",
+    "tasks_done_has": [
+     "Bahçe"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b5-44",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Elektrik faturasını öde",
+    "Su faturasını öde",
+    "Kütüphaneye kitap iade et",
+    "Bahçeyi sula",
+    "Spor çantasını hazırla",
+    "Doğalgaz sayacını oku",
+    "Ayşe'ye doğum günü hediyesi al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kitap iadesi yarın kalsın abi",
+    "kind": "free",
+    "tasks_due": {
+     "Kütüphane": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b5-45",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Elektrik faturasını öde",
+    "Su faturasını öde",
+    "Kütüphaneye kitap iade et",
+    "Bahçeyi sula",
+    "Spor çantasını hazırla",
+    "Doğalgaz sayacını oku",
+    "Ayşe'ye doğum günü hediyesi al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kutuphaneye kitap goturdum, spor cantasi yarina kalsin, sayac cumartesi",
+    "kind": "free",
+    "tasks_done_has": [
+     "Kütüphane"
+    ],
+    "tasks_due": {
+     "Spor": "2026-11-20",
+     "Doğalgaz": "2026-11-21"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b5-46",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Elektrik faturasını öde",
+    "Su faturasını öde",
+    "Kütüphaneye kitap iade et",
+    "Bahçeyi sula",
+    "Spor çantasını hazırla",
+    "Doğalgaz sayacını oku",
+    "Ayşe'ye doğum günü hediyesi al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "bahceyi suladim",
+    "kind": "free"
+   },
+   {
+    "say": "spor cantasi da",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Bahçe",
+     "Spor"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b5-47",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Elektrik faturasını öde",
+    "Su faturasını öde",
+    "Kütüphaneye kitap iade et",
+    "Bahçeyi sula",
+    "Spor çantasını hazırla",
+    "Doğalgaz sayacını oku",
+    "Ayşe'ye doğum günü hediyesi al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "su faturasini odemistim zaten",
+    "kind": "free",
+    "tasks_done_has": [
+     "Su fatura"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b5-48",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Elektrik faturasını öde",
+    "Su faturasını öde",
+    "Kütüphaneye kitap iade et",
+    "Bahçeyi sula",
+    "Spor çantasını hazırla",
+    "Doğalgaz sayacını oku",
+    "Ayşe'ye doğum günü hediyesi al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "ayse hediye bu aksama kalsin",
+    "kind": "free",
+    "tasks_due": {
+     "Ayşe": "2026-11-19"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b5-49",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Elektrik faturasını öde",
+    "Su faturasını öde",
+    "Kütüphaneye kitap iade et",
+    "Bahçeyi sula",
+    "Spor çantasını hazırla",
+    "Doğalgaz sayacını oku",
+    "Ayşe'ye doğum günü hediyesi al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "dogalgaz sayacini okumayi yarina birakiyorum",
+    "kind": "free",
+    "tasks_due": {
+     "Doğalgaz": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b5-50",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Elektrik faturasını öde",
+    "Su faturasını öde",
+    "Kütüphaneye kitap iade et",
+    "Bahçeyi sula",
+    "Spor çantasını hazırla",
+    "Doğalgaz sayacını oku",
+    "Ayşe'ye doğum günü hediyesi al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "bahce ve sayac isi tamam",
+    "kind": "free",
+    "tasks_done_has": [
+     "Bahçe",
+     "Doğalgaz"
+    ]
+   }
+  ]
+ }
+]

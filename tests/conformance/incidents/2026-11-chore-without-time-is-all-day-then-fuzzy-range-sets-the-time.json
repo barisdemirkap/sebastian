@@ -1,0 +1,60 @@
+{
+  "name": "a chore with a day and no time is all-day with a note; a fuzzy range given later turns it into a timed event",
+  "incident": "Live failure of 2026-11-19 (incident G, ADR 0015): 'çoraplar düzenlenecek bunu da cuma gününe ekle' got 'Saat kaçta?'; the answer 'öğleden sonra 4-5 gibi' was not understood and the bot asked 'Saat kaçta olsun? (örnek: 15:00)' again. A chore on a stated day is now added all-day with a one-line note, and a fuzzy time or range is read (16:00-17:00) and shown.",
+  "setup": {
+    "provider": "rules"
+  },
+  "steps": [
+    {
+      "say": "çoraplar düzenlenecek bunu da cuma gününe ekle",
+      "kind": "free",
+      "preview": true,
+      "contains": [
+        "Çoraplar düzenlenecek",
+        "Cuma 20 Kasım 2026 tüm gün",
+        "Saat belirtmediniz, tüm gün ekledim; saat söylerseniz düzeltirim"
+      ],
+      "not_contains": [
+        "Saat kaçta"
+      ],
+      "preview_has": [
+        {
+          "start": "2026-11-20T00:00:00+03:00"
+        }
+      ],
+      "saved_total": 0
+    },
+    {
+      "say": "öğleden sonra 4-5 gibi",
+      "kind": "edit",
+      "preview": true,
+      "contains": [
+        "16:00-17:00",
+        "Saati şöyle anladım: 16:00-17:00 (öğleden sonra 4-5 gibi)"
+      ],
+      "not_contains": [
+        "Saat kaçta",
+        "Tam anlamadım"
+      ],
+      "preview_has": [
+        {
+          "start": "2026-11-20T16:00:00+03:00",
+          "end": "2026-11-20T17:00:00+03:00"
+        }
+      ],
+      "saved_total": 0
+    },
+    {
+      "say": "evet",
+      "kind": "confirm",
+      "preview": false,
+      "saved_total": 1,
+      "saved_has": [
+        {
+          "start": "2026-11-20T16:00:00+03:00",
+          "end": "2026-11-20T17:00:00+03:00"
+        }
+      ]
+    }
+  ]
+}

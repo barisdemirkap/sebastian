@@ -1,0 +1,135 @@
+[
+ {
+  "name": "reminder-on-existing-event",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Toplantı",
+     "start": "2026-11-19T14:00",
+     "end": "2026-11-19T15:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "toplantidan 15 dk once hatirlat",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "15 dk"
+    ],
+    "saved_total": 1
+   },
+   {
+    "say": "evet",
+    "kind": "confirm",
+    "saved_total": 1
+   }
+  ]
+ },
+ {
+  "name": "remind-me-tomorrow-9",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00"
+  },
+  "steps": [
+   {
+    "say": "yarin 9da ilaclarimi almami hatirlat",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "09:00",
+     "20 Kasım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "remind-evening-chore",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T15:00"
+  },
+  "steps": [
+   {
+    "say": "bu aksam 10 gibi cop cikarmayi hatirlat",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "22:00"
+    ],
+    "not_contains": [
+     "Hangi gün"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "remind-saturday-noon",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00"
+  },
+  "steps": [
+   {
+    "say": "cumartesi 12de ehliyet gorusmesini hatirlat",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "12:00",
+     "21 Kasım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "remind-existing-event-by-ready-time",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Diş hekimi",
+     "start": "2026-11-20T15:00",
+     "end": "2026-11-20T16:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "dis hekimi icin 1 saat once hatirlat",
+    "kind": "free",
+    "preview": true,
+    "saved_total": 1,
+    "contains": [
+     "1 saat"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "remind-with-existing-task-no-new-item",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T15:00",
+   "tasks": [
+    "Çamaşır yıka"
+   ]
+  },
+  "steps": [
+   {
+    "say": "camasiri bu aksam 9da hatirlat",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "21:00",
+     "Çamaşır"
+    ],
+    "tasks_open_count": 1
+   }
+  ]
+ }
+]

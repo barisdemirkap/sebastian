@@ -1,0 +1,191 @@
+[
+ {
+  "name": "event-done-yoga-yaptim",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Yoga dersi",
+     "start": "2026-11-19T08:00",
+     "end": "2026-11-19T09:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "yogayi yaptim",
+    "kind": "free",
+    "saved_total": 1,
+    "preview": false,
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil"
+    ],
+    "contains": [
+     "Yoga"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "event-not-started-is-not-closed",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Yoga dersi",
+     "start": "2026-11-19T20:00",
+     "end": "2026-11-19T21:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "yogayi yaptim",
+    "kind": "free",
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil",
+     "Merhaba"
+    ],
+    "preview": false,
+    "saved_total": 1
+   }
+  ]
+ },
+ {
+  "name": "event-move-clock-only",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Yoga dersi",
+     "start": "2026-11-19T20:00",
+     "end": "2026-11-19T21:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "yoga dersini 21e al",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "21:00"
+    ],
+    "saved_total": 1
+   }
+  ]
+ },
+ {
+  "name": "event-move-weekday-with-ye",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Yoga dersi",
+     "start": "2026-11-19T20:00",
+     "end": "2026-11-19T21:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "yoga dersini cumartesiye tasi",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "21 Kasım"
+    ],
+    "saved_total": 1
+   }
+  ]
+ },
+ {
+  "name": "add-new-event-does-not-touch-existing",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Yoga dersi",
+     "start": "2026-11-20T10:00",
+     "end": "2026-11-20T11:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "cuma 10:00 berber",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "10:00",
+     "20 Kasım"
+    ],
+    "saved_total": 1
+   }
+  ]
+ },
+ {
+  "name": "existing-event-restated-is-not-duplicated",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Yoga dersi",
+     "start": "2026-11-20T10:00",
+     "end": "2026-11-20T11:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "yoga dersi yarin 10:00",
+    "kind": "free",
+    "preview": false,
+    "contains": [
+     "Zaten"
+    ],
+    "saved_total": 1
+   }
+  ]
+ },
+ {
+  "name": "delete-by-name-and-confirm",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Yoga dersi",
+     "start": "2026-11-20T10:00",
+     "end": "2026-11-20T11:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "yoga dersini sil",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "SİLMEMİ"
+    ]
+   },
+   {
+    "say": "evet sil",
+    "kind": "confirm",
+    "preview": false,
+    "saved_total": 0
+   }
+  ]
+ }
+]

@@ -1,0 +1,192 @@
+[
+ {
+  "name": "defer-camasir-yarina-kalsin",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır yıka"
+   ]
+  },
+  "steps": [
+   {
+    "say": "CAMASIR YARINA KALSIN",
+    "kind": "free",
+    "tasks_due": {
+     "Çama": "2026-11-20"
+    },
+    "tasks_open_count": 1
+   }
+  ]
+ },
+ {
+  "name": "defer-camasir-yarina-kalsin-lutfen",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır yıka"
+   ]
+  },
+  "steps": [
+   {
+    "say": "camasir yarina kalsin lutfen",
+    "kind": "free",
+    "tasks_due": {
+     "Çama": "2026-11-20"
+    },
+    "tasks_open_count": 1
+   }
+  ]
+ },
+ {
+  "name": "defer-camasir-yrn-kalsin",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır yıka"
+   ]
+  },
+  "steps": [
+   {
+    "say": "camasir yrn kalsin",
+    "kind": "free",
+    "tasks_due": {
+     "Çama": "2026-11-20"
+    },
+    "tasks_open_count": 1
+   }
+  ]
+ },
+ {
+  "name": "defer-ütüyü-cumartesiye-ertelesek",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Ütü yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "ütüyü cumartesiye ertelesek",
+    "kind": "free",
+    "tasks_due": {
+     "Ütü": "2026-11-21"
+    },
+    "tasks_open_count": 1
+   }
+  ]
+ },
+ {
+  "name": "done-camasir-bitti",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır yıka"
+   ]
+  },
+  "steps": [
+   {
+    "say": "CAMASIR BITTI",
+    "kind": "free",
+    "tasks_open_count": 0,
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "done-camasirlar-bitti",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır yıka"
+   ]
+  },
+  "steps": [
+   {
+    "say": "camasirlar bitti",
+    "kind": "free",
+    "tasks_open_count": 0,
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "done-çamaşırı-yıkadım",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır yıka"
+   ]
+  },
+  "steps": [
+   {
+    "say": "çamaşırı yıkadım",
+    "kind": "free",
+    "tasks_open_count": 0,
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "done-camasir-tamam",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır yıka"
+   ]
+  },
+  "steps": [
+   {
+    "say": "camasir tamam",
+    "kind": "free",
+    "tasks_open_count": 0,
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "done-camasir-hallolmus",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır yıka"
+   ]
+  },
+  "steps": [
+   {
+    "say": "camasir hallolmus",
+    "kind": "free",
+    "tasks_open_count": 0,
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil"
+    ]
+   }
+  ]
+ }
+]

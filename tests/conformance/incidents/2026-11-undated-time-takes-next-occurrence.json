@@ -1,0 +1,55 @@
+{
+  "name": "a time without a date means the next upcoming occurrence, never 'Hangi gün?'",
+  "incident": "Live failure of 2026-11-19 05:23 (ADR 0014): the owner wrote a chore with 'sabah 7.30' and no date; the bot asked 'Hangi gün?' three times although the obvious answer is the next 07:30 (today, it was 05:24). A time with no date now picks the next occurrence and shows weekday and full date in the preview; 'yarın olsun' moves it.",
+  "setup": {
+    "provider": "rules",
+    "now": "2026-11-19T05:24"
+  },
+  "steps": [
+    {
+      "say": "çöpü cikarmayi sabah 7.30'a ekle",
+      "kind": "free",
+      "preview": true,
+      "contains": [
+        "Bugün Perşembe 19 Kasım 2026 07:30-07:45",
+        "Çöpü cikarmayi"
+      ],
+      "not_contains": [
+        "Hangi gün",
+        "'a"
+      ],
+      "preview_has": [
+        {
+          "start": "2026-11-19T07:30:00+03:00",
+          "end": "2026-11-19T07:45:00+03:00"
+        }
+      ],
+      "saved_total": 0
+    },
+    {
+      "say": "yarın olsun",
+      "kind": "edit",
+      "preview": true,
+      "contains": [
+        "Yarın Cuma 20 Kasım 2026 07:30-07:45"
+      ],
+      "preview_has": [
+        {
+          "start": "2026-11-20T07:30:00+03:00"
+        }
+      ],
+      "saved_total": 0
+    },
+    {
+      "say": "evet",
+      "kind": "confirm",
+      "preview": false,
+      "saved_total": 1,
+      "saved_has": [
+        {
+          "start": "2026-11-20T07:30:00+03:00"
+        }
+      ]
+    }
+  ]
+}

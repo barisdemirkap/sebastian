@@ -1,0 +1,42 @@
+{
+  "name": "'aloo' / 'orda misin' during a question: 'Buradayım, efendim.' and the question once, short; a quick pair is one reply",
+  "incident": "Live failure of 2026-11-19 05:23 (ADR 0014): two impatient messages ('aloo', 'orda misin') were treated as answers and the day question was reworded. They are presence checks: one 'Buradayım, efendim.' with the pending question in short form, one reply for the merged pair, the question state unchanged.",
+  "setup": {
+    "provider": "rules",
+    "now": "2026-11-19T05:24"
+  },
+  "steps": [
+    {
+      "say": "toplantı ekle",
+      "kind": "free",
+      "preview": false,
+      "contains": [
+        "Hangi gün?"
+      ]
+    },
+    {
+      "say": [
+        "aloo",
+        "orda misin"
+      ],
+      "kind": "free",
+      "replies_max": 1,
+      "preview": false,
+      "contains": [
+        "Buradayım, efendim.",
+        "Hangi gün?"
+      ],
+      "not_contains": [
+        "Tam anlayamadım",
+        "Takıldık"
+      ]
+    },
+    {
+      "say": "yarın",
+      "kind": "free",
+      "contains": [
+        "Saat kaçta"
+      ]
+    }
+  ]
+}

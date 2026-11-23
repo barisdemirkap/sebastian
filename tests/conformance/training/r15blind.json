@@ -1,0 +1,1516 @@
+[
+ {
+  "name": "b15-01",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kombinin filtresini değiştir",
+    "Bisikletin lastiğini şişir",
+    "Teyzeye doğum günü kartı yolla",
+    "Noter randevusu al",
+    "Yazıcıya kağıt koy",
+    "Ödeme planını gözden geçir",
+    "Balkon çiçeklerini içeri al",
+    "Kütüphaneden roman getir"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kombinin filtresini degistirdim, artik sorun yok",
+    "kind": "free",
+    "tasks_done_has": [
+     "Kombinin"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b15-02",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kombinin filtresini değiştir",
+    "Bisikletin lastiğini şişir",
+    "Teyzeye doğum günü kartı yolla",
+    "Noter randevusu al",
+    "Yazıcıya kağıt koy",
+    "Ödeme planını gözden geçir",
+    "Balkon çiçeklerini içeri al",
+    "Kütüphaneden roman getir"
+   ]
+  },
+  "steps": [
+   {
+    "say": "bisikletin lastigini sisirdim valla",
+    "kind": "free",
+    "tasks_done_has": [
+     "Bisiklet"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b15-03",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kombinin filtresini değiştir",
+    "Bisikletin lastiğini şişir",
+    "Teyzeye doğum günü kartı yolla",
+    "Noter randevusu al",
+    "Yazıcıya kağıt koy",
+    "Ödeme planını gözden geçir",
+    "Balkon çiçeklerini içeri al",
+    "Kütüphaneden roman getir"
+   ]
+  },
+  "steps": [
+   {
+    "say": "teyzenin kartini postaya verdim yani gitti",
+    "kind": "free",
+    "tasks_done_has": [
+     "Teyze"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b15-04",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kombinin filtresini değiştir",
+    "Bisikletin lastiğini şişir",
+    "Teyzeye doğum günü kartı yolla",
+    "Noter randevusu al",
+    "Yazıcıya kağıt koy",
+    "Ödeme planını gözden geçir",
+    "Balkon çiçeklerini içeri al",
+    "Kütüphaneden roman getir"
+   ]
+  },
+  "steps": [
+   {
+    "say": "noter randevusu alinmis zaten, bir sey yapmama gerek yok",
+    "kind": "free",
+    "tasks_done_has": [
+     "Noter"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b15-05",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kombinin filtresini değiştir",
+    "Bisikletin lastiğini şişir",
+    "Teyzeye doğum günü kartı yolla",
+    "Noter randevusu al",
+    "Yazıcıya kağıt koy",
+    "Ödeme planını gözden geçir",
+    "Balkon çiçeklerini içeri al",
+    "Kütüphaneden roman getir"
+   ]
+  },
+  "steps": [
+   {
+    "say": "yaziciya kagit koydum cok sukur",
+    "kind": "free",
+    "tasks_done_has": [
+     "Yazıcı"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b15-06",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kombinin filtresini değiştir",
+    "Bisikletin lastiğini şişir",
+    "Teyzeye doğum günü kartı yolla",
+    "Noter randevusu al",
+    "Yazıcıya kağıt koy",
+    "Ödeme planını gözden geçir",
+    "Balkon çiçeklerini içeri al",
+    "Kütüphaneden roman getir"
+   ]
+  },
+  "steps": [
+   {
+    "say": "odeme planina baktim hallettim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Ödeme"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b15-07",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kombinin filtresini değiştir",
+    "Bisikletin lastiğini şişir",
+    "Teyzeye doğum günü kartı yolla",
+    "Noter randevusu al",
+    "Yazıcıya kağıt koy",
+    "Ödeme planını gözden geçir",
+    "Balkon çiçeklerini içeri al",
+    "Kütüphaneden roman getir"
+   ]
+  },
+  "steps": [
+   {
+    "say": "cicekleri iceri aldim hava sogudu",
+    "kind": "free",
+    "tasks_done_has": [
+     "Balkon"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b15-08",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kombinin filtresini değiştir",
+    "Bisikletin lastiğini şişir",
+    "Teyzeye doğum günü kartı yolla",
+    "Noter randevusu al",
+    "Yazıcıya kağıt koy",
+    "Ödeme planını gözden geçir",
+    "Balkon çiçeklerini içeri al",
+    "Kütüphaneden roman getir"
+   ]
+  },
+  "steps": [
+   {
+    "say": "romani getirdim kutuphaneden",
+    "kind": "free",
+    "tasks_done_has": [
+     "Kütüphane"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b15-09",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kombinin filtresini değiştir",
+    "Bisikletin lastiğini şişir",
+    "Teyzeye doğum günü kartı yolla",
+    "Noter randevusu al",
+    "Yazıcıya kağıt koy",
+    "Ödeme planını gözden geçir",
+    "Balkon çiçeklerini içeri al",
+    "Kütüphaneden roman getir"
+   ]
+  },
+  "steps": [
+   {
+    "say": "bu hafta kombi filtresine vakit yok haftaya birakayim",
+    "kind": "free",
+    "tasks_due": {
+     "Kombinin": "2026-11-26"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b15-10",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kombinin filtresini değiştir",
+    "Bisikletin lastiğini şişir",
+    "Teyzeye doğum günü kartı yolla",
+    "Noter randevusu al",
+    "Yazıcıya kağıt koy",
+    "Ödeme planını gözden geçir",
+    "Balkon çiçeklerini içeri al",
+    "Kütüphaneden roman getir"
+   ]
+  },
+  "steps": [
+   {
+    "say": "teyzenin karti icin yarin postaneye ugrayacagim",
+    "kind": "free",
+    "tasks_due": {
+     "Teyze": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b15-11",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kombinin filtresini değiştir",
+    "Bisikletin lastiğini şişir",
+    "Teyzeye doğum günü kartı yolla",
+    "Noter randevusu al",
+    "Yazıcıya kağıt koy",
+    "Ödeme planını gözden geçir",
+    "Balkon çiçeklerini içeri al",
+    "Kütüphaneden roman getir"
+   ]
+  },
+  "steps": [
+   {
+    "say": "noteri bugun arayacaktim ama olmadi, cumaya kalsin",
+    "kind": "free",
+    "tasks_due": {
+     "Noter": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b15-12",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kombinin filtresini değiştir",
+    "Bisikletin lastiğini şişir",
+    "Teyzeye doğum günü kartı yolla",
+    "Noter randevusu al",
+    "Yazıcıya kağıt koy",
+    "Ödeme planını gözden geçir",
+    "Balkon çiçeklerini içeri al",
+    "Kütüphaneden roman getir"
+   ]
+  },
+  "steps": [
+   {
+    "say": "bisiklet lastigini cumartesi sisiririm",
+    "kind": "free",
+    "tasks_due": {
+     "Bisiklet": "2026-11-21"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b15-13",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kombinin filtresini değiştir",
+    "Bisikletin lastiğini şişir",
+    "Teyzeye doğum günü kartı yolla",
+    "Noter randevusu al",
+    "Yazıcıya kağıt koy",
+    "Ödeme planını gözden geçir",
+    "Balkon çiçeklerini içeri al",
+    "Kütüphaneden roman getir"
+   ]
+  },
+  "steps": [
+   {
+    "say": "yazici kagidini cok gec kaldim pazartesiye birakalim",
+    "kind": "free",
+    "tasks_due": {
+     "Yazıcı": "2026-11-23"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b15-14",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kombinin filtresini değiştir",
+    "Bisikletin lastiğini şişir",
+    "Teyzeye doğum günü kartı yolla",
+    "Noter randevusu al",
+    "Yazıcıya kağıt koy",
+    "Ödeme planını gözden geçir",
+    "Balkon çiçeklerini içeri al",
+    "Kütüphaneden roman getir"
+   ]
+  },
+  "steps": [
+   {
+    "say": "odeme plani konusunu yarina erteliyorum",
+    "kind": "free",
+    "tasks_due": {
+     "Ödeme": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b15-15",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kombinin filtresini değiştir",
+    "Bisikletin lastiğini şişir",
+    "Teyzeye doğum günü kartı yolla",
+    "Noter randevusu al",
+    "Yazıcıya kağıt koy",
+    "Ödeme planını gözden geçir",
+    "Balkon çiçeklerini içeri al",
+    "Kütüphaneden roman getir"
+   ]
+  },
+  "steps": [
+   {
+    "say": "romani getirmeyi unuttum",
+    "kind": "free"
+   },
+   {
+    "say": "aksam",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Kütüphane": "2026-11-19"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b15-16",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kombinin filtresini değiştir",
+    "Bisikletin lastiğini şişir",
+    "Teyzeye doğum günü kartı yolla",
+    "Noter randevusu al",
+    "Yazıcıya kağıt koy",
+    "Ödeme planını gözden geçir",
+    "Balkon çiçeklerini içeri al",
+    "Kütüphaneden roman getir"
+   ]
+  },
+  "steps": [
+   {
+    "say": "noter randevusunu almayi unuttum",
+    "kind": "free"
+   },
+   {
+    "say": "cuma",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Noter": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b15-17",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kombinin filtresini değiştir",
+    "Bisikletin lastiğini şişir",
+    "Teyzeye doğum günü kartı yolla",
+    "Noter randevusu al",
+    "Yazıcıya kağıt koy",
+    "Ödeme planını gözden geçir",
+    "Balkon çiçeklerini içeri al",
+    "Kütüphaneden roman getir"
+   ]
+  },
+  "steps": [
+   {
+    "say": "filtre tamam, lastik tamam, kalanlari yarin yaparim",
+    "kind": "free"
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_done_has": [
+     "Kombinin",
+     "Bisiklet"
+    ],
+    "tasks_due": {
+     "Noter": "2026-11-20",
+     "Yazıcı": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b15-18",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kombinin filtresini değiştir",
+    "Bisikletin lastiğini şişir",
+    "Teyzeye doğum günü kartı yolla",
+    "Noter randevusu al",
+    "Yazıcıya kağıt koy",
+    "Ödeme planını gözden geçir",
+    "Balkon çiçeklerini içeri al",
+    "Kütüphaneden roman getir"
+   ]
+  },
+  "steps": [
+   {
+    "say": "bugunluk bu kadar, hepsi yarina",
+    "kind": "free"
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_due": {
+     "Kombinin": "2026-11-20",
+     "Noter": "2026-11-20",
+     "Ödeme": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b15-19",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kombinin filtresini değiştir",
+    "Bisikletin lastiğini şişir",
+    "Teyzeye doğum günü kartı yolla",
+    "Noter randevusu al",
+    "Yazıcıya kağıt koy",
+    "Ödeme planını gözden geçir",
+    "Balkon çiçeklerini içeri al",
+    "Kütüphaneden roman getir"
+   ]
+  },
+  "steps": [
+   {
+    "say": "yaziciya kagit koymustum bu arada",
+    "kind": "free",
+    "tasks_done_has": [
+     "Yazıcı"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b15-20",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kombinin filtresini değiştir",
+    "Bisikletin lastiğini şişir",
+    "Teyzeye doğum günü kartı yolla",
+    "Noter randevusu al",
+    "Yazıcıya kağıt koy",
+    "Ödeme planını gözden geçir",
+    "Balkon çiçeklerini içeri al",
+    "Kütüphaneden roman getir"
+   ]
+  },
+  "steps": [
+   {
+    "say": "karti yolladim cicekleri aldim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Teyze",
+     "Balkon"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b15-21",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kombinin filtresini değiştir",
+    "Bisikletin lastiğini şişir",
+    "Teyzeye doğum günü kartı yolla",
+    "Noter randevusu al",
+    "Yazıcıya kağıt koy",
+    "Ödeme planını gözden geçir",
+    "Balkon çiçeklerini içeri al",
+    "Kütüphaneden roman getir"
+   ]
+  },
+  "steps": [
+   {
+    "say": "ya noter isi halloldu sonunda",
+    "kind": "free",
+    "tasks_done_has": [
+     "Noter"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b15-23",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kombinin filtresini değiştir",
+    "Bisikletin lastiğini şişir",
+    "Teyzeye doğum günü kartı yolla",
+    "Noter randevusu al",
+    "Yazıcıya kağıt koy",
+    "Ödeme planını gözden geçir",
+    "Balkon çiçeklerini içeri al",
+    "Kütüphaneden roman getir"
+   ]
+  },
+  "steps": [
+   {
+    "say": "yazici hazir",
+    "kind": "free"
+   },
+   {
+    "say": "roman da",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Yazıcı",
+     "Kütüphane"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b15-24",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kombinin filtresini değiştir",
+    "Bisikletin lastiğini şişir",
+    "Teyzeye doğum günü kartı yolla",
+    "Noter randevusu al",
+    "Yazıcıya kağıt koy",
+    "Ödeme planını gözden geçir",
+    "Balkon çiçeklerini içeri al",
+    "Kütüphaneden roman getir"
+   ]
+  },
+  "steps": [
+   {
+    "say": "filtre yarina",
+    "kind": "free"
+   },
+   {
+    "say": "noter de",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Kombinin": "2026-11-20",
+     "Noter": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b15-25",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kombinin filtresini değiştir",
+    "Bisikletin lastiğini şişir",
+    "Teyzeye doğum günü kartı yolla",
+    "Noter randevusu al",
+    "Yazıcıya kağıt koy",
+    "Ödeme planını gözden geçir",
+    "Balkon çiçeklerini içeri al",
+    "Kütüphaneden roman getir"
+   ]
+  },
+  "steps": [
+   {
+    "say": "odeme plani hallolmus bu arada",
+    "kind": "free",
+    "tasks_done_has": [
+     "Ödeme"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b15-26",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kombinin filtresini değiştir",
+    "Bisikletin lastiğini şişir",
+    "Teyzeye doğum günü kartı yolla",
+    "Noter randevusu al",
+    "Yazıcıya kağıt koy",
+    "Ödeme planını gözden geçir",
+    "Balkon çiçeklerini içeri al",
+    "Kütüphaneden roman getir"
+   ]
+  },
+  "steps": [
+   {
+    "say": "bisiklet ve yazici isi icin bu aksam vaktim olmaz yarin",
+    "kind": "free",
+    "tasks_due": {
+     "Bisiklet": "2026-11-20",
+     "Yazıcı": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b15-27",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kombinin filtresini değiştir",
+    "Bisikletin lastiğini şişir",
+    "Teyzeye doğum günü kartı yolla",
+    "Noter randevusu al",
+    "Yazıcıya kağıt koy",
+    "Ödeme planını gözden geçir",
+    "Balkon çiçeklerini içeri al",
+    "Kütüphaneden roman getir"
+   ]
+  },
+  "steps": [
+   {
+    "say": "noter ve kart icin bugun yetismedi pazartesiye",
+    "kind": "free",
+    "tasks_due": {
+     "Noter": "2026-11-23",
+     "Teyze": "2026-11-23"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b15-28",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kombinin filtresini değiştir",
+    "Bisikletin lastiğini şişir",
+    "Teyzeye doğum günü kartı yolla",
+    "Noter randevusu al",
+    "Yazıcıya kağıt koy",
+    "Ödeme planını gözden geçir",
+    "Balkon çiçeklerini içeri al",
+    "Kütüphaneden roman getir"
+   ]
+  },
+  "steps": [
+   {
+    "say": "balkon cicekleri icin dukkana baktim ama bulamadim, cumartesi tekrar bakarim",
+    "kind": "free",
+    "tasks_due": {
+     "Balkon": "2026-11-21"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b15-29",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kombinin filtresini değiştir",
+    "Bisikletin lastiğini şişir",
+    "Teyzeye doğum günü kartı yolla",
+    "Noter randevusu al",
+    "Yazıcıya kağıt koy",
+    "Ödeme planını gözden geçir",
+    "Balkon çiçeklerini içeri al",
+    "Kütüphaneden roman getir"
+   ]
+  },
+  "steps": [
+   {
+    "say": "teyzenin kartini yarin 10 gibi hatirlat",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Teyze",
+     "10:00"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b15-30",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kombinin filtresini değiştir",
+    "Bisikletin lastiğini şişir",
+    "Teyzeye doğum günü kartı yolla",
+    "Noter randevusu al",
+    "Yazıcıya kağıt koy",
+    "Ödeme planını gözden geçir",
+    "Balkon çiçeklerini içeri al",
+    "Kütüphaneden roman getir"
+   ]
+  },
+  "steps": [
+   {
+    "say": "romani aksam 8de getirecegim",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Kütüphane",
+     "20:00"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b15-31",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T12:10",
+   "seed": [
+    {
+     "title": "Muhasebe toplantısı",
+     "start": "2026-11-19T11:00",
+     "end": "2026-11-19T12:00"
+    },
+    {
+     "title": "Pazar yeri",
+     "start": "2026-11-20T09:00",
+     "end": "2026-11-20T10:00"
+    },
+    {
+     "title": "Doğum günü partisi",
+     "start": "2026-11-21T16:00",
+     "end": "2026-11-21T19:00"
+    },
+    {
+     "title": "Sinema günü",
+     "start": "2026-11-22T20:00",
+     "end": "2026-11-22T22:30"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "muhasebe toplantisi bitti",
+    "kind": "free",
+    "contains": [
+     "Muhasebe"
+    ],
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım",
+     "silinsin"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b15-32",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Muhasebe toplantısı",
+     "start": "2026-11-19T11:00",
+     "end": "2026-11-19T12:00"
+    },
+    {
+     "title": "Pazar yeri",
+     "start": "2026-11-20T09:00",
+     "end": "2026-11-20T10:00"
+    },
+    {
+     "title": "Doğum günü partisi",
+     "start": "2026-11-21T16:00",
+     "end": "2026-11-21T19:00"
+    },
+    {
+     "title": "Sinema günü",
+     "start": "2026-11-22T20:00",
+     "end": "2026-11-22T22:30"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "pazar yerini cumartesiye kaydir",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "21 Kasım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b15-33",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Muhasebe toplantısı",
+     "start": "2026-11-19T11:00",
+     "end": "2026-11-19T12:00"
+    },
+    {
+     "title": "Pazar yeri",
+     "start": "2026-11-20T09:00",
+     "end": "2026-11-20T10:00"
+    },
+    {
+     "title": "Doğum günü partisi",
+     "start": "2026-11-21T16:00",
+     "end": "2026-11-21T19:00"
+    },
+    {
+     "title": "Sinema günü",
+     "start": "2026-11-22T20:00",
+     "end": "2026-11-22T22:30"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "dogum gunu partisini pazara al",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "22 Kasım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b15-34",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Muhasebe toplantısı",
+     "start": "2026-11-19T11:00",
+     "end": "2026-11-19T12:00"
+    },
+    {
+     "title": "Pazar yeri",
+     "start": "2026-11-20T09:00",
+     "end": "2026-11-20T10:00"
+    },
+    {
+     "title": "Doğum günü partisi",
+     "start": "2026-11-21T16:00",
+     "end": "2026-11-21T19:00"
+    },
+    {
+     "title": "Sinema günü",
+     "start": "2026-11-22T20:00",
+     "end": "2026-11-22T22:30"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "sinema gununu iptal etsene",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Sinema"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b15-35",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Muhasebe toplantısı",
+     "start": "2026-11-19T11:00",
+     "end": "2026-11-19T12:00"
+    },
+    {
+     "title": "Pazar yeri",
+     "start": "2026-11-20T09:00",
+     "end": "2026-11-20T10:00"
+    },
+    {
+     "title": "Doğum günü partisi",
+     "start": "2026-11-21T16:00",
+     "end": "2026-11-21T19:00"
+    },
+    {
+     "title": "Sinema günü",
+     "start": "2026-11-22T20:00",
+     "end": "2026-11-22T22:30"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "yarin neler var bakar misin",
+    "kind": "free",
+    "contains": [
+     "Pazar yeri"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b15-36",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Muhasebe toplantısı",
+     "start": "2026-11-19T11:00",
+     "end": "2026-11-19T12:00"
+    },
+    {
+     "title": "Pazar yeri",
+     "start": "2026-11-20T09:00",
+     "end": "2026-11-20T10:00"
+    },
+    {
+     "title": "Doğum günü partisi",
+     "start": "2026-11-21T16:00",
+     "end": "2026-11-21T19:00"
+    },
+    {
+     "title": "Sinema günü",
+     "start": "2026-11-22T20:00",
+     "end": "2026-11-22T22:30"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "bugun daha ne kaldi",
+    "kind": "free",
+    "contains": [
+     "Muhasebe"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b15-37",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T12:10",
+   "seed": [
+    {
+     "title": "Muhasebe toplantısı",
+     "start": "2026-11-19T11:00",
+     "end": "2026-11-19T12:00"
+    },
+    {
+     "title": "Pazar yeri",
+     "start": "2026-11-20T09:00",
+     "end": "2026-11-20T10:00"
+    },
+    {
+     "title": "Doğum günü partisi",
+     "start": "2026-11-21T16:00",
+     "end": "2026-11-21T19:00"
+    },
+    {
+     "title": "Sinema günü",
+     "start": "2026-11-22T20:00",
+     "end": "2026-11-22T22:30"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "muhasebe toplantisi bitti, parti pazartesiye kalsin",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Doğum günü",
+     "23 Kasım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b15-38",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Muhasebe toplantısı",
+     "start": "2026-11-19T11:00",
+     "end": "2026-11-19T12:00"
+    },
+    {
+     "title": "Pazar yeri",
+     "start": "2026-11-20T09:00",
+     "end": "2026-11-20T10:00"
+    },
+    {
+     "title": "Doğum günü partisi",
+     "start": "2026-11-21T16:00",
+     "end": "2026-11-21T19:00"
+    },
+    {
+     "title": "Sinema günü",
+     "start": "2026-11-22T20:00",
+     "end": "2026-11-22T22:30"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "pazar yeri pazar degil cumartesi",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "21 Kasım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b15-39",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Muhasebe toplantısı",
+     "start": "2026-11-19T11:00",
+     "end": "2026-11-19T12:00"
+    },
+    {
+     "title": "Pazar yeri",
+     "start": "2026-11-20T09:00",
+     "end": "2026-11-20T10:00"
+    },
+    {
+     "title": "Doğum günü partisi",
+     "start": "2026-11-21T16:00",
+     "end": "2026-11-21T19:00"
+    },
+    {
+     "title": "Sinema günü",
+     "start": "2026-11-22T20:00",
+     "end": "2026-11-22T22:30"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "sinema gunu isini sil",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Sinema"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b15-40",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Muhasebe toplantısı",
+     "start": "2026-11-19T11:00",
+     "end": "2026-11-19T12:00"
+    },
+    {
+     "title": "Pazar yeri",
+     "start": "2026-11-20T09:00",
+     "end": "2026-11-20T10:00"
+    },
+    {
+     "title": "Doğum günü partisi",
+     "start": "2026-11-21T16:00",
+     "end": "2026-11-21T19:00"
+    },
+    {
+     "title": "Sinema günü",
+     "start": "2026-11-22T20:00",
+     "end": "2026-11-22T22:30"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "partiyi pazartesiye tasiyalim",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "23 Kasım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b15-41",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kombinin filtresini değiştir",
+    "Bisikletin lastiğini şişir",
+    "Teyzeye doğum günü kartı yolla",
+    "Noter randevusu al",
+    "Yazıcıya kağıt koy",
+    "Ödeme planını gözden geçir",
+    "Balkon çiçeklerini içeri al",
+    "Kütüphaneden roman getir"
+   ]
+  },
+  "steps": [
+   {
+    "say": "balkon cicekleri isini cumartesi sabah 9a koyalim",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Balkon",
+     "09:00",
+     "21 Kasım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b15-42",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kombinin filtresini değiştir",
+    "Bisikletin lastiğini şişir",
+    "Teyzeye doğum günü kartı yolla",
+    "Noter randevusu al",
+    "Yazıcıya kağıt koy",
+    "Ödeme planını gözden geçir",
+    "Balkon çiçeklerini içeri al",
+    "Kütüphaneden roman getir"
+   ]
+  },
+  "steps": [
+   {
+    "say": "noteri yarina birak",
+    "kind": "free"
+   },
+   {
+    "say": "bunu cuma sabah 10da hatirlat",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Noter",
+     "10:00"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b15-43",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kombinin filtresini değiştir",
+    "Bisikletin lastiğini şişir",
+    "Teyzeye doğum günü kartı yolla",
+    "Noter randevusu al",
+    "Yazıcıya kağıt koy",
+    "Ödeme planını gözden geçir",
+    "Balkon çiçeklerini içeri al",
+    "Kütüphaneden roman getir"
+   ]
+  },
+  "steps": [
+   {
+    "say": "hepsini bu aksama birakalim",
+    "kind": "free"
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_due": {
+     "Kombinin": "2026-11-19",
+     "Noter": "2026-11-19"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b15-44",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kombinin filtresini değiştir",
+    "Bisikletin lastiğini şişir",
+    "Teyzeye doğum günü kartı yolla",
+    "Noter randevusu al",
+    "Yazıcıya kağıt koy",
+    "Ödeme planını gözden geçir",
+    "Balkon çiçeklerini içeri al",
+    "Kütüphaneden roman getir"
+   ]
+  },
+  "steps": [
+   {
+    "say": "romani aldim ama kombi filtresi icin vaktim kalmadi yarina",
+    "kind": "free",
+    "tasks_done_has": [
+     "Kütüphane"
+    ],
+    "tasks_due": {
+     "Kombinin": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b15-45",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kombinin filtresini değiştir",
+    "Bisikletin lastiğini şişir",
+    "Teyzeye doğum günü kartı yolla",
+    "Noter randevusu al",
+    "Yazıcıya kağıt koy",
+    "Ödeme planını gözden geçir",
+    "Balkon çiçeklerini içeri al",
+    "Kütüphaneden roman getir"
+   ]
+  },
+  "steps": [
+   {
+    "say": "filtre isi bitti, lastik cumaya, kart yarina, noter pazartesiye",
+    "kind": "free",
+    "tasks_done_has": [
+     "Kombinin"
+    ],
+    "tasks_due": {
+     "Bisiklet": "2026-11-20",
+     "Teyze": "2026-11-20",
+     "Noter": "2026-11-23"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b15-46",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kombinin filtresini değiştir",
+    "Bisikletin lastiğini şişir",
+    "Teyzeye doğum günü kartı yolla",
+    "Noter randevusu al",
+    "Yazıcıya kağıt koy",
+    "Ödeme planını gözden geçir",
+    "Balkon çiçeklerini içeri al",
+    "Kütüphaneden roman getir"
+   ]
+  },
+  "steps": [
+   {
+    "say": "ya yazici isi bitmedi yarina kalsin",
+    "kind": "free",
+    "tasks_due": {
+     "Yazıcı": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b15-47",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kombinin filtresini değiştir",
+    "Bisikletin lastiğini şişir",
+    "Teyzeye doğum günü kartı yolla",
+    "Noter randevusu al",
+    "Yazıcıya kağıt koy",
+    "Ödeme planını gözden geçir",
+    "Balkon çiçeklerini içeri al",
+    "Kütüphaneden roman getir"
+   ]
+  },
+  "steps": [
+   {
+    "say": "noter isi bitti ama roman hala duruyor",
+    "kind": "free",
+    "tasks_done_has": [
+     "Noter"
+    ],
+    "tasks_open_has": [
+     "Kütüphane"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b15-48",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kombinin filtresini değiştir",
+    "Bisikletin lastiğini şişir",
+    "Teyzeye doğum günü kartı yolla",
+    "Noter randevusu al",
+    "Yazıcıya kağıt koy",
+    "Ödeme planını gözden geçir",
+    "Balkon çiçeklerini içeri al",
+    "Kütüphaneden roman getir"
+   ]
+  },
+  "steps": [
+   {
+    "say": "bisiklet lastigi sisirme iptal",
+    "kind": "free"
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_open_count": 7
+   }
+  ]
+ },
+ {
+  "name": "b15-49",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kombinin filtresini değiştir",
+    "Bisikletin lastiğini şişir",
+    "Teyzeye doğum günü kartı yolla",
+    "Noter randevusu al",
+    "Yazıcıya kağıt koy",
+    "Ödeme planını gözden geçir",
+    "Balkon çiçeklerini içeri al",
+    "Kütüphaneden roman getir"
+   ]
+  },
+  "steps": [
+   {
+    "say": "teyze kartini tamamdir sonunda",
+    "kind": "free",
+    "tasks_done_has": [
+     "Teyze"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b15-50",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kombinin filtresini değiştir",
+    "Bisikletin lastiğini şişir",
+    "Teyzeye doğum günü kartı yolla",
+    "Noter randevusu al",
+    "Yazıcıya kağıt koy",
+    "Ödeme planını gözden geçir",
+    "Balkon çiçeklerini içeri al",
+    "Kütüphaneden roman getir"
+   ]
+  },
+  "steps": [
+   {
+    "say": "karti yolladim cicek tamam kalan yarina",
+    "kind": "free"
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_done_has": [
+     "Teyze",
+     "Balkon"
+    ],
+    "tasks_due": {
+     "Noter": "2026-11-20",
+     "Yazıcı": "2026-11-20"
+    }
+   }
+  ]
+ }
+]

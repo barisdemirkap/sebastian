@@ -1,0 +1,51 @@
+{
+  "name": "model unavailable: one subject and one time is parsed by the rules and previewed",
+  "incident": "ADR 0021: simple mode keeps the deterministic single-event path. 'yarın 15:00 diş hekimi' previews one event with the clean title and still needs the owner's confirmation; the simple-mode notice comes once.",
+  "setup": {
+    "provider": "flaky",
+    "model_up": false,
+    "now": "2026-11-19T07:02",
+    "model_intents": {
+      "initech": {
+        "intent": "add_event",
+        "title": "GTech toplantısı",
+        "date": "2026-11-19",
+        "time": "10:00",
+        "duration_min": null,
+        "all_day": false
+      }
+    }
+  },
+  "steps": [
+    {
+      "say": "yarın 15:00 diş hekimi",
+      "kind": "free",
+      "preview": true,
+      "preview_count": 1,
+      "saved_total": 0,
+      "preview_has": [
+        {
+          "title": "Diş hekimi"
+        }
+      ],
+      "contains": [
+        "basit kipte"
+      ],
+      "not_contains": [
+        "Mesajınızı kaydettim",
+        "Galiba birbirimizi"
+      ]
+    },
+    {
+      "say": "evet",
+      "kind": "confirm",
+      "preview": false,
+      "saved_total": 1,
+      "saved_has": [
+        {
+          "title": "Diş hekimi"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "an edit whose after-state equals the before-state is never previewed",
+  "incident": "Incident F (ADR 0015): asking for the reminder the event already has must not open an identical 'Önce / Sonra' preview.",
+  "setup": {
+    "provider": "rules",
+    "now": "2026-11-19T06:30",
+    "seed": [
+      {
+        "title": "Çöpü çıkar",
+        "start": "2026-11-19T07:30",
+        "end": "2026-11-19T07:45",
+        "reminder": 30
+      }
+    ]
+  },
+  "steps": [
+    {
+      "say": "çöpü çıkar 30 dk önce hatırlat",
+      "kind": "free",
+      "preview": false,
+      "saved_total": 1,
+      "contains": [
+        "Zaten"
+      ],
+      "not_contains": [
+        "Önce:",
+        "değiştireyim"
+      ]
+    }
+  ]
+}

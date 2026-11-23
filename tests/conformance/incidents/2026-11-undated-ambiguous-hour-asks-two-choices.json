@@ -1,0 +1,38 @@
+{
+  "name": "an undated hour 1-6 without a part of day asks ONE numbered question when both readings are ahead",
+  "incident": "ADR 0014: 'saat 4' at 02:00 can be 04:00 or 16:00, both ahead today. One question with two numbered choices; the answer '2' (or '16:00') goes on to the preview with the next-occurrence date.",
+  "setup": {
+    "provider": "rules",
+    "now": "2026-11-19T02:00"
+  },
+  "steps": [
+    {
+      "say": "saat 4 çöpü çıkar ekle",
+      "kind": "free",
+      "preview": false,
+      "contains": [
+        "1)",
+        "2)",
+        "04:00",
+        "16:00"
+      ],
+      "not_contains": [
+        "Hangi gün"
+      ]
+    },
+    {
+      "say": "2",
+      "kind": "free",
+      "preview": true,
+      "contains": [
+        "Bugün Perşembe 19 Kasım 2026 16:00-16:15"
+      ],
+      "facts": [
+        {
+          "name": "hour already chosen",
+          "asks": "04:00"
+        }
+      ]
+    }
+  ]
+}

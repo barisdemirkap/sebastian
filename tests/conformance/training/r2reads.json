@@ -1,0 +1,151 @@
+[
+ {
+  "name": "tomorrow-after-done-no-number",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kitapları topla"
+   ],
+   "seed": [
+    {
+     "title": "Berber",
+     "start": "2026-11-20T10:00",
+     "end": "2026-11-20T11:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "kitaplari topladim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Kitap"
+    ]
+   },
+   {
+    "say": "yarinin programi nasil?",
+    "kind": "free",
+    "contains": [
+     "Berber"
+    ],
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "today-read-then-defer-all",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kitapları topla",
+    "Arabayı yıka"
+   ]
+  },
+  "steps": [
+   {
+    "say": "bugun neler kaldi",
+    "kind": "free",
+    "contains": [
+     "Kitap"
+    ]
+   },
+   {
+    "say": "hepsini yarina birak",
+    "kind": "free"
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_due": {
+     "Kitap": "2026-11-20",
+     "Araba": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "plan-for-weekday",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Berber",
+     "start": "2026-11-20T10:00",
+     "end": "2026-11-20T11:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "cuma gunu programim nasil",
+    "kind": "free",
+    "contains": [
+     "Berber"
+    ],
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "pick-then-read-keeps-state",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Ekip toplantısı",
+     "start": "2026-11-19T11:00",
+     "end": "2026-11-19T12:00"
+    },
+    {
+     "title": "Müşteri toplantısı",
+     "start": "2026-11-19T14:00",
+     "end": "2026-11-19T15:00"
+    },
+    {
+     "title": "Berber",
+     "start": "2026-11-20T10:00",
+     "end": "2026-11-20T11:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "toplantiyi 17ye al",
+    "kind": "free",
+    "contains": [
+     "Hangisi"
+    ]
+   },
+   {
+    "say": "1",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "17:00"
+    ]
+   },
+   {
+    "say": "yarin ne var",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Berber"
+    ],
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?"
+    ]
+   }
+  ]
+ }
+]

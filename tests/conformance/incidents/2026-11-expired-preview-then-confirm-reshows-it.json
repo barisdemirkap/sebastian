@@ -1,0 +1,38 @@
+{
+  "name": "confirming an EXPIRED preview writes nothing, says so and shows it again",
+  "incident": "ADR 0014: only an actually expired preview is announced, and only when the message is a confirmation; it is shown again (new TTL) and needs a fresh yes, so nothing is written from a stale preview.",
+  "setup": {
+    "provider": "rules",
+    "now": "2026-11-19T05:24"
+  },
+  "steps": [
+    {
+      "say": "yarın saat 15:00 berber ekle",
+      "kind": "free",
+      "preview": true
+    },
+    {
+      "advance_minutes": 11
+    },
+    {
+      "say": "evet",
+      "kind": "free",
+      "preview": true,
+      "saved_total": 0,
+      "contains": [
+        "Önizlemenin süresi dolmuştu",
+        "Berber",
+        "Yarın Cuma 20 Kasım 2026 15:00-15:30"
+      ],
+      "not_contains": [
+        "Önceki soru"
+      ]
+    },
+    {
+      "say": "evet",
+      "kind": "confirm",
+      "preview": false,
+      "saved_total": 1
+    }
+  ]
+}

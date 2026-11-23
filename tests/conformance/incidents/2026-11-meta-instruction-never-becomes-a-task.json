@@ -1,0 +1,82 @@
+{
+  "name": "a sentence that is an instruction about the list is never stored as a task title",
+  "incident": "'cop acme hala duruyor digerlerini done yapbilirsin bu saate kadar gecmis olanlar' created a task titled with the whole sentence. Meant: keep two open, close the rest. When the reading is not certain, ask a short question instead of storing the sentence.",
+  "setup": {
+    "provider": "rules",
+    "now": "2026-11-19T14:00",
+    "seed": [
+      {
+        "title": "Çöpü çıkar",
+        "start": "2026-11-19T07:30",
+        "end": "2026-11-19T07:45"
+      },
+      {
+        "title": "Aile hekimi: sağlık raporu al",
+        "start": "2026-11-19T08:50",
+        "end": "2026-11-19T09:50"
+      },
+      {
+        "title": "Metin kontrolü",
+        "start": "2026-11-19T12:30",
+        "end": "2026-11-19T13:00"
+      },
+      {
+        "title": "Araç muayenesi için randevu al",
+        "start": "2026-11-19T15:00",
+        "end": "2026-11-19T15:15"
+      },
+      {
+        "title": "Alexa ve Hue kurulumları",
+        "start": "2026-11-19T16:00",
+        "end": "2026-11-19T17:00"
+      }
+    ],
+    "tasks": [
+      "Çöpü akşam çıkar",
+      "Metin kontrolü",
+      "Araç muayenesi için randevu al",
+      "Alexa ve Hue kurulumları"
+    ]
+  },
+  "steps": [
+    {
+      "say": "çöp metin hala duruyor digerlerini done yapbilirsin bu saate kadar gecmis olanlar",
+      "kind": "free",
+      "contains": [
+        "Çöpü akşam çıkar",
+        "Araç muayenesi"
+      ],
+      "not_contains": [
+        "Görev ekledim"
+      ]
+    },
+    {
+      "say": "evet",
+      "kind": "free",
+      "contains": [
+        "Tamamlandı olarak işaretledim"
+      ],
+      "not_contains": [
+        "Görev ekledim"
+      ]
+    },
+    {
+      "say": "çöp hala duruyor gerisini sen hallet bu saate kadar gecmis olanlar",
+      "kind": "free",
+      "not_contains": [
+        "Görev ekledim",
+        "Tam anlayamadım"
+      ],
+      "contains": [
+        "?"
+      ]
+    },
+    {
+      "say": "görevlerim",
+      "kind": "free",
+      "not_contains": [
+        "gerisini"
+      ]
+    }
+  ]
+}

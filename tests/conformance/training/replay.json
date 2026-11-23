@@ -1,0 +1,130 @@
+[
+ {
+  "name": "replay-8-10da-is-a-clock-time-not-a-date",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T06:00"
+  },
+  "steps": [
+   {
+    "say": "doktor randevusu tam 8.50de evden cikmak icin 8.10da hazir olalim",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "19 Kasım",
+     "08:50"
+    ],
+    "not_contains": [
+     "2027",
+     "Ekim"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "replay-long-sentence-sharing-one-word-does-not-move-an-event",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T17:41",
+   "seed": [
+    {
+     "title": "Metin kontrolü",
+     "start": "2026-11-19T12:30",
+     "end": "2026-11-19T13:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "ehliyet icin cumartesi gunu gorusme durumlarini 12de kontrol edecegim bana onu hatirlat",
+    "kind": "free",
+    "not_contains": [
+     "takvimdeki \"Metin kontrolü\""
+    ]
+   }
+  ]
+ },
+ {
+  "name": "replay-dedim-ya-repeats-the-time-of-the-last-item",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T05:23",
+   "seed": [
+    {
+     "title": "Çöpü çıkar",
+     "start": "2026-11-19T07:30",
+     "end": "2026-11-19T07:45"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "çöpü cikarmayi sabah 7.30'a ekle",
+    "kind": "free",
+    "contains": [
+     "Zaten takvimde"
+    ]
+   },
+   {
+    "say": "sabah 7.30 dedim ya",
+    "kind": "free",
+    "contains": [
+     "Çöpü çıkar"
+    ],
+    "not_contains": [
+     "Dedim ya",
+     "Anlayamadık",
+     "anlayamadık"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "replay-yapilacak-isler-lists-todos",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T09:32",
+   "tasks": [
+    "Çöpü akşam çıkar"
+   ],
+   "seed": [
+    {
+     "title": "Metin kontrolü",
+     "start": "2026-11-19T12:30",
+     "end": "2026-11-19T13:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "bugun yapilacak islerim neler",
+    "kind": "free",
+    "contains": [
+     "Metin kontrolü",
+     "Çöpü akşam çıkar"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "replay-same-event-done-twice-is-one-line",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T17:41",
+   "tasks": [],
+   "seed": [
+    {
+     "title": "Aile hekimi: sağlık raporu al",
+     "start": "2026-11-19T08:50",
+     "end": "2026-11-19T09:50"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "saglik raporu bitti, rapor ucreti odendi surecleri bitti",
+    "kind": "free"
+   }
+  ]
+ }
+]

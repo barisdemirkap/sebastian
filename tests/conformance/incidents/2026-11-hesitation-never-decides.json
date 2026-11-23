@@ -1,0 +1,38 @@
+{
+  "name": "hesitation and gibberish never confirm or cancel",
+  "incident": "Found by the first conformance run: 'eee' (a hesitation) collapsed to the colloquial yes 'e' and SAVED the event; 'hh' collapsed to 'h' and cancelled the preview. Neither is a decision.",
+  "setup": {
+    "provider": "rules"
+  },
+  "steps": [
+    {
+      "say": "yarın saat 15:00 diş hekimi ekle",
+      "kind": "free",
+      "preview": true
+    },
+    {
+      "say": "eee",
+      "kind": "neutral",
+      "preview": true,
+      "saved_total": 0
+    },
+    {
+      "say": "ee",
+      "kind": "neutral",
+      "preview": true,
+      "saved_total": 0
+    },
+    {
+      "say": "hh",
+      "kind": "neutral",
+      "preview": true,
+      "saved_total": 0
+    },
+    {
+      "say": "evet",
+      "kind": "confirm",
+      "saved_total": 1,
+      "preview": false
+    }
+  ]
+}

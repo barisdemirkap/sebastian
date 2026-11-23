@@ -1,0 +1,1320 @@
+[
+ {
+  "name": "b20-01",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Köpeği tıraş ettir",
+    "Akvaryum suyunu değiştir",
+    "Kış lastiklerini taktır",
+    "Kumbara parasını say",
+    "Misafir odasını hazırla",
+    "Elektrik sayacını fotoğrafla",
+    "Çocuk kitaplığını monte et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kopegi tiras ettirdim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Köpeği"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b20-02",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Köpeği tıraş ettir",
+    "Akvaryum suyunu değiştir",
+    "Kış lastiklerini taktır",
+    "Kumbara parasını say",
+    "Misafir odasını hazırla",
+    "Elektrik sayacını fotoğrafla",
+    "Çocuk kitaplığını monte et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "akvaryum suyu degistirildi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Akvaryum"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b20-03",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Köpeği tıraş ettir",
+    "Akvaryum suyunu değiştir",
+    "Kış lastiklerini taktır",
+    "Kumbara parasını say",
+    "Misafir odasını hazırla",
+    "Elektrik sayacını fotoğrafla",
+    "Çocuk kitaplığını monte et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kis lastikleri takildi usta aradi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Kış"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b20-04",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Köpeği tıraş ettir",
+    "Akvaryum suyunu değiştir",
+    "Kış lastiklerini taktır",
+    "Kumbara parasını say",
+    "Misafir odasını hazırla",
+    "Elektrik sayacını fotoğrafla",
+    "Çocuk kitaplığını monte et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kumbarayi saydim 840 lira cikti",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Kumbara"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b20-05",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Köpeği tıraş ettir",
+    "Akvaryum suyunu değiştir",
+    "Kış lastiklerini taktır",
+    "Kumbara parasını say",
+    "Misafir odasını hazırla",
+    "Elektrik sayacını fotoğrafla",
+    "Çocuk kitaplığını monte et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "misafir odasini hazirladim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Misafir"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b20-06",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Köpeği tıraş ettir",
+    "Akvaryum suyunu değiştir",
+    "Kış lastiklerini taktır",
+    "Kumbara parasını say",
+    "Misafir odasını hazırla",
+    "Elektrik sayacını fotoğrafla",
+    "Çocuk kitaplığını monte et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "sayaci fotografladim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Elektrik"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b20-07",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Köpeği tıraş ettir",
+    "Akvaryum suyunu değiştir",
+    "Kış lastiklerini taktır",
+    "Kumbara parasını say",
+    "Misafir odasını hazırla",
+    "Elektrik sayacını fotoğrafla",
+    "Çocuk kitaplığını monte et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kitaplik hala monte edilmedi cumartesi yaparim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Çocuk": "2026-11-21"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b20-08",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Köpeği tıraş ettir",
+    "Akvaryum suyunu değiştir",
+    "Kış lastiklerini taktır",
+    "Kumbara parasını say",
+    "Misafir odasını hazırla",
+    "Elektrik sayacını fotoğrafla",
+    "Çocuk kitaplığını monte et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kopek ve akvaryum yarina kalsin",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Köpeği": "2026-11-20",
+     "Akvaryum": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b20-09",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Köpeği tıraş ettir",
+    "Akvaryum suyunu değiştir",
+    "Kış lastiklerini taktır",
+    "Kumbara parasını say",
+    "Misafir odasını hazırla",
+    "Elektrik sayacını fotoğrafla",
+    "Çocuk kitaplığını monte et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "lastikler tamam kumbara pazartesi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Kış"
+    ],
+    "tasks_due": {
+     "Kumbara": "2026-11-23"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b20-10",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Köpeği tıraş ettir",
+    "Akvaryum suyunu değiştir",
+    "Kış lastiklerini taktır",
+    "Kumbara parasını say",
+    "Misafir odasını hazırla",
+    "Elektrik sayacını fotoğrafla",
+    "Çocuk kitaplığını monte et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "misafir odasi icin bugun yetisemedim cuma",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Misafir": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b20-11",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Köpeği tıraş ettir",
+    "Akvaryum suyunu değiştir",
+    "Kış lastiklerini taktır",
+    "Kumbara parasını say",
+    "Misafir odasını hazırla",
+    "Elektrik sayacını fotoğrafla",
+    "Çocuk kitaplığını monte et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "sayac fotografi cekilemedi yarin tekrar bakarim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Elektrik": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b20-12",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Köpeği tıraş ettir",
+    "Akvaryum suyunu değiştir",
+    "Kış lastiklerini taktır",
+    "Kumbara parasını say",
+    "Misafir odasını hazırla",
+    "Elektrik sayacını fotoğrafla",
+    "Çocuk kitaplığını monte et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kumbara parasi sayildi geri kalani yarina",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ]
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_done_has": [
+     "Kumbara"
+    ],
+    "tasks_due": {
+     "Köpeği": "2026-11-20",
+     "Akvaryum": "2026-11-20",
+     "Kış": "2026-11-20",
+     "Misafir": "2026-11-20",
+     "Elektrik": "2026-11-20",
+     "Çocuk": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b20-13",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Köpeği tıraş ettir",
+    "Akvaryum suyunu değiştir",
+    "Kış lastiklerini taktır",
+    "Kumbara parasını say",
+    "Misafir odasını hazırla",
+    "Elektrik sayacını fotoğrafla",
+    "Çocuk kitaplığını monte et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "akvaryum isine gerek kalmadi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ]
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_open_count": 6,
+    "tasks_open_not_has": [
+     "Akvaryum"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b20-14",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Köpeği tıraş ettir",
+    "Akvaryum suyunu değiştir",
+    "Kış lastiklerini taktır",
+    "Kumbara parasını say",
+    "Misafir odasını hazırla",
+    "Elektrik sayacını fotoğrafla",
+    "Çocuk kitaplığını monte et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "hepsi bitti artik",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ]
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_open_count": 0
+   }
+  ]
+ },
+ {
+  "name": "b20-15",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Seyahat sigortası yaptır",
+    "Vize başvurusunu tamamla",
+    "Uçak biletini kontrol et",
+    "Döviz bozdur",
+    "Valizi hazırla",
+    "Otel rezervasyonunu onayla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "seyahat sigortasi yapildi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Seyahat"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b20-16",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Seyahat sigortası yaptır",
+    "Vize başvurusunu tamamla",
+    "Uçak biletini kontrol et",
+    "Döviz bozdur",
+    "Valizi hazırla",
+    "Otel rezervasyonunu onayla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "vize basvurusunu tamamladim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Vize"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b20-17",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Seyahat sigortası yaptır",
+    "Vize başvurusunu tamamla",
+    "Uçak biletini kontrol et",
+    "Döviz bozdur",
+    "Valizi hazırla",
+    "Otel rezervasyonunu onayla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "ucak biletini kontrol ettim sorun yok",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Uçak"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b20-18",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Seyahat sigortası yaptır",
+    "Vize başvurusunu tamamla",
+    "Uçak biletini kontrol et",
+    "Döviz bozdur",
+    "Valizi hazırla",
+    "Otel rezervasyonunu onayla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "doviz bozduruldu",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Döviz"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b20-19",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Seyahat sigortası yaptır",
+    "Vize başvurusunu tamamla",
+    "Uçak biletini kontrol et",
+    "Döviz bozdur",
+    "Valizi hazırla",
+    "Otel rezervasyonunu onayla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "valiz hazir",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Valiz"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b20-20",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Seyahat sigortası yaptır",
+    "Vize başvurusunu tamamla",
+    "Uçak biletini kontrol et",
+    "Döviz bozdur",
+    "Valizi hazırla",
+    "Otel rezervasyonunu onayla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "otel rezervasyonu onaylandi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Otel"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b20-21",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Seyahat sigortası yaptır",
+    "Vize başvurusunu tamamla",
+    "Uçak biletini kontrol et",
+    "Döviz bozdur",
+    "Valizi hazırla",
+    "Otel rezervasyonunu onayla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "vize ve sigorta yarina kalsin",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Vize": "2026-11-20",
+     "Seyahat": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b20-22",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Seyahat sigortası yaptır",
+    "Vize başvurusunu tamamla",
+    "Uçak biletini kontrol et",
+    "Döviz bozdur",
+    "Valizi hazırla",
+    "Otel rezervasyonunu onayla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "valizi bugun hazirlayamadim cumartesi hazirlarim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Valiz": "2026-11-21"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b20-23",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Seyahat sigortası yaptır",
+    "Vize başvurusunu tamamla",
+    "Uçak biletini kontrol et",
+    "Döviz bozdur",
+    "Valizi hazırla",
+    "Otel rezervasyonunu onayla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "doviz bozdurma isi tamam otel yarina",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Döviz"
+    ],
+    "tasks_due": {
+     "Otel": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b20-24",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Seyahat sigortası yaptır",
+    "Vize başvurusunu tamamla",
+    "Uçak biletini kontrol et",
+    "Döviz bozdur",
+    "Valizi hazırla",
+    "Otel rezervasyonunu onayla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "ucak bileti icin vaktim yok",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_open_count": 6,
+    "contains": [
+     "taşıyayım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b20-25",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Seyahat sigortası yaptır",
+    "Vize başvurusunu tamamla",
+    "Uçak biletini kontrol et",
+    "Döviz bozdur",
+    "Valizi hazırla",
+    "Otel rezervasyonunu onayla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "vizeyi yarin tamamlarim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Vize": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b20-26",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Seyahat sigortası yaptır",
+    "Vize başvurusunu tamamla",
+    "Uçak biletini kontrol et",
+    "Döviz bozdur",
+    "Valizi hazırla",
+    "Otel rezervasyonunu onayla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "seyahat sigortasi iptal",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ]
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_open_count": 5,
+    "tasks_open_not_has": [
+     "Seyahat"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b20-27",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Seyahat sigortası yaptır",
+    "Vize başvurusunu tamamla",
+    "Uçak biletini kontrol et",
+    "Döviz bozdur",
+    "Valizi hazırla",
+    "Otel rezervasyonunu onayla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kalanlari cumartesiye birak",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ]
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_due": {
+     "Seyahat": "2026-11-21",
+     "Vize": "2026-11-21",
+     "Uçak": "2026-11-21",
+     "Döviz": "2026-11-21",
+     "Valiz": "2026-11-21",
+     "Otel": "2026-11-21"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b20-28",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Seyahat sigortası yaptır",
+    "Vize başvurusunu tamamla",
+    "Uçak biletini kontrol et",
+    "Döviz bozdur",
+    "Valizi hazırla",
+    "Otel rezervasyonunu onayla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "valiz ve doviz tamamdir",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Valiz",
+     "Döviz"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b20-29",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Konsolosluk randevusu al",
+    "Abonelikleri gözden geçir",
+    "Eski telefonu sat",
+    "Yedek şifreleri güncelle",
+    "Mutfak musluğunu tamir ettir",
+    "Çocuğun bisikletini tamir ettir",
+    "Posta kutusunu boşalt"
+   ]
+  },
+  "steps": [
+   {
+    "say": "konsolosluk randevusu alindi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Konsolosluk"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b20-30",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Konsolosluk randevusu al",
+    "Abonelikleri gözden geçir",
+    "Eski telefonu sat",
+    "Yedek şifreleri güncelle",
+    "Mutfak musluğunu tamir ettir",
+    "Çocuğun bisikletini tamir ettir",
+    "Posta kutusunu boşalt"
+   ]
+  },
+  "steps": [
+   {
+    "say": "abonelikleri gozden gecirdim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Abonelik"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b20-31",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Konsolosluk randevusu al",
+    "Abonelikleri gözden geçir",
+    "Eski telefonu sat",
+    "Yedek şifreleri güncelle",
+    "Mutfak musluğunu tamir ettir",
+    "Çocuğun bisikletini tamir ettir",
+    "Posta kutusunu boşalt"
+   ]
+  },
+  "steps": [
+   {
+    "say": "eski telefonu sattim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Eski"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b20-32",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Konsolosluk randevusu al",
+    "Abonelikleri gözden geçir",
+    "Eski telefonu sat",
+    "Yedek şifreleri güncelle",
+    "Mutfak musluğunu tamir ettir",
+    "Çocuğun bisikletini tamir ettir",
+    "Posta kutusunu boşalt"
+   ]
+  },
+  "steps": [
+   {
+    "say": "sifreler guncellendi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Yedek"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b20-33",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Konsolosluk randevusu al",
+    "Abonelikleri gözden geçir",
+    "Eski telefonu sat",
+    "Yedek şifreleri güncelle",
+    "Mutfak musluğunu tamir ettir",
+    "Çocuğun bisikletini tamir ettir",
+    "Posta kutusunu boşalt"
+   ]
+  },
+  "steps": [
+   {
+    "say": "musluk tamir edildi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Mutfak"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b20-34",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Konsolosluk randevusu al",
+    "Abonelikleri gözden geçir",
+    "Eski telefonu sat",
+    "Yedek şifreleri güncelle",
+    "Mutfak musluğunu tamir ettir",
+    "Çocuğun bisikletini tamir ettir",
+    "Posta kutusunu boşalt"
+   ]
+  },
+  "steps": [
+   {
+    "say": "bisikletin tamiri bitti",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Çocuğun bisikletini"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b20-35",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Konsolosluk randevusu al",
+    "Abonelikleri gözden geçir",
+    "Eski telefonu sat",
+    "Yedek şifreleri güncelle",
+    "Mutfak musluğunu tamir ettir",
+    "Çocuğun bisikletini tamir ettir",
+    "Posta kutusunu boşalt"
+   ]
+  },
+  "steps": [
+   {
+    "say": "posta kutusu bosaltildi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Posta"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b20-36",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Konsolosluk randevusu al",
+    "Abonelikleri gözden geçir",
+    "Eski telefonu sat",
+    "Yedek şifreleri güncelle",
+    "Mutfak musluğunu tamir ettir",
+    "Çocuğun bisikletini tamir ettir",
+    "Posta kutusunu boşalt"
+   ]
+  },
+  "steps": [
+   {
+    "say": "telefon satisi cumaya kalsin",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Eski": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b20-37",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Konsolosluk randevusu al",
+    "Abonelikleri gözden geçir",
+    "Eski telefonu sat",
+    "Yedek şifreleri güncelle",
+    "Mutfak musluğunu tamir ettir",
+    "Çocuğun bisikletini tamir ettir",
+    "Posta kutusunu boşalt"
+   ]
+  },
+  "steps": [
+   {
+    "say": "musluk ve bisiklet bugun olmadi pazartesiye",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Mutfak": "2026-11-23",
+     "Çocuğun bisikletini": "2026-11-23"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b20-38",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Konsolosluk randevusu al",
+    "Abonelikleri gözden geçir",
+    "Eski telefonu sat",
+    "Yedek şifreleri güncelle",
+    "Mutfak musluğunu tamir ettir",
+    "Çocuğun bisikletini tamir ettir",
+    "Posta kutusunu boşalt"
+   ]
+  },
+  "steps": [
+   {
+    "say": "abonelik isi tamam sifreler yarina",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Abonelik"
+    ],
+    "tasks_due": {
+     "Yedek": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b20-39",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Konsolosluk randevusu al",
+    "Abonelikleri gözden geçir",
+    "Eski telefonu sat",
+    "Yedek şifreleri güncelle",
+    "Mutfak musluğunu tamir ettir",
+    "Çocuğun bisikletini tamir ettir",
+    "Posta kutusunu boşalt"
+   ]
+  },
+  "steps": [
+   {
+    "say": "konsolosluk icin bugun gidemedim pazartesi gideriz",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Konsolosluk": "2026-11-23"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b20-40",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Konsolosluk randevusu al",
+    "Abonelikleri gözden geçir",
+    "Eski telefonu sat",
+    "Yedek şifreleri güncelle",
+    "Mutfak musluğunu tamir ettir",
+    "Çocuğun bisikletini tamir ettir",
+    "Posta kutusunu boşalt"
+   ]
+  },
+  "steps": [
+   {
+    "say": "posta kutusuna gerek kalmadi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ]
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_open_count": 6,
+    "tasks_open_not_has": [
+     "Posta"
+    ]
+   }
+  ]
+ }
+]

@@ -1,0 +1,1324 @@
+[
+ {
+  "name": "b21-01",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çiçeklerin saksısını değiştir",
+    "Pencere camlarını sil",
+    "Halıyı vakumla",
+    "Banyo fayanslarını fırçala",
+    "Buzdolabını boşalt",
+    "Perdeleri yıka",
+    "Ayakkabılığı düzenle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "saksilari degistirdim bi de camlari sildim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Çiçeklerin",
+     "Pencere"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b21-02",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çiçeklerin saksısını değiştir",
+    "Pencere camlarını sil",
+    "Halıyı vakumla",
+    "Banyo fayanslarını fırçala",
+    "Buzdolabını boşalt",
+    "Perdeleri yıka",
+    "Ayakkabılığı düzenle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "hali vakumlandi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Halıyı"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b21-03",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çiçeklerin saksısını değiştir",
+    "Pencere camlarını sil",
+    "Halıyı vakumla",
+    "Banyo fayanslarını fırçala",
+    "Buzdolabını boşalt",
+    "Perdeleri yıka",
+    "Ayakkabılığı düzenle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "banyo fayanslari fircalandi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Banyo"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b21-04",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çiçeklerin saksısını değiştir",
+    "Pencere camlarını sil",
+    "Halıyı vakumla",
+    "Banyo fayanslarını fırçala",
+    "Buzdolabını boşalt",
+    "Perdeleri yıka",
+    "Ayakkabılığı düzenle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "buzdolabini bosalttim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Buzdolabını"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b21-05",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çiçeklerin saksısını değiştir",
+    "Pencere camlarını sil",
+    "Halıyı vakumla",
+    "Banyo fayanslarını fırçala",
+    "Buzdolabını boşalt",
+    "Perdeleri yıka",
+    "Ayakkabılığı düzenle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "perdeleri yikadim astim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Perde"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b21-06",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çiçeklerin saksısını değiştir",
+    "Pencere camlarını sil",
+    "Halıyı vakumla",
+    "Banyo fayanslarını fırçala",
+    "Buzdolabını boşalt",
+    "Perdeleri yıka",
+    "Ayakkabılığı düzenle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "ayakkabiligi duzenledim zor oldu",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Ayakkabılığı"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b21-07",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çiçeklerin saksısını değiştir",
+    "Pencere camlarını sil",
+    "Halıyı vakumla",
+    "Banyo fayanslarını fırçala",
+    "Buzdolabını boşalt",
+    "Perdeleri yıka",
+    "Ayakkabılığı düzenle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "camlar bu hafta olmaz haftaya",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Pencere": "2026-11-26"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b21-08",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çiçeklerin saksısını değiştir",
+    "Pencere camlarını sil",
+    "Halıyı vakumla",
+    "Banyo fayanslarını fırçala",
+    "Buzdolabını boşalt",
+    "Perdeleri yıka",
+    "Ayakkabılığı düzenle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "hali ve perde yarin yapilacak",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Halıyı": "2026-11-20",
+     "Perde": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b21-09",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çiçeklerin saksısını değiştir",
+    "Pencere camlarını sil",
+    "Halıyı vakumla",
+    "Banyo fayanslarını fırçala",
+    "Buzdolabını boşalt",
+    "Perdeleri yıka",
+    "Ayakkabılığı düzenle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "banyoyu bugun bitiremedim cumartesi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Banyo": "2026-11-21"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b21-10",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çiçeklerin saksısını değiştir",
+    "Pencere camlarını sil",
+    "Halıyı vakumla",
+    "Banyo fayanslarını fırçala",
+    "Buzdolabını boşalt",
+    "Perdeleri yıka",
+    "Ayakkabılığı düzenle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "buzdolabi tamam ayakkabilik yarina kaldi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Buzdolabını"
+    ],
+    "tasks_due": {
+     "Ayakkabılığı": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b21-11",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çiçeklerin saksısını değiştir",
+    "Pencere camlarını sil",
+    "Halıyı vakumla",
+    "Banyo fayanslarını fırçala",
+    "Buzdolabını boşalt",
+    "Perdeleri yıka",
+    "Ayakkabılığı düzenle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "saksi degisimi icin vaktim kalmadi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_open_count": 7,
+    "contains": [
+     "taşıyayım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b21-12",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çiçeklerin saksısını değiştir",
+    "Pencere camlarını sil",
+    "Halıyı vakumla",
+    "Banyo fayanslarını fırçala",
+    "Buzdolabını boşalt",
+    "Perdeleri yıka",
+    "Ayakkabılığı düzenle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "perde isi yapildi gerisi pazara kalsin",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ]
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_done_has": [
+     "Perde"
+    ],
+    "tasks_due": {
+     "Çiçeklerin": "2026-11-22",
+     "Pencere": "2026-11-22",
+     "Halıyı": "2026-11-22",
+     "Banyo": "2026-11-22",
+     "Buzdolabını": "2026-11-22",
+     "Ayakkabılığı": "2026-11-22"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b21-13",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çiçeklerin saksısını değiştir",
+    "Pencere camlarını sil",
+    "Halıyı vakumla",
+    "Banyo fayanslarını fırçala",
+    "Buzdolabını boşalt",
+    "Perdeleri yıka",
+    "Ayakkabılığı düzenle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "ayakkabilik isi iptal",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ]
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_open_count": 6,
+    "tasks_open_not_has": [
+     "Ayakkabılığı"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b21-14",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çiçeklerin saksısını değiştir",
+    "Pencere camlarını sil",
+    "Halıyı vakumla",
+    "Banyo fayanslarını fırçala",
+    "Buzdolabını boşalt",
+    "Perdeleri yıka",
+    "Ayakkabılığı düzenle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "hepsi yapildi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ]
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_open_count": 0
+   }
+  ]
+ },
+ {
+  "name": "b21-15",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Öğretmene not yaz",
+    "Okul servis kartını yenile",
+    "Çocuk pasaportu için fotoğraf çektir",
+    "Kitap fuarı biletini al",
+    "Futbol kursunu iptal et",
+    "Doğum günü davetiyelerini dağıt"
+   ]
+  },
+  "steps": [
+   {
+    "say": "ogretmene notu yazdim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Öğretmene"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b21-16",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Öğretmene not yaz",
+    "Okul servis kartını yenile",
+    "Çocuk pasaportu için fotoğraf çektir",
+    "Kitap fuarı biletini al",
+    "Futbol kursunu iptal et",
+    "Doğum günü davetiyelerini dağıt"
+   ]
+  },
+  "steps": [
+   {
+    "say": "servis karti yenilendi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Okul servis"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b21-17",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Öğretmene not yaz",
+    "Okul servis kartını yenile",
+    "Çocuk pasaportu için fotoğraf çektir",
+    "Kitap fuarı biletini al",
+    "Futbol kursunu iptal et",
+    "Doğum günü davetiyelerini dağıt"
+   ]
+  },
+  "steps": [
+   {
+    "say": "pasaport fotografi cekildi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Çocuk pasaportu"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b21-18",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Öğretmene not yaz",
+    "Okul servis kartını yenile",
+    "Çocuk pasaportu için fotoğraf çektir",
+    "Kitap fuarı biletini al",
+    "Futbol kursunu iptal et",
+    "Doğum günü davetiyelerini dağıt"
+   ]
+  },
+  "steps": [
+   {
+    "say": "fuar biletini aldim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Kitap fuarı"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b21-19",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Öğretmene not yaz",
+    "Okul servis kartını yenile",
+    "Çocuk pasaportu için fotoğraf çektir",
+    "Kitap fuarı biletini al",
+    "Futbol kursunu iptal et",
+    "Doğum günü davetiyelerini dağıt"
+   ]
+  },
+  "steps": [
+   {
+    "say": "futbol kursu iptal edildi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Futbol"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b21-20",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Öğretmene not yaz",
+    "Okul servis kartını yenile",
+    "Çocuk pasaportu için fotoğraf çektir",
+    "Kitap fuarı biletini al",
+    "Futbol kursunu iptal et",
+    "Doğum günü davetiyelerini dağıt"
+   ]
+  },
+  "steps": [
+   {
+    "say": "davetiyeleri dagittim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Doğum günü"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b21-21",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Öğretmene not yaz",
+    "Okul servis kartını yenile",
+    "Çocuk pasaportu için fotoğraf çektir",
+    "Kitap fuarı biletini al",
+    "Futbol kursunu iptal et",
+    "Doğum günü davetiyelerini dağıt"
+   ]
+  },
+  "steps": [
+   {
+    "say": "ogretmen notu ve servis karti yarina kalsin",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Öğretmene": "2026-11-20",
+     "Okul servis": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b21-22",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Öğretmene not yaz",
+    "Okul servis kartını yenile",
+    "Çocuk pasaportu için fotoğraf çektir",
+    "Kitap fuarı biletini al",
+    "Futbol kursunu iptal et",
+    "Doğum günü davetiyelerini dağıt"
+   ]
+  },
+  "steps": [
+   {
+    "say": "fuar biletini bugun alamadim cuma alirim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Kitap fuarı": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b21-23",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Öğretmene not yaz",
+    "Okul servis kartını yenile",
+    "Çocuk pasaportu için fotoğraf çektir",
+    "Kitap fuarı biletini al",
+    "Futbol kursunu iptal et",
+    "Doğum günü davetiyelerini dağıt"
+   ]
+  },
+  "steps": [
+   {
+    "say": "davetiyeler tamam futbol pazartesi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Doğum günü"
+    ],
+    "tasks_due": {
+     "Futbol": "2026-11-23"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b21-24",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Öğretmene not yaz",
+    "Okul servis kartını yenile",
+    "Çocuk pasaportu için fotoğraf çektir",
+    "Kitap fuarı biletini al",
+    "Futbol kursunu iptal et",
+    "Doğum günü davetiyelerini dağıt"
+   ]
+  },
+  "steps": [
+   {
+    "say": "pasaport fotografi icin vaktim yok",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_open_count": 6,
+    "contains": [
+     "taşıyayım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b21-25",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Öğretmene not yaz",
+    "Okul servis kartını yenile",
+    "Çocuk pasaportu için fotoğraf çektir",
+    "Kitap fuarı biletini al",
+    "Futbol kursunu iptal et",
+    "Doğum günü davetiyelerini dağıt"
+   ]
+  },
+  "steps": [
+   {
+    "say": "futbol kursuna gerek kalmadi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ]
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_open_count": 5,
+    "tasks_open_not_has": [
+     "Futbol"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b21-26",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Öğretmene not yaz",
+    "Okul servis kartını yenile",
+    "Çocuk pasaportu için fotoğraf çektir",
+    "Kitap fuarı biletini al",
+    "Futbol kursunu iptal et",
+    "Doğum günü davetiyelerini dağıt"
+   ]
+  },
+  "steps": [
+   {
+    "say": "fotograf cektirme isi tamam kalanlar cumartesiye",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ]
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_done_has": [
+     "Çocuk pasaportu"
+    ],
+    "tasks_due": {
+     "Öğretmene": "2026-11-21",
+     "Okul servis": "2026-11-21",
+     "Kitap fuarı": "2026-11-21",
+     "Futbol": "2026-11-21",
+     "Doğum günü": "2026-11-21"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b21-27",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Öğretmene not yaz",
+    "Okul servis kartını yenile",
+    "Çocuk pasaportu için fotoğraf çektir",
+    "Kitap fuarı biletini al",
+    "Futbol kursunu iptal et",
+    "Doğum günü davetiyelerini dağıt"
+   ]
+  },
+  "steps": [
+   {
+    "say": "servis kartini yarin yenilerim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Okul servis": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b21-28",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Öğretmene not yaz",
+    "Okul servis kartını yenile",
+    "Çocuk pasaportu için fotoğraf çektir",
+    "Kitap fuarı biletini al",
+    "Futbol kursunu iptal et",
+    "Doğum günü davetiyelerini dağıt"
+   ]
+  },
+  "steps": [
+   {
+    "say": "ogretmen notu ve davetiyeler bitti",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Öğretmene",
+     "Doğum günü"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b21-29",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Aylık raporu gönder",
+    "Ekip toplantısı gündemini hazırla",
+    "Yeni lisansı satın al",
+    "Kullanıcı anketini hazırla",
+    "Eski dosyaları arşivle",
+    "Yedeklemeyi test et",
+    "İK formunu doldur"
+   ]
+  },
+  "steps": [
+   {
+    "say": "aylik rapor gonderildi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Aylık"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b21-30",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Aylık raporu gönder",
+    "Ekip toplantısı gündemini hazırla",
+    "Yeni lisansı satın al",
+    "Kullanıcı anketini hazırla",
+    "Eski dosyaları arşivle",
+    "Yedeklemeyi test et",
+    "İK formunu doldur"
+   ]
+  },
+  "steps": [
+   {
+    "say": "toplanti gundemini hazirladim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Ekip"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b21-31",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Aylık raporu gönder",
+    "Ekip toplantısı gündemini hazırla",
+    "Yeni lisansı satın al",
+    "Kullanıcı anketini hazırla",
+    "Eski dosyaları arşivle",
+    "Yedeklemeyi test et",
+    "İK formunu doldur"
+   ]
+  },
+  "steps": [
+   {
+    "say": "yeni lisansi satin aldim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Yeni lisans"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b21-32",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Aylık raporu gönder",
+    "Ekip toplantısı gündemini hazırla",
+    "Yeni lisansı satın al",
+    "Kullanıcı anketini hazırla",
+    "Eski dosyaları arşivle",
+    "Yedeklemeyi test et",
+    "İK formunu doldur"
+   ]
+  },
+  "steps": [
+   {
+    "say": "anket hazirlandi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Kullanıcı"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b21-33",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Aylık raporu gönder",
+    "Ekip toplantısı gündemini hazırla",
+    "Yeni lisansı satın al",
+    "Kullanıcı anketini hazırla",
+    "Eski dosyaları arşivle",
+    "Yedeklemeyi test et",
+    "İK formunu doldur"
+   ]
+  },
+  "steps": [
+   {
+    "say": "eski dosyalar arsivlendi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Eski"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b21-34",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Aylık raporu gönder",
+    "Ekip toplantısı gündemini hazırla",
+    "Yeni lisansı satın al",
+    "Kullanıcı anketini hazırla",
+    "Eski dosyaları arşivle",
+    "Yedeklemeyi test et",
+    "İK formunu doldur"
+   ]
+  },
+  "steps": [
+   {
+    "say": "yedeklemeyi test ettim calisiyor",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Yedekleme"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b21-35",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Aylık raporu gönder",
+    "Ekip toplantısı gündemini hazırla",
+    "Yeni lisansı satın al",
+    "Kullanıcı anketini hazırla",
+    "Eski dosyaları arşivle",
+    "Yedeklemeyi test et",
+    "İK formunu doldur"
+   ]
+  },
+  "steps": [
+   {
+    "say": "ik formunu doldurdum",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "İK"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b21-36",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Aylık raporu gönder",
+    "Ekip toplantısı gündemini hazırla",
+    "Yeni lisansı satın al",
+    "Kullanıcı anketini hazırla",
+    "Eski dosyaları arşivle",
+    "Yedeklemeyi test et",
+    "İK formunu doldur"
+   ]
+  },
+  "steps": [
+   {
+    "say": "lisans ve anket yarina kalsin",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Yeni lisans": "2026-11-20",
+     "Kullanıcı": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b21-37",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Aylık raporu gönder",
+    "Ekip toplantısı gündemini hazırla",
+    "Yeni lisansı satın al",
+    "Kullanıcı anketini hazırla",
+    "Eski dosyaları arşivle",
+    "Yedeklemeyi test et",
+    "İK formunu doldur"
+   ]
+  },
+  "steps": [
+   {
+    "say": "raporu bugun gonderemedim pazartesiye",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Aylık": "2026-11-23"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b21-38",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Aylık raporu gönder",
+    "Ekip toplantısı gündemini hazırla",
+    "Yeni lisansı satın al",
+    "Kullanıcı anketini hazırla",
+    "Eski dosyaları arşivle",
+    "Yedeklemeyi test et",
+    "İK formunu doldur"
+   ]
+  },
+  "steps": [
+   {
+    "say": "yedekleme testi tamam ik formu cuma",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Yedekleme"
+    ],
+    "tasks_due": {
+     "İK": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b21-39",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Aylık raporu gönder",
+    "Ekip toplantısı gündemini hazırla",
+    "Yeni lisansı satın al",
+    "Kullanıcı anketini hazırla",
+    "Eski dosyaları arşivle",
+    "Yedeklemeyi test et",
+    "İK formunu doldur"
+   ]
+  },
+  "steps": [
+   {
+    "say": "arsiv isi icin vaktim olmadi yarina",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Eski": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b21-40",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Aylık raporu gönder",
+    "Ekip toplantısı gündemini hazırla",
+    "Yeni lisansı satın al",
+    "Kullanıcı anketini hazırla",
+    "Eski dosyaları arşivle",
+    "Yedeklemeyi test et",
+    "İK formunu doldur"
+   ]
+  },
+  "steps": [
+   {
+    "say": "gundem hazirligina gerek kalmadi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ]
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_open_count": 6,
+    "tasks_open_not_has": [
+     "Ekip"
+    ]
+   }
+  ]
+ }
+]

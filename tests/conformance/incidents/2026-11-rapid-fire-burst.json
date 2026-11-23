@@ -1,0 +1,30 @@
+{
+  "name": "rapid-fire burst",
+  "incident": "Several texts in one poll batch are one turn (ADR 0006 debounce): no duplicate replies, no double writes.",
+  "setup": {
+    "provider": "rules"
+  },
+  "steps": [
+    {
+      "say": [
+        "yarın saat 15:00 diş hekimi ekle",
+        "hmm",
+        "bir saniye"
+      ],
+      "kind": "free",
+      "replies_max": 1,
+      "saved_total": 0
+    },
+    {
+      "say": "evet",
+      "kind": "confirm",
+      "saved_total": 1,
+      "replies_max": 1,
+      "preview": false
+    },
+    {
+      "redeliver": true,
+      "saved_total": 1
+    }
+  ]
+}

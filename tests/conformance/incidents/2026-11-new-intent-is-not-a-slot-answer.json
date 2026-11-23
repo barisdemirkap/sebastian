@@ -1,0 +1,119 @@
+{
+  "name": "a new self-contained command is never swallowed as the answer to an open question",
+  "incident": "After 'Hangi gun?' the owner sent a different command (hourly reminder), which was taken as the slot answer ('Saat kacta?'); the next unrelated command got 'Saat kacta?' again. An undated to-do ('odeyecegiz') is a task: no question at all.",
+  "setup": {
+    "provider": "rules",
+    "now": "2026-11-19T14:00",
+    "seed": [
+      {
+        "title": "Çöpü çıkar",
+        "start": "2026-11-19T07:30",
+        "end": "2026-11-19T07:45"
+      },
+      {
+        "title": "Aile hekimi: sağlık raporu al",
+        "start": "2026-11-19T08:50",
+        "end": "2026-11-19T09:50"
+      },
+      {
+        "title": "Metin kontrolü",
+        "start": "2026-11-19T12:30",
+        "end": "2026-11-19T13:00"
+      },
+      {
+        "title": "Araç muayenesi için randevu al",
+        "start": "2026-11-19T15:00",
+        "end": "2026-11-19T15:15"
+      },
+      {
+        "title": "Alexa ve Hue kurulumları",
+        "start": "2026-11-19T16:00",
+        "end": "2026-11-19T17:00"
+      }
+    ],
+    "tasks": [
+      "Çöpü akşam çıkar",
+      "Metin kontrolü",
+      "Araç muayenesi için randevu al",
+      "Alexa ve Hue kurulumları"
+    ]
+  },
+  "steps": [
+    {
+      "say": "bir tane daha ekle amcamin trafik cezasini odeyecegiz",
+      "kind": "free",
+      "contains": [
+        "Görev ekledim"
+      ],
+      "not_contains": [
+        "Hangi gün",
+        "Saat kaçta"
+      ]
+    },
+    {
+      "say": "yarın toplantı ekle",
+      "kind": "free",
+      "contains": [
+        "Saat kaçta"
+      ]
+    },
+    {
+      "say": "saat aksam 6dan sonra saat başı hatirlatsin 4 yapilmamis işi",
+      "kind": "free",
+      "contains": [
+        "her saat başı"
+      ],
+      "not_contains": [
+        "Saat kaçta?"
+      ]
+    },
+    {
+      "say": "yarın toplantı ekle",
+      "kind": "free",
+      "contains": [
+        "Saat kaçta"
+      ]
+    },
+    {
+      "say": "yarin'in listesine duş ve kişisel bakim ekle",
+      "kind": "free",
+      "contains": [
+        "Yarının listesine"
+      ],
+      "not_contains": [
+        "Saat kaçta"
+      ]
+    },
+    {
+      "say": "yarın toplantı ekle",
+      "kind": "free",
+      "contains": [
+        "Saat kaçta"
+      ]
+    },
+    {
+      "say": "bugun ne var",
+      "kind": "free",
+      "contains": [
+        "Alexa"
+      ],
+      "not_contains": [
+        "Saat kaçta"
+      ]
+    },
+    {
+      "say": "yarın toplantı ekle",
+      "kind": "free",
+      "contains": [
+        "Saat kaçta"
+      ]
+    },
+    {
+      "say": "kurulumlari yaptim çöp aksam cikacak",
+      "kind": "free",
+      "not_contains": [
+        "Saat kaçta"
+      ]
+    }
+  ]
+}

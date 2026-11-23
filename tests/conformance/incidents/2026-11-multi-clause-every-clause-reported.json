@@ -1,0 +1,86 @@
+{
+  "name": "a message with three clauses handles every clause and reports each; nothing is dropped, nothing is saved unconfirmed, no failure menu",
+  "incident": "'kurulumlari yaptim cop aksam cikacak 18.30da amcamin trafik cezalari odenecek aksam 23te' produced only the 23:00 preview; the done clause and the 18:30 clause vanished, a failure menu followed and the event was then added. Now: done -> closed, never a delete offer (training loop), 18:30 -> edit of the existing event, 23:00 -> add preview; one preview at a time, the rest queued and shown after each answer. The event replaces the same open task.",
+  "agent": false,
+  "setup": {
+    "provider": "rules",
+    "now": "2026-11-19T14:00",
+    "seed": [
+      {
+        "title": "Çöpü çıkar",
+        "start": "2026-11-19T07:30",
+        "end": "2026-11-19T07:45"
+      },
+      {
+        "title": "Aile hekimi: sağlık raporu al",
+        "start": "2026-11-19T08:50",
+        "end": "2026-11-19T09:50"
+      },
+      {
+        "title": "Metin kontrolü",
+        "start": "2026-11-19T12:30",
+        "end": "2026-11-19T13:00"
+      },
+      {
+        "title": "Araç muayenesi için randevu al",
+        "start": "2026-11-19T15:00",
+        "end": "2026-11-19T15:15"
+      },
+      {
+        "title": "Alexa ve Hue kurulumları",
+        "start": "2026-11-19T16:00",
+        "end": "2026-11-19T17:00"
+      }
+    ],
+    "tasks": [
+      "Çöpü akşam çıkar",
+      "Metin kontrolü",
+      "Araç muayenesi için randevu al",
+      "Alexa ve Hue kurulumları",
+      "Amcamın trafik cezasını öde"
+    ]
+  },
+  "steps": [
+    {
+      "say": "kurulumlari yaptim çöp aksam cikacak 18.30da amcamin trafik cezalari odenecek aksam 23te",
+      "kind": "free",
+      "preview": true,
+      "contains": [
+        "Alexa ve Hue kurulumları",
+        "18:30",
+        "Önce: Çöpü çıkar"
+      ],
+      "not_contains": [
+        "birbirimizi",
+        "Tam anlayamadım"
+      ],
+      "saved_total": 5
+    },
+    {
+      "say": "evet",
+      "kind": "confirm",
+      "preview": true,
+      "contains": [
+        "23:00",
+        "trafik cezas"
+      ],
+      "not_contains": [
+        "birbirimizi"
+      ],
+      "saved_total": 5
+    },
+    {
+      "say": "evet",
+      "kind": "confirm",
+      "preview": false,
+      "saved_total": 6,
+      "contains": [
+        "Ekledim",
+        "Amcamın trafik cezasını öde"
+      ],
+      "not_contains": [
+        "birbirimizi"
+      ]
+    }
+  ]
+}

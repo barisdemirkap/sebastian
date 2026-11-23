@@ -1,0 +1,48 @@
+{
+  "name": "'sabah 7.30 dedim ya' re-reads the time, apologises in one clause and moves on",
+  "incident": "Live failure of 2026-11-19 05:23 (ADR 0014): the owner answered the day question with 'sabah 7.30 dedim ya' (I said morning 7:30!) and the bot asked 'Hangi tarih?' and then the 'Takıldık galiba' menu. A time given in an answer is taken from the text; the next missing field is asked (here none: the date is the next 07:30), with 'Haklısınız, saati aldım.'",
+  "setup": {
+    "provider": "rules",
+    "now": "2026-11-19T05:24"
+  },
+  "steps": [
+    {
+      "say": "çöp ekle",
+      "kind": "free",
+      "preview": false,
+      "contains": [
+        "Hangi gün?",
+        "1) Bugün",
+        "2) Yarın",
+        "3) Başka gün"
+      ]
+    },
+    {
+      "say": "sabah 7.30 dedim ya",
+      "kind": "free",
+      "preview": true,
+      "contains": [
+        "Haklısınız, saati aldım.",
+        "Bugün Perşembe 19 Kasım 2026 07:30-07:45"
+      ],
+      "not_contains": [
+        "Hangi tarih",
+        "Hangi gün",
+        "Takıldık"
+      ],
+      "saved_total": 0,
+      "facts": [
+        {
+          "name": "time already given",
+          "asks": "Saat kaç"
+        }
+      ]
+    },
+    {
+      "say": "evet",
+      "kind": "confirm",
+      "preview": false,
+      "saved_total": 1
+    }
+  ]
+}

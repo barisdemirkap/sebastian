@@ -1,0 +1,1535 @@
+[
+ {
+  "name": "b12-01",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çatı tamircisini ara",
+    "Kışlık montları çıkar",
+    "Halı sahaya yer ayır",
+    "Mama kabını yıka",
+    "Ev ödevini yazdır",
+    "Biletleri rezerve et",
+    "Antibiyotiği bitir",
+    "Şarj aletini sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "catı tamircisini aradım",
+    "kind": "free",
+    "tasks_done_has": [
+     "Çatı"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b12-02",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çatı tamircisini ara",
+    "Kışlık montları çıkar",
+    "Halı sahaya yer ayır",
+    "Mama kabını yıka",
+    "Ev ödevini yazdır",
+    "Biletleri rezerve et",
+    "Antibiyotiği bitir",
+    "Şarj aletini sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "montlari cikardim",
+    "kind": "free",
+    "tasks_done_has": [
+     "mont"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b12-03",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çatı tamircisini ara",
+    "Kışlık montları çıkar",
+    "Halı sahaya yer ayır",
+    "Mama kabını yıka",
+    "Ev ödevini yazdır",
+    "Biletleri rezerve et",
+    "Antibiyotiği bitir",
+    "Şarj aletini sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "hali saha ayarlandi",
+    "kind": "free",
+    "tasks_done_has": [
+     "Halı"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b12-04",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çatı tamircisini ara",
+    "Kışlık montları çıkar",
+    "Halı sahaya yer ayır",
+    "Mama kabını yıka",
+    "Ev ödevini yazdır",
+    "Biletleri rezerve et",
+    "Antibiyotiği bitir",
+    "Şarj aletini sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "mama kabi yikandi",
+    "kind": "free",
+    "tasks_done_has": [
+     "Mama"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b12-05",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çatı tamircisini ara",
+    "Kışlık montları çıkar",
+    "Halı sahaya yer ayır",
+    "Mama kabını yıka",
+    "Ev ödevini yazdır",
+    "Biletleri rezerve et",
+    "Antibiyotiği bitir",
+    "Şarj aletini sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "odevi yazdirdim",
+    "kind": "free",
+    "tasks_done_has": [
+     "ödev"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b12-06",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çatı tamircisini ara",
+    "Kışlık montları çıkar",
+    "Halı sahaya yer ayır",
+    "Mama kabını yıka",
+    "Ev ödevini yazdır",
+    "Biletleri rezerve et",
+    "Antibiyotiği bitir",
+    "Şarj aletini sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "biletler rezerve edildi",
+    "kind": "free",
+    "tasks_done_has": [
+     "Bilet"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b12-07",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çatı tamircisini ara",
+    "Kışlık montları çıkar",
+    "Halı sahaya yer ayır",
+    "Mama kabını yıka",
+    "Ev ödevini yazdır",
+    "Biletleri rezerve et",
+    "Antibiyotiği bitir",
+    "Şarj aletini sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "antibiyotik bitti",
+    "kind": "free",
+    "tasks_done_has": [
+     "Antibiyot"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b12-08",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çatı tamircisini ara",
+    "Kışlık montları çıkar",
+    "Halı sahaya yer ayır",
+    "Mama kabını yıka",
+    "Ev ödevini yazdır",
+    "Biletleri rezerve et",
+    "Antibiyotiği bitir",
+    "Şarj aletini sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "sarj aletini siparis verdim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Şarj"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b12-09",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çatı tamircisini ara",
+    "Kışlık montları çıkar",
+    "Halı sahaya yer ayır",
+    "Mama kabını yıka",
+    "Ev ödevini yazdır",
+    "Biletleri rezerve et",
+    "Antibiyotiği bitir",
+    "Şarj aletini sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "cati isi yarina kalsin",
+    "kind": "free",
+    "tasks_due": {
+     "Çatı": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b12-10",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çatı tamircisini ara",
+    "Kışlık montları çıkar",
+    "Halı sahaya yer ayır",
+    "Mama kabını yıka",
+    "Ev ödevini yazdır",
+    "Biletleri rezerve et",
+    "Antibiyotiği bitir",
+    "Şarj aletini sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "biletleri cumartesi rezerve ederim",
+    "kind": "free",
+    "tasks_due": {
+     "Bilet": "2026-11-21"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b12-11",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çatı tamircisini ara",
+    "Kışlık montları çıkar",
+    "Halı sahaya yer ayır",
+    "Mama kabını yıka",
+    "Ev ödevini yazdır",
+    "Biletleri rezerve et",
+    "Antibiyotiği bitir",
+    "Şarj aletini sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "halı sahayı pazartesi ayirtacagim",
+    "kind": "free",
+    "tasks_due": {
+     "Halı": "2026-11-23"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b12-12",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çatı tamircisini ara",
+    "Kışlık montları çıkar",
+    "Halı sahaya yer ayır",
+    "Mama kabını yıka",
+    "Ev ödevini yazdır",
+    "Biletleri rezerve et",
+    "Antibiyotiği bitir",
+    "Şarj aletini sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "odev yazdirma bu yarina",
+    "kind": "free",
+    "tasks_due": {
+     "ödev": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b12-13",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çatı tamircisini ara",
+    "Kışlık montları çıkar",
+    "Halı sahaya yer ayır",
+    "Mama kabını yıka",
+    "Ev ödevini yazdır",
+    "Biletleri rezerve et",
+    "Antibiyotiği bitir",
+    "Şarj aletini sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "montlari cikarmayi unuttum",
+    "kind": "free",
+    "contains": [
+     "akşama mı"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b12-14",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çatı tamircisini ara",
+    "Kışlık montları çıkar",
+    "Halı sahaya yer ayır",
+    "Mama kabını yıka",
+    "Ev ödevini yazdır",
+    "Biletleri rezerve et",
+    "Antibiyotiği bitir",
+    "Şarj aletini sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "tamirciyi aramayi unuttum",
+    "kind": "free"
+   },
+   {
+    "say": "yarina",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Çatı": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b12-15",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çatı tamircisini ara",
+    "Kışlık montları çıkar",
+    "Halı sahaya yer ayır",
+    "Mama kabını yıka",
+    "Ev ödevini yazdır",
+    "Biletleri rezerve et",
+    "Antibiyotiği bitir",
+    "Şarj aletini sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "mama kabini yikamayi unuttum",
+    "kind": "free"
+   },
+   {
+    "say": "aksama",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Mama": "2026-11-19"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b12-16",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çatı tamircisini ara",
+    "Kışlık montları çıkar",
+    "Halı sahaya yer ayır",
+    "Mama kabını yıka",
+    "Ev ödevini yazdır",
+    "Biletleri rezerve et",
+    "Antibiyotiği bitir",
+    "Şarj aletini sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "cati bitti, bilet yarina, mama kabi cuma",
+    "kind": "free",
+    "tasks_done_has": [
+     "Çatı"
+    ],
+    "tasks_due": {
+     "Bilet": "2026-11-20",
+     "Mama": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b12-17",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çatı tamircisini ara",
+    "Kışlık montları çıkar",
+    "Halı sahaya yer ayır",
+    "Mama kabını yıka",
+    "Ev ödevini yazdır",
+    "Biletleri rezerve et",
+    "Antibiyotiği bitir",
+    "Şarj aletini sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "hepsini cumartesiye atalim",
+    "kind": "free"
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_due": {
+     "Çatı": "2026-11-21",
+     "mont": "2026-11-21",
+     "Şarj": "2026-11-21"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b12-18",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çatı tamircisini ara",
+    "Kışlık montları çıkar",
+    "Halı sahaya yer ayır",
+    "Mama kabını yıka",
+    "Ev ödevini yazdır",
+    "Biletleri rezerve et",
+    "Antibiyotiği bitir",
+    "Şarj aletini sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "montlari cikardim digerleri yarina kalsin",
+    "kind": "free"
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_done_has": [
+     "mont"
+    ],
+    "tasks_due": {
+     "Çatı": "2026-11-20",
+     "Bilet": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b12-19",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çatı tamircisini ara",
+    "Kışlık montları çıkar",
+    "Halı sahaya yer ayır",
+    "Mama kabını yıka",
+    "Ev ödevini yazdır",
+    "Biletleri rezerve et",
+    "Antibiyotiği bitir",
+    "Şarj aletini sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "abi sarj aletini siparis ettim ya",
+    "kind": "free",
+    "tasks_done_has": [
+     "Şarj"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b12-20",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çatı tamircisini ara",
+    "Kışlık montları çıkar",
+    "Halı sahaya yer ayır",
+    "Mama kabını yıka",
+    "Ev ödevini yazdır",
+    "Biletleri rezerve et",
+    "Antibiyotiği bitir",
+    "Şarj aletini sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "antibiyotik isi tamamdir",
+    "kind": "free",
+    "tasks_done_has": [
+     "Antibiyot"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b12-21",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çatı tamircisini ara",
+    "Kışlık montları çıkar",
+    "Halı sahaya yer ayır",
+    "Mama kabını yıka",
+    "Ev ödevini yazdır",
+    "Biletleri rezerve et",
+    "Antibiyotiği bitir",
+    "Şarj aletini sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "biletleri ayirttim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Bilet"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b12-22",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çatı tamircisini ara",
+    "Kışlık montları çıkar",
+    "Halı sahaya yer ayır",
+    "Mama kabını yıka",
+    "Ev ödevini yazdır",
+    "Biletleri rezerve et",
+    "Antibiyotiği bitir",
+    "Şarj aletini sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "hali saha icin yer ayirdim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Halı"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b12-23",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çatı tamircisini ara",
+    "Kışlık montları çıkar",
+    "Halı sahaya yer ayır",
+    "Mama kabını yıka",
+    "Ev ödevini yazdır",
+    "Biletleri rezerve et",
+    "Antibiyotiği bitir",
+    "Şarj aletini sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "odev yazdirildi mama kabi yikandi",
+    "kind": "free",
+    "tasks_done_has": [
+     "ödev",
+     "Mama"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b12-24",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çatı tamircisini ara",
+    "Kışlık montları çıkar",
+    "Halı sahaya yer ayır",
+    "Mama kabını yıka",
+    "Ev ödevini yazdır",
+    "Biletleri rezerve et",
+    "Antibiyotiği bitir",
+    "Şarj aletini sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "catı tamircisini aradim",
+    "kind": "free"
+   },
+   {
+    "say": "bilet de",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Çatı",
+     "Bilet"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b12-25",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çatı tamircisini ara",
+    "Kışlık montları çıkar",
+    "Halı sahaya yer ayır",
+    "Mama kabını yıka",
+    "Ev ödevini yazdır",
+    "Biletleri rezerve et",
+    "Antibiyotiği bitir",
+    "Şarj aletini sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "montlar yarina",
+    "kind": "free"
+   },
+   {
+    "say": "antibiyotik de",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "mont": "2026-11-20",
+     "Antibiyot": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b12-26",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çatı tamircisini ara",
+    "Kışlık montları çıkar",
+    "Halı sahaya yer ayır",
+    "Mama kabını yıka",
+    "Ev ödevini yazdır",
+    "Biletleri rezerve et",
+    "Antibiyotiği bitir",
+    "Şarj aletini sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "BILETLER REZERVE EDILDI",
+    "kind": "free",
+    "tasks_done_has": [
+     "Bilet"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b12-27",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çatı tamircisini ara",
+    "Kışlık montları çıkar",
+    "Halı sahaya yer ayır",
+    "Mama kabını yıka",
+    "Ev ödevini yazdır",
+    "Biletleri rezerve et",
+    "Antibiyotiği bitir",
+    "Şarj aletini sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "sarj aletini siparis vermedm yarina",
+    "kind": "free",
+    "tasks_due": {
+     "Şarj": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b12-28",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çatı tamircisini ara",
+    "Kışlık montları çıkar",
+    "Halı sahaya yer ayır",
+    "Mama kabını yıka",
+    "Ev ödevini yazdır",
+    "Biletleri rezerve et",
+    "Antibiyotiği bitir",
+    "Şarj aletini sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "cati ve mont isi bugun olmaz cumartesiye",
+    "kind": "free",
+    "tasks_due": {
+     "Çatı": "2026-11-21",
+     "mont": "2026-11-21"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b12-29",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çatı tamircisini ara",
+    "Kışlık montları çıkar",
+    "Halı sahaya yer ayır",
+    "Mama kabını yıka",
+    "Ev ödevini yazdır",
+    "Biletleri rezerve et",
+    "Antibiyotiği bitir",
+    "Şarj aletini sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "bilet icin bugun fırsat bulamadim yarin ayirtirim",
+    "kind": "free",
+    "tasks_due": {
+     "Bilet": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b12-30",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çatı tamircisini ara",
+    "Kışlık montları çıkar",
+    "Halı sahaya yer ayır",
+    "Mama kabını yıka",
+    "Ev ödevini yazdır",
+    "Biletleri rezerve et",
+    "Antibiyotiği bitir",
+    "Şarj aletini sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "mama kabi yarina kaldi",
+    "kind": "free",
+    "tasks_due": {
+     "Mama": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b12-31",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T20:10",
+   "seed": [
+    {
+     "title": "Ders çalışma",
+     "start": "2026-11-19T19:00",
+     "end": "2026-11-19T20:00"
+    },
+    {
+     "title": "Sinema",
+     "start": "2026-11-20T21:00",
+     "end": "2026-11-20T23:00"
+    },
+    {
+     "title": "Yüzme",
+     "start": "2026-11-21T09:00",
+     "end": "2026-11-21T10:00"
+    },
+    {
+     "title": "Aile ziyareti",
+     "start": "2026-11-22T15:00",
+     "end": "2026-11-22T18:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "ders calisma bitti",
+    "kind": "free",
+    "contains": [
+     "Ders"
+    ],
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım",
+     "silinsin"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b12-32",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Ders çalışma",
+     "start": "2026-11-19T19:00",
+     "end": "2026-11-19T20:00"
+    },
+    {
+     "title": "Sinema",
+     "start": "2026-11-20T21:00",
+     "end": "2026-11-20T23:00"
+    },
+    {
+     "title": "Yüzme",
+     "start": "2026-11-21T09:00",
+     "end": "2026-11-21T10:00"
+    },
+    {
+     "title": "Aile ziyareti",
+     "start": "2026-11-22T15:00",
+     "end": "2026-11-22T18:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "sinemayi cumartesiye al",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "21 Kasım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b12-33",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Ders çalışma",
+     "start": "2026-11-19T19:00",
+     "end": "2026-11-19T20:00"
+    },
+    {
+     "title": "Sinema",
+     "start": "2026-11-20T21:00",
+     "end": "2026-11-20T23:00"
+    },
+    {
+     "title": "Yüzme",
+     "start": "2026-11-21T09:00",
+     "end": "2026-11-21T10:00"
+    },
+    {
+     "title": "Aile ziyareti",
+     "start": "2026-11-22T15:00",
+     "end": "2026-11-22T18:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "yuzmeyi pazara tasi",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "22 Kasım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b12-34",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Ders çalışma",
+     "start": "2026-11-19T19:00",
+     "end": "2026-11-19T20:00"
+    },
+    {
+     "title": "Sinema",
+     "start": "2026-11-20T21:00",
+     "end": "2026-11-20T23:00"
+    },
+    {
+     "title": "Yüzme",
+     "start": "2026-11-21T09:00",
+     "end": "2026-11-21T10:00"
+    },
+    {
+     "title": "Aile ziyareti",
+     "start": "2026-11-22T15:00",
+     "end": "2026-11-22T18:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "aile ziyaretini iptal et",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Aile"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b12-35",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Ders çalışma",
+     "start": "2026-11-19T19:00",
+     "end": "2026-11-19T20:00"
+    },
+    {
+     "title": "Sinema",
+     "start": "2026-11-20T21:00",
+     "end": "2026-11-20T23:00"
+    },
+    {
+     "title": "Yüzme",
+     "start": "2026-11-21T09:00",
+     "end": "2026-11-21T10:00"
+    },
+    {
+     "title": "Aile ziyareti",
+     "start": "2026-11-22T15:00",
+     "end": "2026-11-22T18:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "yarin ne var",
+    "kind": "free",
+    "contains": [
+     "Sinema"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b12-36",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Ders çalışma",
+     "start": "2026-11-19T19:00",
+     "end": "2026-11-19T20:00"
+    },
+    {
+     "title": "Sinema",
+     "start": "2026-11-20T21:00",
+     "end": "2026-11-20T23:00"
+    },
+    {
+     "title": "Yüzme",
+     "start": "2026-11-21T09:00",
+     "end": "2026-11-21T10:00"
+    },
+    {
+     "title": "Aile ziyareti",
+     "start": "2026-11-22T15:00",
+     "end": "2026-11-22T18:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "bugun ne kaldi",
+    "kind": "free",
+    "contains": [
+     "Ders"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b12-37",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T20:10",
+   "seed": [
+    {
+     "title": "Ders çalışma",
+     "start": "2026-11-19T19:00",
+     "end": "2026-11-19T20:00"
+    },
+    {
+     "title": "Sinema",
+     "start": "2026-11-20T21:00",
+     "end": "2026-11-20T23:00"
+    },
+    {
+     "title": "Yüzme",
+     "start": "2026-11-21T09:00",
+     "end": "2026-11-21T10:00"
+    },
+    {
+     "title": "Aile ziyareti",
+     "start": "2026-11-22T15:00",
+     "end": "2026-11-22T18:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "ders calisma bitti yuzme pazartesiye kalsin",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Yüzme",
+     "23 Kasım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b12-38",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T20:30",
+   "seed": [
+    {
+     "title": "Ders çalışma",
+     "start": "2026-11-19T19:00",
+     "end": "2026-11-19T20:00"
+    },
+    {
+     "title": "Sinema",
+     "start": "2026-11-20T21:00",
+     "end": "2026-11-20T23:00"
+    },
+    {
+     "title": "Yüzme",
+     "start": "2026-11-21T09:00",
+     "end": "2026-11-21T10:00"
+    },
+    {
+     "title": "Aile ziyareti",
+     "start": "2026-11-22T15:00",
+     "end": "2026-11-22T18:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "ders calisma yapildi",
+    "kind": "free",
+    "contains": [
+     "Ders"
+    ],
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım",
+     "silinsin"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b12-39",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Ders çalışma",
+     "start": "2026-11-19T19:00",
+     "end": "2026-11-19T20:00"
+    },
+    {
+     "title": "Sinema",
+     "start": "2026-11-20T21:00",
+     "end": "2026-11-20T23:00"
+    },
+    {
+     "title": "Yüzme",
+     "start": "2026-11-21T09:00",
+     "end": "2026-11-21T10:00"
+    },
+    {
+     "title": "Aile ziyareti",
+     "start": "2026-11-22T15:00",
+     "end": "2026-11-22T18:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "sinema cuma degil cumartesi",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "21 Kasım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b12-40",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Ders çalışma",
+     "start": "2026-11-19T19:00",
+     "end": "2026-11-19T20:00"
+    },
+    {
+     "title": "Sinema",
+     "start": "2026-11-20T21:00",
+     "end": "2026-11-20T23:00"
+    },
+    {
+     "title": "Yüzme",
+     "start": "2026-11-21T09:00",
+     "end": "2026-11-21T10:00"
+    },
+    {
+     "title": "Aile ziyareti",
+     "start": "2026-11-22T15:00",
+     "end": "2026-11-22T18:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "yuzmeyi sil",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Yüzme"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b12-41",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çatı tamircisini ara",
+    "Kışlık montları çıkar",
+    "Halı sahaya yer ayır",
+    "Mama kabını yıka",
+    "Ev ödevini yazdır",
+    "Biletleri rezerve et",
+    "Antibiyotiği bitir",
+    "Şarj aletini sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "biletleri cumartesi sabah 9da ayirtacagim",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Bilet",
+     "09:00",
+     "21 Kasım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b12-42",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çatı tamircisini ara",
+    "Kışlık montları çıkar",
+    "Halı sahaya yer ayır",
+    "Mama kabını yıka",
+    "Ev ödevini yazdır",
+    "Biletleri rezerve et",
+    "Antibiyotiği bitir",
+    "Şarj aletini sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "antibiyotigi yarin 10 gibi hatirlat",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Antibiyot",
+     "10:00"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b12-43",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çatı tamircisini ara",
+    "Kışlık montları çıkar",
+    "Halı sahaya yer ayır",
+    "Mama kabını yıka",
+    "Ev ödevini yazdır",
+    "Biletleri rezerve et",
+    "Antibiyotiği bitir",
+    "Şarj aletini sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "biletleri yarina birak",
+    "kind": "free"
+   },
+   {
+    "say": "bunu cuma sabah 10da hatirlat",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Bilet",
+     "10:00"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b12-44",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çatı tamircisini ara",
+    "Kışlık montları çıkar",
+    "Halı sahaya yer ayır",
+    "Mama kabını yıka",
+    "Ev ödevini yazdır",
+    "Biletleri rezerve et",
+    "Antibiyotiği bitir",
+    "Şarj aletini sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "montlari aksam 9da cikaracagim",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "mont",
+     "21:00"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b12-45",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çatı tamircisini ara",
+    "Kışlık montları çıkar",
+    "Halı sahaya yer ayır",
+    "Mama kabını yıka",
+    "Ev ödevini yazdır",
+    "Biletleri rezerve et",
+    "Antibiyotiği bitir",
+    "Şarj aletini sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "cati ve bilet isi cumartesiye lutfen",
+    "kind": "free",
+    "tasks_due": {
+     "Çatı": "2026-11-21",
+     "Bilet": "2026-11-21"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b12-46",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çatı tamircisini ara",
+    "Kışlık montları çıkar",
+    "Halı sahaya yer ayır",
+    "Mama kabını yıka",
+    "Ev ödevini yazdır",
+    "Biletleri rezerve et",
+    "Antibiyotiği bitir",
+    "Şarj aletini sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "montlari cikardim, bilet yarin, sarj pazar, mama cuma",
+    "kind": "free",
+    "tasks_done_has": [
+     "mont"
+    ],
+    "tasks_due": {
+     "Bilet": "2026-11-20",
+     "Şarj": "2026-11-22",
+     "Mama": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b12-47",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çatı tamircisini ara",
+    "Kışlık montları çıkar",
+    "Halı sahaya yer ayır",
+    "Mama kabını yıka",
+    "Ev ödevini yazdır",
+    "Biletleri rezerve et",
+    "Antibiyotiği bitir",
+    "Şarj aletini sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "cati isi icin hic vaktim yok yarina",
+    "kind": "free",
+    "tasks_due": {
+     "Çatı": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b12-48",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çatı tamircisini ara",
+    "Kışlık montları çıkar",
+    "Halı sahaya yer ayır",
+    "Mama kabını yıka",
+    "Ev ödevini yazdır",
+    "Biletleri rezerve et",
+    "Antibiyotiği bitir",
+    "Şarj aletini sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "mama kabi isi bitti ama bilet hala duruyor",
+    "kind": "free",
+    "tasks_done_has": [
+     "Mama"
+    ],
+    "tasks_open_has": [
+     "Bilet"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b12-49",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çatı tamircisini ara",
+    "Kışlık montları çıkar",
+    "Halı sahaya yer ayır",
+    "Mama kabını yıka",
+    "Ev ödevini yazdır",
+    "Biletleri rezerve et",
+    "Antibiyotiği bitir",
+    "Şarj aletini sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "sarj aleti iptal",
+    "kind": "free"
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_open_count": 7
+   }
+  ]
+ },
+ {
+  "name": "b12-50",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çatı tamircisini ara",
+    "Kışlık montları çıkar",
+    "Halı sahaya yer ayır",
+    "Mama kabını yıka",
+    "Ev ödevini yazdır",
+    "Biletleri rezerve et",
+    "Antibiyotiği bitir",
+    "Şarj aletini sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "antibiyotik tamam sonunda yaa",
+    "kind": "free",
+    "tasks_done_has": [
+     "Antibiyot"
+    ]
+   }
+  ]
+ }
+]

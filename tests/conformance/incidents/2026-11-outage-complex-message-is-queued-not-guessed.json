@@ -1,0 +1,38 @@
+{
+  "name": "model unavailable: a three-fact message is stored, never guessed",
+  "incident": "Live failure of 2026-11-19 07:02 (incident J, ADR 0021): the model hit its usage limit, the rules parser read 'copu evden cikarken ... bugun 10da initech toplantim var 11de de cto ile toplantim var' as ONE garbled event ('Copu evden cikarken cikartacagim initech toplantim 11de cto ile toplantim', 10:00-10:15) and added the way-out menu. In an outage a message the rules cannot parse with high confidence is classified complex, stored in the retry queue, nothing is previewed or written, the owner is told once that Sebastian is in simple mode, and the way-out menu is never shown.",
+  "agent": false,
+  "setup": {
+    "provider": "flaky",
+    "model_up": false,
+    "now": "2026-11-19T07:02",
+    "model_intents": {
+      "initech": {
+        "intent": "add_event",
+        "title": "GTech toplantısı",
+        "date": "2026-11-19",
+        "time": "10:00",
+        "duration_min": null,
+        "all_day": false
+      }
+    }
+  },
+  "steps": [
+    {
+      "say": "copu evden cikarken cikartacagim bugun 10da initech toplantim var 11de de cto ile toplantim var",
+      "kind": "free",
+      "preview": false,
+      "saved_total": 0,
+      "contains": [
+        "basit kipte",
+        "Mesajınızı kaydettim, hiçbir şey eklemedim; model döndüğünde yeniden okuyup önünüze getireceğim"
+      ],
+      "not_contains": [
+        "Takıldık",
+        "Galiba birbirimizi",
+        "Hatırlatma 30 dk önce",
+        "Bugün 10:00"
+      ]
+    }
+  ]
+}

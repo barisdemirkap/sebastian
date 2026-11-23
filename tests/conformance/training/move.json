@@ -1,0 +1,316 @@
+[
+ {
+  "name": "move-to-clock",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Toplantı",
+     "start": "2026-11-19T14:00",
+     "end": "2026-11-19T15:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "toplantiyi 16:00'ya al",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "16:00"
+    ],
+    "saved_total": 1
+   },
+   {
+    "say": "evet",
+    "kind": "confirm",
+    "saved_has": [
+     {
+      "title": "Toplantı",
+      "start": "2026-11-19T16:00:00+03:00"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "move-to-weekday",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Diş hekimi",
+     "start": "2026-11-19T17:00",
+     "end": "2026-11-19T18:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "dis hekimini cumaya tasi",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Cuma 20 Kasım"
+    ],
+    "saved_total": 1
+   }
+  ]
+ },
+ {
+  "name": "move-to-tomorrow-evening-clock",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Yoga dersi",
+     "start": "2026-11-19T20:30",
+     "end": "2026-11-19T21:30"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "yoga dersini yarin 19da yap",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "19:00"
+    ],
+    "saved_total": 1
+   }
+  ]
+ },
+ {
+  "name": "move-ambiguous-asks-once",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Ekip toplantısı",
+     "start": "2026-11-19T11:00",
+     "end": "2026-11-19T12:00"
+    },
+    {
+     "title": "Müşteri toplantısı",
+     "start": "2026-11-19T14:00",
+     "end": "2026-11-19T15:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "toplantiyi 17ye al",
+    "kind": "free",
+    "contains": [
+     "Hangisi"
+    ],
+    "preview": false
+   },
+   {
+    "say": "1",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "17:00"
+    ],
+    "not_contains": [
+     "Numarasını"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "delete-preview-needs-evet-sil",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Yoga dersi",
+     "start": "2026-11-19T20:30",
+     "end": "2026-11-19T21:30"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "yoga dersini sil",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "SİLMEMİ"
+    ]
+   },
+   {
+    "say": "evet",
+    "kind": "neutral",
+    "preview": true,
+    "saved_total": 1
+   },
+   {
+    "say": "evet sil",
+    "kind": "confirm",
+    "preview": false,
+    "saved_total": 0
+   }
+  ]
+ },
+ {
+  "name": "delete-cancel",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Yoga dersi",
+     "start": "2026-11-19T20:30",
+     "end": "2026-11-19T21:30"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "yoga dersini iptal et",
+    "kind": "free",
+    "preview": true
+   },
+   {
+    "say": "hayır",
+    "kind": "cancel",
+    "preview": false,
+    "saved_total": 1
+   }
+  ]
+ },
+ {
+  "name": "delete-by-day-phrase",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Toplantı",
+     "start": "2026-11-20T10:00",
+     "end": "2026-11-20T11:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "yarin 10 da olan toplantiyi sil",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "20 Kasım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "delete-two-events-one-message",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Alışveriş",
+     "start": "2026-11-20T11:00",
+     "end": "2026-11-20T12:00"
+    },
+    {
+     "title": "Sabah işleri",
+     "start": "2026-11-20T08:00",
+     "end": "2026-11-20T09:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "yarin alisveris ve sabah islerini de kaldir",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Alışveriş"
+    ],
+    "not_contains": [
+     "Tam anlayamadım"
+    ]
+   },
+   {
+    "say": "evet sil",
+    "kind": "confirm",
+    "preview": true,
+    "saved_total": 1
+   },
+   {
+    "say": "evet sil",
+    "kind": "confirm",
+    "preview": false,
+    "saved_total": 0
+   }
+  ],
+  "incident": "Both named events of a 'sil' clause need a preview each, in order; none is dropped."
+ },
+ {
+  "name": "move-by-saat-basi-evening",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T12:00",
+   "seed": [
+    {
+     "title": "Çöpü çıkar",
+     "start": "2026-11-19T07:30",
+     "end": "2026-11-19T07:45"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "cop aksam cikacak 18.30da",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "18:30"
+    ],
+    "saved_total": 1
+   }
+  ]
+ },
+ {
+  "name": "reschedule-then-keep-preview-on-read",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Toplantı",
+     "start": "2026-11-19T14:00",
+     "end": "2026-11-19T15:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "toplantiyi 16:00'ya al",
+    "kind": "free",
+    "preview": true
+   },
+   {
+    "say": "yarin ne var?",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Yarın"
+    ],
+    "not_contains": [
+     "Numarasını"
+    ]
+   }
+  ]
+ }
+]

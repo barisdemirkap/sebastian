@@ -1,0 +1,50 @@
+{
+  "name": "a doctor message with a ready-by time edits the existing doctor event and sets a reminder; no new 'hazır ol' event, no conflict with itself",
+  "incident": "Live failure of 2026-11-19 06:27 (incident I, ADR 0017): the calendar had 'Aile hekimi: sağlık raporu al' today 09:00-10:00. The owner said the doctor appointment is exactly at 8:50 and to be ready at 8:10. The bot proposed a NEW 60 minute event 'Doktor randevusu için hazır ol' 08:10-09:10 with a conflict warning against the doctor event. Now: ONE edit preview (start 08:50, duration kept, reminder 40 min) with before and after.",
+  "setup": {
+    "provider": "rules",
+    "now": "2026-11-19T06:27",
+    "seed": [
+      {
+        "title": "Aile hekimi: sağlık raporu al",
+        "start": "2026-11-19T09:00",
+        "end": "2026-11-19T10:00"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "say": "doktor randevusu tam 8.50de evden cikmak icin 8.10da hazir olalim",
+      "kind": "free",
+      "preview": true,
+      "contains": [
+        "Şunu şöyle değiştiriyorum",
+        "Önce: Aile hekimi: sağlık raporu al",
+        "09:00-10:00",
+        "Sonra: Aile hekimi: sağlık raporu al",
+        "08:50-09:50",
+        "Hatırlatma: 40 dk önce"
+      ],
+      "not_contains": [
+        "Şunu takvime işliyorum",
+        "hazır ol 08:10",
+        "Dikkat"
+      ],
+      "saved_total": 1
+    },
+    {
+      "say": "evet",
+      "kind": "confirm",
+      "preview": false,
+      "saved_total": 1,
+      "saved_has": [
+        {
+          "title": "Aile hekimi: sağlık raporu al",
+          "start": "2026-11-19T08:50:00+03:00",
+          "end": "2026-11-19T09:50:00+03:00",
+          "reminder_minutes": 40
+        }
+      ]
+    }
+  ]
+}

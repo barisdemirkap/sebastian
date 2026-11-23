@@ -1,0 +1,34 @@
+{
+  "name": "'persembe' on a Thursday finds today's event for a delete too",
+  "incident": "ADR 0012: 'camasiri persembeden kaldir' written on the Thursday itself must find the event of TODAY (the old date resolution looked only at next week and said nothing was found).",
+  "setup": {
+    "provider": "rules",
+    "now": "2026-11-19T05:01",
+    "seed": [
+      [
+        "İkinci çamaşır turu",
+        10,
+        "2026-11-19"
+      ]
+    ]
+  },
+  "steps": [
+    {
+      "say": "camasiri persembe gununden kaldir",
+      "kind": "free",
+      "preview": true,
+      "contains": [
+        "SİLMEMİ",
+        "19 Kasım 2026"
+      ]
+    },
+    {
+      "say": "evet sil",
+      "kind": "confirm",
+      "contains": [
+        "Sildim"
+      ],
+      "saved_total": 0
+    }
+  ]
+}

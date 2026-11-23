@@ -1,0 +1,305 @@
+[
+ {
+  "name": "done-defer-defer",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kitapları topla",
+    "Arabayı yıka",
+    "Dilekçeyi ver"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kitaplari topladim, arabayi yarina birak, dilekceyi cumaya ertele",
+    "kind": "free",
+    "tasks_done_has": [
+     "Kitap"
+    ],
+    "tasks_due": {
+     "Araba": "2026-11-20",
+     "Dilek": "2026-11-20"
+    },
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "three-defers-with-bu-yarina",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kitapları topla",
+    "Arabayı yıka",
+    "Dilekçeyi ver"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kitap bu yarina araba bu yarina dilekce bu yarina",
+    "kind": "free",
+    "tasks_due": {
+     "Kitap": "2026-11-20",
+     "Araba": "2026-11-20",
+     "Dilek": "2026-11-20"
+    },
+    "tasks_open_count": 3
+   }
+  ]
+ },
+ {
+  "name": "keep-one-done-rest",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kitapları topla",
+    "Arabayı yıka",
+    "Dilekçeyi ver"
+   ]
+  },
+  "steps": [
+   {
+    "say": "sadece araba kalsin gerisini yaptim",
+    "kind": "free"
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_open_count": 1,
+    "tasks_open_has": [
+     "Araba"
+    ],
+    "tasks_done_has": [
+     "Kitap",
+     "Dilek"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "done-then-remaining-read",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kitapları topla",
+    "Arabayı yıka"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kitaplari topladim bugun neler kaldi",
+    "kind": "free",
+    "tasks_done_has": [
+     "Kitap"
+    ],
+    "contains": [
+     "Araba"
+    ],
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "all-done-but-one-deferred",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kitapları topla",
+    "Arabayı yıka",
+    "Dilekçeyi ver"
+   ]
+  },
+  "steps": [
+   {
+    "say": "arabayi yarina birak digerleri bitti",
+    "kind": "free"
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_due": {
+     "Araba": "2026-11-20"
+    },
+    "tasks_done_has": [
+     "Kitap",
+     "Dilek"
+    ],
+    "tasks_open_count": 1
+   }
+  ]
+ },
+ {
+  "name": "event-done-and-task-deferred",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T12:00",
+   "tasks": [
+    "Kitapları topla"
+   ],
+   "seed": [
+    {
+     "title": "Ekip toplantısı",
+     "start": "2026-11-19T09:00",
+     "end": "2026-11-19T10:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "toplanti bitti, kitaplar yarina kalsin",
+    "kind": "free",
+    "tasks_due": {
+     "Kitap": "2026-11-20"
+    },
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil"
+    ],
+    "saved_total": 1,
+    "preview": false,
+    "contains": [
+     "Ekip toplantısı"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "move-two-events-to-tomorrow",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Ekip toplantısı",
+     "start": "2026-11-19T14:00",
+     "end": "2026-11-19T15:00"
+    },
+    {
+     "title": "Müşteri görüşmesi",
+     "start": "2026-11-19T16:00",
+     "end": "2026-11-19T17:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "ekip toplantisi yarina kalsin, musteri gorusmesi yarina kalsin",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "20 Kasım"
+    ],
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "Tam anlayamadım"
+    ]
+   },
+   {
+    "say": "evet",
+    "kind": "confirm",
+    "preview": true,
+    "saved_total": 2
+   },
+   {
+    "say": "evet",
+    "kind": "confirm",
+    "preview": false,
+    "saved_total": 2
+   }
+  ]
+ },
+ {
+  "name": "delete-event-and-add-task",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Yoga dersi",
+     "start": "2026-11-20T20:30",
+     "end": "2026-11-20T21:30"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "yoga dersini kaldir, bir de market yapmam lazim",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Yoga"
+    ],
+    "tasks_open_has": [
+     "Market"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "negation-kitaplari-topladim-ama-arabayi-yapamadim",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kitapları topla",
+    "Arabayı yıka"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kitaplari topladim ama arabayi yapamadim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Kitap"
+    ],
+    "tasks_done_not": [
+     "Araba"
+    ],
+    "tasks_open_has": [
+     "Araba"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "negation-arabayi-yikamadim-kitaplari-topladim",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kitapları topla",
+    "Arabayı yıka"
+   ]
+  },
+  "steps": [
+   {
+    "say": "arabayi yikamadim kitaplari topladim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Kitap"
+    ],
+    "tasks_done_not": [
+     "Araba"
+    ],
+    "tasks_open_has": [
+     "Araba"
+    ]
+   }
+  ]
+ }
+]

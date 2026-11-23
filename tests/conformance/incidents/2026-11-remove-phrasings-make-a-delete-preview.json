@@ -1,0 +1,89 @@
+{
+  "name": "kaldir / kaldirdin mi / kalmasin / gerek yok / cikar all open a delete preview",
+  "incident": "Live failure of 2026-11-19 (ADR 0011): 'camasiri kaldir' did not remove the event and 'camasiri persembe gununden kaldirdin mi?' found it but stored nothing. Every removal wording finds the event (fuzzy title, date hint) and opens a pending delete preview with the 'evet sil' rules.",
+  "setup": {
+    "provider": "rules",
+    "seed": [
+      [
+        "İkinci çamaşır turu",
+        10,
+        "2026-11-19"
+      ]
+    ]
+  },
+  "steps": [
+    {
+      "say": "camasiri kaldir",
+      "kind": "free",
+      "preview": true,
+      "contains": [
+        "SİLMEMİ"
+      ]
+    },
+    {
+      "say": "hayır",
+      "kind": "cancel",
+      "preview": false,
+      "saved_total": 1
+    },
+    {
+      "say": "camasiri persembe gununden kaldirdin mi?",
+      "kind": "free",
+      "preview": true,
+      "contains": [
+        "SİLMEMİ"
+      ]
+    },
+    {
+      "say": "hayır",
+      "kind": "cancel",
+      "preview": false,
+      "saved_total": 1
+    },
+    {
+      "say": "camasir kalmasın",
+      "kind": "free",
+      "preview": true,
+      "contains": [
+        "SİLMEMİ"
+      ]
+    },
+    {
+      "say": "hayır",
+      "kind": "cancel",
+      "preview": false,
+      "saved_total": 1
+    },
+    {
+      "say": "çamaşıra gerek yok",
+      "kind": "free",
+      "preview": true,
+      "contains": [
+        "SİLMEMİ"
+      ]
+    },
+    {
+      "say": "hayır",
+      "kind": "cancel",
+      "preview": false,
+      "saved_total": 1
+    },
+    {
+      "say": "çamaşırı çıkar",
+      "kind": "free",
+      "preview": true,
+      "contains": [
+        "SİLMEMİ"
+      ]
+    },
+    {
+      "say": "evet sil",
+      "kind": "confirm",
+      "contains": [
+        "Sildim"
+      ],
+      "preview": false,
+      "saved_total": 0
+    }
+  ]
+}

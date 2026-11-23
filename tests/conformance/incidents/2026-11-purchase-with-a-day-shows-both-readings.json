@@ -1,0 +1,36 @@
+{
+  "name": "an unclear purchase-or-event utterance shows ONE question with two numbered readings; 1 adds to the list",
+  "incident": "ADR 0017: 'yarın ekmek alınacak' may be a shopping item or a calendar chore. One numbered choice instead of an open question. List adds stay immediate.",
+  "setup": {
+    "provider": "rules",
+    "now": "2026-11-19T06:27"
+  },
+  "steps": [
+    {
+      "say": "yarın ekmek alınacak",
+      "kind": "free",
+      "preview": false,
+      "contains": [
+        "1)",
+        "2)",
+        "Alınacaklar",
+        "Takvim"
+      ],
+      "not_contains": [
+        "Hangi gün",
+        "Saat kaçta"
+      ],
+      "saved_total": 0
+    },
+    {
+      "say": "1",
+      "kind": "free",
+      "preview": false,
+      "contains": [
+        "Alınacaklar listesine ekledim: Ekmek",
+        "☐ Ekmek"
+      ],
+      "saved_total": 0
+    }
+  ]
+}

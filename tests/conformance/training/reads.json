@@ -1,0 +1,350 @@
+[
+ {
+  "name": "today-read",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Initech toplantısı",
+     "start": "2026-11-19T10:00",
+     "end": "2026-11-19T11:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "bugun ne var",
+    "kind": "free",
+    "contains": [
+     "Initech toplantısı"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "tomorrow-programi-nasil",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Yoga dersi",
+     "start": "2026-11-20T20:30",
+     "end": "2026-11-20T21:30"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "yarinin programi nasil?",
+    "kind": "free",
+    "contains": [
+     "Cuma 20 Kasım",
+     "Yoga"
+    ],
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "Tam anlayamadım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "tomorrow-plan-variants",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Yoga dersi",
+     "start": "2026-11-20T20:30",
+     "end": "2026-11-20T21:30"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "yarin planim nasil",
+    "kind": "free",
+    "contains": [
+     "Yoga"
+    ]
+   },
+   {
+    "say": "yarin ne yapiyoruz",
+    "kind": "free",
+    "contains": [
+     "Yoga"
+    ],
+    "not_contains": [
+     "Tam anlayamadım"
+    ],
+    "repeat_ok": true
+   },
+   {
+    "say": "yarin bos muyum",
+    "kind": "free",
+    "contains": [
+     "Yoga"
+    ],
+    "repeat_ok": true
+   }
+  ]
+ },
+ {
+  "name": "weekday-read",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Piknik",
+     "start": "2026-11-21T11:00",
+     "end": "2026-11-21T12:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "cumartesi ne var",
+    "kind": "free",
+    "contains": [
+     "Piknik"
+    ],
+    "not_contains": [
+     "Tam anlayamadım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "week-read",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Piknik",
+     "start": "2026-11-21T11:00",
+     "end": "2026-11-21T12:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "bu hafta ne var",
+    "kind": "free",
+    "contains": [
+     "Piknik"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "empty-tomorrow",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00"
+  },
+  "steps": [
+   {
+    "say": "yarin ne var",
+    "kind": "free",
+    "contains": [
+     "Yarın takvimde bir şey yok"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "remaining-and-tomorrow-in-one-message",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T19:00",
+   "seed": [
+    {
+     "title": "Akşam yemeği",
+     "start": "2026-11-19T20:00",
+     "end": "2026-11-19T21:00"
+    },
+    {
+     "title": "Yoga dersi",
+     "start": "2026-11-20T20:30",
+     "end": "2026-11-20T21:30"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "bugunun kalanlarini ve yarinin planlarini soyle",
+    "kind": "free",
+    "contains": [
+     "Akşam yemeği",
+     "Yoga"
+    ],
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "bulamadım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "read-while-a-pick-question-is-open-drops-the-question",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Ekip toplantısı",
+     "start": "2026-11-19T11:00",
+     "end": "2026-11-19T12:00"
+    },
+    {
+     "title": "Müşteri toplantısı",
+     "start": "2026-11-19T14:00",
+     "end": "2026-11-19T15:00"
+    },
+    {
+     "title": "Yoga dersi",
+     "start": "2026-11-20T20:30",
+     "end": "2026-11-20T21:30"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "toplantiyi 17ye al",
+    "kind": "free",
+    "contains": [
+     "Hangisi"
+    ]
+   },
+   {
+    "say": "yarinin programi nasil?",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?"
+    ],
+    "contains": [
+     "Cuma 20 Kasım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "read-keeps-an-open-preview",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Initech toplantısı",
+     "start": "2026-11-19T10:00",
+     "end": "2026-11-19T11:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "yarin 15:00 berber",
+    "kind": "free",
+    "preview": true
+   },
+   {
+    "say": "bugun ne var",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Initech"
+    ]
+   },
+   {
+    "say": "evet",
+    "kind": "confirm",
+    "saved_total": 2
+   }
+  ]
+ },
+ {
+  "name": "followup-answer-day-after-question",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T20:00"
+  },
+  "steps": [
+   {
+    "say": "cop cikarmayi 7.30a ekle",
+    "kind": "free"
+   },
+   {
+    "say": "yarin",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "20 Kasım",
+     "07:30"
+    ],
+    "not_contains": [
+     "Hangi etkinliği"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "followup-answer-with-number-for-pick",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Ekip toplantısı",
+     "start": "2026-11-19T11:00",
+     "end": "2026-11-19T12:00"
+    },
+    {
+     "title": "Müşteri toplantısı",
+     "start": "2026-11-19T14:00",
+     "end": "2026-11-19T15:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "toplantiyi 17ye al",
+    "kind": "free",
+    "contains": [
+     "Hangisi"
+    ]
+   },
+   {
+    "say": "2",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Müşteri toplantısı",
+     "17:00"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "stranger-chat-ignored",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00"
+  },
+  "steps": [
+   {
+    "say": "yarin 15:00 toplanti",
+    "chat": 99,
+    "kind": "free",
+    "saved_total": 0
+   }
+  ]
+ }
+]

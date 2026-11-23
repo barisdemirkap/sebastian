@@ -1,0 +1,402 @@
+[
+ {
+  "name": "done-and-todo",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Sağlık raporunu al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "saglik raporu bitti ehliyet icin cumartesi 12de gorusme hatirlat",
+    "kind": "free",
+    "tasks_done_has": [
+     "Sağlık"
+    ],
+    "preview": true,
+    "contains": [
+     "12:00",
+     "21 Kasım"
+    ],
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "three-dones",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır yıka",
+    "Ütü yap",
+    "Bulaşık yıka"
+   ]
+  },
+  "steps": [
+   {
+    "say": "camasir bitti utu bitti bulasik bitti",
+    "kind": "free",
+    "tasks_open_count": 0,
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "done-defer-add",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır yıka",
+    "Ütü yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "camasir bitti, utu yarina kaldi, bir de market yapmam lazim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Çamaşır"
+    ],
+    "tasks_due": {
+     "Ütü": "2026-11-20"
+    },
+    "tasks_open_has": [
+     "Market"
+    ],
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "done-and-event-add",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Raporu gönder"
+   ]
+  },
+  "steps": [
+   {
+    "say": "raporu gonderdim yarin 10da toplanti var",
+    "kind": "free",
+    "tasks_done_has": [
+     "Rapor"
+    ],
+    "preview": true,
+    "contains": [
+     "10:00"
+    ],
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "two-adds",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00"
+  },
+  "steps": [
+   {
+    "say": "yarin 10da toplanti var cuma 15te dis hekimi var",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "10:00",
+     "15te"
+    ],
+    "not_contains": [
+     "Tam anlayamadım"
+    ]
+   },
+   {
+    "say": "evet",
+    "kind": "confirm",
+    "preview": true
+   }
+  ]
+ },
+ {
+  "name": "queue-announced",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00"
+  },
+  "steps": [
+   {
+    "say": "yarin 10da toplanti var cuma 15te dis hekimi var",
+    "kind": "free",
+    "contains": [
+     "sırada"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "defer-and-remind",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T15:00",
+   "tasks": [
+    "Çamaşır yıka",
+    "Ütü yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "camasir yarina kalsin, utuyu bu aksam 9da hatirlat",
+    "kind": "free",
+    "tasks_due": {
+     "Çamaşır": "2026-11-20"
+    },
+    "preview": true,
+    "contains": [
+     "21:00"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "move-event-and-done-task",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır yıka"
+   ],
+   "seed": [
+    {
+     "title": "Toplantı",
+     "start": "2026-11-19T14:00",
+     "end": "2026-11-19T15:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "toplantiyi 16ya al, camasir bitti",
+    "kind": "free",
+    "tasks_done_has": [
+     "Çamaşır"
+    ],
+    "preview": true,
+    "contains": [
+     "16:00"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "keep-and-close-others",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır yıka",
+    "Ütü yap",
+    "Bulaşık yıka",
+    "Rapor yaz"
+   ]
+  },
+  "steps": [
+   {
+    "say": "camasir ve utu kalsin digerlerini tamamladim",
+    "kind": "free"
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_open_count": 2,
+    "tasks_open_has": [
+     "Çamaşır",
+     "Ütü"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "partial-completion-keeps-the-rest",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Odayı topla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "odayi topladim sadece supurge kaldi",
+    "kind": "free",
+    "tasks_done_has": [
+     "Oda"
+    ],
+    "tasks_open_has": [
+     "süpürge"
+    ],
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "delete-event-and-defer-task",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır yıka"
+   ],
+   "seed": [
+    {
+     "title": "Alışveriş",
+     "start": "2026-11-20T11:00",
+     "end": "2026-11-20T12:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "yarin alisverisi kaldir, camasir yarina kalsin",
+    "kind": "free",
+    "tasks_due": {
+     "Çamaşır": "2026-11-20"
+    },
+    "preview": true,
+    "contains": [
+     "Alışveriş",
+     "SİLMEMİ"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "newline-separated-clauses",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır yıka",
+    "Ütü yap",
+    "Bulaşık yıka"
+   ]
+  },
+  "steps": [
+   {
+    "say": "camasir bitti\nutu yarina kalsin\nbulasik bitti",
+    "kind": "free",
+    "tasks_done_has": [
+     "Çamaşır",
+     "Bulaşık"
+    ],
+    "tasks_due": {
+     "Ütü": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "semicolon-clauses-mixed-read",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır yıka"
+   ],
+   "seed": [
+    {
+     "title": "Yoga dersi",
+     "start": "2026-11-20T20:30",
+     "end": "2026-11-20T21:30"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "camasir bitti; yarin ne var?",
+    "kind": "free",
+    "tasks_done_has": [
+     "Çamaşır"
+    ],
+    "contains": [
+     "Yoga"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "ve-joined-dones-and-defer",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır yıka",
+    "Bulaşık yıka"
+   ]
+  },
+  "steps": [
+   {
+    "say": "bulasik bitti ve camasir yarina kalsin",
+    "kind": "free",
+    "tasks_done_has": [
+     "Bulaşık"
+    ],
+    "tasks_due": {
+     "Çamaşır": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "late-night-all-done",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T23:00",
+   "tasks": [
+    "Çamaşır yıka",
+    "Ütü yap",
+    "Bulaşık yıka"
+   ]
+  },
+  "steps": [
+   {
+    "say": "bugunluk bu kadar camasir bitti kalanlar yarina",
+    "kind": "free"
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_done_has": [
+     "Çamaşır"
+    ],
+    "tasks_due": {
+     "Ütü": "2026-11-20",
+     "Bulaşık": "2026-11-20"
+    }
+   }
+  ]
+ }
+]

@@ -1,0 +1,33 @@
+{
+  "name": "choosing reading 2 continues the normal calendar flow for the same words",
+  "incident": "ADR 0017: the second reading is the old event path; nothing is lost.",
+  "setup": {
+    "provider": "rules",
+    "now": "2026-11-19T06:27"
+  },
+  "steps": [
+    {
+      "say": "yarın ekmek alınacak",
+      "kind": "free",
+      "preview": false,
+      "contains": [
+        "1)",
+        "2)"
+      ],
+      "saved_total": 0
+    },
+    {
+      "say": "2",
+      "kind": "free",
+      "preview": true,
+      "contains": [
+        "Şunu takvime işliyorum",
+        "Ekmek"
+      ],
+      "not_contains": [
+        "Alınacaklar listesine ekledim"
+      ],
+      "saved_total": 0
+    }
+  ]
+}

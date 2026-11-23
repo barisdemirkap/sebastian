@@ -1,0 +1,1513 @@
+[
+ {
+  "name": "b14-01",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır makinesini temizle",
+    "Annemin ilaçlarını eczaneden getir",
+    "Sigorta evraklarını tara",
+    "Hesap makinesi bataryasını değiştir",
+    "Balkon masasını boya",
+    "Yeğenin doğum günü hediyesini bul",
+    "Garaj kapısını yağla",
+    "Pazartesi toplantısı için slayt hazırla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "valla camasir makinesini temizledim bi sey kalmadi",
+    "kind": "free",
+    "tasks_done_has": [
+     "Çamaşır"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b14-02",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır makinesini temizle",
+    "Annemin ilaçlarını eczaneden getir",
+    "Sigorta evraklarını tara",
+    "Hesap makinesi bataryasını değiştir",
+    "Balkon masasını boya",
+    "Yeğenin doğum günü hediyesini bul",
+    "Garaj kapısını yağla",
+    "Pazartesi toplantısı için slayt hazırla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "annemin ilaclarini getirdim, eczaneden gecerken aldim zaten",
+    "kind": "free",
+    "tasks_done_has": [
+     "Annemin"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b14-03",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır makinesini temizle",
+    "Annemin ilaçlarını eczaneden getir",
+    "Sigorta evraklarını tara",
+    "Hesap makinesi bataryasını değiştir",
+    "Balkon masasını boya",
+    "Yeğenin doğum günü hediyesini bul",
+    "Garaj kapısını yağla",
+    "Pazartesi toplantısı için slayt hazırla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "sigorta evraklari taranmis zaten, gerek kalmadi",
+    "kind": "free",
+    "tasks_done_has": [
+     "Sigorta"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b14-04",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır makinesini temizle",
+    "Annemin ilaçlarını eczaneden getir",
+    "Sigorta evraklarını tara",
+    "Hesap makinesi bataryasını değiştir",
+    "Balkon masasını boya",
+    "Yeğenin doğum günü hediyesini bul",
+    "Garaj kapısını yağla",
+    "Pazartesi toplantısı için slayt hazırla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "bataryayi degistirdim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Hesap"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b14-05",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır makinesini temizle",
+    "Annemin ilaçlarını eczaneden getir",
+    "Sigorta evraklarını tara",
+    "Hesap makinesi bataryasını değiştir",
+    "Balkon masasını boya",
+    "Yeğenin doğum günü hediyesini bul",
+    "Garaj kapısını yağla",
+    "Pazartesi toplantısı için slayt hazırla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "masayi boyadim kurumasi lazim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Balkon"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b14-06",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır makinesini temizle",
+    "Annemin ilaçlarını eczaneden getir",
+    "Sigorta evraklarını tara",
+    "Hesap makinesi bataryasını değiştir",
+    "Balkon masasını boya",
+    "Yeğenin doğum günü hediyesini bul",
+    "Garaj kapısını yağla",
+    "Pazartesi toplantısı için slayt hazırla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "yegenin hediyesini buldum aldim da",
+    "kind": "free",
+    "tasks_done_has": [
+     "Yeğen"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b14-07",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır makinesini temizle",
+    "Annemin ilaçlarını eczaneden getir",
+    "Sigorta evraklarını tara",
+    "Hesap makinesi bataryasını değiştir",
+    "Balkon masasını boya",
+    "Yeğenin doğum günü hediyesini bul",
+    "Garaj kapısını yağla",
+    "Pazartesi toplantısı için slayt hazırla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "garaj kapisi yagli artik",
+    "kind": "free",
+    "tasks_done_has": [
+     "Garaj"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b14-08",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır makinesini temizle",
+    "Annemin ilaçlarını eczaneden getir",
+    "Sigorta evraklarını tara",
+    "Hesap makinesi bataryasını değiştir",
+    "Balkon masasını boya",
+    "Yeğenin doğum günü hediyesini bul",
+    "Garaj kapısını yağla",
+    "Pazartesi toplantısı için slayt hazırla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "slaytlar hazir pazartesi icin",
+    "kind": "free",
+    "tasks_done_has": [
+     "slayt"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b14-09",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır makinesini temizle",
+    "Annemin ilaçlarını eczaneden getir",
+    "Sigorta evraklarını tara",
+    "Hesap makinesi bataryasını değiştir",
+    "Balkon masasını boya",
+    "Yeğenin doğum günü hediyesini bul",
+    "Garaj kapısını yağla",
+    "Pazartesi toplantısı için slayt hazırla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "bu hafta camasir makinesine vakit yok onu haftaya birakayim",
+    "kind": "free",
+    "tasks_due": {
+     "Çamaşır": "2026-11-26"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b14-10",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır makinesini temizle",
+    "Annemin ilaçlarını eczaneden getir",
+    "Sigorta evraklarını tara",
+    "Hesap makinesi bataryasını değiştir",
+    "Balkon masasını boya",
+    "Yeğenin doğum günü hediyesini bul",
+    "Garaj kapısını yağla",
+    "Pazartesi toplantısı için slayt hazırla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "yegenin hediyesi icin yarin cikacagim",
+    "kind": "free",
+    "tasks_due": {
+     "Yeğen": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b14-11",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır makinesini temizle",
+    "Annemin ilaçlarını eczaneden getir",
+    "Sigorta evraklarını tara",
+    "Hesap makinesi bataryasını değiştir",
+    "Balkon masasını boya",
+    "Yeğenin doğum günü hediyesini bul",
+    "Garaj kapısını yağla",
+    "Pazartesi toplantısı için slayt hazırla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "garaj kapisini bugun yaparim demistim ama olmadi, yarina",
+    "kind": "free",
+    "tasks_due": {
+     "Garaj": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b14-12",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır makinesini temizle",
+    "Annemin ilaçlarını eczaneden getir",
+    "Sigorta evraklarını tara",
+    "Hesap makinesi bataryasını değiştir",
+    "Balkon masasını boya",
+    "Yeğenin doğum günü hediyesini bul",
+    "Garaj kapısını yağla",
+    "Pazartesi toplantısı için slayt hazırla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "sigorta evraklarini cumartesi taratirim",
+    "kind": "free",
+    "tasks_due": {
+     "Sigorta": "2026-11-21"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b14-13",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır makinesini temizle",
+    "Annemin ilaçlarını eczaneden getir",
+    "Sigorta evraklarını tara",
+    "Hesap makinesi bataryasını değiştir",
+    "Balkon masasını boya",
+    "Yeğenin doğum günü hediyesini bul",
+    "Garaj kapısını yağla",
+    "Pazartesi toplantısı için slayt hazırla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "balkon masasini boyamayi gec kaldim cumaya birakalim",
+    "kind": "free",
+    "tasks_due": {
+     "Balkon": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b14-14",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır makinesini temizle",
+    "Annemin ilaçlarını eczaneden getir",
+    "Sigorta evraklarını tara",
+    "Hesap makinesi bataryasını değiştir",
+    "Balkon masasını boya",
+    "Yeğenin doğum günü hediyesini bul",
+    "Garaj kapısını yağla",
+    "Pazartesi toplantısı için slayt hazırla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "batarya konusunu yarina erteliyorum",
+    "kind": "free",
+    "tasks_due": {
+     "Hesap": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b14-15",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır makinesini temizle",
+    "Annemin ilaçlarını eczaneden getir",
+    "Sigorta evraklarını tara",
+    "Hesap makinesi bataryasını değiştir",
+    "Balkon masasını boya",
+    "Yeğenin doğum günü hediyesini bul",
+    "Garaj kapısını yağla",
+    "Pazartesi toplantısı için slayt hazırla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "slayt isini unuttum",
+    "kind": "free"
+   },
+   {
+    "say": "aksam",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "slayt": "2026-11-19"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b14-16",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır makinesini temizle",
+    "Annemin ilaçlarını eczaneden getir",
+    "Sigorta evraklarını tara",
+    "Hesap makinesi bataryasını değiştir",
+    "Balkon masasını boya",
+    "Yeğenin doğum günü hediyesini bul",
+    "Garaj kapısını yağla",
+    "Pazartesi toplantısı için slayt hazırla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "garaji yaglamayi unuttum",
+    "kind": "free"
+   },
+   {
+    "say": "cuma",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Garaj": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b14-17",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır makinesini temizle",
+    "Annemin ilaçlarını eczaneden getir",
+    "Sigorta evraklarını tara",
+    "Hesap makinesi bataryasını değiştir",
+    "Balkon masasını boya",
+    "Yeğenin doğum günü hediyesini bul",
+    "Garaj kapısını yağla",
+    "Pazartesi toplantısı için slayt hazırla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "camasir makinesi tamam, garaj tamam, kalanlari yarin yaparim",
+    "kind": "free"
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_done_has": [
+     "Çamaşır",
+     "Garaj"
+    ],
+    "tasks_due": {
+     "Balkon": "2026-11-20",
+     "slayt": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b14-18",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır makinesini temizle",
+    "Annemin ilaçlarını eczaneden getir",
+    "Sigorta evraklarını tara",
+    "Hesap makinesi bataryasını değiştir",
+    "Balkon masasını boya",
+    "Yeğenin doğum günü hediyesini bul",
+    "Garaj kapısını yağla",
+    "Pazartesi toplantısı için slayt hazırla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "bugunluk bu kadar, hepsi yarina",
+    "kind": "free"
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_due": {
+     "Çamaşır": "2026-11-20",
+     "Garaj": "2026-11-20",
+     "slayt": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b14-19",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır makinesini temizle",
+    "Annemin ilaçlarını eczaneden getir",
+    "Sigorta evraklarını tara",
+    "Hesap makinesi bataryasını değiştir",
+    "Balkon masasını boya",
+    "Yeğenin doğum günü hediyesini bul",
+    "Garaj kapısını yağla",
+    "Pazartesi toplantısı için slayt hazırla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "slaytlar bitti mi diye bakmistim bitmis zaten",
+    "kind": "free",
+    "tasks_done_has": [
+     "slayt"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b14-20",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır makinesini temizle",
+    "Annemin ilaçlarını eczaneden getir",
+    "Sigorta evraklarını tara",
+    "Hesap makinesi bataryasını değiştir",
+    "Balkon masasını boya",
+    "Yeğenin doğum günü hediyesini bul",
+    "Garaj kapısını yağla",
+    "Pazartesi toplantısı için slayt hazırla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "ilaclar tamam hediye tamam",
+    "kind": "free",
+    "tasks_done_has": [
+     "Annemin",
+     "Yeğen"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b14-21",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır makinesini temizle",
+    "Annemin ilaçlarını eczaneden getir",
+    "Sigorta evraklarını tara",
+    "Hesap makinesi bataryasını değiştir",
+    "Balkon masasını boya",
+    "Yeğenin doğum günü hediyesini bul",
+    "Garaj kapısını yağla",
+    "Pazartesi toplantısı için slayt hazırla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "eczaneden ilaclari almistim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Annemin"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b14-23",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır makinesini temizle",
+    "Annemin ilaçlarını eczaneden getir",
+    "Sigorta evraklarını tara",
+    "Hesap makinesi bataryasını değiştir",
+    "Balkon masasını boya",
+    "Yeğenin doğum günü hediyesini bul",
+    "Garaj kapısını yağla",
+    "Pazartesi toplantısı için slayt hazırla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "batarya degisti masa boyandi",
+    "kind": "free",
+    "tasks_done_has": [
+     "Hesap",
+     "Balkon"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b14-24",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır makinesini temizle",
+    "Annemin ilaçlarını eczaneden getir",
+    "Sigorta evraklarını tara",
+    "Hesap makinesi bataryasını değiştir",
+    "Balkon masasını boya",
+    "Yeğenin doğum günü hediyesini bul",
+    "Garaj kapısını yağla",
+    "Pazartesi toplantısı için slayt hazırla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "slaytlar hazir",
+    "kind": "free"
+   },
+   {
+    "say": "garaj da",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "slayt",
+     "Garaj"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b14-25",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır makinesini temizle",
+    "Annemin ilaçlarını eczaneden getir",
+    "Sigorta evraklarını tara",
+    "Hesap makinesi bataryasını değiştir",
+    "Balkon masasını boya",
+    "Yeğenin doğum günü hediyesini bul",
+    "Garaj kapısını yağla",
+    "Pazartesi toplantısı için slayt hazırla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "batarya yarina",
+    "kind": "free"
+   },
+   {
+    "say": "masa da",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Hesap": "2026-11-20",
+     "Balkon": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b14-26",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır makinesini temizle",
+    "Annemin ilaçlarını eczaneden getir",
+    "Sigorta evraklarını tara",
+    "Hesap makinesi bataryasını değiştir",
+    "Balkon masasını boya",
+    "Yeğenin doğum günü hediyesini bul",
+    "Garaj kapısını yağla",
+    "Pazartesi toplantısı için slayt hazırla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "yegenin hediyesi hallolmus bu arada",
+    "kind": "free",
+    "tasks_done_has": [
+     "Yeğen"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b14-27",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır makinesini temizle",
+    "Annemin ilaçlarını eczaneden getir",
+    "Sigorta evraklarını tara",
+    "Hesap makinesi bataryasını değiştir",
+    "Balkon masasını boya",
+    "Yeğenin doğum günü hediyesini bul",
+    "Garaj kapısını yağla",
+    "Pazartesi toplantısı için slayt hazırla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "camasir makinesi temizligi icin bu aksam vaktim olmaz yarin",
+    "kind": "free",
+    "tasks_due": {
+     "Çamaşır": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b14-28",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır makinesini temizle",
+    "Annemin ilaçlarını eczaneden getir",
+    "Sigorta evraklarını tara",
+    "Hesap makinesi bataryasını değiştir",
+    "Balkon masasını boya",
+    "Yeğenin doğum günü hediyesini bul",
+    "Garaj kapısını yağla",
+    "Pazartesi toplantısı için slayt hazırla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "slayt ve sigorta icin bugun yetismedi pazartesiye",
+    "kind": "free",
+    "tasks_due": {
+     "slayt": "2026-11-23",
+     "Sigorta": "2026-11-23"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b14-29",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır makinesini temizle",
+    "Annemin ilaçlarını eczaneden getir",
+    "Sigorta evraklarını tara",
+    "Hesap makinesi bataryasını değiştir",
+    "Balkon masasını boya",
+    "Yeğenin doğum günü hediyesini bul",
+    "Garaj kapısını yağla",
+    "Pazartesi toplantısı için slayt hazırla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "annemin ilaclari icin yarin 10 gibi hatirlat",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Annemin",
+     "10:00"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b14-30",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır makinesini temizle",
+    "Annemin ilaçlarını eczaneden getir",
+    "Sigorta evraklarını tara",
+    "Hesap makinesi bataryasını değiştir",
+    "Balkon masasını boya",
+    "Yeğenin doğum günü hediyesini bul",
+    "Garaj kapısını yağla",
+    "Pazartesi toplantısı için slayt hazırla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "garaji aksam 8de yaglayacagim",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Garaj",
+     "20:00"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b14-31",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T14:40",
+   "seed": [
+    {
+     "title": "Fatura görüşmesi",
+     "start": "2026-11-19T14:00",
+     "end": "2026-11-19T14:30"
+    },
+    {
+     "title": "Voleybol",
+     "start": "2026-11-20T20:00",
+     "end": "2026-11-20T21:30"
+    },
+    {
+     "title": "Kamp",
+     "start": "2026-11-21T08:00",
+     "end": "2026-11-21T18:00"
+    },
+    {
+     "title": "Yemek daveti",
+     "start": "2026-11-22T19:30",
+     "end": "2026-11-22T22:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "fatura gorusmesi bitti",
+    "kind": "free",
+    "contains": [
+     "Fatura"
+    ],
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım",
+     "silinsin"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b14-32",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Fatura görüşmesi",
+     "start": "2026-11-19T14:00",
+     "end": "2026-11-19T14:30"
+    },
+    {
+     "title": "Voleybol",
+     "start": "2026-11-20T20:00",
+     "end": "2026-11-20T21:30"
+    },
+    {
+     "title": "Kamp",
+     "start": "2026-11-21T08:00",
+     "end": "2026-11-21T18:00"
+    },
+    {
+     "title": "Yemek daveti",
+     "start": "2026-11-22T19:30",
+     "end": "2026-11-22T22:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "voleybolu cumartesiye kaydir",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "21 Kasım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b14-33",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Fatura görüşmesi",
+     "start": "2026-11-19T14:00",
+     "end": "2026-11-19T14:30"
+    },
+    {
+     "title": "Voleybol",
+     "start": "2026-11-20T20:00",
+     "end": "2026-11-20T21:30"
+    },
+    {
+     "title": "Kamp",
+     "start": "2026-11-21T08:00",
+     "end": "2026-11-21T18:00"
+    },
+    {
+     "title": "Yemek daveti",
+     "start": "2026-11-22T19:30",
+     "end": "2026-11-22T22:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "kampi pazara al",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "22 Kasım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b14-34",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Fatura görüşmesi",
+     "start": "2026-11-19T14:00",
+     "end": "2026-11-19T14:30"
+    },
+    {
+     "title": "Voleybol",
+     "start": "2026-11-20T20:00",
+     "end": "2026-11-20T21:30"
+    },
+    {
+     "title": "Kamp",
+     "start": "2026-11-21T08:00",
+     "end": "2026-11-21T18:00"
+    },
+    {
+     "title": "Yemek daveti",
+     "start": "2026-11-22T19:30",
+     "end": "2026-11-22T22:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "yemek davetini iptal etsene",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Yemek"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b14-35",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Fatura görüşmesi",
+     "start": "2026-11-19T14:00",
+     "end": "2026-11-19T14:30"
+    },
+    {
+     "title": "Voleybol",
+     "start": "2026-11-20T20:00",
+     "end": "2026-11-20T21:30"
+    },
+    {
+     "title": "Kamp",
+     "start": "2026-11-21T08:00",
+     "end": "2026-11-21T18:00"
+    },
+    {
+     "title": "Yemek daveti",
+     "start": "2026-11-22T19:30",
+     "end": "2026-11-22T22:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "yarin neler var bakar misin",
+    "kind": "free",
+    "contains": [
+     "Voleybol"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b14-36",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Fatura görüşmesi",
+     "start": "2026-11-19T14:00",
+     "end": "2026-11-19T14:30"
+    },
+    {
+     "title": "Voleybol",
+     "start": "2026-11-20T20:00",
+     "end": "2026-11-20T21:30"
+    },
+    {
+     "title": "Kamp",
+     "start": "2026-11-21T08:00",
+     "end": "2026-11-21T18:00"
+    },
+    {
+     "title": "Yemek daveti",
+     "start": "2026-11-22T19:30",
+     "end": "2026-11-22T22:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "bugun daha ne kaldi",
+    "kind": "free",
+    "contains": [
+     "Fatura"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b14-37",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T14:40",
+   "seed": [
+    {
+     "title": "Fatura görüşmesi",
+     "start": "2026-11-19T14:00",
+     "end": "2026-11-19T14:30"
+    },
+    {
+     "title": "Voleybol",
+     "start": "2026-11-20T20:00",
+     "end": "2026-11-20T21:30"
+    },
+    {
+     "title": "Kamp",
+     "start": "2026-11-21T08:00",
+     "end": "2026-11-21T18:00"
+    },
+    {
+     "title": "Yemek daveti",
+     "start": "2026-11-22T19:30",
+     "end": "2026-11-22T22:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "fatura gorusmesi bitti, kamp pazartesiye kalsin",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Kamp",
+     "23 Kasım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b14-38",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Fatura görüşmesi",
+     "start": "2026-11-19T14:00",
+     "end": "2026-11-19T14:30"
+    },
+    {
+     "title": "Voleybol",
+     "start": "2026-11-20T20:00",
+     "end": "2026-11-20T21:30"
+    },
+    {
+     "title": "Kamp",
+     "start": "2026-11-21T08:00",
+     "end": "2026-11-21T18:00"
+    },
+    {
+     "title": "Yemek daveti",
+     "start": "2026-11-22T19:30",
+     "end": "2026-11-22T22:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "voleybol pazar degil cumartesi",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "21 Kasım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b14-39",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Fatura görüşmesi",
+     "start": "2026-11-19T14:00",
+     "end": "2026-11-19T14:30"
+    },
+    {
+     "title": "Voleybol",
+     "start": "2026-11-20T20:00",
+     "end": "2026-11-20T21:30"
+    },
+    {
+     "title": "Kamp",
+     "start": "2026-11-21T08:00",
+     "end": "2026-11-21T18:00"
+    },
+    {
+     "title": "Yemek daveti",
+     "start": "2026-11-22T19:30",
+     "end": "2026-11-22T22:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "kamp isini sil",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Kamp"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b14-40",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Fatura görüşmesi",
+     "start": "2026-11-19T14:00",
+     "end": "2026-11-19T14:30"
+    },
+    {
+     "title": "Voleybol",
+     "start": "2026-11-20T20:00",
+     "end": "2026-11-20T21:30"
+    },
+    {
+     "title": "Kamp",
+     "start": "2026-11-21T08:00",
+     "end": "2026-11-21T18:00"
+    },
+    {
+     "title": "Yemek daveti",
+     "start": "2026-11-22T19:30",
+     "end": "2026-11-22T22:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "yemek davetini pazartesiye tasiyalim",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "23 Kasım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b14-41",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır makinesini temizle",
+    "Annemin ilaçlarını eczaneden getir",
+    "Sigorta evraklarını tara",
+    "Hesap makinesi bataryasını değiştir",
+    "Balkon masasını boya",
+    "Yeğenin doğum günü hediyesini bul",
+    "Garaj kapısını yağla",
+    "Pazartesi toplantısı için slayt hazırla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "balkon masasi boyama isini cumartesi sabah 9a koyalim",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Balkon",
+     "09:00",
+     "21 Kasım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b14-42",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır makinesini temizle",
+    "Annemin ilaçlarını eczaneden getir",
+    "Sigorta evraklarını tara",
+    "Hesap makinesi bataryasını değiştir",
+    "Balkon masasını boya",
+    "Yeğenin doğum günü hediyesini bul",
+    "Garaj kapısını yağla",
+    "Pazartesi toplantısı için slayt hazırla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "garaji yarina birak",
+    "kind": "free"
+   },
+   {
+    "say": "bunu cuma sabah 10da hatirlat",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Garaj",
+     "10:00"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b14-43",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır makinesini temizle",
+    "Annemin ilaçlarını eczaneden getir",
+    "Sigorta evraklarını tara",
+    "Hesap makinesi bataryasını değiştir",
+    "Balkon masasını boya",
+    "Yeğenin doğum günü hediyesini bul",
+    "Garaj kapısını yağla",
+    "Pazartesi toplantısı için slayt hazırla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "hepsini bu aksama birakalim",
+    "kind": "free"
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_due": {
+     "Çamaşır": "2026-11-19",
+     "Garaj": "2026-11-19"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b14-44",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır makinesini temizle",
+    "Annemin ilaçlarını eczaneden getir",
+    "Sigorta evraklarını tara",
+    "Hesap makinesi bataryasını değiştir",
+    "Balkon masasını boya",
+    "Yeğenin doğum günü hediyesini bul",
+    "Garaj kapısını yağla",
+    "Pazartesi toplantısı için slayt hazırla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "yegenin hediyesi icin dukkana gidip baktim ama bulamadim, cumartesi tekrar bakarim",
+    "kind": "free",
+    "tasks_due": {
+     "Yeğen": "2026-11-21"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b14-45",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır makinesini temizle",
+    "Annemin ilaçlarını eczaneden getir",
+    "Sigorta evraklarını tara",
+    "Hesap makinesi bataryasını değiştir",
+    "Balkon masasını boya",
+    "Yeğenin doğum günü hediyesini bul",
+    "Garaj kapısını yağla",
+    "Pazartesi toplantısı için slayt hazırla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "camasir makinesi isi bitti, balkon masasi cumaya, garaj yarina, slayt pazartesiye",
+    "kind": "free",
+    "tasks_done_has": [
+     "Çamaşır"
+    ],
+    "tasks_due": {
+     "Balkon": "2026-11-20",
+     "Garaj": "2026-11-20",
+     "slayt": "2026-11-23"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b14-46",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır makinesini temizle",
+    "Annemin ilaçlarını eczaneden getir",
+    "Sigorta evraklarını tara",
+    "Hesap makinesi bataryasını değiştir",
+    "Balkon masasını boya",
+    "Yeğenin doğum günü hediyesini bul",
+    "Garaj kapısını yağla",
+    "Pazartesi toplantısı için slayt hazırla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "ya slaytlar bitmedi yarina kalsin",
+    "kind": "free",
+    "tasks_due": {
+     "slayt": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b14-47",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır makinesini temizle",
+    "Annemin ilaçlarını eczaneden getir",
+    "Sigorta evraklarını tara",
+    "Hesap makinesi bataryasını değiştir",
+    "Balkon masasını boya",
+    "Yeğenin doğum günü hediyesini bul",
+    "Garaj kapısını yağla",
+    "Pazartesi toplantısı için slayt hazırla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "sigorta evrak tarama isi bitti ama batarya hala duruyor",
+    "kind": "free",
+    "tasks_done_has": [
+     "Sigorta"
+    ],
+    "tasks_open_has": [
+     "Hesap"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b14-48",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır makinesini temizle",
+    "Annemin ilaçlarını eczaneden getir",
+    "Sigorta evraklarını tara",
+    "Hesap makinesi bataryasını değiştir",
+    "Balkon masasını boya",
+    "Yeğenin doğum günü hediyesini bul",
+    "Garaj kapısını yağla",
+    "Pazartesi toplantısı için slayt hazırla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "garaj kapisi yaglama iptal",
+    "kind": "free"
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_open_count": 7
+   }
+  ]
+ },
+ {
+  "name": "b14-49",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır makinesini temizle",
+    "Annemin ilaçlarını eczaneden getir",
+    "Sigorta evraklarını tara",
+    "Hesap makinesi bataryasını değiştir",
+    "Balkon masasını boya",
+    "Yeğenin doğum günü hediyesini bul",
+    "Garaj kapısını yağla",
+    "Pazartesi toplantısı için slayt hazırla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "annemin ilaclari tamamdir sonunda",
+    "kind": "free",
+    "tasks_done_has": [
+     "Annemin"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b14-50",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır makinesini temizle",
+    "Annemin ilaçlarını eczaneden getir",
+    "Sigorta evraklarını tara",
+    "Hesap makinesi bataryasını değiştir",
+    "Balkon masasını boya",
+    "Yeğenin doğum günü hediyesini bul",
+    "Garaj kapısını yağla",
+    "Pazartesi toplantısı için slayt hazırla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "yegen hediyesi tamam masa da tamam kalan yarina",
+    "kind": "free"
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_done_has": [
+     "Yeğen",
+     "Balkon"
+    ],
+    "tasks_due": {
+     "Çamaşır": "2026-11-20",
+     "Garaj": "2026-11-20"
+    }
+   }
+  ]
+ }
+]

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- TEMPLATE ONLY. Never installed by any script or agent. Runs scripts/watchdog.sh every 2 minutes; it restarts
+     com.sebastian.bot when the bot's heartbeat file is older than 180 s. Replace __REPO_DIR__ and __HOME__. -->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.sebastian.watchdog</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>__REPO_DIR__/scripts/watchdog.sh</string>
+  </array>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>SEBASTIAN_HEARTBEAT</key><string>__HOME__/.config/sebastian/heartbeat</string>
+    <key>SEBASTIAN_STALE_SECONDS</key><string>180</string>
+  </dict>
+  <key>StartInterval</key><integer>120</integer>
+  <key>RunAtLoad</key><false/>
+  <key>StandardOutPath</key><string>__HOME__/Library/Logs/sebastian-watchdog.log</string>
+  <key>StandardErrorPath</key><string>__HOME__/Library/Logs/sebastian-watchdog.err.log</string>
+</dict>
+</plist>

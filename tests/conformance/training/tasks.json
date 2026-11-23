@@ -1,0 +1,320 @@
+[
+ {
+  "name": "explicit-add",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00"
+  },
+  "steps": [
+   {
+    "say": "gorev ekle ütü yap",
+    "kind": "free",
+    "tasks_open_has": [
+     "Ütü"
+    ],
+    "contains": [
+     "Görev ekledim"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "lazim-adds",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00"
+  },
+  "steps": [
+   {
+    "say": "market alisverisi yapmam lazim",
+    "kind": "free",
+    "tasks_open_has": [
+     "Market"
+    ],
+    "preview": false
+   }
+  ]
+ },
+ {
+  "name": "duplicate-add-is-recognised",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "camasir yapmam lazim",
+    "kind": "free",
+    "tasks_open_count": 1,
+    "contains": [
+     "Zaten"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "duplicate-explicit-add",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "gorev ekle camasir yap",
+    "kind": "free",
+    "tasks_open_count": 1,
+    "contains": [
+     "zaten listenizde"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "one-more-todo",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00"
+  },
+  "steps": [
+   {
+    "say": "bir tane daha ekle amcamin trafik cezasini odeyecegiz",
+    "kind": "free",
+    "tasks_open_has": [
+     "trafik"
+    ],
+    "not_contains": [
+     "Hangi gün"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "tomorrow-list-add",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00"
+  },
+  "steps": [
+   {
+    "say": "yarin'in listesine dus ve kisisel bakim ekle",
+    "kind": "free",
+    "tasks_due": {
+     "Duş": "2026-11-20"
+    },
+    "not_contains": [
+     "Saat kaçta"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "list-tasks-read",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır yıka",
+    "Ütü yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "gorevlerim",
+    "kind": "free",
+    "contains": [
+     "1. Çamaşır yıka",
+     "2. Ütü yap"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "remove-a-task-explicitly",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır yıka",
+    "Ütü yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "utu gorevini kaldir",
+    "kind": "free",
+    "tasks_open_count": 2,
+    "contains": [
+     "Ütü yap",
+     "(evet / hayır)"
+    ]
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_open_count": 1,
+    "tasks_open_not_has": [
+     "Ütü"
+    ],
+    "contains": [
+     "Kaldırdım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "kalan-isler-read",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır yıka"
+   ]
+  },
+  "steps": [
+   {
+    "say": "neler kaldi",
+    "kind": "free",
+    "contains": [
+     "Çamaşır yıka"
+    ],
+    "not_contains": [
+     "Hangisi"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "chore-as-plan-becomes-task",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00"
+  },
+  "steps": [
+   {
+    "say": "cop aksam cikacak",
+    "kind": "free",
+    "tasks_open_has": [
+     "Çöp"
+    ],
+    "not_contains": [
+     "Hangi gün",
+     "Saat kaçta"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "meta-instruction-is-not-a-task",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00"
+  },
+  "steps": [
+   {
+    "say": "hepsini halletmeni istiyorum bunlari sen yap",
+    "kind": "free",
+    "tasks_open_count": 0,
+    "not_contains": [
+     "Görev ekledim"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "nag-after-six",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır yıka",
+    "Ütü yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "saat 6dan sonra saat basi hepsini hatirlat",
+    "kind": "free",
+    "contains": [
+     "18:00"
+    ],
+    "not_contains": [
+     "Tam anlayamadım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "undo-style-done-then-readd",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "camasir bitti",
+    "kind": "free",
+    "tasks_open_count": 0
+   },
+   {
+    "say": "gorev ekle camasir yap",
+    "kind": "free",
+    "tasks_open_has": [
+     "Çamaşır"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "plan-statement-resolves-existing-task-not-new",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Odayı topla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "odayi toplayacagim",
+    "kind": "free",
+    "tasks_open_count": 1,
+    "not_contains": [
+     "Görev ekledim"
+    ]
+   }
+  ],
+  "incident": "Principle 1: a statement about an existing item resolves to it."
+ },
+ {
+  "name": "plan-statement-with-today-keeps-the-task-due-today",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    {
+     "title": "Çamaşır yap",
+     "due": "2026-11-20"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "camasiri bugun yapacagim",
+    "kind": "free",
+    "tasks_open_count": 1,
+    "tasks_due": {
+     "Çamaşır": "2026-11-19"
+    }
+   }
+  ]
+ }
+]

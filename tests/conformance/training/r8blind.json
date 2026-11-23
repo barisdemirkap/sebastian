@@ -1,0 +1,1436 @@
+[
+ {
+  "name": "b8-01",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Banka kartını yenile",
+    "Lastikleri kontrol ettir",
+    "Doğum günü pastası sipariş et",
+    "Kira dekontunu gönder",
+    "İlaçları eczaneden al",
+    "Terziye pantolon bırak",
+    "Muhasebeciyi ara",
+    "Balkonu temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "banka kartini yeniledim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Banka"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b8-02",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Banka kartını yenile",
+    "Lastikleri kontrol ettir",
+    "Doğum günü pastası sipariş et",
+    "Kira dekontunu gönder",
+    "İlaçları eczaneden al",
+    "Terziye pantolon bırak",
+    "Muhasebeciyi ara",
+    "Balkonu temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "lastikleri kontrol ettirdim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Lastik"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b8-03",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Banka kartını yenile",
+    "Lastikleri kontrol ettir",
+    "Doğum günü pastası sipariş et",
+    "Kira dekontunu gönder",
+    "İlaçları eczaneden al",
+    "Terziye pantolon bırak",
+    "Muhasebeciyi ara",
+    "Balkonu temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "pasta siparisi verildi",
+    "kind": "free",
+    "tasks_done_has": [
+     "pastası"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b8-04",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Banka kartını yenile",
+    "Lastikleri kontrol ettir",
+    "Doğum günü pastası sipariş et",
+    "Kira dekontunu gönder",
+    "İlaçları eczaneden al",
+    "Terziye pantolon bırak",
+    "Muhasebeciyi ara",
+    "Balkonu temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kirayi gonderdim dekont da gitti",
+    "kind": "free",
+    "tasks_done_has": [
+     "Kira"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b8-05",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Banka kartını yenile",
+    "Lastikleri kontrol ettir",
+    "Doğum günü pastası sipariş et",
+    "Kira dekontunu gönder",
+    "İlaçları eczaneden al",
+    "Terziye pantolon bırak",
+    "Muhasebeciyi ara",
+    "Balkonu temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "eczaneden ilaclari aldim",
+    "kind": "free",
+    "tasks_done_has": [
+     "İlaç"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b8-06",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Banka kartını yenile",
+    "Lastikleri kontrol ettir",
+    "Doğum günü pastası sipariş et",
+    "Kira dekontunu gönder",
+    "İlaçları eczaneden al",
+    "Terziye pantolon bırak",
+    "Muhasebeciyi ara",
+    "Balkonu temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "pantolonu terziye biraktim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Terzi"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b8-07",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Banka kartını yenile",
+    "Lastikleri kontrol ettir",
+    "Doğum günü pastası sipariş et",
+    "Kira dekontunu gönder",
+    "İlaçları eczaneden al",
+    "Terziye pantolon bırak",
+    "Muhasebeciyi ara",
+    "Balkonu temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "muhasebeciyle konustum",
+    "kind": "free",
+    "tasks_done_has": [
+     "Muhasebe"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b8-08",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Banka kartını yenile",
+    "Lastikleri kontrol ettir",
+    "Doğum günü pastası sipariş et",
+    "Kira dekontunu gönder",
+    "İlaçları eczaneden al",
+    "Terziye pantolon bırak",
+    "Muhasebeciyi ara",
+    "Balkonu temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "balkon temizlendi",
+    "kind": "free",
+    "tasks_done_has": [
+     "Balkon"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b8-09",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Banka kartını yenile",
+    "Lastikleri kontrol ettir",
+    "Doğum günü pastası sipariş et",
+    "Kira dekontunu gönder",
+    "İlaçları eczaneden al",
+    "Terziye pantolon bırak",
+    "Muhasebeciyi ara",
+    "Balkonu temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "banka karti isi cumartesiye kalsin",
+    "kind": "free",
+    "tasks_due": {
+     "Banka": "2026-11-21"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b8-10",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Banka kartını yenile",
+    "Lastikleri kontrol ettir",
+    "Doğum günü pastası sipariş et",
+    "Kira dekontunu gönder",
+    "İlaçları eczaneden al",
+    "Terziye pantolon bırak",
+    "Muhasebeciyi ara",
+    "Balkonu temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "lastikleri pazartesi kontrol ettiririm",
+    "kind": "free",
+    "tasks_due": {
+     "Lastik": "2026-11-23"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b8-11",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Banka kartını yenile",
+    "Lastikleri kontrol ettir",
+    "Doğum günü pastası sipariş et",
+    "Kira dekontunu gönder",
+    "İlaçları eczaneden al",
+    "Terziye pantolon bırak",
+    "Muhasebeciyi ara",
+    "Balkonu temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "pasta siparisini yarin veririm",
+    "kind": "free",
+    "tasks_due": {
+     "pastası": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b8-12",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Banka kartını yenile",
+    "Lastikleri kontrol ettir",
+    "Doğum günü pastası sipariş et",
+    "Kira dekontunu gönder",
+    "İlaçları eczaneden al",
+    "Terziye pantolon bırak",
+    "Muhasebeciyi ara",
+    "Balkonu temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "muhasebeciyi aramayi bu yarina birak",
+    "kind": "free",
+    "tasks_due": {
+     "Muhasebe": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b8-13",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Banka kartını yenile",
+    "Lastikleri kontrol ettir",
+    "Doğum günü pastası sipariş et",
+    "Kira dekontunu gönder",
+    "İlaçları eczaneden al",
+    "Terziye pantolon bırak",
+    "Muhasebeciyi ara",
+    "Balkonu temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "balkonu temizlemeyi unuttum",
+    "kind": "free",
+    "contains": [
+     "akşama mı"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b8-14",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Banka kartını yenile",
+    "Lastikleri kontrol ettir",
+    "Doğum günü pastası sipariş et",
+    "Kira dekontunu gönder",
+    "İlaçları eczaneden al",
+    "Terziye pantolon bırak",
+    "Muhasebeciyi ara",
+    "Balkonu temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "ilaclari almayi unuttum",
+    "kind": "free"
+   },
+   {
+    "say": "yarina",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "İlaç": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b8-15",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Banka kartını yenile",
+    "Lastikleri kontrol ettir",
+    "Doğum günü pastası sipariş et",
+    "Kira dekontunu gönder",
+    "İlaçları eczaneden al",
+    "Terziye pantolon bırak",
+    "Muhasebeciyi ara",
+    "Balkonu temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kirayi gondermeyi unuttum",
+    "kind": "free"
+   },
+   {
+    "say": "aksama",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Kira": "2026-11-19"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b8-16",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Banka kartını yenile",
+    "Lastikleri kontrol ettir",
+    "Doğum günü pastası sipariş et",
+    "Kira dekontunu gönder",
+    "İlaçları eczaneden al",
+    "Terziye pantolon bırak",
+    "Muhasebeciyi ara",
+    "Balkonu temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kart yenilendi lastikler tamam balkon yarina",
+    "kind": "free",
+    "tasks_done_has": [
+     "Banka",
+     "Lastik"
+    ],
+    "tasks_due": {
+     "Balkon": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b8-17",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Banka kartını yenile",
+    "Lastikleri kontrol ettir",
+    "Doğum günü pastası sipariş et",
+    "Kira dekontunu gönder",
+    "İlaçları eczaneden al",
+    "Terziye pantolon bırak",
+    "Muhasebeciyi ara",
+    "Balkonu temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "hepsi pazartesiye kalsin",
+    "kind": "free"
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_due": {
+     "Banka": "2026-11-23",
+     "Balkon": "2026-11-23",
+     "Kira": "2026-11-23"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b8-18",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Banka kartını yenile",
+    "Lastikleri kontrol ettir",
+    "Doğum günü pastası sipariş et",
+    "Kira dekontunu gönder",
+    "İlaçları eczaneden al",
+    "Terziye pantolon bırak",
+    "Muhasebeciyi ara",
+    "Balkonu temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "terzi isi bitti digerlerini yarina at",
+    "kind": "free"
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_done_has": [
+     "Terzi"
+    ],
+    "tasks_due": {
+     "Banka": "2026-11-20",
+     "Balkon": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b8-19",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Banka kartını yenile",
+    "Lastikleri kontrol ettir",
+    "Doğum günü pastası sipariş et",
+    "Kira dekontunu gönder",
+    "İlaçları eczaneden al",
+    "Terziye pantolon bırak",
+    "Muhasebeciyi ara",
+    "Balkonu temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "yarın balkonu temizleyecegim",
+    "kind": "free",
+    "tasks_due": {
+     "Balkon": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b8-20",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Banka kartını yenile",
+    "Lastikleri kontrol ettir",
+    "Doğum günü pastası sipariş et",
+    "Kira dekontunu gönder",
+    "İlaçları eczaneden al",
+    "Terziye pantolon bırak",
+    "Muhasebeciyi ara",
+    "Balkonu temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "gec kaldim ilaclari almadim yarina kalsin",
+    "kind": "free",
+    "tasks_due": {
+     "İlaç": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b8-21",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Banka kartını yenile",
+    "Lastikleri kontrol ettir",
+    "Doğum günü pastası sipariş et",
+    "Kira dekontunu gönder",
+    "İlaçları eczaneden al",
+    "Terziye pantolon bırak",
+    "Muhasebeciyi ara",
+    "Balkonu temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "abi muhasebeciyi aradim tamam",
+    "kind": "free",
+    "tasks_done_has": [
+     "Muhasebe"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b8-22",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Banka kartını yenile",
+    "Lastikleri kontrol ettir",
+    "Doğum günü pastası sipariş et",
+    "Kira dekontunu gönder",
+    "İlaçları eczaneden al",
+    "Terziye pantolon bırak",
+    "Muhasebeciyi ara",
+    "Balkonu temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kira dekontu yarina kaldi",
+    "kind": "free",
+    "tasks_due": {
+     "Kira": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b8-23",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Banka kartını yenile",
+    "Lastikleri kontrol ettir",
+    "Doğum günü pastası sipariş et",
+    "Kira dekontunu gönder",
+    "İlaçları eczaneden al",
+    "Terziye pantolon bırak",
+    "Muhasebeciyi ara",
+    "Balkonu temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "ilac ve pantolon isi tamamdir",
+    "kind": "free",
+    "tasks_done_has": [
+     "İlaç",
+     "Terzi"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b8-24",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Banka kartını yenile",
+    "Lastikleri kontrol ettir",
+    "Doğum günü pastası sipariş et",
+    "Kira dekontunu gönder",
+    "İlaçları eczaneden al",
+    "Terziye pantolon bırak",
+    "Muhasebeciyi ara",
+    "Balkonu temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "bankayi hallettim pastayi da hallettim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Banka",
+     "pastası"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b8-25",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Banka kartını yenile",
+    "Lastikleri kontrol ettir",
+    "Doğum günü pastası sipariş et",
+    "Kira dekontunu gönder",
+    "İlaçları eczaneden al",
+    "Terziye pantolon bırak",
+    "Muhasebeciyi ara",
+    "Balkonu temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "banka kartini yeniledim",
+    "kind": "free"
+   },
+   {
+    "say": "lastikler de",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Banka",
+     "Lastik"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b8-26",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Banka kartını yenile",
+    "Lastikleri kontrol ettir",
+    "Doğum günü pastası sipariş et",
+    "Kira dekontunu gönder",
+    "İlaçları eczaneden al",
+    "Terziye pantolon bırak",
+    "Muhasebeciyi ara",
+    "Balkonu temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kirayi yarina birak",
+    "kind": "free"
+   },
+   {
+    "say": "pantolon da",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Kira": "2026-11-20",
+     "Terzi": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b8-27",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Banka kartını yenile",
+    "Lastikleri kontrol ettir",
+    "Doğum günü pastası sipariş et",
+    "Kira dekontunu gönder",
+    "İlaçları eczaneden al",
+    "Terziye pantolon bırak",
+    "Muhasebeciyi ara",
+    "Balkonu temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "balkon temizligi cuma",
+    "kind": "free",
+    "tasks_due": {
+     "Balkon": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b8-28",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Banka kartını yenile",
+    "Lastikleri kontrol ettir",
+    "Doğum günü pastası sipariş et",
+    "Kira dekontunu gönder",
+    "İlaçları eczaneden al",
+    "Terziye pantolon bırak",
+    "Muhasebeciyi ara",
+    "Balkonu temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "KIRAYI GONDERDIM",
+    "kind": "free",
+    "tasks_done_has": [
+     "Kira"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b8-29",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Banka kartını yenile",
+    "Lastikleri kontrol ettir",
+    "Doğum günü pastası sipariş et",
+    "Kira dekontunu gönder",
+    "İlaçları eczaneden al",
+    "Terziye pantolon bırak",
+    "Muhasebeciyi ara",
+    "Balkonu temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kirayi gonderdm",
+    "kind": "free",
+    "tasks_done_has": [
+     "Kira"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b8-30",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Banka kartını yenile",
+    "Lastikleri kontrol ettir",
+    "Doğum günü pastası sipariş et",
+    "Kira dekontunu gönder",
+    "İlaçları eczaneden al",
+    "Terziye pantolon bırak",
+    "Muhasebeciyi ara",
+    "Balkonu temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "lastik kontrolu icin yarin sabah gidecegim",
+    "kind": "free",
+    "tasks_due": {
+     "Lastik": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b8-31",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T14:10",
+   "seed": [
+    {
+     "title": "Toplantı: Q4 planı",
+     "start": "2026-11-19T13:00",
+     "end": "2026-11-19T14:00"
+    },
+    {
+     "title": "Çocuk hastanesi",
+     "start": "2026-11-20T08:30",
+     "end": "2026-11-20T09:30"
+    },
+    {
+     "title": "Futbol maçı",
+     "start": "2026-11-21T20:00",
+     "end": "2026-11-21T22:00"
+    },
+    {
+     "title": "Mezuniyet",
+     "start": "2026-11-22T14:00",
+     "end": "2026-11-22T16:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "toplanti bitti",
+    "kind": "free",
+    "contains": [
+     "Q4"
+    ],
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım",
+     "silinsin"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b8-32",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Toplantı: Q4 planı",
+     "start": "2026-11-19T13:00",
+     "end": "2026-11-19T14:00"
+    },
+    {
+     "title": "Çocuk hastanesi",
+     "start": "2026-11-20T08:30",
+     "end": "2026-11-20T09:30"
+    },
+    {
+     "title": "Futbol maçı",
+     "start": "2026-11-21T20:00",
+     "end": "2026-11-21T22:00"
+    },
+    {
+     "title": "Mezuniyet",
+     "start": "2026-11-22T14:00",
+     "end": "2026-11-22T16:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "cocuk hastanesini cumartesiye al",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "21 Kasım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b8-33",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Toplantı: Q4 planı",
+     "start": "2026-11-19T13:00",
+     "end": "2026-11-19T14:00"
+    },
+    {
+     "title": "Çocuk hastanesi",
+     "start": "2026-11-20T08:30",
+     "end": "2026-11-20T09:30"
+    },
+    {
+     "title": "Futbol maçı",
+     "start": "2026-11-21T20:00",
+     "end": "2026-11-21T22:00"
+    },
+    {
+     "title": "Mezuniyet",
+     "start": "2026-11-22T14:00",
+     "end": "2026-11-22T16:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "futbol macini pazartesiye tasi",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "23 Kasım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b8-34",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Toplantı: Q4 planı",
+     "start": "2026-11-19T13:00",
+     "end": "2026-11-19T14:00"
+    },
+    {
+     "title": "Çocuk hastanesi",
+     "start": "2026-11-20T08:30",
+     "end": "2026-11-20T09:30"
+    },
+    {
+     "title": "Futbol maçı",
+     "start": "2026-11-21T20:00",
+     "end": "2026-11-21T22:00"
+    },
+    {
+     "title": "Mezuniyet",
+     "start": "2026-11-22T14:00",
+     "end": "2026-11-22T16:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "mezuniyeti iptal et",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Mezuniyet"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b8-35",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Toplantı: Q4 planı",
+     "start": "2026-11-19T13:00",
+     "end": "2026-11-19T14:00"
+    },
+    {
+     "title": "Çocuk hastanesi",
+     "start": "2026-11-20T08:30",
+     "end": "2026-11-20T09:30"
+    },
+    {
+     "title": "Futbol maçı",
+     "start": "2026-11-21T20:00",
+     "end": "2026-11-21T22:00"
+    },
+    {
+     "title": "Mezuniyet",
+     "start": "2026-11-22T14:00",
+     "end": "2026-11-22T16:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "yarin ne var",
+    "kind": "free",
+    "contains": [
+     "Çocuk hastanesi"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b8-36",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Toplantı: Q4 planı",
+     "start": "2026-11-19T13:00",
+     "end": "2026-11-19T14:00"
+    },
+    {
+     "title": "Çocuk hastanesi",
+     "start": "2026-11-20T08:30",
+     "end": "2026-11-20T09:30"
+    },
+    {
+     "title": "Futbol maçı",
+     "start": "2026-11-21T20:00",
+     "end": "2026-11-21T22:00"
+    },
+    {
+     "title": "Mezuniyet",
+     "start": "2026-11-22T14:00",
+     "end": "2026-11-22T16:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "bugun ne kaldi",
+    "kind": "free",
+    "contains": [
+     "Q4"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b8-37",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T14:10",
+   "seed": [
+    {
+     "title": "Toplantı: Q4 planı",
+     "start": "2026-11-19T13:00",
+     "end": "2026-11-19T14:00"
+    },
+    {
+     "title": "Çocuk hastanesi",
+     "start": "2026-11-20T08:30",
+     "end": "2026-11-20T09:30"
+    },
+    {
+     "title": "Futbol maçı",
+     "start": "2026-11-21T20:00",
+     "end": "2026-11-21T22:00"
+    },
+    {
+     "title": "Mezuniyet",
+     "start": "2026-11-22T14:00",
+     "end": "2026-11-22T16:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "q4 toplantisi bitti futbol macini yarina birak",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Futbol"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b8-39",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Toplantı: Q4 planı",
+     "start": "2026-11-19T13:00",
+     "end": "2026-11-19T14:00"
+    },
+    {
+     "title": "Çocuk hastanesi",
+     "start": "2026-11-20T08:30",
+     "end": "2026-11-20T09:30"
+    },
+    {
+     "title": "Futbol maçı",
+     "start": "2026-11-21T20:00",
+     "end": "2026-11-21T22:00"
+    },
+    {
+     "title": "Mezuniyet",
+     "start": "2026-11-22T14:00",
+     "end": "2026-11-22T16:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "mezuniyet pazar degil pazartesi",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "23 Kasım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b8-40",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Toplantı: Q4 planı",
+     "start": "2026-11-19T13:00",
+     "end": "2026-11-19T14:00"
+    },
+    {
+     "title": "Çocuk hastanesi",
+     "start": "2026-11-20T08:30",
+     "end": "2026-11-20T09:30"
+    },
+    {
+     "title": "Futbol maçı",
+     "start": "2026-11-21T20:00",
+     "end": "2026-11-21T22:00"
+    },
+    {
+     "title": "Mezuniyet",
+     "start": "2026-11-22T14:00",
+     "end": "2026-11-22T16:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "hastaneyi sil",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Çocuk hastanesi"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b8-41",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Banka kartını yenile",
+    "Lastikleri kontrol ettir",
+    "Doğum günü pastası sipariş et",
+    "Kira dekontunu gönder",
+    "İlaçları eczaneden al",
+    "Terziye pantolon bırak",
+    "Muhasebeciyi ara",
+    "Balkonu temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "balkonu cumartesi sabah 10da temizleyecegim",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Balkon",
+     "21 Kasım",
+     "10:00"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b8-42",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Banka kartını yenile",
+    "Lastikleri kontrol ettir",
+    "Doğum günü pastası sipariş et",
+    "Kira dekontunu gönder",
+    "İlaçları eczaneden al",
+    "Terziye pantolon bırak",
+    "Muhasebeciyi ara",
+    "Balkonu temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "bunu bu aksam 9 gibi hatirlat",
+    "kind": "free",
+    "tasks_open_count": 8,
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım",
+     "adı ne olsun"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b8-44",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Banka kartını yenile",
+    "Lastikleri kontrol ettir",
+    "Doğum günü pastası sipariş et",
+    "Kira dekontunu gönder",
+    "İlaçları eczaneden al",
+    "Terziye pantolon bırak",
+    "Muhasebeciyi ara",
+    "Balkonu temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "ilaclari aksam 7de alacagim",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "İlaç",
+     "19:00"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b8-45",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Banka kartını yenile",
+    "Lastikleri kontrol ettir",
+    "Doğum günü pastası sipariş et",
+    "Kira dekontunu gönder",
+    "İlaçları eczaneden al",
+    "Terziye pantolon bırak",
+    "Muhasebeciyi ara",
+    "Balkonu temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kira dekontunu yarin 10 gibi hatirlat",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Kira",
+     "10:00"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b8-46",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Banka kartını yenile",
+    "Lastikleri kontrol ettir",
+    "Doğum günü pastası sipariş et",
+    "Kira dekontunu gönder",
+    "İlaçları eczaneden al",
+    "Terziye pantolon bırak",
+    "Muhasebeciyi ara",
+    "Balkonu temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "banka karti ve kira isleri bu yarina kalsin lutfen",
+    "kind": "free",
+    "tasks_due": {
+     "Banka": "2026-11-20",
+     "Kira": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b8-48",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Banka kartını yenile",
+    "Lastikleri kontrol ettir",
+    "Doğum günü pastası sipariş et",
+    "Kira dekontunu gönder",
+    "İlaçları eczaneden al",
+    "Terziye pantolon bırak",
+    "Muhasebeciyi ara",
+    "Balkonu temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "muhasebeci bitti, balkon yarin, kira cuma, banka pazartesi",
+    "kind": "free",
+    "tasks_done_has": [
+     "Muhasebe"
+    ],
+    "tasks_due": {
+     "Balkon": "2026-11-20",
+     "Kira": "2026-11-20",
+     "Banka": "2026-11-23"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b8-49",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Banka kartını yenile",
+    "Lastikleri kontrol ettir",
+    "Doğum günü pastası sipariş et",
+    "Kira dekontunu gönder",
+    "İlaçları eczaneden al",
+    "Terziye pantolon bırak",
+    "Muhasebeciyi ara",
+    "Balkonu temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "pasta siparisi iptal",
+    "kind": "free"
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_open_count": 7
+   }
+  ]
+ },
+ {
+  "name": "b8-50",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Banka kartını yenile",
+    "Lastikleri kontrol ettir",
+    "Doğum günü pastası sipariş et",
+    "Kira dekontunu gönder",
+    "İlaçları eczaneden al",
+    "Terziye pantolon bırak",
+    "Muhasebeciyi ara",
+    "Balkonu temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "balkon temizlendi ama lastik kontrolu hala duruyor",
+    "kind": "free",
+    "tasks_done_has": [
+     "Balkon"
+    ],
+    "tasks_open_has": [
+     "Lastik"
+    ]
+   }
+  ]
+ }
+]

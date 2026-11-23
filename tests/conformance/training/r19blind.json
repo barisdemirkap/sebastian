@@ -1,0 +1,1313 @@
+[
+ {
+  "name": "b19-01",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kan tahlilini yaptır",
+    "Göz muayenesine git",
+    "Vitamin siparişi ver",
+    "Koşu ayakkabısı al",
+    "Fizik tedavi seansını ayarla",
+    "Diyetisyene mesaj at",
+    "Yoga matını yıka"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kan tahlili yapildi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Kan"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b19-02",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kan tahlilini yaptır",
+    "Göz muayenesine git",
+    "Vitamin siparişi ver",
+    "Koşu ayakkabısı al",
+    "Fizik tedavi seansını ayarla",
+    "Diyetisyene mesaj at",
+    "Yoga matını yıka"
+   ]
+  },
+  "steps": [
+   {
+    "say": "goz muayenesine gittim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Göz"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b19-03",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kan tahlilini yaptır",
+    "Göz muayenesine git",
+    "Vitamin siparişi ver",
+    "Koşu ayakkabısı al",
+    "Fizik tedavi seansını ayarla",
+    "Diyetisyene mesaj at",
+    "Yoga matını yıka"
+   ]
+  },
+  "steps": [
+   {
+    "say": "vitamin siparisi verildi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Vitamin"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b19-04",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kan tahlilini yaptır",
+    "Göz muayenesine git",
+    "Vitamin siparişi ver",
+    "Koşu ayakkabısı al",
+    "Fizik tedavi seansını ayarla",
+    "Diyetisyene mesaj at",
+    "Yoga matını yıka"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kosu ayakkabisini aldim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Koşu"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b19-05",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kan tahlilini yaptır",
+    "Göz muayenesine git",
+    "Vitamin siparişi ver",
+    "Koşu ayakkabısı al",
+    "Fizik tedavi seansını ayarla",
+    "Diyetisyene mesaj at",
+    "Yoga matını yıka"
+   ]
+  },
+  "steps": [
+   {
+    "say": "fizik tedavi seansi icin yarin ararim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Fizik": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b19-06",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kan tahlilini yaptır",
+    "Göz muayenesine git",
+    "Vitamin siparişi ver",
+    "Koşu ayakkabısı al",
+    "Fizik tedavi seansını ayarla",
+    "Diyetisyene mesaj at",
+    "Yoga matını yıka"
+   ]
+  },
+  "steps": [
+   {
+    "say": "diyetisyene mesaj attim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Diyetisyen"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b19-07",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kan tahlilini yaptır",
+    "Göz muayenesine git",
+    "Vitamin siparişi ver",
+    "Koşu ayakkabısı al",
+    "Fizik tedavi seansını ayarla",
+    "Diyetisyene mesaj at",
+    "Yoga matını yıka"
+   ]
+  },
+  "steps": [
+   {
+    "say": "yoga matini yikayamadim pazar",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Yoga": "2026-11-22"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b19-08",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kan tahlilini yaptır",
+    "Göz muayenesine git",
+    "Vitamin siparişi ver",
+    "Koşu ayakkabısı al",
+    "Fizik tedavi seansını ayarla",
+    "Diyetisyene mesaj at",
+    "Yoga matını yıka"
+   ]
+  },
+  "steps": [
+   {
+    "say": "goz muayenesi ve kan tahlili bugun olmaz cumartesi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Göz": "2026-11-21",
+     "Kan": "2026-11-21"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b19-09",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kan tahlilini yaptır",
+    "Göz muayenesine git",
+    "Vitamin siparişi ver",
+    "Koşu ayakkabısı al",
+    "Fizik tedavi seansını ayarla",
+    "Diyetisyene mesaj at",
+    "Yoga matını yıka"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kan tahlilini yaptirdim, vitamini de siparis ettim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Kan",
+     "Vitamin"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b19-10",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kan tahlilini yaptır",
+    "Göz muayenesine git",
+    "Vitamin siparişi ver",
+    "Koşu ayakkabısı al",
+    "Fizik tedavi seansını ayarla",
+    "Diyetisyene mesaj at",
+    "Yoga matını yıka"
+   ]
+  },
+  "steps": [
+   {
+    "say": "diyetisyene yarin yazarim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Diyetisyen": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b19-11",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kan tahlilini yaptır",
+    "Göz muayenesine git",
+    "Vitamin siparişi ver",
+    "Koşu ayakkabısı al",
+    "Fizik tedavi seansını ayarla",
+    "Diyetisyene mesaj at",
+    "Yoga matını yıka"
+   ]
+  },
+  "steps": [
+   {
+    "say": "yoga mati yikandi kurumaya birakildi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Yoga"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b19-12",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kan tahlilini yaptır",
+    "Göz muayenesine git",
+    "Vitamin siparişi ver",
+    "Koşu ayakkabısı al",
+    "Fizik tedavi seansını ayarla",
+    "Diyetisyene mesaj at",
+    "Yoga matını yıka"
+   ]
+  },
+  "steps": [
+   {
+    "say": "geri kalanlar pazartesiye kalsin",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ]
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_due": {
+     "Kan": "2026-11-23",
+     "Göz": "2026-11-23",
+     "Vitamin": "2026-11-23",
+     "Koşu": "2026-11-23",
+     "Fizik": "2026-11-23",
+     "Diyetisyen": "2026-11-23",
+     "Yoga": "2026-11-23"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b19-13",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kan tahlilini yaptır",
+    "Göz muayenesine git",
+    "Vitamin siparişi ver",
+    "Koşu ayakkabısı al",
+    "Fizik tedavi seansını ayarla",
+    "Diyetisyene mesaj at",
+    "Yoga matını yıka"
+   ]
+  },
+  "steps": [
+   {
+    "say": "fizik tedavi iptal",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ]
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_open_count": 6,
+    "tasks_open_not_has": [
+     "Fizik"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b19-14",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kan tahlilini yaptır",
+    "Göz muayenesine git",
+    "Vitamin siparişi ver",
+    "Koşu ayakkabısı al",
+    "Fizik tedavi seansını ayarla",
+    "Diyetisyene mesaj at",
+    "Yoga matını yıka"
+   ]
+  },
+  "steps": [
+   {
+    "say": "hepsi tamamdir",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ]
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_open_count": 0
+   }
+  ]
+ },
+ {
+  "name": "b19-15",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Aidatı öde",
+    "Doğalgaz faturasını kontrol et",
+    "Asansör bakım formunu imzala",
+    "Yangın tüpünü yenile",
+    "Çatı tamircisini ara",
+    "Su sayacını oku"
+   ]
+  },
+  "steps": [
+   {
+    "say": "aidat odendi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Aidat"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b19-16",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Aidatı öde",
+    "Doğalgaz faturasını kontrol et",
+    "Asansör bakım formunu imzala",
+    "Yangın tüpünü yenile",
+    "Çatı tamircisini ara",
+    "Su sayacını oku"
+   ]
+  },
+  "steps": [
+   {
+    "say": "dogalgaz faturasini kontrol ettim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Doğalgaz"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b19-17",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Aidatı öde",
+    "Doğalgaz faturasını kontrol et",
+    "Asansör bakım formunu imzala",
+    "Yangın tüpünü yenile",
+    "Çatı tamircisini ara",
+    "Su sayacını oku"
+   ]
+  },
+  "steps": [
+   {
+    "say": "asansor formu imzalandi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Asansör"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b19-18",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Aidatı öde",
+    "Doğalgaz faturasını kontrol et",
+    "Asansör bakım formunu imzala",
+    "Yangın tüpünü yenile",
+    "Çatı tamircisini ara",
+    "Su sayacını oku"
+   ]
+  },
+  "steps": [
+   {
+    "say": "yangin tupu yenilendi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Yangın"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b19-19",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Aidatı öde",
+    "Doğalgaz faturasını kontrol et",
+    "Asansör bakım formunu imzala",
+    "Yangın tüpünü yenile",
+    "Çatı tamircisini ara",
+    "Su sayacını oku"
+   ]
+  },
+  "steps": [
+   {
+    "say": "catici ile konustum yarin gelecek",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Çatı"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b19-20",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Aidatı öde",
+    "Doğalgaz faturasını kontrol et",
+    "Asansör bakım formunu imzala",
+    "Yangın tüpünü yenile",
+    "Çatı tamircisini ara",
+    "Su sayacını oku"
+   ]
+  },
+  "steps": [
+   {
+    "say": "su sayacini okudum",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Su"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b19-21",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Aidatı öde",
+    "Doğalgaz faturasını kontrol et",
+    "Asansör bakım formunu imzala",
+    "Yangın tüpünü yenile",
+    "Çatı tamircisini ara",
+    "Su sayacını oku"
+   ]
+  },
+  "steps": [
+   {
+    "say": "aidat ve sayac cumaya kalsin",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Aidat": "2026-11-20",
+     "Su": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b19-22",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Aidatı öde",
+    "Doğalgaz faturasını kontrol et",
+    "Asansör bakım formunu imzala",
+    "Yangın tüpünü yenile",
+    "Çatı tamircisini ara",
+    "Su sayacını oku"
+   ]
+  },
+  "steps": [
+   {
+    "say": "yangin tupunu bugun alamadim pazartesi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Yangın": "2026-11-23"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b19-23",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Aidatı öde",
+    "Doğalgaz faturasını kontrol et",
+    "Asansör bakım formunu imzala",
+    "Yangın tüpünü yenile",
+    "Çatı tamircisini ara",
+    "Su sayacını oku"
+   ]
+  },
+  "steps": [
+   {
+    "say": "asansor formu tamam dogalgaz yarina",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Asansör"
+    ],
+    "tasks_due": {
+     "Doğalgaz": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b19-24",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Aidatı öde",
+    "Doğalgaz faturasını kontrol et",
+    "Asansör bakım formunu imzala",
+    "Yangın tüpünü yenile",
+    "Çatı tamircisini ara",
+    "Su sayacını oku"
+   ]
+  },
+  "steps": [
+   {
+    "say": "tamirciyi aramaya vaktim olmadi yarina",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Çatı": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b19-25",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Aidatı öde",
+    "Doğalgaz faturasını kontrol et",
+    "Asansör bakım formunu imzala",
+    "Yangın tüpünü yenile",
+    "Çatı tamircisini ara",
+    "Su sayacını oku"
+   ]
+  },
+  "steps": [
+   {
+    "say": "aidati odeyecegim pazartesi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Aidat": "2026-11-23"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b19-26",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Aidatı öde",
+    "Doğalgaz faturasını kontrol et",
+    "Asansör bakım formunu imzala",
+    "Yangın tüpünü yenile",
+    "Çatı tamircisini ara",
+    "Su sayacını oku"
+   ]
+  },
+  "steps": [
+   {
+    "say": "sayac okumasina gerek kalmadi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ]
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_open_count": 5,
+    "tasks_open_not_has": [
+     "Su"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b19-27",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Aidatı öde",
+    "Doğalgaz faturasını kontrol et",
+    "Asansör bakım formunu imzala",
+    "Yangın tüpünü yenile",
+    "Çatı tamircisini ara",
+    "Su sayacını oku"
+   ]
+  },
+  "steps": [
+   {
+    "say": "hepsini yarina atalim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ]
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_due": {
+     "Aidat": "2026-11-20",
+     "Doğalgaz": "2026-11-20",
+     "Asansör": "2026-11-20",
+     "Yangın": "2026-11-20",
+     "Çatı": "2026-11-20",
+     "Su": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b19-28",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Aidatı öde",
+    "Doğalgaz faturasını kontrol et",
+    "Asansör bakım formunu imzala",
+    "Yangın tüpünü yenile",
+    "Çatı tamircisini ara",
+    "Su sayacını oku"
+   ]
+  },
+  "steps": [
+   {
+    "say": "dogalgaz ve aidat bitti",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Doğalgaz",
+     "Aidat"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b19-29",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Blog yazısını bitir",
+    "Logo taslaklarını gönder",
+    "Alan adını yenile",
+    "Sunucu faturasını öde",
+    "Müşteri sözleşmesini imzala",
+    "Portfolyoyu güncelle",
+    "Kahve makinesini detaylı temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "blog yazisini bitirdim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Blog"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b19-30",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Blog yazısını bitir",
+    "Logo taslaklarını gönder",
+    "Alan adını yenile",
+    "Sunucu faturasını öde",
+    "Müşteri sözleşmesini imzala",
+    "Portfolyoyu güncelle",
+    "Kahve makinesini detaylı temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "logolar gonderildi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Logo"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b19-31",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Blog yazısını bitir",
+    "Logo taslaklarını gönder",
+    "Alan adını yenile",
+    "Sunucu faturasını öde",
+    "Müşteri sözleşmesini imzala",
+    "Portfolyoyu güncelle",
+    "Kahve makinesini detaylı temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "alan adi yenilendi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Alan"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b19-32",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Blog yazısını bitir",
+    "Logo taslaklarını gönder",
+    "Alan adını yenile",
+    "Sunucu faturasını öde",
+    "Müşteri sözleşmesini imzala",
+    "Portfolyoyu güncelle",
+    "Kahve makinesini detaylı temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "sunucu faturasini odedim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Sunucu"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b19-33",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Blog yazısını bitir",
+    "Logo taslaklarını gönder",
+    "Alan adını yenile",
+    "Sunucu faturasını öde",
+    "Müşteri sözleşmesini imzala",
+    "Portfolyoyu güncelle",
+    "Kahve makinesini detaylı temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "musteri sozlesmesi imzalandi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Müşteri"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b19-34",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Blog yazısını bitir",
+    "Logo taslaklarını gönder",
+    "Alan adını yenile",
+    "Sunucu faturasını öde",
+    "Müşteri sözleşmesini imzala",
+    "Portfolyoyu güncelle",
+    "Kahve makinesini detaylı temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "portfolyo guncellendi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Portfolyo"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b19-35",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Blog yazısını bitir",
+    "Logo taslaklarını gönder",
+    "Alan adını yenile",
+    "Sunucu faturasını öde",
+    "Müşteri sözleşmesini imzala",
+    "Portfolyoyu güncelle",
+    "Kahve makinesini detaylı temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kahve makinesini temizledim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Kahve"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b19-36",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Blog yazısını bitir",
+    "Logo taslaklarını gönder",
+    "Alan adını yenile",
+    "Sunucu faturasını öde",
+    "Müşteri sözleşmesini imzala",
+    "Portfolyoyu güncelle",
+    "Kahve makinesini detaylı temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "blog yazisi yarina kalsin logo da",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Blog": "2026-11-20",
+     "Logo": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b19-37",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Blog yazısını bitir",
+    "Logo taslaklarını gönder",
+    "Alan adını yenile",
+    "Sunucu faturasını öde",
+    "Müşteri sözleşmesini imzala",
+    "Portfolyoyu güncelle",
+    "Kahve makinesini detaylı temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "alan adi ve sunucu faturasi bugun olmaz cuma",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Alan": "2026-11-20",
+     "Sunucu": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b19-38",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Blog yazısını bitir",
+    "Logo taslaklarını gönder",
+    "Alan adını yenile",
+    "Sunucu faturasını öde",
+    "Müşteri sözleşmesini imzala",
+    "Portfolyoyu güncelle",
+    "Kahve makinesini detaylı temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "portfolyoyu bitiremedim pazartesi bakarim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Portfolyo": "2026-11-23"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b19-39",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Blog yazısını bitir",
+    "Logo taslaklarını gönder",
+    "Alan adını yenile",
+    "Sunucu faturasını öde",
+    "Müşteri sözleşmesini imzala",
+    "Portfolyoyu güncelle",
+    "Kahve makinesini detaylı temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "blog bitti logo tamam kahve makinesi yarina",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Blog",
+     "Logo"
+    ],
+    "tasks_due": {
+     "Kahve": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b19-40",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Blog yazısını bitir",
+    "Logo taslaklarını gönder",
+    "Alan adını yenile",
+    "Sunucu faturasını öde",
+    "Müşteri sözleşmesini imzala",
+    "Portfolyoyu güncelle",
+    "Kahve makinesini detaylı temizle"
+   ]
+  },
+  "steps": [
+   {
+    "say": "sozlesme icin vaktim kalmadi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_open_count": 7,
+    "contains": [
+     "taşıyayım"
+    ]
+   }
+  ]
+ }
+]

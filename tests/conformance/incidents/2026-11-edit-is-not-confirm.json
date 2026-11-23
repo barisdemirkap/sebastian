@@ -1,0 +1,39 @@
+{
+  "name": "an edit is never a confirmation, and the new preview is what 'evet' saves",
+  "incident": "'evet ama saat 16:00 olsun' must change the preview, not save; the next 'evet' saves the NEW values once.",
+  "setup": {
+    "provider": "rules"
+  },
+  "steps": [
+    {
+      "say": "yarın saat 15:00 diş hekimi ekle",
+      "kind": "free",
+      "preview": true
+    },
+    {
+      "say": "evet ama saati 16:00 yap",
+      "kind": "edit",
+      "saved_total": 0,
+      "preview": true,
+      "contains": [
+        "16:00-17:00"
+      ],
+      "preview_has": [
+        {
+          "start": "2026-11-19T16:00:00+03:00"
+        }
+      ]
+    },
+    {
+      "say": "evet",
+      "kind": "confirm",
+      "saved_total": 1,
+      "saved_has": [
+        {
+          "start": "2026-11-19T16:00:00+03:00"
+        }
+      ],
+      "preview": false
+    }
+  ]
+}

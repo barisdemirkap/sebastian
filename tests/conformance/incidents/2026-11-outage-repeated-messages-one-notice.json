@@ -1,0 +1,68 @@
+{
+  "name": "model unavailable: several messages, one notice, no way-out menu",
+  "incident": "ADR 0021: the simple-mode notice is sent once per outage, not per message; repeated complex messages are queued each (the same text twice is stored once) and never trigger the 'Takıldık galiba' way-out menu.",
+  "agent": false,
+  "setup": {
+    "provider": "flaky",
+    "model_up": false,
+    "now": "2026-11-19T07:02",
+    "model_intents": {
+      "initech": {
+        "intent": "add_event",
+        "title": "GTech toplantısı",
+        "date": "2026-11-19",
+        "time": "10:00",
+        "duration_min": null,
+        "all_day": false
+      }
+    }
+  },
+  "steps": [
+    {
+      "say": "copu evden cikarken cikartacagim bugun 10da initech toplantim var 11de de cto ile toplantim var",
+      "kind": "free",
+      "preview": false,
+      "contains": [
+        "basit kipte",
+        "Bekleyen: 1"
+      ]
+    },
+    {
+      "say": "yarın sabah 9da berber cuma 5te dişçi var",
+      "kind": "free",
+      "preview": false,
+      "contains": [
+        "Bekleyen: 2"
+      ],
+      "not_contains": [
+        "basit kipte",
+        "Galiba birbirimizi"
+      ]
+    },
+    {
+      "say": "yarın sabah 9da berber cuma 5te dişçi var",
+      "kind": "free",
+      "preview": false,
+      "contains": [
+        "Bekleyen: 2"
+      ],
+      "not_contains": [
+        "basit kipte",
+        "Galiba birbirimizi"
+      ]
+    },
+    {
+      "say": "pazartesi 3te muhasebe toplantısı salı 4te de avukat görüşmesi var",
+      "kind": "free",
+      "preview": false,
+      "contains": [
+        "Bekleyen: 3"
+      ],
+      "not_contains": [
+        "basit kipte",
+        "Galiba birbirimizi"
+      ],
+      "saved_total": 0
+    }
+  ]
+}

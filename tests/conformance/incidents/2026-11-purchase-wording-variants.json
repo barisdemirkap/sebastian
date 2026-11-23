@@ -1,0 +1,154 @@
+{
+  "name": "every common purchase wording lands on the list (lazım, bitti, kalmadı, tükendi, listeye, market:, unutma, newlines, quantities)",
+  "incident": "Incident H generalised (ADR 0017): the broad purchase classifier covers lazım, almamız lazım, bitti, kalmadı, tükendi, listeye X, market: X, Y, X'i unutma, eve X lazım, X al, repeated verbs and newlines.",
+  "setup": {
+    "provider": "rules",
+    "now": "2026-11-19T06:27"
+  },
+  "steps": [
+    {
+      "say": "süt lazım",
+      "kind": "free",
+      "preview": false,
+      "contains": [
+        "Alınacaklar listesine ekledim: Süt"
+      ],
+      "not_contains": [
+        "Hangi gün"
+      ],
+      "saved_total": 0
+    },
+    {
+      "say": "2 litre yumurta almamız lazım",
+      "kind": "free",
+      "preview": false,
+      "contains": [
+        "Alınacaklar listesine ekledim: 2 litre yumurta"
+      ],
+      "not_contains": [
+        "Hangi gün"
+      ],
+      "saved_total": 0
+    },
+    {
+      "say": "peynir bitti",
+      "kind": "free",
+      "preview": false,
+      "contains": [
+        "Alınacaklar listesine ekledim: Peynir"
+      ],
+      "not_contains": [
+        "Hangi gün"
+      ],
+      "saved_total": 0
+    },
+    {
+      "say": "market: zeytin, reçel",
+      "kind": "free",
+      "preview": false,
+      "contains": [
+        "Alınacaklar listesine ekledim: Zeytin, Reçel"
+      ],
+      "not_contains": [
+        "Hangi gün"
+      ],
+      "saved_total": 0
+    },
+    {
+      "say": "çay'ı unutma",
+      "kind": "free",
+      "preview": false,
+      "contains": [
+        "Alınacaklar listesine ekledim: Çay"
+      ],
+      "not_contains": [
+        "Hangi gün"
+      ],
+      "saved_total": 0
+    },
+    {
+      "say": "eve limon lazım",
+      "kind": "free",
+      "preview": false,
+      "contains": [
+        "Alınacaklar listesine ekledim: Limon"
+      ],
+      "not_contains": [
+        "Hangi gün"
+      ],
+      "saved_total": 0
+    },
+    {
+      "say": "listeye tuz",
+      "kind": "free",
+      "preview": false,
+      "contains": [
+        "Alınacaklar listesine ekledim: Tuz"
+      ],
+      "not_contains": [
+        "Hangi gün"
+      ],
+      "saved_total": 0
+    },
+    {
+      "say": "kahve kalmadı",
+      "kind": "free",
+      "preview": false,
+      "contains": [
+        "Alınacaklar listesine ekledim: Kahve"
+      ],
+      "not_contains": [
+        "Hangi gün"
+      ],
+      "saved_total": 0
+    },
+    {
+      "say": "makarna tükendi",
+      "kind": "free",
+      "preview": false,
+      "contains": [
+        "Alınacaklar listesine ekledim: Makarna"
+      ],
+      "not_contains": [
+        "Hangi gün"
+      ],
+      "saved_total": 0
+    },
+    {
+      "say": "un al",
+      "kind": "free",
+      "preview": false,
+      "contains": [
+        "Alınacaklar listesine ekledim: Un"
+      ],
+      "not_contains": [
+        "Hangi gün"
+      ],
+      "saved_total": 0
+    },
+    {
+      "say": "pirinç ve nohut alınacak",
+      "kind": "free",
+      "preview": false,
+      "contains": [
+        "Alınacaklar listesine ekledim: Pirinç, Nohut"
+      ],
+      "not_contains": [
+        "Hangi gün"
+      ],
+      "saved_total": 0
+    },
+    {
+      "say": "bulgur\nmercimek\nalınacak",
+      "kind": "free",
+      "preview": false,
+      "contains": [
+        "Alınacaklar listesine ekledim: Bulgur, Mercimek"
+      ],
+      "not_contains": [
+        "Hangi gün"
+      ],
+      "saved_total": 0
+    }
+  ]
+}

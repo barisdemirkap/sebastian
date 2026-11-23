@@ -1,0 +1,1317 @@
+[
+ {
+  "name": "b18-01",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe hortumunu topla",
+    "Çatı oluklarını temizle",
+    "Garaj kapısını yağla",
+    "Kombi bakımını yaptır",
+    "Yağmurluğu kurutmaya as",
+    "Şömine odunlarını getir",
+    "Kapı zilini tamir et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "hortumu topladim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Bahçe"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b18-02",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe hortumunu topla",
+    "Çatı oluklarını temizle",
+    "Garaj kapısını yağla",
+    "Kombi bakımını yaptır",
+    "Yağmurluğu kurutmaya as",
+    "Şömine odunlarını getir",
+    "Kapı zilini tamir et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "oluklar temizlendi usta geldi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Çatı"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b18-03",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe hortumunu topla",
+    "Çatı oluklarını temizle",
+    "Garaj kapısını yağla",
+    "Kombi bakımını yaptır",
+    "Yağmurluğu kurutmaya as",
+    "Şömine odunlarını getir",
+    "Kapı zilini tamir et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "garaj kapisi yaglandi tamam",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Garaj"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b18-04",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe hortumunu topla",
+    "Çatı oluklarını temizle",
+    "Garaj kapısını yağla",
+    "Kombi bakımını yaptır",
+    "Yağmurluğu kurutmaya as",
+    "Şömine odunlarını getir",
+    "Kapı zilini tamir et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kombi bakimi icin adam yarin gelecek",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Kombi": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b18-05",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe hortumunu topla",
+    "Çatı oluklarını temizle",
+    "Garaj kapısını yağla",
+    "Kombi bakımını yaptır",
+    "Yağmurluğu kurutmaya as",
+    "Şömine odunlarını getir",
+    "Kapı zilini tamir et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "yagmurluk kurudu",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Yağmurluğu"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b18-06",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe hortumunu topla",
+    "Çatı oluklarını temizle",
+    "Garaj kapısını yağla",
+    "Kombi bakımını yaptır",
+    "Yağmurluğu kurutmaya as",
+    "Şömine odunlarını getir",
+    "Kapı zilini tamir et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "somine odunlari cumartesi gelecek",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Şömine": "2026-11-21"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b18-07",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe hortumunu topla",
+    "Çatı oluklarını temizle",
+    "Garaj kapısını yağla",
+    "Kombi bakımını yaptır",
+    "Yağmurluğu kurutmaya as",
+    "Şömine odunlarını getir",
+    "Kapı zilini tamir et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "zil tamir edilemedi pazartesi tekrar",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Kapı": "2026-11-23"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b18-08",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe hortumunu topla",
+    "Çatı oluklarını temizle",
+    "Garaj kapısını yağla",
+    "Kombi bakımını yaptır",
+    "Yağmurluğu kurutmaya as",
+    "Şömine odunlarını getir",
+    "Kapı zilini tamir et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "olugu temizleyemedim yarina kalsin",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Çatı": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b18-09",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe hortumunu topla",
+    "Çatı oluklarını temizle",
+    "Garaj kapısını yağla",
+    "Kombi bakımını yaptır",
+    "Yağmurluğu kurutmaya as",
+    "Şömine odunlarını getir",
+    "Kapı zilini tamir et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "hortumu topladim, garaji da yagladim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Bahçe",
+     "Garaj"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b18-10",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe hortumunu topla",
+    "Çatı oluklarını temizle",
+    "Garaj kapısını yağla",
+    "Kombi bakımını yaptır",
+    "Yağmurluğu kurutmaya as",
+    "Şömine odunlarını getir",
+    "Kapı zilini tamir et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kombi ve zil bugun olmadi pazara kalsin",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Kombi": "2026-11-22",
+     "Kapı": "2026-11-22"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b18-11",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe hortumunu topla",
+    "Çatı oluklarını temizle",
+    "Garaj kapısını yağla",
+    "Kombi bakımını yaptır",
+    "Yağmurluğu kurutmaya as",
+    "Şömine odunlarını getir",
+    "Kapı zilini tamir et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "sadece zil kaldi gerisi tamam",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ]
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_open_count": 1
+   }
+  ]
+ },
+ {
+  "name": "b18-12",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe hortumunu topla",
+    "Çatı oluklarını temizle",
+    "Garaj kapısını yağla",
+    "Kombi bakımını yaptır",
+    "Yağmurluğu kurutmaya as",
+    "Şömine odunlarını getir",
+    "Kapı zilini tamir et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "somine odunu getirildi, yagmurluk hala islak yarin",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Şömine"
+    ],
+    "tasks_due": {
+     "Yağmurluğu": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b18-13",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe hortumunu topla",
+    "Çatı oluklarını temizle",
+    "Garaj kapısını yağla",
+    "Kombi bakımını yaptır",
+    "Yağmurluğu kurutmaya as",
+    "Şömine odunlarını getir",
+    "Kapı zilini tamir et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kombi bakimi iptal",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ]
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_open_count": 6,
+    "tasks_open_not_has": [
+     "Kombi"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b18-14",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bahçe hortumunu topla",
+    "Çatı oluklarını temizle",
+    "Garaj kapısını yağla",
+    "Kombi bakımını yaptır",
+    "Yağmurluğu kurutmaya as",
+    "Şömine odunlarını getir",
+    "Kapı zilini tamir et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "hepsini cumaya al",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ]
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_due": {
+     "Bahçe": "2026-11-20",
+     "Çatı": "2026-11-20",
+     "Garaj": "2026-11-20",
+     "Kombi": "2026-11-20",
+     "Yağmurluğu": "2026-11-20",
+     "Şömine": "2026-11-20",
+     "Kapı": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b18-15",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Karne imzasını al",
+    "Çocuğun gözlüğünü yaptır",
+    "Veli toplantısına katıl",
+    "Kırtasiye alışverişini yap",
+    "Servis ücretini öde",
+    "Piyano dersini ayarla",
+    "Okul fotoğraflarını sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "karneyi imzaladim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Karne"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b18-16",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Karne imzasını al",
+    "Çocuğun gözlüğünü yaptır",
+    "Veli toplantısına katıl",
+    "Kırtasiye alışverişini yap",
+    "Servis ücretini öde",
+    "Piyano dersini ayarla",
+    "Okul fotoğraflarını sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "gozluk yapildi cocugun",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Çocuğun gözlüğünü"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b18-17",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Karne imzasını al",
+    "Çocuğun gözlüğünü yaptır",
+    "Veli toplantısına katıl",
+    "Kırtasiye alışverişini yap",
+    "Servis ücretini öde",
+    "Piyano dersini ayarla",
+    "Okul fotoğraflarını sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "veli toplantisina katildim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Veli"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b18-18",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Karne imzasını al",
+    "Çocuğun gözlüğünü yaptır",
+    "Veli toplantısına katıl",
+    "Kırtasiye alışverişini yap",
+    "Servis ücretini öde",
+    "Piyano dersini ayarla",
+    "Okul fotoğraflarını sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kirtasiye alisverisi bitti",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Kırtasiye"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b18-19",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Karne imzasını al",
+    "Çocuğun gözlüğünü yaptır",
+    "Veli toplantısına katıl",
+    "Kırtasiye alışverişini yap",
+    "Servis ücretini öde",
+    "Piyano dersini ayarla",
+    "Okul fotoğraflarını sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "servis ucreti odendi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Servis"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b18-20",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Karne imzasını al",
+    "Çocuğun gözlüğünü yaptır",
+    "Veli toplantısına katıl",
+    "Kırtasiye alışverişini yap",
+    "Servis ücretini öde",
+    "Piyano dersini ayarla",
+    "Okul fotoğraflarını sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "piyano dersini ayarladim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Piyano"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b18-21",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Karne imzasını al",
+    "Çocuğun gözlüğünü yaptır",
+    "Veli toplantısına katıl",
+    "Kırtasiye alışverişini yap",
+    "Servis ücretini öde",
+    "Piyano dersini ayarla",
+    "Okul fotoğraflarını sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "fotograflari siparis ettim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Okul"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b18-22",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Karne imzasını al",
+    "Çocuğun gözlüğünü yaptır",
+    "Veli toplantısına katıl",
+    "Kırtasiye alışverişini yap",
+    "Servis ücretini öde",
+    "Piyano dersini ayarla",
+    "Okul fotoğraflarını sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "veli toplantisi bu yarina",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Veli": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b18-23",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Karne imzasını al",
+    "Çocuğun gözlüğünü yaptır",
+    "Veli toplantısına katıl",
+    "Kırtasiye alışverişini yap",
+    "Servis ücretini öde",
+    "Piyano dersini ayarla",
+    "Okul fotoğraflarını sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "gozluk ve servis ucreti pazartesiye kalsin",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Çocuğun gözlüğünü": "2026-11-23",
+     "Servis": "2026-11-23"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b18-24",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Karne imzasını al",
+    "Çocuğun gözlüğünü yaptır",
+    "Veli toplantısına katıl",
+    "Kırtasiye alışverişini yap",
+    "Servis ücretini öde",
+    "Piyano dersini ayarla",
+    "Okul fotoğraflarını sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "karne imzasi icin okula gidemedim cuma",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Karne": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b18-25",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Karne imzasını al",
+    "Çocuğun gözlüğünü yaptır",
+    "Veli toplantısına katıl",
+    "Kırtasiye alışverişini yap",
+    "Servis ücretini öde",
+    "Piyano dersini ayarla",
+    "Okul fotoğraflarını sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kirtasiye isi tamam piyano yarina",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Kırtasiye"
+    ],
+    "tasks_due": {
+     "Piyano": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b18-26",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Karne imzasını al",
+    "Çocuğun gözlüğünü yaptır",
+    "Veli toplantısına katıl",
+    "Kırtasiye alışverişini yap",
+    "Servis ücretini öde",
+    "Piyano dersini ayarla",
+    "Okul fotoğraflarını sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "fotograf siparisi yapilmadi yarin veririm",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Okul": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b18-27",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Karne imzasını al",
+    "Çocuğun gözlüğünü yaptır",
+    "Veli toplantısına katıl",
+    "Kırtasiye alışverişini yap",
+    "Servis ücretini öde",
+    "Piyano dersini ayarla",
+    "Okul fotoğraflarını sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "servis ucreti ve karne tamam",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Servis",
+     "Karne"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b18-28",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Karne imzasını al",
+    "Çocuğun gözlüğünü yaptır",
+    "Veli toplantısına katıl",
+    "Kırtasiye alışverişini yap",
+    "Servis ücretini öde",
+    "Piyano dersini ayarla",
+    "Okul fotoğraflarını sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "okul fotograflari icin vaktim kalmadi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_open_count": 7,
+    "contains": [
+     "taşıyayım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b18-29",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bütçe tablosunu güncelle",
+    "Tedarikçiyle görüş",
+    "Yeni stajyerin hesabını aç",
+    "Fatura mutabakatını tamamla",
+    "Sözleşme taslağını gözden geçir",
+    "Ekip yemeğini rezerve et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "butce tablosunu guncelledim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Bütçe"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b18-30",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bütçe tablosunu güncelle",
+    "Tedarikçiyle görüş",
+    "Yeni stajyerin hesabını aç",
+    "Fatura mutabakatını tamamla",
+    "Sözleşme taslağını gözden geçir",
+    "Ekip yemeğini rezerve et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "tedarikciyle gorustum",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Tedarikçi"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b18-31",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bütçe tablosunu güncelle",
+    "Tedarikçiyle görüş",
+    "Yeni stajyerin hesabını aç",
+    "Fatura mutabakatını tamamla",
+    "Sözleşme taslağını gözden geçir",
+    "Ekip yemeğini rezerve et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "stajyerin hesabi acildi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Yeni stajyerin"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b18-32",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bütçe tablosunu güncelle",
+    "Tedarikçiyle görüş",
+    "Yeni stajyerin hesabını aç",
+    "Fatura mutabakatını tamamla",
+    "Sözleşme taslağını gözden geçir",
+    "Ekip yemeğini rezerve et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "mutabakat tamamlandi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Fatura"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b18-33",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bütçe tablosunu güncelle",
+    "Tedarikçiyle görüş",
+    "Yeni stajyerin hesabını aç",
+    "Fatura mutabakatını tamamla",
+    "Sözleşme taslağını gözden geçir",
+    "Ekip yemeğini rezerve et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "sozlesme taslagini gozden gecirdim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Sözleşme"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b18-34",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bütçe tablosunu güncelle",
+    "Tedarikçiyle görüş",
+    "Yeni stajyerin hesabını aç",
+    "Fatura mutabakatını tamamla",
+    "Sözleşme taslağını gözden geçir",
+    "Ekip yemeğini rezerve et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "ekip yemegi icin yer ayirttim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Ekip"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b18-35",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bütçe tablosunu güncelle",
+    "Tedarikçiyle görüş",
+    "Yeni stajyerin hesabını aç",
+    "Fatura mutabakatını tamamla",
+    "Sözleşme taslağını gözden geçir",
+    "Ekip yemeğini rezerve et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "butce ve tedarikci gorusmesi yarina kalsin",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Bütçe": "2026-11-20",
+     "Tedarikçi": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b18-36",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bütçe tablosunu güncelle",
+    "Tedarikçiyle görüş",
+    "Yeni stajyerin hesabını aç",
+    "Fatura mutabakatını tamamla",
+    "Sözleşme taslağını gözden geçir",
+    "Ekip yemeğini rezerve et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "stajyer hesabini bugun acamadim pazartesiye",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Yeni stajyerin": "2026-11-23"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b18-37",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bütçe tablosunu güncelle",
+    "Tedarikçiyle görüş",
+    "Yeni stajyerin hesabını aç",
+    "Fatura mutabakatını tamamla",
+    "Sözleşme taslağını gözden geçir",
+    "Ekip yemeğini rezerve et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "mutabakat tamam sozlesme cuma",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Fatura"
+    ],
+    "tasks_due": {
+     "Sözleşme": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b18-38",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bütçe tablosunu güncelle",
+    "Tedarikçiyle görüş",
+    "Yeni stajyerin hesabını aç",
+    "Fatura mutabakatını tamamla",
+    "Sözleşme taslağını gözden geçir",
+    "Ekip yemeğini rezerve et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "ekip yemegi artik olmayacak iptal",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ]
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_open_count": 5,
+    "tasks_open_not_has": [
+     "Ekip"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b18-39",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bütçe tablosunu güncelle",
+    "Tedarikçiyle görüş",
+    "Yeni stajyerin hesabını aç",
+    "Fatura mutabakatını tamamla",
+    "Sözleşme taslağını gözden geçir",
+    "Ekip yemeğini rezerve et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "geri kalan her sey yarina",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ]
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_due": {
+     "Bütçe": "2026-11-20",
+     "Tedarikçi": "2026-11-20",
+     "Yeni stajyerin": "2026-11-20",
+     "Fatura": "2026-11-20",
+     "Sözleşme": "2026-11-20",
+     "Ekip": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b18-40",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bütçe tablosunu güncelle",
+    "Tedarikçiyle görüş",
+    "Yeni stajyerin hesabını aç",
+    "Fatura mutabakatını tamamla",
+    "Sözleşme taslağını gözden geçir",
+    "Ekip yemeğini rezerve et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "tedarikci ve butce bitti",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Tedarikçi",
+     "Bütçe"
+    ]
+   }
+  ]
+ }
+]

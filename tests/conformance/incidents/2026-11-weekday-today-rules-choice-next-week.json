@@ -1,0 +1,34 @@
+{
+  "name": "the same ambiguity without a model: choosing next week previews the 26th",
+  "incident": "ADR 0012: the rules parser (no model) must ask too. Answering 'haftaya' or '2' picks the 26th and the preview shows weekday and full date.",
+  "setup": {
+    "provider": "rules",
+    "now": "2026-11-19T05:01"
+  },
+  "steps": [
+    {
+      "say": "persembe ogleden sonra 4e alexa ve hue kurulumu ekle",
+      "kind": "free",
+      "preview": false,
+      "contains": [
+        "Bugün Perşembe"
+      ]
+    },
+    {
+      "say": "haftaya",
+      "kind": "free",
+      "preview": true,
+      "contains": [
+        "Alexa ve hue kurulumu",
+        "Perşembe 26 Kasım 2026 16:00-16:30"
+      ],
+      "saved_total": 0
+    },
+    {
+      "say": "hayır",
+      "kind": "cancel",
+      "preview": false,
+      "saved_total": 0
+    }
+  ]
+}

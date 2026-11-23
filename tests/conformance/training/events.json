@@ -1,0 +1,306 @@
+[
+ {
+  "name": "add-tomorrow-appointment",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00"
+  },
+  "steps": [
+   {
+    "say": "yarin 15:00 diş hekimi",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "15:00",
+     "20 Kasım"
+    ]
+   },
+   {
+    "say": "evet",
+    "kind": "confirm",
+    "saved_total": 1,
+    "preview": false
+   }
+  ]
+ },
+ {
+  "name": "add-friday-evening",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00"
+  },
+  "steps": [
+   {
+    "say": "cuma 18:00 aile yemeği",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Cuma 20 Kasım",
+     "18:00"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "add-monday-range",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00"
+  },
+  "steps": [
+   {
+    "say": "pazartesi 10-11 toplanti",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "23 Kasım",
+     "10:00"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "add-next-tuesday",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00"
+  },
+  "steps": [
+   {
+    "say": "haftaya sali 14:30 CTO ile toplanti",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "14:30",
+     "CTO"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "add-all-day",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00"
+  },
+  "steps": [
+   {
+    "say": "cumartesi tum gun piknik",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "21 Kasım",
+     "Piknik"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "add-with-reminder",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00"
+  },
+  "steps": [
+   {
+    "say": "yarin 9da doktor 1 saat once hatirlat",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "09:00",
+     "1 saat"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "duplicate-event-writes-nothing",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Diş hekimi",
+     "start": "2026-11-20T15:00",
+     "end": "2026-11-20T16:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "yarin 15te dis hekimi ekle",
+    "kind": "free",
+    "preview": false,
+    "saved_total": 1,
+    "contains": [
+     "Zaten"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "time-asked-then-answered",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00"
+  },
+  "steps": [
+   {
+    "say": "yarin dis hekimi",
+    "kind": "free",
+    "preview": false,
+    "contains": [
+     "Saat kaçta"
+    ]
+   },
+   {
+    "say": "15:00",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "15:00"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "time-asked-then-fuzzy-answer",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00"
+  },
+  "steps": [
+   {
+    "say": "yarin dis hekimi",
+    "kind": "free",
+    "contains": [
+     "Saat kaçta"
+    ]
+   },
+   {
+    "say": "ogleden sonra 3 gibi",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "15:00"
+    ],
+    "not_contains": [
+     "Saat kaçta"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "day-asked-then-answered-with-weekday",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00"
+  },
+  "steps": [
+   {
+    "say": "yoga dersi ekle",
+    "kind": "free",
+    "contains": [
+     "Hangi"
+    ]
+   },
+   {
+    "say": "cuma",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangi etkinliği"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "birthday-add",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00"
+  },
+  "steps": [
+   {
+    "say": "21 aralik annemin dogum gunu ekle",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Aralık"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "same-title-other-day-is-allowed",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Diş hekimi",
+     "start": "2026-11-21T15:00",
+     "end": "2026-11-21T16:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "cuma 15:00 diş hekimi",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "20 Kasım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "edit-flow-before-confirm",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00"
+  },
+  "steps": [
+   {
+    "say": "yarin 15:00 toplanti",
+    "kind": "free",
+    "preview": true
+   },
+   {
+    "say": "saati 16:00 yap",
+    "kind": "edit",
+    "preview": true,
+    "contains": [
+     "16:00"
+    ],
+    "saved_total": 0
+   },
+   {
+    "say": "evet",
+    "kind": "confirm",
+    "saved_total": 1
+   }
+  ]
+ },
+ {
+  "name": "cancel-flow",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00"
+  },
+  "steps": [
+   {
+    "say": "yarin 15:00 toplanti",
+    "kind": "free",
+    "preview": true
+   },
+   {
+    "say": "hayır",
+    "kind": "cancel",
+    "preview": false,
+    "saved_total": 0
+   }
+  ]
+ }
+]

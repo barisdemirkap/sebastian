@@ -1,0 +1,48 @@
+{
+  "name": "'cop aksam cikacak 18.30da' moves the existing trash event instead of creating a new one",
+  "incident": "A chore mentioned with a clock time while an event of that subject exists today is a move (edit preview before -> after), never a new event; the open task of the same subject stays a task.",
+  "agent": false,
+  "setup": {
+    "provider": "rules",
+    "now": "2026-11-19T10:00",
+    "seed": [
+      {
+        "title": "Çöpü çıkar",
+        "start": "2026-11-19T07:30",
+        "end": "2026-11-19T07:45"
+      }
+    ],
+    "tasks": [
+      "Çöpü akşam çıkar"
+    ]
+  },
+  "steps": [
+    {
+      "say": "çöp akşam çıkacak 18.30da",
+      "kind": "free",
+      "preview": true,
+      "contains": [
+        "Şunu şöyle değiştiriyorum",
+        "Önce: Çöpü çıkar",
+        "07:30",
+        "Sonra: Çöpü çıkar",
+        "18:30"
+      ],
+      "not_contains": [
+        "Şunu takvime işliyorum"
+      ],
+      "saved_total": 1
+    },
+    {
+      "say": "evet",
+      "kind": "confirm",
+      "saved_has": [
+        {
+          "title": "Çöpü çıkar",
+          "start": "2026-11-19T18:30:00+03:00"
+        }
+      ],
+      "saved_total": 1
+    }
+  ]
+}

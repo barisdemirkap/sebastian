@@ -1,0 +1,25 @@
+{
+  "name": "'X alinacak Y alinacak' is a shopping list add, never an event with a day question",
+  "incident": "Live failure of 2026-11-19 06:27 (incident H, ADR 0017): the owner wrote that bread and tomatoes are to be bought. The bot treated it as add_event and asked 'Hangi gün?'. Now: both items go to the Alınacaklar list immediately, with the checkbox view.",
+  "setup": {
+    "provider": "rules",
+    "now": "2026-11-19T06:27"
+  },
+  "steps": [
+    {
+      "say": "ekmek alinacak domates alinacak",
+      "kind": "free",
+      "preview": false,
+      "contains": [
+        "Alınacaklar listesine ekledim: Ekmek, Domates",
+        "☐ Ekmek",
+        "☐ Domates"
+      ],
+      "not_contains": [
+        "Hangi gün",
+        "Bugün"
+      ],
+      "saved_total": 0
+    }
+  ]
+}

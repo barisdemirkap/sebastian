@@ -1,0 +1,51 @@
+{
+  "name": "unrecognised, gibberish and chit-chat never destroy a pending preview",
+  "incident": "ADR 0006: any unrecognised text used to close the pending action as superseded.",
+  "setup": {
+    "provider": "rules"
+  },
+  "steps": [
+    {
+      "say": "yarın saat 15:00 diş hekimi ekle",
+      "kind": "free",
+      "preview": true
+    },
+    {
+      "say": "asdfgh",
+      "kind": "neutral",
+      "preview": true
+    },
+    {
+      "say": "???",
+      "kind": "neutral",
+      "preview": true
+    },
+    {
+      "say": "😀",
+      "kind": "neutral",
+      "preview": true
+    },
+    {
+      "say": "merhaba",
+      "kind": "neutral",
+      "preview": true
+    },
+    {
+      "say": "bugün ne var",
+      "kind": "neutral",
+      "preview": true
+    },
+    {
+      "say": "asdfgh",
+      "kind": "neutral",
+      "preview": true,
+      "saved_total": 0
+    },
+    {
+      "say": "tamam",
+      "kind": "confirm",
+      "saved_total": 1,
+      "preview": false
+    }
+  ]
+}

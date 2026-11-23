@@ -1,0 +1,55 @@
+[
+ {
+  "name": "check-list-item-and-task-done",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kitapları topla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "alinacaklar listesine sut ekle",
+    "kind": "free"
+   },
+   {
+    "say": "sut aldim, kitaplari topladim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Kitap"
+    ],
+    "contains": [
+     "Sut"
+    ],
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "list-add-and-defer",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kitapları topla"
+   ]
+  },
+  "steps": [
+   {
+    "say": "alinacaklar listesine sut ekle, kitaplar yarina kalsin",
+    "kind": "free",
+    "contains": [
+     "Sut"
+    ],
+    "tasks_due": {
+     "Kitap": "2026-11-20"
+    }
+   }
+  ]
+ }
+]

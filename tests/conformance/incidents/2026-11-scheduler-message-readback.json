@@ -1,0 +1,24 @@
+{
+  "name": "the bot can read back a digest the scheduler sent",
+  "incident": "Live failure of 2026-11-19 (ADR 0010): digests and reminders sent by the scheduler process were not in the message log, so 'az once ne dediydin' / 'saat 8 deki mesaji oku' found nothing. Reading back changes nothing.",
+  "setup": {
+    "provider": "rules",
+    "now": "2026-11-18T09:00",
+    "seed": [["Demo toplantı", 14, "2026-11-18"]],
+    "scheduler_digest": true
+  },
+  "steps": [
+    {
+      "say": "az önce ne dediydin",
+      "kind": "free",
+      "contains": ["Günaydın", "Demo toplantı"],
+      "saved_total": 1
+    },
+    {
+      "say": "saat 9 daki mesajı oku",
+      "kind": "free",
+      "contains": ["Günaydın"],
+      "saved_total": 1
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "name": "asking for today's plan again and again is never a failure",
+  "incident": "Owner asked 'bugun planim nasil' / 'programim nasil' (paraphrases of 'show today'); the repeat guard answered 'Yine ayni durumdayiz' and the health menu followed. A repeated read-only query is legitimate: same answer, no lead, no S1, no menu.",
+  "setup": {
+    "provider": "rules",
+    "now": "2026-11-19T14:00",
+    "seed": [
+      {
+        "title": "Çöpü çıkar",
+        "start": "2026-11-19T07:30",
+        "end": "2026-11-19T07:45"
+      },
+      {
+        "title": "Aile hekimi: sağlık raporu al",
+        "start": "2026-11-19T08:50",
+        "end": "2026-11-19T09:50"
+      },
+      {
+        "title": "Metin kontrolü",
+        "start": "2026-11-19T12:30",
+        "end": "2026-11-19T13:00"
+      },
+      {
+        "title": "Araç muayenesi için randevu al",
+        "start": "2026-11-19T15:00",
+        "end": "2026-11-19T15:15"
+      },
+      {
+        "title": "Alexa ve Hue kurulumları",
+        "start": "2026-11-19T16:00",
+        "end": "2026-11-19T17:00"
+      }
+    ],
+    "tasks": [
+      "Çöpü akşam çıkar",
+      "Metin kontrolü",
+      "Araç muayenesi için randevu al",
+      "Alexa ve Hue kurulumları"
+    ]
+  },
+  "steps": [
+    {
+      "say": "bugun planim nasil",
+      "kind": "free",
+      "contains": [
+        "Çöpü çıkar",
+        "Alexa"
+      ],
+      "not_contains": [
+        "Yine aynı",
+        "Hâlâ aynı",
+        "birbirimizi",
+        "/bildir"
+      ]
+    },
+    {
+      "say": "programim nasil",
+      "kind": "free",
+      "repeat_ok": true,
+      "contains": [
+        "Çöpü çıkar",
+        "Alexa"
+      ],
+      "not_contains": [
+        "Yine aynı",
+        "Hâlâ aynı",
+        "birbirimizi",
+        "/bildir"
+      ]
+    },
+    {
+      "say": "bugun planim nasil",
+      "kind": "free",
+      "repeat_ok": true,
+      "contains": [
+        "Çöpü çıkar",
+        "Alexa"
+      ],
+      "not_contains": [
+        "Yine aynı",
+        "Hâlâ aynı",
+        "birbirimizi",
+        "/bildir"
+      ],
+      "replies_max": 1
+    },
+    {
+      "say": "programim nasil",
+      "kind": "free",
+      "repeat_ok": true,
+      "contains": [
+        "Alexa"
+      ],
+      "not_contains": [
+        "Yine aynı",
+        "Hâlâ aynı",
+        "birbirimizi",
+        "/bildir"
+      ],
+      "replies_max": 1,
+      "preview": false
+    }
+  ]
+}

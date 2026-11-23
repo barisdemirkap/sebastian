@@ -1,0 +1,1531 @@
+[
+ {
+  "name": "b11-01",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Oto yıkamaya git",
+    "Kütüphane kartını yenile",
+    "Ayakkabıları boyat",
+    "Su sayacını bildir",
+    "Tohum al",
+    "Bebek aşı kartını bul",
+    "Kitapları koliye koy",
+    "Kargo iadesi yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "oto yikamaya gittim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Oto"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b11-02",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Oto yıkamaya git",
+    "Kütüphane kartını yenile",
+    "Ayakkabıları boyat",
+    "Su sayacını bildir",
+    "Tohum al",
+    "Bebek aşı kartını bul",
+    "Kitapları koliye koy",
+    "Kargo iadesi yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kutuphane kartini yeniledim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Kütüphane"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b11-03",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Oto yıkamaya git",
+    "Kütüphane kartını yenile",
+    "Ayakkabıları boyat",
+    "Su sayacını bildir",
+    "Tohum al",
+    "Bebek aşı kartını bul",
+    "Kitapları koliye koy",
+    "Kargo iadesi yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "ayakkabilar boyatildi",
+    "kind": "free",
+    "tasks_done_has": [
+     "Ayakkab"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b11-04",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Oto yıkamaya git",
+    "Kütüphane kartını yenile",
+    "Ayakkabıları boyat",
+    "Su sayacını bildir",
+    "Tohum al",
+    "Bebek aşı kartını bul",
+    "Kitapları koliye koy",
+    "Kargo iadesi yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "sayaci bildirdim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Su say"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b11-05",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Oto yıkamaya git",
+    "Kütüphane kartını yenile",
+    "Ayakkabıları boyat",
+    "Su sayacını bildir",
+    "Tohum al",
+    "Bebek aşı kartını bul",
+    "Kitapları koliye koy",
+    "Kargo iadesi yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "tohumlari aldim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Tohum"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b11-06",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Oto yıkamaya git",
+    "Kütüphane kartını yenile",
+    "Ayakkabıları boyat",
+    "Su sayacını bildir",
+    "Tohum al",
+    "Bebek aşı kartını bul",
+    "Kitapları koliye koy",
+    "Kargo iadesi yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "bebegin asi kartini buldum",
+    "kind": "free",
+    "tasks_done_has": [
+     "Bebek"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b11-07",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Oto yıkamaya git",
+    "Kütüphane kartını yenile",
+    "Ayakkabıları boyat",
+    "Su sayacını bildir",
+    "Tohum al",
+    "Bebek aşı kartını bul",
+    "Kitapları koliye koy",
+    "Kargo iadesi yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kitaplar koliye kondu",
+    "kind": "free",
+    "tasks_done_has": [
+     "Kitap"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b11-08",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Oto yıkamaya git",
+    "Kütüphane kartını yenile",
+    "Ayakkabıları boyat",
+    "Su sayacını bildir",
+    "Tohum al",
+    "Bebek aşı kartını bul",
+    "Kitapları koliye koy",
+    "Kargo iadesi yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kargo iadesini yaptim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Kargo"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b11-09",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Oto yıkamaya git",
+    "Kütüphane kartını yenile",
+    "Ayakkabıları boyat",
+    "Su sayacını bildir",
+    "Tohum al",
+    "Bebek aşı kartını bul",
+    "Kitapları koliye koy",
+    "Kargo iadesi yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "oto yikama yarina kalsin",
+    "kind": "free",
+    "tasks_due": {
+     "Oto": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b11-10",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Oto yıkamaya git",
+    "Kütüphane kartını yenile",
+    "Ayakkabıları boyat",
+    "Su sayacını bildir",
+    "Tohum al",
+    "Bebek aşı kartını bul",
+    "Kitapları koliye koy",
+    "Kargo iadesi yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "tohumu cumartesi alirim",
+    "kind": "free",
+    "tasks_due": {
+     "Tohum": "2026-11-21"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b11-11",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Oto yıkamaya git",
+    "Kütüphane kartını yenile",
+    "Ayakkabıları boyat",
+    "Su sayacını bildir",
+    "Tohum al",
+    "Bebek aşı kartını bul",
+    "Kitapları koliye koy",
+    "Kargo iadesi yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kutuphane kartini pazartesi yenileyecegim",
+    "kind": "free",
+    "tasks_due": {
+     "Kütüphane": "2026-11-23"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b11-12",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Oto yıkamaya git",
+    "Kütüphane kartını yenile",
+    "Ayakkabıları boyat",
+    "Su sayacını bildir",
+    "Tohum al",
+    "Bebek aşı kartını bul",
+    "Kitapları koliye koy",
+    "Kargo iadesi yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kargo iadesi bu yarina",
+    "kind": "free",
+    "tasks_due": {
+     "Kargo": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b11-13",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Oto yıkamaya git",
+    "Kütüphane kartını yenile",
+    "Ayakkabıları boyat",
+    "Su sayacını bildir",
+    "Tohum al",
+    "Bebek aşı kartını bul",
+    "Kitapları koliye koy",
+    "Kargo iadesi yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "su sayacini bildirmeyi unuttum",
+    "kind": "free",
+    "contains": [
+     "akşama mı"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b11-14",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Oto yıkamaya git",
+    "Kütüphane kartını yenile",
+    "Ayakkabıları boyat",
+    "Su sayacını bildir",
+    "Tohum al",
+    "Bebek aşı kartını bul",
+    "Kitapları koliye koy",
+    "Kargo iadesi yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "ayakkabilari boyatmayi unuttum",
+    "kind": "free"
+   },
+   {
+    "say": "yarina",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Ayakkab": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b11-15",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Oto yıkamaya git",
+    "Kütüphane kartını yenile",
+    "Ayakkabıları boyat",
+    "Su sayacını bildir",
+    "Tohum al",
+    "Bebek aşı kartını bul",
+    "Kitapları koliye koy",
+    "Kargo iadesi yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "tohum almayi unuttum",
+    "kind": "free"
+   },
+   {
+    "say": "aksama",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Tohum": "2026-11-19"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b11-16",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Oto yıkamaya git",
+    "Kütüphane kartını yenile",
+    "Ayakkabıları boyat",
+    "Su sayacını bildir",
+    "Tohum al",
+    "Bebek aşı kartını bul",
+    "Kitapları koliye koy",
+    "Kargo iadesi yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "oto yikama bitti, tohum yarina, kitaplar pazar",
+    "kind": "free",
+    "tasks_done_has": [
+     "Oto"
+    ],
+    "tasks_due": {
+     "Tohum": "2026-11-20",
+     "Kitap": "2026-11-22"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b11-17",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Oto yıkamaya git",
+    "Kütüphane kartını yenile",
+    "Ayakkabıları boyat",
+    "Su sayacını bildir",
+    "Tohum al",
+    "Bebek aşı kartını bul",
+    "Kitapları koliye koy",
+    "Kargo iadesi yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "hepsini pazartesiye birak",
+    "kind": "free"
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_due": {
+     "Oto": "2026-11-23",
+     "Tohum": "2026-11-23",
+     "Kargo": "2026-11-23"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b11-18",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Oto yıkamaya git",
+    "Kütüphane kartını yenile",
+    "Ayakkabıları boyat",
+    "Su sayacını bildir",
+    "Tohum al",
+    "Bebek aşı kartını bul",
+    "Kitapları koliye koy",
+    "Kargo iadesi yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "tohum aldim gerisi yarina kalsin",
+    "kind": "free"
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_done_has": [
+     "Tohum"
+    ],
+    "tasks_due": {
+     "Oto": "2026-11-20",
+     "Kargo": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b11-19",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Oto yıkamaya git",
+    "Kütüphane kartını yenile",
+    "Ayakkabıları boyat",
+    "Su sayacını bildir",
+    "Tohum al",
+    "Bebek aşı kartını bul",
+    "Kitapları koliye koy",
+    "Kargo iadesi yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "ha tohumu da aldim iste",
+    "kind": "free",
+    "tasks_done_has": [
+     "Tohum"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b11-20",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Oto yıkamaya git",
+    "Kütüphane kartını yenile",
+    "Ayakkabıları boyat",
+    "Su sayacını bildir",
+    "Tohum al",
+    "Bebek aşı kartını bul",
+    "Kitapları koliye koy",
+    "Kargo iadesi yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "koli isi bitti",
+    "kind": "free",
+    "tasks_done_has": [
+     "Kitap"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b11-21",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Oto yıkamaya git",
+    "Kütüphane kartını yenile",
+    "Ayakkabıları boyat",
+    "Su sayacını bildir",
+    "Tohum al",
+    "Bebek aşı kartını bul",
+    "Kitapları koliye koy",
+    "Kargo iadesi yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kargoyu iade ettim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Kargo"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b11-22",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Oto yıkamaya git",
+    "Kütüphane kartını yenile",
+    "Ayakkabıları boyat",
+    "Su sayacını bildir",
+    "Tohum al",
+    "Bebek aşı kartını bul",
+    "Kitapları koliye koy",
+    "Kargo iadesi yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "bebek asi karti tamamdir",
+    "kind": "free",
+    "tasks_done_has": [
+     "Bebek"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b11-23",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Oto yıkamaya git",
+    "Kütüphane kartını yenile",
+    "Ayakkabıları boyat",
+    "Su sayacını bildir",
+    "Tohum al",
+    "Bebek aşı kartını bul",
+    "Kitapları koliye koy",
+    "Kargo iadesi yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "sayac bildirildi kargo iadesi yapildi",
+    "kind": "free",
+    "tasks_done_has": [
+     "Su say",
+     "Kargo"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b11-24",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Oto yıkamaya git",
+    "Kütüphane kartını yenile",
+    "Ayakkabıları boyat",
+    "Su sayacını bildir",
+    "Tohum al",
+    "Bebek aşı kartını bul",
+    "Kitapları koliye koy",
+    "Kargo iadesi yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "oto yikamaya gittim",
+    "kind": "free"
+   },
+   {
+    "say": "tohum da",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Oto",
+     "Tohum"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b11-25",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Oto yıkamaya git",
+    "Kütüphane kartını yenile",
+    "Ayakkabıları boyat",
+    "Su sayacını bildir",
+    "Tohum al",
+    "Bebek aşı kartını bul",
+    "Kitapları koliye koy",
+    "Kargo iadesi yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kitaplar yarina",
+    "kind": "free"
+   },
+   {
+    "say": "kargo da",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Kitap": "2026-11-20",
+     "Kargo": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b11-26",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Oto yıkamaya git",
+    "Kütüphane kartını yenile",
+    "Ayakkabıları boyat",
+    "Su sayacını bildir",
+    "Tohum al",
+    "Bebek aşı kartını bul",
+    "Kitapları koliye koy",
+    "Kargo iadesi yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "OTO YIKAMAYA GITTIM",
+    "kind": "free",
+    "tasks_done_has": [
+     "Oto"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b11-27",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Oto yıkamaya git",
+    "Kütüphane kartını yenile",
+    "Ayakkabıları boyat",
+    "Su sayacını bildir",
+    "Tohum al",
+    "Bebek aşı kartını bul",
+    "Kitapları koliye koy",
+    "Kargo iadesi yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kutuphane kartini yenilemdim yarina",
+    "kind": "free",
+    "tasks_due": {
+     "Kütüphane": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b11-28",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Oto yıkamaya git",
+    "Kütüphane kartını yenile",
+    "Ayakkabıları boyat",
+    "Su sayacını bildir",
+    "Tohum al",
+    "Bebek aşı kartını bul",
+    "Kitapları koliye koy",
+    "Kargo iadesi yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "ayakkabi boyatma ve tohum bugun olmaz cumaya",
+    "kind": "free",
+    "tasks_due": {
+     "Ayakkab": "2026-11-20",
+     "Tohum": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b11-29",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Oto yıkamaya git",
+    "Kütüphane kartını yenile",
+    "Ayakkabıları boyat",
+    "Su sayacını bildir",
+    "Tohum al",
+    "Bebek aşı kartını bul",
+    "Kitapları koliye koy",
+    "Kargo iadesi yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "su sayaci icin bugun yetisemedim yarin bildiririm",
+    "kind": "free",
+    "tasks_due": {
+     "Su say": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b11-30",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Oto yıkamaya git",
+    "Kütüphane kartını yenile",
+    "Ayakkabıları boyat",
+    "Su sayacını bildir",
+    "Tohum al",
+    "Bebek aşı kartını bul",
+    "Kitapları koliye koy",
+    "Kargo iadesi yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "bebek asi kartini bulamadim cumartesi bakarim",
+    "kind": "free",
+    "tasks_due": {
+     "Bebek": "2026-11-21"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b11-31",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T18:10",
+   "seed": [
+    {
+     "title": "Okul toplantısı",
+     "start": "2026-11-19T17:00",
+     "end": "2026-11-19T18:00"
+    },
+    {
+     "title": "Berber",
+     "start": "2026-11-20T15:00",
+     "end": "2026-11-20T16:00"
+    },
+    {
+     "title": "Misafir",
+     "start": "2026-11-21T20:00",
+     "end": "2026-11-21T23:00"
+    },
+    {
+     "title": "Kahvaltı",
+     "start": "2026-11-22T10:00",
+     "end": "2026-11-22T11:30"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "okul toplantisi bitti",
+    "kind": "free",
+    "contains": [
+     "Okul"
+    ],
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım",
+     "silinsin"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b11-32",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Okul toplantısı",
+     "start": "2026-11-19T17:00",
+     "end": "2026-11-19T18:00"
+    },
+    {
+     "title": "Berber",
+     "start": "2026-11-20T15:00",
+     "end": "2026-11-20T16:00"
+    },
+    {
+     "title": "Misafir",
+     "start": "2026-11-21T20:00",
+     "end": "2026-11-21T23:00"
+    },
+    {
+     "title": "Kahvaltı",
+     "start": "2026-11-22T10:00",
+     "end": "2026-11-22T11:30"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "berberi cumartesiye al",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "21 Kasım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b11-33",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Okul toplantısı",
+     "start": "2026-11-19T17:00",
+     "end": "2026-11-19T18:00"
+    },
+    {
+     "title": "Berber",
+     "start": "2026-11-20T15:00",
+     "end": "2026-11-20T16:00"
+    },
+    {
+     "title": "Misafir",
+     "start": "2026-11-21T20:00",
+     "end": "2026-11-21T23:00"
+    },
+    {
+     "title": "Kahvaltı",
+     "start": "2026-11-22T10:00",
+     "end": "2026-11-22T11:30"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "misafiri pazara tasi",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "22 Kasım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b11-34",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Okul toplantısı",
+     "start": "2026-11-19T17:00",
+     "end": "2026-11-19T18:00"
+    },
+    {
+     "title": "Berber",
+     "start": "2026-11-20T15:00",
+     "end": "2026-11-20T16:00"
+    },
+    {
+     "title": "Misafir",
+     "start": "2026-11-21T20:00",
+     "end": "2026-11-21T23:00"
+    },
+    {
+     "title": "Kahvaltı",
+     "start": "2026-11-22T10:00",
+     "end": "2026-11-22T11:30"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "kahvaltiyi iptal et",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Kahvaltı"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b11-35",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Okul toplantısı",
+     "start": "2026-11-19T17:00",
+     "end": "2026-11-19T18:00"
+    },
+    {
+     "title": "Berber",
+     "start": "2026-11-20T15:00",
+     "end": "2026-11-20T16:00"
+    },
+    {
+     "title": "Misafir",
+     "start": "2026-11-21T20:00",
+     "end": "2026-11-21T23:00"
+    },
+    {
+     "title": "Kahvaltı",
+     "start": "2026-11-22T10:00",
+     "end": "2026-11-22T11:30"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "yarin ne var",
+    "kind": "free",
+    "contains": [
+     "Berber"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b11-36",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Okul toplantısı",
+     "start": "2026-11-19T17:00",
+     "end": "2026-11-19T18:00"
+    },
+    {
+     "title": "Berber",
+     "start": "2026-11-20T15:00",
+     "end": "2026-11-20T16:00"
+    },
+    {
+     "title": "Misafir",
+     "start": "2026-11-21T20:00",
+     "end": "2026-11-21T23:00"
+    },
+    {
+     "title": "Kahvaltı",
+     "start": "2026-11-22T10:00",
+     "end": "2026-11-22T11:30"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "bugun ne kaldi",
+    "kind": "free",
+    "contains": [
+     "Okul"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b11-37",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T18:10",
+   "seed": [
+    {
+     "title": "Okul toplantısı",
+     "start": "2026-11-19T17:00",
+     "end": "2026-11-19T18:00"
+    },
+    {
+     "title": "Berber",
+     "start": "2026-11-20T15:00",
+     "end": "2026-11-20T16:00"
+    },
+    {
+     "title": "Misafir",
+     "start": "2026-11-21T20:00",
+     "end": "2026-11-21T23:00"
+    },
+    {
+     "title": "Kahvaltı",
+     "start": "2026-11-22T10:00",
+     "end": "2026-11-22T11:30"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "okul toplantisi bitti misafir pazartesiye kalsin",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Misafir",
+     "23 Kasım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b11-38",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T12:00",
+   "seed": [
+    {
+     "title": "Okul toplantısı",
+     "start": "2026-11-19T17:00",
+     "end": "2026-11-19T18:00"
+    },
+    {
+     "title": "Berber",
+     "start": "2026-11-20T15:00",
+     "end": "2026-11-20T16:00"
+    },
+    {
+     "title": "Misafir",
+     "start": "2026-11-21T20:00",
+     "end": "2026-11-21T23:00"
+    },
+    {
+     "title": "Kahvaltı",
+     "start": "2026-11-22T10:00",
+     "end": "2026-11-22T11:30"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "kahvalti yapildi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b11-39",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Okul toplantısı",
+     "start": "2026-11-19T17:00",
+     "end": "2026-11-19T18:00"
+    },
+    {
+     "title": "Berber",
+     "start": "2026-11-20T15:00",
+     "end": "2026-11-20T16:00"
+    },
+    {
+     "title": "Misafir",
+     "start": "2026-11-21T20:00",
+     "end": "2026-11-21T23:00"
+    },
+    {
+     "title": "Kahvaltı",
+     "start": "2026-11-22T10:00",
+     "end": "2026-11-22T11:30"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "kahvalti pazar degil cumartesi",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "21 Kasım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b11-40",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Okul toplantısı",
+     "start": "2026-11-19T17:00",
+     "end": "2026-11-19T18:00"
+    },
+    {
+     "title": "Berber",
+     "start": "2026-11-20T15:00",
+     "end": "2026-11-20T16:00"
+    },
+    {
+     "title": "Misafir",
+     "start": "2026-11-21T20:00",
+     "end": "2026-11-21T23:00"
+    },
+    {
+     "title": "Kahvaltı",
+     "start": "2026-11-22T10:00",
+     "end": "2026-11-22T11:30"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "berberi sil",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Berber"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b11-41",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Oto yıkamaya git",
+    "Kütüphane kartını yenile",
+    "Ayakkabıları boyat",
+    "Su sayacını bildir",
+    "Tohum al",
+    "Bebek aşı kartını bul",
+    "Kitapları koliye koy",
+    "Kargo iadesi yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "tohumu cumartesi sabah 9da alacagim",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Tohum",
+     "09:00",
+     "21 Kasım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b11-42",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Oto yıkamaya git",
+    "Kütüphane kartını yenile",
+    "Ayakkabıları boyat",
+    "Su sayacını bildir",
+    "Tohum al",
+    "Bebek aşı kartını bul",
+    "Kitapları koliye koy",
+    "Kargo iadesi yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kargo iadesini yarin 11 gibi hatirlat",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Kargo",
+     "11:00"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b11-43",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Oto yıkamaya git",
+    "Kütüphane kartını yenile",
+    "Ayakkabıları boyat",
+    "Su sayacını bildir",
+    "Tohum al",
+    "Bebek aşı kartını bul",
+    "Kitapları koliye koy",
+    "Kargo iadesi yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "tohumu yarina birak",
+    "kind": "free"
+   },
+   {
+    "say": "bunu cuma sabah 10da hatirlat",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Tohum",
+     "10:00"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b11-44",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Oto yıkamaya git",
+    "Kütüphane kartını yenile",
+    "Ayakkabıları boyat",
+    "Su sayacını bildir",
+    "Tohum al",
+    "Bebek aşı kartını bul",
+    "Kitapları koliye koy",
+    "Kargo iadesi yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kitaplari aksam 9da kolileyecegim",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Kitap",
+     "21:00"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b11-45",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Oto yıkamaya git",
+    "Kütüphane kartını yenile",
+    "Ayakkabıları boyat",
+    "Su sayacını bildir",
+    "Tohum al",
+    "Bebek aşı kartını bul",
+    "Kitapları koliye koy",
+    "Kargo iadesi yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "oto yikama ve kargo isi cumartesiye lutfen",
+    "kind": "free",
+    "tasks_due": {
+     "Oto": "2026-11-21",
+     "Kargo": "2026-11-21"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b11-46",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Oto yıkamaya git",
+    "Kütüphane kartını yenile",
+    "Ayakkabıları boyat",
+    "Su sayacını bildir",
+    "Tohum al",
+    "Bebek aşı kartını bul",
+    "Kitapları koliye koy",
+    "Kargo iadesi yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "tohum aldim, oto yikama yarin, kargo pazar, kitap cuma",
+    "kind": "free",
+    "tasks_done_has": [
+     "Tohum"
+    ],
+    "tasks_due": {
+     "Oto": "2026-11-20",
+     "Kargo": "2026-11-22",
+     "Kitap": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b11-47",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Oto yıkamaya git",
+    "Kütüphane kartını yenile",
+    "Ayakkabıları boyat",
+    "Su sayacını bildir",
+    "Tohum al",
+    "Bebek aşı kartını bul",
+    "Kitapları koliye koy",
+    "Kargo iadesi yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "oto yikama yarina kaldi",
+    "kind": "free",
+    "tasks_due": {
+     "Oto": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b11-48",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Oto yıkamaya git",
+    "Kütüphane kartını yenile",
+    "Ayakkabıları boyat",
+    "Su sayacını bildir",
+    "Tohum al",
+    "Bebek aşı kartını bul",
+    "Kitapları koliye koy",
+    "Kargo iadesi yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "su sayaci isi bitti ama tohum hala duruyor",
+    "kind": "free",
+    "tasks_done_has": [
+     "Su say"
+    ],
+    "tasks_open_has": [
+     "Tohum"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b11-49",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Oto yıkamaya git",
+    "Kütüphane kartını yenile",
+    "Ayakkabıları boyat",
+    "Su sayacını bildir",
+    "Tohum al",
+    "Bebek aşı kartını bul",
+    "Kitapları koliye koy",
+    "Kargo iadesi yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "bebek asi karti iptal",
+    "kind": "free"
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_open_count": 7
+   }
+  ]
+ },
+ {
+  "name": "b11-50",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Oto yıkamaya git",
+    "Kütüphane kartını yenile",
+    "Ayakkabıları boyat",
+    "Su sayacını bildir",
+    "Tohum al",
+    "Bebek aşı kartını bul",
+    "Kitapları koliye koy",
+    "Kargo iadesi yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "ayakkabi boyatma tamamdir yaa",
+    "kind": "free",
+    "tasks_done_has": [
+     "Ayakkab"
+    ]
+   }
+  ]
+ }
+]

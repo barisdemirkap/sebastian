@@ -1,0 +1,167 @@
+[
+ {
+  "name": "task-reminder-keeps-task-open",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır yıka",
+    "Çöp çıkar",
+    "Ütü yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "camasir yikamayi bu aksam 10 gibi hatirlat",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "22:00",
+     "Çamaşır"
+    ]
+   },
+   {
+    "say": "evet",
+    "kind": "confirm",
+    "tasks_open_has": [
+     "Çamaşır"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "task-reminder-bunu-resolves-last-item",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır yıka",
+    "Çöp çıkar",
+    "Ütü yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "utuyu yarina birak",
+    "kind": "free",
+    "tasks_due": {
+     "Ütü": "2026-11-20"
+    }
+   },
+   {
+    "say": "bunu cumartesi 11de hatirlat",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "21 Kasım",
+     "11:00",
+     "Ütü"
+    ],
+    "not_contains": [
+     "adı ne olsun"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "plan-with-clock-time-resolves-task",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır yıka",
+    "Çöp çıkar",
+    "Ütü yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "cop aksam cikacak 18.30da",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Çöp çıkar",
+     "18:30"
+    ],
+    "not_contains": [
+     "Cop aksam"
+    ]
+   },
+   {
+    "say": "evet",
+    "kind": "confirm",
+    "tasks_open_count": 2
+   }
+  ]
+ },
+ {
+  "name": "plan-with-clock-time-tomorrow",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır yıka",
+    "Çöp çıkar",
+    "Ütü yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "utuyu yarin 9da yapacagim",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "Ütü yap",
+     "09:00",
+     "20 Kasım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "prefix-collision-ali",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Ali'yi ara",
+    "Ali'ye mesaj at"
+   ]
+  },
+  "steps": [
+   {
+    "say": "ali'yi aradim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Ali'yi"
+    ],
+    "tasks_open_has": [
+     "Ali'ye"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "prefix-collision-su-faturasi",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Elektrik faturasını öde",
+    "Su faturasını öde"
+   ]
+  },
+  "steps": [
+   {
+    "say": "su faturasi odendi",
+    "kind": "free",
+    "tasks_done_has": [
+     "Su fatura"
+    ],
+    "tasks_open_has": [
+     "Elektrik"
+    ]
+   }
+  ]
+ }
+]

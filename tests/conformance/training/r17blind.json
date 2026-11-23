@@ -1,0 +1,1327 @@
+[
+ {
+  "name": "b17-01",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çocuğun aşı randevusunu al",
+    "Diş hekimine git",
+    "Annemin ilaçlarını eczaneden al",
+    "Okul formunu doldur",
+    "Spor çantasını hazırla",
+    "Doktor raporunu teslim et",
+    "Büyükannenin doğum günü pastasını sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "cocugun asi randevusunu aldim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Çocuğun aşı"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b17-02",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çocuğun aşı randevusunu al",
+    "Diş hekimine git",
+    "Annemin ilaçlarını eczaneden al",
+    "Okul formunu doldur",
+    "Spor çantasını hazırla",
+    "Doktor raporunu teslim et",
+    "Büyükannenin doğum günü pastasını sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "disci icin yarin gidemem cumartesiye birak",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Diş": "2026-11-21"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b17-03",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çocuğun aşı randevusunu al",
+    "Diş hekimine git",
+    "Annemin ilaçlarını eczaneden al",
+    "Okul formunu doldur",
+    "Spor çantasını hazırla",
+    "Doktor raporunu teslim et",
+    "Büyükannenin doğum günü pastasını sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "annemin ilaclari alindi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Annemin"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b17-04",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çocuğun aşı randevusunu al",
+    "Diş hekimine git",
+    "Annemin ilaçlarını eczaneden al",
+    "Okul formunu doldur",
+    "Spor çantasını hazırla",
+    "Doktor raporunu teslim et",
+    "Büyükannenin doğum günü pastasını sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "okul formu hala yapilmadi pazartesi doldururum",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Okul": "2026-11-23"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b17-05",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çocuğun aşı randevusunu al",
+    "Diş hekimine git",
+    "Annemin ilaçlarını eczaneden al",
+    "Okul formunu doldur",
+    "Spor çantasını hazırla",
+    "Doktor raporunu teslim et",
+    "Büyükannenin doğum günü pastasını sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "spor cantasi hazir artik",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Spor"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b17-06",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çocuğun aşı randevusunu al",
+    "Diş hekimine git",
+    "Annemin ilaçlarını eczaneden al",
+    "Okul formunu doldur",
+    "Spor çantasını hazırla",
+    "Doktor raporunu teslim et",
+    "Büyükannenin doğum günü pastasını sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "rapor teslim edildi bu arada",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Doktor"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b17-07",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çocuğun aşı randevusunu al",
+    "Diş hekimine git",
+    "Annemin ilaçlarını eczaneden al",
+    "Okul formunu doldur",
+    "Spor çantasını hazırla",
+    "Doktor raporunu teslim et",
+    "Büyükannenin doğum günü pastasını sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "pasta siparisini verdim buyukanne icin",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Büyükanne"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b17-08",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çocuğun aşı randevusunu al",
+    "Diş hekimine git",
+    "Annemin ilaçlarını eczaneden al",
+    "Okul formunu doldur",
+    "Spor çantasını hazırla",
+    "Doktor raporunu teslim et",
+    "Büyükannenin doğum günü pastasını sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "dis hekimi ve rapor ikisi de yarina kalsin",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Diş": "2026-11-20",
+     "Doktor": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b17-09",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çocuğun aşı randevusunu al",
+    "Diş hekimine git",
+    "Annemin ilaçlarını eczaneden al",
+    "Okul formunu doldur",
+    "Spor çantasını hazırla",
+    "Doktor raporunu teslim et",
+    "Büyükannenin doğum günü pastasını sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "ilaclari aldim formu da doldurdum",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Annemin",
+     "Okul"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b17-10",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çocuğun aşı randevusunu al",
+    "Diş hekimine git",
+    "Annemin ilaçlarını eczaneden al",
+    "Okul formunu doldur",
+    "Spor çantasını hazırla",
+    "Doktor raporunu teslim et",
+    "Büyükannenin doğum günü pastasını sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "cantayi hazirlayamadim yarin sabah hazirlarim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Spor": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b17-11",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çocuğun aşı randevusunu al",
+    "Diş hekimine git",
+    "Annemin ilaçlarını eczaneden al",
+    "Okul formunu doldur",
+    "Spor çantasını hazırla",
+    "Doktor raporunu teslim et",
+    "Büyükannenin doğum günü pastasını sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "asi randevusu icin bugun ugrayamadim cuma bakariz",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Çocuğun aşı": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b17-12",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çocuğun aşı randevusunu al",
+    "Diş hekimine git",
+    "Annemin ilaçlarını eczaneden al",
+    "Okul formunu doldur",
+    "Spor çantasını hazırla",
+    "Doktor raporunu teslim et",
+    "Büyükannenin doğum günü pastasını sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "pasta isi tamam geri kalanlar yarina",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ]
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_done_has": [
+     "Büyükanne"
+    ],
+    "tasks_due": {
+     "Çocuğun aşı": "2026-11-20",
+     "Diş": "2026-11-20",
+     "Annemin": "2026-11-20",
+     "Okul": "2026-11-20",
+     "Spor": "2026-11-20",
+     "Doktor": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b17-13",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çocuğun aşı randevusunu al",
+    "Diş hekimine git",
+    "Annemin ilaçlarını eczaneden al",
+    "Okul formunu doldur",
+    "Spor çantasını hazırla",
+    "Doktor raporunu teslim et",
+    "Büyükannenin doğum günü pastasını sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "hepsini bu aksama birakalim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ]
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_due": {
+     "Çocuğun aşı": "2026-11-19",
+     "Diş": "2026-11-19",
+     "Annemin": "2026-11-19",
+     "Okul": "2026-11-19",
+     "Spor": "2026-11-19",
+     "Doktor": "2026-11-19",
+     "Büyükanne": "2026-11-19"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b17-14",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çocuğun aşı randevusunu al",
+    "Diş hekimine git",
+    "Annemin ilaçlarını eczaneden al",
+    "Okul formunu doldur",
+    "Spor çantasını hazırla",
+    "Doktor raporunu teslim et",
+    "Büyükannenin doğum günü pastasını sipariş et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "doktor raporu iptal artik gerek yok",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ]
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_open_count": 6,
+    "tasks_open_not_has": [
+     "Doktor"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b17-15",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Süt ve yumurta al",
+    "Ayakkabıyı tamire ver",
+    "Kargoyu postaneden al",
+    "Arabanın lastiklerini kontrol ettir",
+    "Kuru temizlemeden ceketi al",
+    "Çocuk bisikletinin zincirini yağla",
+    "Hediye paketi al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "sut ve yumurta alindi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Süt"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b17-16",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Süt ve yumurta al",
+    "Ayakkabıyı tamire ver",
+    "Kargoyu postaneden al",
+    "Arabanın lastiklerini kontrol ettir",
+    "Kuru temizlemeden ceketi al",
+    "Çocuk bisikletinin zincirini yağla",
+    "Hediye paketi al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "ayakkabiyi tamire verdim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Ayakkabı"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b17-17",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Süt ve yumurta al",
+    "Ayakkabıyı tamire ver",
+    "Kargoyu postaneden al",
+    "Arabanın lastiklerini kontrol ettir",
+    "Kuru temizlemeden ceketi al",
+    "Çocuk bisikletinin zincirini yağla",
+    "Hediye paketi al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kargo postaneden alindi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Kargo"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b17-18",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Süt ve yumurta al",
+    "Ayakkabıyı tamire ver",
+    "Kargoyu postaneden al",
+    "Arabanın lastiklerini kontrol ettir",
+    "Kuru temizlemeden ceketi al",
+    "Çocuk bisikletinin zincirini yağla",
+    "Hediye paketi al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "lastikler kontrol edildi usta baktı",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Arabanın"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b17-19",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Süt ve yumurta al",
+    "Ayakkabıyı tamire ver",
+    "Kargoyu postaneden al",
+    "Arabanın lastiklerini kontrol ettir",
+    "Kuru temizlemeden ceketi al",
+    "Çocuk bisikletinin zincirini yağla",
+    "Hediye paketi al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "ceketi kuru temizlemeden aldim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Kuru"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b17-20",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Süt ve yumurta al",
+    "Ayakkabıyı tamire ver",
+    "Kargoyu postaneden al",
+    "Arabanın lastiklerini kontrol ettir",
+    "Kuru temizlemeden ceketi al",
+    "Çocuk bisikletinin zincirini yağla",
+    "Hediye paketi al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "bisiklet zinciri yagi yarina kalsin",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Çocuk bisikletinin": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b17-21",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Süt ve yumurta al",
+    "Ayakkabıyı tamire ver",
+    "Kargoyu postaneden al",
+    "Arabanın lastiklerini kontrol ettir",
+    "Kuru temizlemeden ceketi al",
+    "Çocuk bisikletinin zincirini yağla",
+    "Hediye paketi al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "hediye paketini cumartesi alirim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Hediye": "2026-11-21"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b17-22",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Süt ve yumurta al",
+    "Ayakkabıyı tamire ver",
+    "Kargoyu postaneden al",
+    "Arabanın lastiklerini kontrol ettir",
+    "Kuru temizlemeden ceketi al",
+    "Çocuk bisikletinin zincirini yağla",
+    "Hediye paketi al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "sut yumurta ve kargo bugun olmadi yarina",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Süt": "2026-11-20",
+     "Kargo": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b17-23",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Süt ve yumurta al",
+    "Ayakkabıyı tamire ver",
+    "Kargoyu postaneden al",
+    "Arabanın lastiklerini kontrol ettir",
+    "Kuru temizlemeden ceketi al",
+    "Çocuk bisikletinin zincirini yağla",
+    "Hediye paketi al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "lastik isi ve hediye paketi ikisi de pazartesiye",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Arabanın": "2026-11-23",
+     "Hediye": "2026-11-23"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b17-24",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Süt ve yumurta al",
+    "Ayakkabıyı tamire ver",
+    "Kargoyu postaneden al",
+    "Arabanın lastiklerini kontrol ettir",
+    "Kuru temizlemeden ceketi al",
+    "Çocuk bisikletinin zincirini yağla",
+    "Hediye paketi al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kargoyu aldim tamirci henuz haber vermedi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Kargo"
+    ],
+    "tasks_open_count": 6
+   }
+  ]
+ },
+ {
+  "name": "b17-25",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Süt ve yumurta al",
+    "Ayakkabıyı tamire ver",
+    "Kargoyu postaneden al",
+    "Arabanın lastiklerini kontrol ettir",
+    "Kuru temizlemeden ceketi al",
+    "Çocuk bisikletinin zincirini yağla",
+    "Hediye paketi al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "ceket tamam bisiklet cuma",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Kuru"
+    ],
+    "tasks_due": {
+     "Çocuk bisikletinin": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b17-26",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Süt ve yumurta al",
+    "Ayakkabıyı tamire ver",
+    "Kargoyu postaneden al",
+    "Arabanın lastiklerini kontrol ettir",
+    "Kuru temizlemeden ceketi al",
+    "Çocuk bisikletinin zincirini yağla",
+    "Hediye paketi al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "alisveris isleri bitti hepsi tamam",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ]
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_open_count": 0
+   }
+  ]
+ },
+ {
+  "name": "b17-27",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Süt ve yumurta al",
+    "Ayakkabıyı tamire ver",
+    "Kargoyu postaneden al",
+    "Arabanın lastiklerini kontrol ettir",
+    "Kuru temizlemeden ceketi al",
+    "Çocuk bisikletinin zincirini yağla",
+    "Hediye paketi al"
+   ]
+  },
+  "steps": [
+   {
+    "say": "ayakkabi tamiri icin vaktim yok",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_open_count": 7,
+    "contains": [
+     "taşıyayım"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b17-28",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Dilekçeyi yaz",
+    "İnternet sözleşmesini iptal et",
+    "Garanti belgesini bul",
+    "Sayaç okumasını bildir",
+    "Tapu harcını öde",
+    "Kitapları kütüphaneye iade et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "dilekceyi yazdim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Dilekçe"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b17-29",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Dilekçeyi yaz",
+    "İnternet sözleşmesini iptal et",
+    "Garanti belgesini bul",
+    "Sayaç okumasını bildir",
+    "Tapu harcını öde",
+    "Kitapları kütüphaneye iade et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "internet sozlesmesi iptal edildi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "İnternet"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b17-30",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Dilekçeyi yaz",
+    "İnternet sözleşmesini iptal et",
+    "Garanti belgesini bul",
+    "Sayaç okumasını bildir",
+    "Tapu harcını öde",
+    "Kitapları kütüphaneye iade et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "garanti belgesini buldum sonunda",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Garanti"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b17-31",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Dilekçeyi yaz",
+    "İnternet sözleşmesini iptal et",
+    "Garanti belgesini bul",
+    "Sayaç okumasını bildir",
+    "Tapu harcını öde",
+    "Kitapları kütüphaneye iade et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "sayac okumasi bildirildi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Sayaç"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b17-32",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Dilekçeyi yaz",
+    "İnternet sözleşmesini iptal et",
+    "Garanti belgesini bul",
+    "Sayaç okumasını bildir",
+    "Tapu harcını öde",
+    "Kitapları kütüphaneye iade et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "tapu harci odendi dekont geldi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Tapu"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b17-33",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Dilekçeyi yaz",
+    "İnternet sözleşmesini iptal et",
+    "Garanti belgesini bul",
+    "Sayaç okumasını bildir",
+    "Tapu harcını öde",
+    "Kitapları kütüphaneye iade et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kitaplari iade ettim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Kitapları"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b17-34",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Dilekçeyi yaz",
+    "İnternet sözleşmesini iptal et",
+    "Garanti belgesini bul",
+    "Sayaç okumasını bildir",
+    "Tapu harcını öde",
+    "Kitapları kütüphaneye iade et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "dilekce icin bugun vakit bulamadim cuma yazarim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Dilekçe": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b17-35",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Dilekçeyi yaz",
+    "İnternet sözleşmesini iptal et",
+    "Garanti belgesini bul",
+    "Sayaç okumasını bildir",
+    "Tapu harcını öde",
+    "Kitapları kütüphaneye iade et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "tapu harci ve sayac bildirimi pazartesiye kalsin",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Tapu": "2026-11-23",
+     "Sayaç": "2026-11-23"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b17-36",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Dilekçeyi yaz",
+    "İnternet sözleşmesini iptal et",
+    "Garanti belgesini bul",
+    "Sayaç okumasını bildir",
+    "Tapu harcını öde",
+    "Kitapları kütüphaneye iade et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "garanti belgesi bulunamadi yarin tekrar bakarim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_due": {
+     "Garanti": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b17-37",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Dilekçeyi yaz",
+    "İnternet sözleşmesini iptal et",
+    "Garanti belgesini bul",
+    "Sayaç okumasını bildir",
+    "Tapu harcını öde",
+    "Kitapları kütüphaneye iade et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "dilekce tamam kitaplar yarina",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Dilekçe"
+    ],
+    "tasks_due": {
+     "Kitapları": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "b17-38",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Dilekçeyi yaz",
+    "İnternet sözleşmesini iptal et",
+    "Garanti belgesini bul",
+    "Sayaç okumasını bildir",
+    "Tapu harcını öde",
+    "Kitapları kütüphaneye iade et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "internet sozlesmesine gerek kalmadi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ]
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_open_count": 5,
+    "tasks_open_not_has": [
+     "İnternet"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "b17-39",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Dilekçeyi yaz",
+    "İnternet sözleşmesini iptal et",
+    "Garanti belgesini bul",
+    "Sayaç okumasını bildir",
+    "Tapu harcını öde",
+    "Kitapları kütüphaneye iade et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "sayac isi ve tapu harci bitti kitaplar kaldi",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ],
+    "tasks_done_has": [
+     "Sayaç",
+     "Tapu"
+    ],
+    "tasks_open_count": 4
+   }
+  ]
+ },
+ {
+  "name": "b17-40",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Dilekçeyi yaz",
+    "İnternet sözleşmesini iptal et",
+    "Garanti belgesini bul",
+    "Sayaç okumasını bildir",
+    "Tapu harcını öde",
+    "Kitapları kütüphaneye iade et"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kalanlari cumartesiye atalim",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?",
+     "SİLMEMİ",
+     "evet sil",
+     "Tam anlayamadım"
+    ]
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_due": {
+     "Dilekçe": "2026-11-21",
+     "İnternet": "2026-11-21",
+     "Garanti": "2026-11-21",
+     "Sayaç": "2026-11-21",
+     "Tapu": "2026-11-21",
+     "Kitapları": "2026-11-21"
+    }
+   }
+  ]
+ }
+]

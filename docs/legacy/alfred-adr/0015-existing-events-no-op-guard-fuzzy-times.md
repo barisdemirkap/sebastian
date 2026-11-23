@@ -1,0 +1,17 @@
+# 0015. Existing events are never added or edited again; fuzzy times; all-day chores
+
+Status: accepted (owner decision, 2026-11-19).
+
+## Context
+Incident F: the calendar already had "Çöpü çıkar" today 07:30-07:45 (reminder 30 min). The owner wrote that they will take the trash out at 7:30 and asked to be reminded. The bot previewed an edit with identical "Önce" and "Sonra", the owner asked what the difference was, and after "evet" it wrote a no-op "Değiştirdim".
+Incident G: "çoraplar düzenlenecek bunu da cuma gününe ekle" got "Saat kaçta?"; the answer "öğleden sonra 4-5 gibi" was not understood and the question was repeated.
+
+## Decisions
+1. **Duplicate check before any add** (`Assistant._duplicate`): an existing event of the same day and the same start (or both all-day) whose title is about the same thing (`textutil.similar_title`: every word of the shorter title shares a stem of at least 3 letters) means nothing is previewed or written. Reply: `Zaten takvimde: <event>. Hatırlatma 30 dk önce gelecek.`
+2. **Reminder wish on an existing event**: when the text asks for a reminder ("hatırlat", or a stated lead), a REAL edit preview follows (`Hatırlatmayı 1 saat önce yapayım mı?`, Kaydet/İptal buttons); the stated lead if there is one, else 1 hour (2 hours if the lead already is 1 hour). A stated lead equal to the current one is just "Zaten takvimde".
+3. **No-op guard, two layers**: (a) `_propose_target` never creates a pending edit whose changes equal the event's current state (`_same_state`; a reminder equal to the default lead counts as equal to an unset one); (b) `_execute` re-reads the event and, when the STORED changes already equal its state, writes nothing, says `Zaten böyle olduğu için bir şey değiştirmedim`, closes the action as done and audits `write_noop`.
+4. **Fuzzy times** (`fuzzytime.py`, pure): ranges (`öğleden sonra 4-5 gibi`, `4 ile 5 arası`, `dörtle beş arası`, `4-5 civarı`) give start and end; `N gibi/civarı` and the words akşama doğru 18:00, öğlene doğru 12:00, sabah erken 07:00, öğle 12:00, akşamüstü 17:00, gece yarısı 00:00 of the NEXT day, kahvaltıda 08:00, öğle yemeğinde 12:30 give a start with the default duration; `yarım saat`, `bir saat sürsün` give a duration. Bare hours: a day part decides, otherwise 1-6 is afternoon and 7-11 morning. Dates ("4-5 Kasım") and reminders ("1 saat önce") are not times. The preview says how it was read: `Saati şöyle anladım: 16:00-17:00 (öğleden sonra 4-5 gibi).` Fuzzy times are read in the first message, in the answer to the time question and when editing an open preview (a time given for an all-day draft makes it a timed one).
+5. **All-day default for chores**: a to-do style item (`i18n.TODO_STEMS`, `TODO_WORDS`, `CHORE_STEMS`: düzenle, topla, temizle, al, yap, çıkar, ...) with a day but no time is added ALL-DAY with the note `Saat belirtmedin, tüm gün ekledim; saat söylersen düzeltirim.` instead of asking. An appointment-like word (`i18n.APPOINTMENT_STEMS`: randevu, toplantı, doktor, buluşma, görüşme, ...) always wins and keeps the time question.
+
+## Consequences
+A wrong fuzzy reading costs one visible edit. `similar_title` is deliberately looser than `title_match` because it is only used together with the same date and start. Incident fixtures: `2026-11-existing-event-*`, `2026-11-add-matching-*`, `2026-11-edit-with-identical-*`, `2026-11-chore-without-time-*`, `2026-11-appointment-asks-time-*`, `2026-11-single-fuzzy-time-*`.

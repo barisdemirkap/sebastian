@@ -1,0 +1,100 @@
+{
+  "name": "named lists: add, view, check off, preview-gated removal and clear, never touching the calendar",
+  "incident": "Feature fixture (ADR 0016): the 'Alınacaklar' list. Adds and check-offs are immediate, removal and clearing need a preview and a yes, and nothing is ever written to the calendar.",
+  "setup": {
+    "provider": "rules"
+  },
+  "steps": [
+    {
+      "say": "alınacaklara üçlü priz ve kahve ekle",
+      "kind": "free",
+      "saved_total": 0,
+      "contains": [
+        "Alınacaklar listesine ekledim: Üçlü priz, Kahve.",
+        "1. ☐ Üçlü priz",
+        "2. ☐ Kahve"
+      ]
+    },
+    {
+      "say": "alışveriş listesine süt, kahve ekle",
+      "kind": "free",
+      "saved_total": 0,
+      "contains": [
+        "ekledim: Süt.",
+        "Zaten listede, tekrar eklemedim: Kahve."
+      ]
+    },
+    {
+      "say": "yumurtayı aldım",
+      "kind": "free",
+      "saved_total": 0,
+      "not_contains": [
+        "Aldım olarak"
+      ]
+    },
+    {
+      "say": "kahveyi aldım",
+      "kind": "free",
+      "contains": [
+        "Aldım olarak işaretledim: Kahve.",
+        "Alındı:",
+        "✔ Kahve"
+      ]
+    },
+    {
+      "say": "üçlü prizi listeden çıkar",
+      "kind": "free",
+      "contains": [
+        "Alınacaklar listesinden şunu çıkarayım mı?",
+        "- Üçlü priz",
+        "(evet / hayır)"
+      ]
+    },
+    {
+      "say": "asdf",
+      "kind": "neutral",
+      "not_contains": [
+        "Listeden çıkardım"
+      ]
+    },
+    {
+      "say": "evet",
+      "kind": "free",
+      "contains": [
+        "Listeden çıkardım: Üçlü priz."
+      ],
+      "saved_total": 0
+    },
+    {
+      "say": "listemde ne var",
+      "kind": "free",
+      "contains": [
+        "1. ☐ Süt"
+      ],
+      "not_contains": [
+        "Üçlü priz"
+      ]
+    },
+    {
+      "say": "listeyi temizle",
+      "kind": "free",
+      "contains": [
+        "temizleyeyim mi? (2 madde)"
+      ]
+    },
+    {
+      "say": "hayır",
+      "kind": "cancel",
+      "contains": [
+        "vazgeçtim"
+      ]
+    },
+    {
+      "say": "listem",
+      "kind": "free",
+      "contains": [
+        "1. ☐ Süt"
+      ]
+    }
+  ]
+}

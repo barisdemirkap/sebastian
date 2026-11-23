@@ -1,0 +1,35 @@
+{
+  "name": "'camasir bitti' never gets a reminder/event offer even when the model asks one",
+  "incident": "Live failure of 2026-11-19 (ADR 0013, invariant I10): a finished to-do got 'Hatirlatici ya da etkinlik ekleyeyim mi?'. Finish wordings are handled by the task rules before the model; with no task and no event the bot says so and shows how to add a task.",
+  "setup": {
+    "provider": "claude_like",
+    "model_intent": {
+      "intent": "unclear",
+      "question": "Bir hatırlatıcı ya da etkinlik ekleyeyim mi?"
+    }
+  },
+  "steps": [
+    {
+      "say": "çamaşırı bitirdim",
+      "kind": "free",
+      "not_contains": [
+        "ekleyeyim mi",
+        "hatırlatıcı"
+      ],
+      "contains": [
+        "görev ekle"
+      ],
+      "preview": false,
+      "saved_total": 0
+    },
+    {
+      "say": "ödevi yaptım",
+      "kind": "free",
+      "not_contains": [
+        "ekleyeyim mi"
+      ],
+      "preview": false,
+      "saved_total": 0
+    }
+  ]
+}

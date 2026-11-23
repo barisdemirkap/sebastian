@@ -1,0 +1,36 @@
+{
+  "name": "frustration never destroys a pending preview",
+  "incident": "A frustrated message (insult, 'dedim ya') must be answered calmly and the preview must stay.",
+  "setup": {
+    "provider": "rules"
+  },
+  "steps": [
+    {
+      "say": "yarın saat 15:00 diş hekimi ekle",
+      "kind": "free",
+      "preview": true
+    },
+    {
+      "say": "ulan",
+      "kind": "neutral",
+      "preview": true
+    },
+    {
+      "say": "dedim ya",
+      "kind": "neutral",
+      "preview": true
+    },
+    {
+      "say": "anlamıyorsun",
+      "kind": "neutral",
+      "preview": true,
+      "saved_total": 0
+    },
+    {
+      "say": "evet",
+      "kind": "confirm",
+      "saved_total": 1,
+      "preview": false
+    }
+  ]
+}

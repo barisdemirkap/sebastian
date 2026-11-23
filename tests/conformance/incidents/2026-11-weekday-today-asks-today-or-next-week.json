@@ -1,0 +1,53 @@
+{
+  "name": "on a Thursday, 'persembe' is today or next week: the bot asks, never silently picks next week",
+  "incident": "Live failure of 2026-11-19 05:01 (ADR 0012): the owner wrote 'persembe ogleden sonra 4e' on a Thursday meaning today; the bot proposed Perşembe 26 Kasım (next week) and the owner confirmed without noticing. A bare weekday that is today now asks 'today or next week?' and every preview shows weekday and full date.",
+  "setup": {
+    "provider": "claude_like",
+    "now": "2026-11-19T05:01",
+    "model_intent": {
+      "intent": "add_event",
+      "title": "Alexa ve Hue kurulumları",
+      "date": "2026-11-26",
+      "time": "16:00",
+      "end_time": null,
+      "duration_min": null,
+      "all_day": false,
+      "reminder_min": null,
+      "location": null,
+      "notes": null,
+      "recurrence": null,
+      "tag": null
+    }
+  },
+  "steps": [
+    {
+      "say": "camasiri ama bitirdim ona gerek yok persembe gunu sadece alexa ve hue kurulumlarini yapalim bunu ekle persembe ogleden sonra 4e",
+      "kind": "free",
+      "preview": false,
+      "contains": [
+        "Bugün Perşembe",
+        "19 Kasım",
+        "26 Kasım"
+      ],
+      "saved_total": 0
+    },
+    {
+      "say": "bugün",
+      "kind": "free",
+      "preview": true,
+      "contains": [
+        "Perşembe 19 Kasım 2026 16:00-16:30"
+      ],
+      "saved_total": 0
+    },
+    {
+      "say": "evet",
+      "kind": "confirm",
+      "contains": [
+        "Ekledim"
+      ],
+      "preview": false,
+      "saved_total": 1
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "name": "'X'de evden çıkmak için Y'de hazır olalım' without a named appointment shows two numbered readings and applies the picked one",
+  "incident": "ADR 0017: when it is unclear whether X is the appointment or the leave time, ONE message with two numbered readings; the owner's pick becomes the edit preview.",
+  "setup": {
+    "provider": "rules",
+    "now": "2026-11-19T06:27",
+    "seed": [
+      {
+        "title": "Aile hekimi: sağlık raporu al",
+        "start": "2026-11-19T09:00",
+        "end": "2026-11-19T10:00"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "say": "doktor 8.50de evden cikmak icin 8.10da hazir olalim",
+      "kind": "free",
+      "preview": false,
+      "contains": [
+        "1)",
+        "2)",
+        "08:50",
+        "08:10"
+      ],
+      "not_contains": [
+        "Şunu takvime işliyorum",
+        "Dikkat"
+      ],
+      "saved_total": 1
+    },
+    {
+      "say": "2",
+      "kind": "free",
+      "preview": true,
+      "contains": [
+        "Şunu şöyle değiştiriyorum",
+        "09:00-10:00",
+        "50 dk önce",
+        "Evden çıkış: 08:50"
+      ],
+      "not_contains": [
+        "08:50-09:50"
+      ],
+      "saved_total": 1
+    },
+    {
+      "say": "evet",
+      "kind": "confirm",
+      "preview": false,
+      "saved_total": 1,
+      "saved_has": [
+        {
+          "start": "2026-11-19T09:00:00+03:00",
+          "reminder_minutes": 50
+        }
+      ]
+    }
+  ]
+}

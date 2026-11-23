@@ -1,0 +1,110 @@
+[
+ {
+  "name": "tomorrow-plan-variants-2",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Berber",
+     "start": "2026-11-20T10:00",
+     "end": "2026-11-20T11:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "yarinin planlari neler",
+    "kind": "free",
+    "contains": [
+     "Berber"
+    ],
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?"
+    ]
+   },
+   {
+    "say": "yarin ne var ne yok",
+    "kind": "free",
+    "contains": [
+     "Berber"
+    ],
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?"
+    ],
+    "repeat_ok": true
+   }
+  ]
+ },
+ {
+  "name": "remaining-today-variants",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Faturaları öde",
+    "Pencereleri sil",
+    "Dolabı düzenle",
+    "Rapor taslağını yaz"
+   ]
+  },
+  "steps": [
+   {
+    "say": "bugun kalan islerim",
+    "kind": "free",
+    "contains": [
+     "Faturaları öde"
+    ]
+   },
+   {
+    "say": "kalanlar neler",
+    "kind": "free",
+    "contains": [
+     "Faturaları öde"
+    ],
+    "repeat_ok": true
+   }
+  ]
+ },
+ {
+  "name": "read-with-open-question-clears-it",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Ekip toplantısı",
+     "start": "2026-11-19T11:00",
+     "end": "2026-11-19T12:00"
+    },
+    {
+     "title": "Müşteri toplantısı",
+     "start": "2026-11-19T14:00",
+     "end": "2026-11-19T15:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "toplantiyi yarina tasi",
+    "kind": "free",
+    "contains": [
+     "Hangisi"
+    ]
+   },
+   {
+    "say": "bugun programim nasil",
+    "kind": "free",
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?"
+    ],
+    "contains": [
+     "Ekip toplantısı"
+    ]
+   }
+  ]
+ }
+]

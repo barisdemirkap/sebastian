@@ -1,0 +1,57 @@
+{
+  "name": "model back: the queued message is read again and previewed, confirmation needed",
+  "incident": "ADR 0021: when the model works again the queue is processed oldest first through the normal path; the preview carries the 'Efendim, daha önce ilettiğiniz şu mesajı şimdi okudum' prefix, needs its own confirmation, and nothing is written before it. (Dialogue manager only: the retry queue belongs to the manager's fallback chain, agent mode keeps its own session.)",
+  "agent": false,
+  "setup": {
+    "provider": "flaky",
+    "model_up": false,
+    "now": "2026-11-19T07:02",
+    "model_intents": {
+      "initech": {
+        "intent": "add_event",
+        "title": "GTech toplantısı",
+        "date": "2026-11-19",
+        "time": "10:00",
+        "duration_min": null,
+        "all_day": false
+      }
+    }
+  },
+  "steps": [
+    {
+      "say": "copu evden cikarken cikartacagim bugun 10da initech toplantim var 11de de cto ile toplantim var",
+      "kind": "free",
+      "preview": false,
+      "saved_total": 0
+    },
+    {
+      "model": "up",
+      "advance_minutes": 3,
+      "say": "merhaba",
+      "kind": "free",
+      "preview": true,
+      "preview_count": 1,
+      "saved_total": 0,
+      "contains": [
+        "Efendim, daha önce ilettiğiniz şu mesajı şimdi okudum",
+        "GTech toplantısı"
+      ],
+      "preview_has": [
+        {
+          "title": "GTech toplantısı"
+        }
+      ]
+    },
+    {
+      "say": "evet",
+      "kind": "confirm",
+      "preview": false,
+      "saved_total": 1,
+      "saved_has": [
+        {
+          "title": "GTech toplantısı"
+        }
+      ]
+    }
+  ]
+}

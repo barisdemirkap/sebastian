@@ -1,0 +1,29 @@
+{
+  "name": "another chat is ignored",
+  "incident": "Single owner: a stranger's 'evet' must not confirm the owner's preview nor get any reply.",
+  "setup": {
+    "provider": "rules"
+  },
+  "steps": [
+    {
+      "say": "yarın saat 15:00 diş hekimi ekle",
+      "kind": "free",
+      "preview": true
+    },
+    {
+      "say": "evet",
+      "chat": 2,
+      "kind": "neutral"
+    },
+    {
+      "say": "bugün ne var",
+      "chat": 2,
+      "kind": "neutral"
+    },
+    {
+      "say": "evet",
+      "kind": "confirm",
+      "saved_total": 1
+    }
+  ]
+}

@@ -1,0 +1,648 @@
+[
+ {
+  "name": "task-camasir-bitti",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır yıka",
+    "Başka bir iş"
+   ]
+  },
+  "steps": [
+   {
+    "say": "camasir bitti",
+    "kind": "free",
+    "tasks_done_has": [
+     "Çama"
+    ],
+    "tasks_removed_not_has": [
+     "Çama"
+    ],
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil",
+     "Hangi gün"
+    ],
+    "preview": false
+   }
+  ]
+ },
+ {
+  "name": "task-bulasiklari-yikadim",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bulaşıkları yıka",
+    "Başka bir iş"
+   ]
+  },
+  "steps": [
+   {
+    "say": "bulasiklari yikadim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Bula"
+    ],
+    "tasks_removed_not_has": [
+     "Bula"
+    ],
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil",
+     "Hangi gün"
+    ],
+    "preview": false
+   }
+  ]
+ },
+ {
+  "name": "task-faturayi-odedim",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Faturayı öde",
+    "Başka bir iş"
+   ]
+  },
+  "steps": [
+   {
+    "say": "faturayi odedim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Fatu"
+    ],
+    "tasks_removed_not_has": [
+     "Fatu"
+    ],
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil",
+     "Hangi gün"
+    ],
+    "preview": false
+   }
+  ]
+ },
+ {
+  "name": "task-market-alisverisi-tamamlandi",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Market alışverişi yap",
+    "Başka bir iş"
+   ]
+  },
+  "steps": [
+   {
+    "say": "market alisverisi tamamlandi",
+    "kind": "free",
+    "tasks_done_has": [
+     "Mark"
+    ],
+    "tasks_removed_not_has": [
+     "Mark"
+    ],
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil",
+     "Hangi gün"
+    ],
+    "preview": false
+   }
+  ]
+ },
+ {
+  "name": "task-raporu-gonderdim",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Raporu gönder",
+    "Başka bir iş"
+   ]
+  },
+  "steps": [
+   {
+    "say": "raporu gonderdim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Rapo"
+    ],
+    "tasks_removed_not_has": [
+     "Rapo"
+    ],
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil",
+     "Hangi gün"
+    ],
+    "preview": false
+   }
+  ]
+ },
+ {
+  "name": "task-ilaclari-aldim",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "İlaçları al",
+    "Başka bir iş"
+   ]
+  },
+  "steps": [
+   {
+    "say": "ilaclari aldim",
+    "kind": "free",
+    "tasks_done_has": [
+     "İlaç"
+    ],
+    "tasks_removed_not_has": [
+     "İlaç"
+    ],
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil",
+     "Hangi gün"
+    ],
+    "preview": false
+   }
+  ]
+ },
+ {
+  "name": "task-odayi-topladim",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Odayı topla",
+    "Başka bir iş"
+   ]
+  },
+  "steps": [
+   {
+    "say": "odayi topladim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Oday"
+    ],
+    "tasks_removed_not_has": [
+     "Oday"
+    ],
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil",
+     "Hangi gün"
+    ],
+    "preview": false
+   }
+  ]
+ },
+ {
+  "name": "task-toplanti-notlarini-yazdim",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Toplantı notlarını yaz",
+    "Başka bir iş"
+   ]
+  },
+  "steps": [
+   {
+    "say": "toplanti notlarini yazdim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Topl"
+    ],
+    "tasks_removed_not_has": [
+     "Topl"
+    ],
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil",
+     "Hangi gün"
+    ],
+    "preview": false
+   }
+  ]
+ },
+ {
+  "name": "task-utuyu-bitirdim",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Ütü yap",
+    "Başka bir iş"
+   ]
+  },
+  "steps": [
+   {
+    "say": "utuyu bitirdim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Ütü"
+    ],
+    "tasks_removed_not_has": [
+     "Ütü"
+    ],
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil",
+     "Hangi gün"
+    ],
+    "preview": false
+   }
+  ]
+ },
+ {
+  "name": "task-kargoyu-postaladim",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kargoyu postala",
+    "Başka bir iş"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kargoyu postaladim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Karg"
+    ],
+    "tasks_removed_not_has": [
+     "Karg"
+    ],
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil",
+     "Hangi gün"
+    ],
+    "preview": false
+   }
+  ]
+ },
+ {
+  "name": "task-sunumu-hazirladim",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Sunumu hazırla",
+    "Başka bir iş"
+   ]
+  },
+  "steps": [
+   {
+    "say": "sunumu hazirladim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Sunu"
+    ],
+    "tasks_removed_not_has": [
+     "Sunu"
+    ],
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil",
+     "Hangi gün"
+    ],
+    "preview": false
+   }
+  ]
+ },
+ {
+  "name": "task-randevuyu-aldim",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Randevu al",
+    "Başka bir iş"
+   ]
+  },
+  "steps": [
+   {
+    "say": "randevuyu aldim",
+    "kind": "free",
+    "tasks_done_has": [
+     "Rand"
+    ],
+    "tasks_removed_not_has": [
+     "Rand"
+    ],
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil",
+     "Hangi gün"
+    ],
+    "preview": false
+   }
+  ]
+ },
+ {
+  "name": "task-with-matching-event-closes-both-never-delete-preview",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T16:00",
+   "tasks": [
+    "Araç muayenesi için randevu al"
+   ],
+   "seed": [
+    {
+     "title": "Araç muayenesi için randevu al",
+     "start": "2026-11-19T15:00",
+     "end": "2026-11-19T15:15"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "arac muayenesi yapildi",
+    "kind": "free",
+    "tasks_done_has": [
+     "Araç"
+    ],
+    "preview": false,
+    "saved_total": 1,
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "event-only-completion-is-closed-not-deleted",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T11:00",
+   "seed": [
+    {
+     "title": "Diş hekimi",
+     "start": "2026-11-19T09:00",
+     "end": "2026-11-19T10:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "diş hekimine gittim",
+    "kind": "free",
+    "preview": false,
+    "saved_total": 1,
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil",
+     "Hangi gün",
+     "Merhaba"
+    ],
+    "contains": [
+     "Diş hekimi"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "event-spor-yaptim",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Spor",
+     "start": "2026-11-19T08:00",
+     "end": "2026-11-19T09:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "spor yaptim",
+    "kind": "free",
+    "preview": false,
+    "saved_total": 1,
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil"
+    ],
+    "contains": [
+     "Spor"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "completed-event-leaves-the-remaining-list",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T11:30",
+   "seed": [
+    {
+     "title": "Initech toplantısı",
+     "start": "2026-11-19T10:00",
+     "end": "2026-11-19T11:00"
+    },
+    {
+     "title": "Akşam yemeği",
+     "start": "2026-11-19T20:00",
+     "end": "2026-11-19T21:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "toplanti bitti",
+    "kind": "free",
+    "preview": false,
+    "saved_total": 2,
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil"
+    ]
+   },
+   {
+    "say": "bugun neler kaldi?",
+    "kind": "free",
+    "not_contains": [
+     "Initech toplantısı"
+    ],
+    "contains": [
+     "Akşam yemeği"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "completion-of-unknown-item-creates-nothing",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00"
+  },
+  "steps": [
+   {
+    "say": "fatura odendi",
+    "kind": "free",
+    "tasks_open_count": 0,
+    "preview": false,
+    "saved_total": 0
+   }
+  ]
+ },
+ {
+  "name": "two-finished-things-in-one-message",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır yıka",
+    "Bulaşık yıka",
+    "Ütü yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "camasir bitti bulasik bitti",
+    "kind": "free",
+    "tasks_done_has": [
+     "Çamaşır",
+     "Bulaşık"
+    ],
+    "tasks_open_count": 1,
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "finished-and-comma-clause",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır yıka",
+    "Ütü yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "camasir bitti, utu yarina kaldi",
+    "kind": "free",
+    "tasks_done_has": [
+     "Çamaşır"
+    ],
+    "tasks_due": {
+     "Ütü": "2026-11-20"
+    },
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "hepsi-bitti-closes-every-open-task",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır yıka",
+    "Bulaşık yıka"
+   ]
+  },
+  "steps": [
+   {
+    "say": "bugunkuler hepsi bitti",
+    "kind": "free"
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_open_count": 0
+   }
+  ]
+ },
+ {
+  "name": "yapildi-with-time-aside",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Rapor yaz"
+   ]
+  },
+  "steps": [
+   {
+    "say": "rapor yapildi saat 14te",
+    "kind": "free",
+    "tasks_done_has": [
+     "Rapor"
+    ],
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil"
+    ],
+    "preview": false
+   }
+  ]
+ },
+ {
+  "name": "completed-twice-second-time-is-calm",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır yıka"
+   ]
+  },
+  "steps": [
+   {
+    "say": "camasir bitti",
+    "kind": "free",
+    "tasks_done_has": [
+     "Çamaşır"
+    ]
+   },
+   {
+    "say": "camasir bitti",
+    "kind": "free",
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil",
+     "Merhaba"
+    ],
+    "preview": false
+   }
+  ]
+ }
+]

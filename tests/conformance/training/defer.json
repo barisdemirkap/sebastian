@@ -1,0 +1,608 @@
+[
+ {
+  "name": "task-camasir-bu-yarina",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır yıka",
+    "Başka bir iş"
+   ]
+  },
+  "steps": [
+   {
+    "say": "camasir bu yarina",
+    "kind": "free",
+    "tasks_due": {
+     "Çamaş": "2026-11-20"
+    },
+    "tasks_done_not": [
+     "Çamaş"
+    ],
+    "tasks_open_count": 2,
+    "not_contains": [
+     "Görev ekledim",
+     "Numarasını",
+     "Hangisi?"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "task-bulasik-yarina-kalsin",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bulaşık yıka",
+    "Başka bir iş"
+   ]
+  },
+  "steps": [
+   {
+    "say": "bulasik yarina kalsin",
+    "kind": "free",
+    "tasks_due": {
+     "Bulaş": "2026-11-20"
+    },
+    "tasks_done_not": [
+     "Bulaş"
+    ],
+    "tasks_open_count": 2,
+    "not_contains": [
+     "Görev ekledim",
+     "Numarasını",
+     "Hangisi?"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "task-faturayi-cumartesiye-tasi",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Faturayı öde",
+    "Başka bir iş"
+   ]
+  },
+  "steps": [
+   {
+    "say": "faturayi cumartesiye tasi",
+    "kind": "free",
+    "tasks_due": {
+     "Fatur": "2026-11-21"
+    },
+    "tasks_done_not": [
+     "Fatur"
+    ],
+    "tasks_open_count": 2,
+    "not_contains": [
+     "Görev ekledim",
+     "Numarasını",
+     "Hangisi?"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "task-raporu-pazartesiye-ertele",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Raporu yaz",
+    "Başka bir iş"
+   ]
+  },
+  "steps": [
+   {
+    "say": "raporu pazartesiye ertele",
+    "kind": "free",
+    "tasks_due": {
+     "Rapor": "2026-11-23"
+    },
+    "tasks_done_not": [
+     "Rapor"
+    ],
+    "tasks_open_count": 2,
+    "not_contains": [
+     "Görev ekledim",
+     "Numarasını",
+     "Hangisi?"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "task-odayi-yarina-birak",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Odayı topla",
+    "Başka bir iş"
+   ]
+  },
+  "steps": [
+   {
+    "say": "odayi yarina birak",
+    "kind": "free",
+    "tasks_due": {
+     "Odayı": "2026-11-20"
+    },
+    "tasks_done_not": [
+     "Odayı"
+    ],
+    "tasks_open_count": 2,
+    "not_contains": [
+     "Görev ekledim",
+     "Numarasını",
+     "Hangisi?"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "task-ilaclar-yarina-kalsin",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "İlaçları al",
+    "Başka bir iş"
+   ]
+  },
+  "steps": [
+   {
+    "say": "ilaclar yarina kalsin",
+    "kind": "free",
+    "tasks_due": {
+     "İlaçl": "2026-11-20"
+    },
+    "tasks_done_not": [
+     "İlaçl"
+    ],
+    "tasks_open_count": 2,
+    "not_contains": [
+     "Görev ekledim",
+     "Numarasını",
+     "Hangisi?"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "task-utu-cumaya-kalsin",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Ütü yap",
+    "Başka bir iş"
+   ]
+  },
+  "steps": [
+   {
+    "say": "utu cumaya kalsin",
+    "kind": "free",
+    "tasks_due": {
+     "Ütü": "2026-11-20"
+    },
+    "tasks_done_not": [
+     "Ütü"
+    ],
+    "tasks_open_count": 2,
+    "not_contains": [
+     "Görev ekledim",
+     "Numarasını",
+     "Hangisi?"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "task-marketi-yarin-yapacagim",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Market alışverişi yap",
+    "Başka bir iş"
+   ]
+  },
+  "steps": [
+   {
+    "say": "marketi yarin yapacagim",
+    "kind": "free",
+    "tasks_due": {
+     "Marke": "2026-11-20"
+    },
+    "tasks_done_not": [
+     "Marke"
+    ],
+    "tasks_open_count": 2,
+    "not_contains": [
+     "Görev ekledim",
+     "Numarasını",
+     "Hangisi?"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "task-kargo-pazara-kalsin",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Kargoyu postala",
+    "Başka bir iş"
+   ]
+  },
+  "steps": [
+   {
+    "say": "kargo pazara kalsin",
+    "kind": "free",
+    "tasks_due": {
+     "Kargo": "2026-11-22"
+    },
+    "tasks_done_not": [
+     "Kargo"
+    ],
+    "tasks_open_count": 2,
+    "not_contains": [
+     "Görev ekledim",
+     "Numarasını",
+     "Hangisi?"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "task-sunumu-sali-gunune-at",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Sunumu hazırla",
+    "Başka bir iş"
+   ]
+  },
+  "steps": [
+   {
+    "say": "sunumu sali gunune at",
+    "kind": "free",
+    "tasks_due": {
+     "Sunum": "2026-11-24"
+    },
+    "tasks_done_not": [
+     "Sunum"
+    ],
+    "tasks_open_count": 2,
+    "not_contains": [
+     "Görev ekledim",
+     "Numarasını",
+     "Hangisi?"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "task-rapor-bunu-yarina-birakalim",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Rapor yaz",
+    "Başka bir iş"
+   ]
+  },
+  "steps": [
+   {
+    "say": "rapor bunu yarina birakalim",
+    "kind": "free",
+    "tasks_due": {
+     "Rapor": "2026-11-20"
+    },
+    "tasks_done_not": [
+     "Rapor"
+    ],
+    "tasks_open_count": 2,
+    "not_contains": [
+     "Görev ekledim",
+     "Numarasını",
+     "Hangisi?"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "task-fatura-yarina",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Faturayı öde",
+    "Başka bir iş"
+   ]
+  },
+  "steps": [
+   {
+    "say": "fatura yarina",
+    "kind": "free",
+    "tasks_due": {
+     "Fatur": "2026-11-20"
+    },
+    "tasks_done_not": [
+     "Fatur"
+    ],
+    "tasks_open_count": 2,
+    "not_contains": [
+     "Görev ekledim",
+     "Numarasını",
+     "Hangisi?"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "task-and-event-both-move-with-one-preview",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T13:00",
+   "tasks": [
+    "Araç muayenesi için randevu al"
+   ],
+   "seed": [
+    {
+     "title": "Araç muayenesi için randevu al",
+     "start": "2026-11-19T15:00",
+     "end": "2026-11-19T15:15"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "arac muayenesi yarina kalsin",
+    "kind": "free",
+    "tasks_due": {
+     "Araç": "2026-11-20"
+    },
+    "preview": true,
+    "contains": [
+     "Araç muayenesi",
+     "20 Kasım"
+    ],
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil"
+    ]
+   },
+   {
+    "say": "evet",
+    "kind": "confirm",
+    "preview": false,
+    "saved_total": 1
+   }
+  ]
+ },
+ {
+  "name": "event-only-moves-to-tomorrow",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Initech toplantısı",
+     "start": "2026-11-19T14:00",
+     "end": "2026-11-19T15:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "toplantiyi yarina tasi",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "20 Kasım"
+    ],
+    "saved_total": 1
+   },
+   {
+    "say": "evet",
+    "kind": "confirm",
+    "preview": false,
+    "saved_has": [
+     {
+      "title": "Initech toplantısı",
+      "start": "2026-11-20T14:00:00+03:00"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "event-bu-yarina",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "seed": [
+    {
+     "title": "Diş hekimi",
+     "start": "2026-11-19T17:00",
+     "end": "2026-11-19T18:00"
+    }
+   ]
+  },
+  "steps": [
+   {
+    "say": "dis hekimi bu yarina",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "20 Kasım"
+    ],
+    "not_contains": [
+     "SİLMEMİ",
+     "silebilirim",
+     "evet sil"
+    ],
+    "saved_total": 1
+   }
+  ]
+ },
+ {
+  "name": "hepsi-yarina-kalsin-after-the-list",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır yıka",
+    "Ütü yap"
+   ]
+  },
+  "steps": [
+   {
+    "say": "bugun neler kaldi?",
+    "kind": "free",
+    "contains": [
+     "Çamaşır"
+    ]
+   },
+   {
+    "say": "hepsi yarina kalsin",
+    "kind": "free"
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_due": {
+     "Çamaşır": "2026-11-20",
+     "Ütü": "2026-11-20"
+    },
+    "tasks_open_count": 2
+   }
+  ]
+ },
+ {
+  "name": "digerleri-yarina-kalsin",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır yıka",
+    "Ütü yap",
+    "Bulaşık yıka"
+   ]
+  },
+  "steps": [
+   {
+    "say": "camasir bitti digerleri yarina kalsin",
+    "kind": "free"
+   },
+   {
+    "say": "evet",
+    "kind": "free",
+    "tasks_done_has": [
+     "Çamaşır"
+    ],
+    "tasks_due": {
+     "Ütü": "2026-11-20",
+     "Bulaşık": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "two-named-tasks-bu-yarina",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır yıka",
+    "Ütü yap",
+    "Bulaşık yıka"
+   ]
+  },
+  "steps": [
+   {
+    "say": "camasir bu yarina utu bu yarina",
+    "kind": "free",
+    "tasks_due": {
+     "Çamaşır": "2026-11-20",
+     "Ütü": "2026-11-20"
+    },
+    "tasks_open_count": 3
+   }
+  ]
+ },
+ {
+  "name": "task-to-a-weekday-with-ye-suffix",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Bulaşık yıka"
+   ]
+  },
+  "steps": [
+   {
+    "say": "bulasigi persembeye tasi",
+    "kind": "free",
+    "tasks_due": {
+     "Bulaşık": "2026-11-26"
+    },
+    "not_contains": [
+     "Numarasını",
+     "Hangisi?"
+    ]
+   }
+  ],
+  "incident": "Thursday said on a Thursday for a task means next Thursday (a task cannot be 'today' again)."
+ },
+ {
+  "name": "defer-does-not-duplicate-the-task",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00",
+   "tasks": [
+    "Çamaşır yıka"
+   ]
+  },
+  "steps": [
+   {
+    "say": "camasiri yarina birak",
+    "kind": "free",
+    "tasks_open_count": 1,
+    "tasks_due": {
+     "Çamaşır": "2026-11-20"
+    }
+   }
+  ]
+ },
+ {
+  "name": "yarina-kalsin-without-a-match-adds-a-tomorrow-task",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-19T10:00"
+  },
+  "steps": [
+   {
+    "say": "dus ve kisisel bakim yarina kalsin",
+    "kind": "free",
+    "tasks_due": {
+     "Duş": "2026-11-20"
+    },
+    "tasks_open_count": 1,
+    "not_contains": [
+     "Hangi gün",
+     "Saat kaçta"
+    ]
+   }
+  ]
+ }
+]

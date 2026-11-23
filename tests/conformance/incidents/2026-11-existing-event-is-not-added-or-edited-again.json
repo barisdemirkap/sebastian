@@ -1,0 +1,45 @@
+{
+  "name": "an event that already exists is never added or edited again; a reminder wish becomes a real reminder preview",
+  "incident": "Live failure of 2026-11-19 (incident F, ADR 0015): the calendar already had 'Çöpü çıkar' today 07:30-07:45 with a 30 min reminder. The owner wrote that they will take the trash out at 7:30 and asked to be reminded. The bot previewed an edit with identical before and after, the owner asked what the difference was, and after 'evet' it wrote a no-op. Now: 'Zaten takvimde', nothing is written, and a reminder wish is offered as a real reminder change.",
+  "setup": {
+    "provider": "rules",
+    "now": "2026-11-19T06:30",
+    "seed": [
+      {
+        "title": "Çöpü çıkar",
+        "start": "2026-11-19T07:30",
+        "end": "2026-11-19T07:45",
+        "reminder": 30
+      }
+    ]
+  },
+  "steps": [
+    {
+      "say": "çöpleri bugun sabah 7.30da cikaracagim bunu bana hatirlat",
+      "kind": "free",
+      "preview": true,
+      "contains": [
+        "Zaten takvimde: Çöpü çıkar",
+        "Hatırlatma 30 dk önce gelecek",
+        "Hatırlatmayı 1 saat önce yapayım mı?"
+      ],
+      "not_contains": [
+        "Şunu takvime işliyorum",
+        "Önce: Çöpü çıkar, Bugün Perşembe 19 Kasım 2026 07:30-07:45\nSonra: Çöpü çıkar, Bugün"
+      ],
+      "saved_total": 1
+    },
+    {
+      "say": "evet",
+      "kind": "confirm",
+      "preview": false,
+      "saved_total": 1,
+      "saved_has": [
+        {
+          "title": "Çöpü çıkar",
+          "reminder_minutes": 60
+        }
+      ]
+    }
+  ]
+}

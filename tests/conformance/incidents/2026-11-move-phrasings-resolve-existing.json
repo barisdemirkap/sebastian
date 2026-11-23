@@ -1,0 +1,21 @@
+{
+  "name": "'X'i 6ya al' and 'X de aksam 7' move the existing event; 'X yapilmadi yarina at' moves it to tomorrow",
+  "incident": "Reference resolution before create: a message naming an existing event with a clock time or a day move is an edit preview.",
+  "setup": {
+    "provider": "rules",
+    "now": "2026-11-19T10:00",
+    "seed": [
+      {"title": "Çöpü çıkar", "start": "2026-11-19T07:30", "end": "2026-11-19T07:45"}
+    ]
+  },
+  "steps": [
+    {"say": "çöpü 6ya al", "kind": "free", "preview": true,
+     "contains": ["Önce: Çöpü çıkar", "Sonra: Çöpü çıkar", "18:00"], "not_contains": ["Şunu takvime işliyorum"], "saved_total": 1},
+    {"say": "hayır", "kind": "cancel", "preview": false, "saved_total": 1},
+    {"say": "çöp de akşam 7", "kind": "free", "preview": true,
+     "contains": ["Sonra: Çöpü çıkar", "19:00"], "not_contains": ["Şunu takvime işliyorum"], "saved_total": 1},
+    {"say": "hayır", "kind": "cancel", "preview": false, "saved_total": 1},
+    {"say": "çöp yapılmadı yarına at", "kind": "free", "preview": true,
+     "contains": ["Sonra: Çöpü çıkar", "20 Kasım"], "not_contains": ["Şunu takvime işliyorum"], "saved_total": 1}
+  ]
+}

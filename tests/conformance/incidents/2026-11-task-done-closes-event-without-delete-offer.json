@@ -1,0 +1,55 @@
+{
+  "name": "finishing a to-do closes it and the matching calendar event; no delete is ever offered",
+  "incident": "Owner rule (training loop): a completion statement closes the item and never proposes deleting it. 'camasir bitti' marks the task done and the matching event of today as finished in Sebastian's store; the calendar keeps it.",
+  "setup": {
+    "provider": "rules",
+    "seed": [
+      [
+        "Çamaşır",
+        10,
+        "2026-11-18"
+      ]
+    ]
+  },
+  "steps": [
+    {
+      "say": "görev ekle çamaşır",
+      "kind": "free",
+      "contains": [
+        "Emredersiniz, efendim. Görev ekledim: Çamaşır"
+      ],
+      "preview": false,
+      "saved_total": 1
+    },
+    {
+      "say": "görevlerim",
+      "kind": "free",
+      "contains": [
+        "1. Çamaşır"
+      ],
+      "saved_total": 1
+    },
+    {
+      "say": "camasir bitti",
+      "kind": "free",
+      "contains": [
+        "Tamamlandı olarak işaretledim: Çamaşır",
+        "silmedim"
+      ],
+      "not_contains": [
+        "SİLMEMİ",
+        "silebilirim"
+      ],
+      "preview": false,
+      "saved_total": 1
+    },
+    {
+      "say": "görevlerim",
+      "kind": "free",
+      "contains": [
+        "Açık göreviniz yok"
+      ],
+      "saved_total": 1
+    }
+  ]
+}

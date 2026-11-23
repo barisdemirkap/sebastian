@@ -1,0 +1,201 @@
+[
+ {
+  "name": "real-bu-gorevleri-de-planla",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-20T10:30",
+   "tasks": [
+    "Duş ve kişisel bakım",
+    "Acme Türkçe metin kontrolü",
+    "Araç muayenesi için randevu al",
+    "Çorap çekmecesi düzenlenecek",
+    "Annemlerin odası düzenlenecek"
+   ]
+  },
+  "steps": [
+   {
+    "say": "bu gorevleri de planla",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "taslak plan"
+    ],
+    "preview_count": 5
+   }
+  ]
+ },
+ {
+  "name": "planla-gorevlerimi",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-20T10:30",
+   "tasks": [
+    "Duş ve kişisel bakım",
+    "Acme Türkçe metin kontrolü",
+    "Araç muayenesi için randevu al",
+    "Çorap çekmecesi düzenlenecek",
+    "Annemlerin odası düzenlenecek"
+   ]
+  },
+  "steps": [
+   {
+    "say": "gorevlerimi planla",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "taslak plan"
+    ],
+    "preview_count": 5
+   }
+  ]
+ },
+ {
+  "name": "planla-bunlari",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-20T10:30",
+   "tasks": [
+    "Duş ve kişisel bakım",
+    "Acme Türkçe metin kontrolü",
+    "Araç muayenesi için randevu al",
+    "Çorap çekmecesi düzenlenecek",
+    "Annemlerin odası düzenlenecek"
+   ]
+  },
+  "steps": [
+   {
+    "say": "bunlari planla lutfen",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "taslak plan"
+    ],
+    "preview_count": 5
+   }
+  ]
+ },
+ {
+  "name": "planla-yarin",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-20T10:30",
+   "tasks": [
+    "Duş ve kişisel bakım",
+    "Acme Türkçe metin kontrolü",
+    "Araç muayenesi için randevu al",
+    "Çorap çekmecesi düzenlenecek",
+    "Annemlerin odası düzenlenecek"
+   ]
+  },
+  "steps": [
+   {
+    "say": "bu gorevleri yarina planla",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "taslak plan"
+    ],
+    "preview_count": 5,
+    "preview_has": [
+     {
+      "title": "Duş ve kişisel bakım",
+      "start": "2026-11-21T09:00:00+03:00",
+      "end": "2026-11-21T09:30:00+03:00"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "planla-plana-al",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-20T10:30",
+   "tasks": [
+    "Duş ve kişisel bakım",
+    "Acme Türkçe metin kontrolü",
+    "Araç muayenesi için randevu al",
+    "Çorap çekmecesi düzenlenecek",
+    "Annemlerin odası düzenlenecek"
+   ]
+  },
+  "steps": [
+   {
+    "say": "gorevleri plana al",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "taslak plan"
+    ],
+    "preview_count": 5
+   }
+  ]
+ },
+ {
+  "name": "planla-plan-yap",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-20T10:30",
+   "tasks": [
+    "Duş ve kişisel bakım",
+    "Acme Türkçe metin kontrolü",
+    "Araç muayenesi için randevu al",
+    "Çorap çekmecesi düzenlenecek",
+    "Annemlerin odası düzenlenecek"
+   ]
+  },
+  "steps": [
+   {
+    "say": "bugun icin gorevlerime plan yap",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "taslak plan"
+    ],
+    "preview_count": 5
+   }
+  ]
+ },
+ {
+  "name": "planla-diger-isler",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-20T10:30",
+   "tasks": [
+    "Duş ve kişisel bakım",
+    "Acme Türkçe metin kontrolü",
+    "Araç muayenesi için randevu al",
+    "Çorap çekmecesi düzenlenecek",
+    "Annemlerin odası düzenlenecek"
+   ]
+  },
+  "steps": [
+   {
+    "say": "digerlerini de planla",
+    "kind": "free",
+    "preview": true,
+    "contains": [
+     "taslak plan"
+    ],
+    "preview_count": 5
+   }
+  ]
+ },
+ {
+  "name": "planla-no-tasks",
+  "setup": {
+   "provider": "rules",
+   "now": "2026-11-20T10:30"
+  },
+  "steps": [
+   {
+    "say": "bu gorevleri planla",
+    "kind": "free",
+    "preview": false,
+    "contains": [
+     "Açık göreviniz yok"
+    ]
+   }
+  ]
+ }
+]
