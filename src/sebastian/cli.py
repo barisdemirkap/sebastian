@@ -6,7 +6,7 @@ import time
 from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
-from . import config as cfg
+from . import i18n, config as cfg
 from .digest import morning_digest, evening_digest
 from .oauth import ClientCredentials, TokenStore, build_auth_request, exchange_code, ENDPOINTS
 from .samples import sample_events, sample_mail
@@ -16,7 +16,9 @@ REDIRECT = "http://127.0.0.1:8765/callback"
 
 
 def _load(a) -> cfg.Config:
-    return cfg.load(Path(a.config)) if a.config else cfg.load()
+    c = cfg.load(Path(a.config)) if a.config else cfg.load()
+    i18n.configure(c.owner_title, c.assistant_name)        # [persona] in the config file
+    return c
 
 
 def _now(c: cfg.Config) -> datetime:

@@ -37,6 +37,8 @@ class Config:
     birthdays: bool = True               # also read Google's Birthdays calendar (read-only)
     db_path: Path = CONFIG_DIR / "sebastian.db"
     heartbeat_path: Path = CONFIG_DIR / "heartbeat"
+    owner_title: str = "Ahmet Bey"       # [persona] owner_title: how the assistant addresses you
+    assistant_name: str = "Sebastian"    # [persona] assistant_name
 
 
 def _t(s: str) -> time:
@@ -75,7 +77,8 @@ def parse(raw: dict) -> Config:
                   {k: v.get("client_id", "") for k, v in raw.get("oauth", {}).items()},
                   Path(raw.get("state_path", CONFIG_DIR / "state.json")),
                   _t(raw.get("plan", "22:00")), _t(rem.get("allday_at", "09:00")), bool(raw.get("birthdays", True)),
-                  Path(raw.get("db_path", CONFIG_DIR / "sebastian.db")), Path(raw.get("heartbeat_path", CONFIG_DIR / "heartbeat")))
+                  Path(raw.get("db_path", CONFIG_DIR / "sebastian.db")), Path(raw.get("heartbeat_path", CONFIG_DIR / "heartbeat")),
+                  str(raw.get("persona", {}).get("owner_title", "Ahmet Bey")), str(raw.get("persona", {}).get("assistant_name", "Sebastian")))
 
 
 def load(path: Path = DEFAULT_PATH) -> Config:

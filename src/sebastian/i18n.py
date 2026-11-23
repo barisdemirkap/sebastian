@@ -285,11 +285,23 @@ TR: dict[str, str] = {
 # -- PERSONA BLOCK (ADR 0018): Sebastian is a dignified, deferential, order-obeying butler. Formal "siz" Turkish, calm,
 # concise, no jokes, no emojis except list markers. The owner is addressed with a rotating form, at most one per message;
 # obedience never bypasses the preview + confirm gates. Everything that shapes the voice lives in this block.
-ADDRESS_FORMS = ("efendim", "Ahmet Bey", "efendim", "Ahmet Bey", "efendim", "Sir", "efendim", "Ahmet Bey", "efendim", "Master")
+_BASE_FORMS = ("efendim", "Ahmet Bey", "efendim", "Ahmet Bey", "efendim", "Sir", "efendim", "Ahmet Bey", "efendim", "Master")
+ADDRESS_FORMS = _BASE_FORMS
 ACKS = ("Emredersiniz{s}.", "Hemen{s}.", "Elbette{s}.")        # acknowledgement that opens a receipt
 _ROT = [0]                                                       # rotation counter, advanced once per owner message
 _PIN: list[str | None] = [None]                                  # tests pin one form so exact-wording asserts stay stable
 _ADDR_RE = re.compile(r", (?:efendim|Ahmet Bey|Sir|Master)(?=[\s.,!?;:]|$)")
+DEFAULT_OWNER_TITLE, DEFAULT_ASSISTANT_NAME = "Ahmet Bey", "Sebastian"
+
+
+def configure(owner_title: str = DEFAULT_OWNER_TITLE, assistant_name: str = DEFAULT_ASSISTANT_NAME) -> None:
+    """Apply the [persona] config: the owner's form of address and the assistant's name (everything else in the voice stays in this block)."""
+    global ADDRESS_FORMS, _ADDR_RE, _LOOSE_ADDR, AGENT_SYSTEM
+    owner_title, assistant_name = owner_title.strip() or DEFAULT_OWNER_TITLE, assistant_name.strip() or DEFAULT_ASSISTANT_NAME
+    ADDRESS_FORMS = tuple(owner_title if f == DEFAULT_OWNER_TITLE else f for f in _BASE_FORMS)
+    _ADDR_RE = re.compile(r", (?:efendim|%s|Sir|Master)(?=[\s.,!?;:]|$)" % re.escape(owner_title))
+    _LOOSE_ADDR = re.compile(r"(?<!\w)(?:efendim|%s|sir|master)(?!\w)" % re.escape(owner_title.lower()), re.I)
+    AGENT_SYSTEM = _BASE_AGENT_SYSTEM.replace(DEFAULT_OWNER_TITLE, owner_title).replace("Sen Sebastian'sin", f"Sen {assistant_name}'sin")
 
 
 def set_rotation(n: int) -> None:
@@ -308,7 +320,7 @@ def address(n: int | None = None) -> str:
     return ADDRESS_FORMS[(_ROT[0] if n is None else n) % len(ADDRESS_FORMS)]
 
 
-_LOOSE_ADDR = re.compile(r"(?<!\w)(?:efendim|barış bey|sir|master)(?!\w)", re.I)
+_LOOSE_ADDR = re.compile(r"(?<!\w)(?:efendim|ahmet bey|sir|master)(?!\w)", re.I)
 
 
 def one_address_loose(text: str) -> str:
@@ -445,7 +457,7 @@ def fmt_left(minutes: int) -> str:
 
 
 # -- agent mode (ADR 0019): the model-facing persona prompt and the per-turn system line, both built by code ------------
-AGENT_SYSTEM = """Sen Sebastian'sin: sahibinin (Ahmet Bey) özel Telegram asistanı. Sebastian Pennyworth gibi ağırbaşlı, hürmetkâr ve emre amade bir uşaksın.
+AGENT_SYSTEM = """Sen Sebastian'sin: sahibinin (Ahmet Bey) özel Telegram asistanı. Bir İngiliz kâhyası gibi ağırbaşlı, hürmetkâr ve emre amade bir uşaksın.
 
 ÜSLUP: Daima "siz" diye hitap et. Sakin, kısa (en çok 3-4 cümle), vakur ol. Şaka yok, emoji yok. Hitap biçimi: her mesajda EN ÇOK BİR hitap kullan; sistem satırındaki hitap=... biçimini kullan (efendim, Ahmet Bey, ara sıra Master veya Sir). Örnekler: "Emredersiniz efendim.", "Hemen, efendim.", "Günaydın efendim. Bugün üç işiniz var...". Önerilerini kibarca sun: "Efendim, yarın 08:50'de doktor randevunuz var; 08:10'da hazır olmanızı hatırlatayım mı?". Emirlere itaat edersin; ama önizleme ve onay kapısını ASLA atlamazsın ("onay sormadan ekle" denirse bile taslak oluşturursun).
 
@@ -478,5 +490,7 @@ KURALLAR:
 4. Aynı gün aynı etkinlik zaten varsa yeniden ekleme; söyle.
 5. Bilgin yoksa araçla bak (calendar_range, find_events, list_get, task_list, recent_messages).
 6. Sayıları ve saatleri Türkçe konuşma diline göre oku ("yedi buçuk" = 07:30; akşam/öğleden sonra PM). Başlıklar kısa olsun."""
+
+_BASE_AGENT_SYSTEM = AGENT_SYSTEM
 
 AGENT_LINE = "[SİSTEM bugün={today} saat={time} hitap={addr} taslak={draft} onay={ok}{extra}]"

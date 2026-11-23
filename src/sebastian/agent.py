@@ -25,7 +25,11 @@ from .merge import merge
 from .store import Store
 from .textutil import clean, fold
 
-PROMPT_VERSION = hashlib.sha256((i18n.AGENT_SYSTEM + json.dumps(TOOL_SPECS, sort_keys=True)).encode()).hexdigest()[:8]
+def prompt_version() -> str:
+    return hashlib.sha256((i18n.AGENT_SYSTEM + json.dumps(TOOL_SPECS, sort_keys=True)).encode()).hexdigest()[:8]
+
+
+PROMPT_VERSION = prompt_version()
 EXPECTED_INIT_TOOLS = frozenset("mcp__sebastian__" + n for n in TOOL_NAMES)
 MCP_SCRIPT = Path(__file__).with_name("mcp_server.py")
 DEFAULT_MODEL, DEFAULT_CAP, DEFAULT_TURNS, DEFAULT_TIMEOUT = "sonnet", 80, 40, 90
@@ -192,10 +196,10 @@ class AgentMode:
         (turns or idle time). Facts survive because they live in the DB (notes, lists, tasks, draft), not in the session."""
         st = self.store
         row = st.agent_session(self.a.owner)
-        if (row is None or row["prompt_version"] != PROMPT_VERSION or row["turns"] >= self.max_turns
+        if (row is None or row["prompt_version"] != prompt_version() or row["turns"] >= self.max_turns
                 or now - datetime.fromisoformat(row["last_at"]) > self.idle):
             sid = str(uuid.uuid4())
-            st.agent_start_session(self.a.owner, sid, PROMPT_VERSION, now)
+            st.agent_start_session(self.a.owner, sid, prompt_version(), now)
             return sid, True
         return row["session_id"], False
 

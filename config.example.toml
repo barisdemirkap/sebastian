@@ -35,3 +35,7 @@ client_id = ""
 enabled = false          # delivery goes to the owner's chat only, via the Cimcime bot
 chat_id = ""
 token_file = "telegram.token"   # inside ~/.config/sebastian/secrets/
+
+[persona]
+owner_title = "Ahmet Bey"     # how the assistant addresses you
+assistant_name = "Sebastian"  # the name it uses for itself
