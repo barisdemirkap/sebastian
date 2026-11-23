@@ -32,3 +32,24 @@ def test_console_channel_drives_the_real_bot_through_a_preview():
     bot.step(poll_timeout=0)
     assert "diş hekimi" in out[-1].lower() and "1) Kaydet" in out[-1]
     assert st.open_pending(bot.owner) is not None          # nothing is written before the confirmation
+
+
+def test_slack_channel_drives_the_real_bot_through_a_preview():
+    from sebastian.channels import SlackChannel
+    bot, _, st, _ = make_bot()
+    sent, queue_ = [], []
+    n = [0]
+
+    def call(method, payload):
+        if method == "conversations.open":
+            return {"ok": True, "channel": {"id": "D1"}}
+        n[0] += 1
+        sent.append(payload)
+        return {"ok": True, "ts": f"1700000000.{n[0]:06d}"}
+    bot.api = SlackChannel(bot.owner, "U1", call, lambda: [queue_.pop(0)] if queue_ else [])
+    queue_.append({"type": "events_api", "payload": {"event": {"type": "message", "channel_type": "im", "channel": "D1", "user": "U1",
+                                                                "text": "yarın saat 15:00 diş hekimi ekle", "ts": "1700000010.000100"}}})
+    bot.step(poll_timeout=0)
+    assert sent and "diş hekimi" in sent[-1]["text"].lower()
+    assert [e["action_id"][0] for b in sent[-1]["blocks"] if b["type"] == "actions" for e in b["elements"]][0] == "k"
+    assert st.open_pending(bot.owner) is not None              # a preview, nothing written yet
