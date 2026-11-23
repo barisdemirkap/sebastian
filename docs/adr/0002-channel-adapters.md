@@ -1,6 +1,6 @@
 # 0002. Multi-channel through adapters (proposed)
 
-Status: proposed, awaiting owner approval.
+Status: accepted (owner, 2026-11-23). Slice 1 done: `channels/base.py` contract, `ConsoleChannel`, contract tests. Next: Slack (Socket Mode) adapter with a fake transport.
 
 ## Context
 The assistant must be reachable from several platforms (Telegram, Slack, and others), not tied to one.
