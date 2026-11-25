@@ -382,17 +382,23 @@ class NLResult:
     reset: int | None = None    # epoch second the usage limit lifts, when the provider said so
 
 
+def _api_provider(kind: str):
+    from .model_providers import API_PROVIDERS   # late import: model_providers imports this module
+    return API_PROVIDERS[kind]()
+
+
 class NLService:
-    """SEBASTIAN_NL=off|claude|qwen. Chain: chosen provider -> qwen (when claude) -> rules. Each provider is tried at
+    """SEBASTIAN_NL=off|claude|anthropic|openai|qwen (claude = the CLI; anthropic/openai = API key from env, see model_providers.py). Chain: chosen provider -> qwen (when claude) -> rules. Each provider is tried at
     most once per message. `consent` is the owner's explicit opt-in (SEBASTIAN_NL_CONSENT=1): without it nothing leaves
     the machine and no provider runs."""
 
     def __init__(self, mode: str = "off", providers: dict | None = None, consent: bool = False, daily_cap: int = 60):
-        self.mode = mode if mode in ("claude", "qwen") else "off"
+        self.mode = mode if mode in ("claude", "qwen", "anthropic", "openai") else "off"
         self.consent, self.daily_cap = consent, daily_cap
         p = providers or {}
         self.chain = [] if self.mode == "off" else (
             [p.get("claude") or ClaudeCodeProvider(), p.get("qwen") or QwenProvider()] if self.mode == "claude"
+            else [p.get(self.mode) or _api_provider(self.mode), p.get("qwen") or QwenProvider()] if self.mode in ("anthropic", "openai")
             else [p.get("qwen") or QwenProvider()])
 
     @classmethod

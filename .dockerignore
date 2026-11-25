@@ -1,0 +1,12 @@
+.git
+.venv
+.env
+.env.*
+!.env.example
+data
+secrets
+*.db
+config.toml
+**/__pycache__
+.pytest_cache
+tests

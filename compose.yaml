@@ -1,0 +1,17 @@
+# Your own isolated instance. One command:  cp .env.example .env && chmod 600 .env && $EDITOR .env && docker compose up -d
+services:
+  sebastian:
+    build: .
+    image: sebastian:local
+    restart: unless-stopped
+    env_file: .env                 # holds your API key and owner id; never committed (.gitignore), never baked into the image
+    environment:
+      SEBASTIAN_ALLOW_LIVE: "1"
+    volumes:
+      - sebastian-data:/data       # config.toml, secrets/, sebastian.db
+    security_opt: ["no-new-privileges:true"]
+    cap_drop: [ALL]
+    read_only: true
+    tmpfs: ["/tmp"]
+volumes:
+  sebastian-data:

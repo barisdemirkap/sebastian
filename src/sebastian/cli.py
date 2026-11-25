@@ -136,6 +136,31 @@ kind = "console"        # console | telegram | slack  (see README: Connect a cha
 """
 
 
+def _model_rows(env=None, cwd=None) -> list:
+    """Model provider key check: presence and file permissions only. The key is never printed."""
+    from .model_providers import KEY_ENV, key_from_env, selected_kind
+    env = os.environ if env is None else env
+    kind = selected_kind(env)
+    rows = []
+    if kind in KEY_ENV:
+        var = KEY_ENV[kind]
+        key = key_from_env(kind, env)
+        ok = bool(key) and not key.lower().startswith(("your-", "changeme", "sk-...", "replace"))
+        rows.append((f"{kind} api key", ok, f"env {var} " + ("is set" if ok else "is missing or still a placeholder")))
+        rows.append(("consent", env.get("SEBASTIAN_NL_CONSENT") == "1",
+                     "SEBASTIAN_NL_CONSENT=1 is needed before any text is sent to the provider"))
+    elif kind in ("claude", "agent"):
+        rows.append(("model", True, "claude CLI login (no API key used)"))
+    else:
+        rows.append(("model", True, f"SEBASTIAN_NL={kind or 'off'}: offline rules only"))
+    envfile = Path(cwd or Path.cwd()) / ".env"
+    if envfile.is_file():
+        mode = envfile.stat().st_mode & 0o777
+        loose = bool(mode & 0o077)
+        rows.append((".env permissions", not loose, f"{envfile} is {mode:o}" + ("  <- run chmod 600 on it" if loose else "")))
+    return rows
+
+
 def cmd_doctor(a, c):
     """Check the setup and say what to do next. Read-only: no network, nothing is changed."""
     secrets = _secrets_dir()
@@ -152,11 +177,12 @@ def cmd_doctor(a, c):
         rows.append(("slack user", bool(c.channel.slack_user), "channel.slack_user"))
     live = os.environ.get("SEBASTIAN_ALLOW_LIVE") == "1"
     rows.append(("live access", live, "SEBASTIAN_ALLOW_LIVE=1 is needed for real accounts and channels (off = offline only)"))
+    rows.extend(_model_rows())
     rows.append(("accounts", True, f"{sum(1 for x in c.accounts if x.enabled)} enabled of {len(c.accounts)}"))
     bad = 0
     for name, ok, note in rows:
         print(f"[{'ok' if ok else '--'}] {name}: {note}")
-        bad += (not ok and name != "live access")
+        bad += (not ok and name not in ("live access", "consent"))
     print("All set." if not bad else f"{bad} item(s) to fix before 'sebastian bot'.")
 
 
