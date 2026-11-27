@@ -4,10 +4,12 @@ Sebastian is for one person. You run your own copy; nobody else sees your data o
 
 ## Offline, no account (1 minute)
 ```
-git clone <your fork> && cd sebastian
-python -m venv .venv && .venv/bin/pip install -e .
-.venv/bin/sebastian chat
+git clone <your fork> && cd sebastian && uv sync
+uv run sebastian init --language en     # optional: writes ~/.config/sebastian/config.toml
+uv run sebastian doctor                 # what is missing before connecting a channel
+uv run sebastian chat                   # fixture calendar, nothing saved; try /help, /today; Ctrl+D quits
 ```
+Without `uv`: `python -m venv .venv && .venv/bin/pip install -e .`, then `.venv/bin/sebastian ...`. Developers: `uv sync --extra dev && uv run pytest -q` (see [CONTRIBUTING.md](../CONTRIBUTING.md)).
 
 ## Container, one command
 ```

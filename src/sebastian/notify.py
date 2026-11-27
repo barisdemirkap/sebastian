@@ -27,7 +27,7 @@ class StubNotifier:
 
 
 class TelegramNotifier:
-    """Sends to ONE configured owner chat via the Telegram Bot API (the Cimcime bot).
+    """Sends to ONE configured owner chat via the Telegram Bot API (your own bot).
 
     Only enabled after owner approval; the chat id is fixed in config, never taken from input."""
 

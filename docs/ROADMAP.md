@@ -6,6 +6,6 @@ Each step gets its own ADR and the owner's approval before it starts.
 2. **Plugin architecture** (ADR 0005, done): calendar, tasks, lists, reminders and digests are registry entries, each switched on or off in `[plugins]` (all on by default). Writes stay preview + confirm. Not built: a loader for third-party plugin code.
 2b. **Channel adapters** (ADR 0002, done): Telegram, Slack (Socket Mode), CLI first; same preview + confirm gate on every channel.
 3. **Language packs** (ADR 0006, done): replies live in selectable packs, Turkish (default) and English, chosen by `[persona] language`; a parity test keeps packs complete ([docs/LANGUAGES.md](LANGUAGES.md)). Not built: understanding free-text commands in English beyond confirm/cancel, add task and list tasks (still Turkish-first), and an English agent prompt.
-4. **Fork kit**: install guide, example config with fictional data, tests, contribution notes.
+4. **Fork kit** (ADR 0007, done): three-command offline quickstart, `CONTRIBUTING.md`, `SECURITY.md`, issue and PR templates, offline CI, fictional example data, a leakage audit. Not built: a release process and GitHub repository settings (owner decisions).
 5. **Migration**: keep the private assistant running while Sebastian is built piece by piece; replace it when ready.
 6. **Later, each its own decision**: mail awareness, other integrations (evaluate ready-made connectors such as MCP first).

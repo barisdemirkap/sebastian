@@ -32,7 +32,7 @@ client_id = ""   # client secret, if any, goes in ~/.config/sebastian/secrets/go
 client_id = ""
 
 [telegram]
-enabled = false          # delivery goes to the owner's chat only, via the Cimcime bot
+enabled = false          # delivery goes to the owner's chat only, via your own bot
 chat_id = ""
 token_file = "telegram.token"   # inside ~/.config/sebastian/secrets/
 

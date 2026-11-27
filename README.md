@@ -4,16 +4,15 @@ A personal AI assistant for **one person**. Fork it, run it on your own machine,
 
 Status: early. Sebastian grows out of a private assistant ("Sebastian"); the generic core is being extracted step by step.
 
-## Quickstart (about a minute, offline)
+## Quickstart (about a minute, offline, no account)
 ```
-git clone https://github.com/barisdemirkap/sebastian && cd sebastian
-python -m venv .venv && .venv/bin/pip install -e .
-.venv/bin/sebastian chat          # talk to it now: fixture calendar, no accounts, nothing saved
-.venv/bin/sebastian init          # write your own config (timezone, how it addresses you)
-.venv/bin/sebastian doctor        # what is missing before connecting a channel
+git clone https://github.com/barisdemirkap/sebastian && cd sebastian && uv sync
+uv run sebastian init --language en && uv run sebastian doctor
+uv run sebastian chat             # try: /help, /today, "add task buy milk"  (Ctrl+D quits)
 ```
-Connect a channel (Telegram: [docs/TELEGRAM-SETUP.md](docs/TELEGRAM-SETUP.md), Slack: [docs/SLACK-SETUP.md](docs/SLACK-SETUP.md), or the console) in `[channel]` of your config; run on a VM with [docs/VM.md](docs/VM.md).
-Fork-and-run, container and model choice: [docs/QUICKSTART.md](docs/QUICKSTART.md).
+No `uv`? Use `python -m venv .venv && .venv/bin/pip install -e .` and run `.venv/bin/sebastian ...` instead. `chat` works even before `init`: it uses a fixture calendar and saves nothing. `init` writes `~/.config/sebastian/config.toml` (add `--timezone Europe/London --title "Ms. Doe"`); replies are Turkish unless you pass `--language en`.
+
+Next: connect a channel (Telegram: [docs/TELEGRAM-SETUP.md](docs/TELEGRAM-SETUP.md), Slack: [docs/SLACK-SETUP.md](docs/SLACK-SETUP.md)) in `[channel]` of your config, run it on a VM ([docs/VM.md](docs/VM.md)) or in a container ([docs/QUICKSTART.md](docs/QUICKSTART.md)), and extend it ([CONTRIBUTING.md](CONTRIBUTING.md): channels, languages, plugins). Security and secrets: [SECURITY.md](SECURITY.md).
 
 ## Principles
 - **Single user, local first.** No hosted multi-user service. Your data, your secrets, your machine.
@@ -29,4 +28,4 @@ See [docs/ROADMAP.md](docs/ROADMAP.md) and the decisions in [docs/adr](docs/adr)
 MIT. See [LICENSE](LICENSE).
 
 ## Current state
-The first code drop is an anonymized copy of the generic parts of a private assistant (calendar with preview-gated writes, tasks, lists, reminders, digests, Telegram, optional model agent mode, ~3900 offline tests). Names and identifiers in the test data are fictional. Features (calendar, tasks, lists, reminders, digests) are plugins you can switch off in the `[plugins]` config section (ADR 0005). Replies come in Turkish (default) or English via `[persona] language` (ADR 0006, [docs/LANGUAGES.md](docs/LANGUAGES.md)); understanding free-text commands is still Turkish-first. Next: the fork kit. Design notes from the private assistant are in `docs/legacy/`.
+The first code drop is an anonymized copy of the generic parts of a private assistant (calendar with preview-gated writes, tasks, lists, reminders, digests, Telegram, optional model agent mode, ~3900 offline tests). Names and identifiers in the test data are fictional. Features (calendar, tasks, lists, reminders, digests) are plugins you can switch off in the `[plugins]` config section (ADR 0005). Replies come in Turkish (default) or English via `[persona] language` (ADR 0006, [docs/LANGUAGES.md](docs/LANGUAGES.md)); understanding free-text commands is still Turkish-first. The fork kit (ADR 0007) is in place: contribution guide, security notes, templates and offline CI. Design notes from the private assistant are in `docs/legacy/`.
