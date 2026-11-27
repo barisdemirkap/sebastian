@@ -53,3 +53,48 @@ def test_slack_channel_drives_the_real_bot_through_a_preview():
     assert sent and "diş hekimi" in sent[-1]["text"].lower()
     assert [e["action_id"][0] for b in sent[-1]["blocks"] if b["type"] == "actions" for e in b["elements"]][0] == "k"
     assert st.open_pending(bot.owner) is not None              # a preview, nothing written yet
+
+
+def _telegram_with_fake_transport(inbox):
+    calls = []
+
+    def post(url, payload, timeout):
+        method = url.rsplit("/", 1)[-1]
+        calls.append((method, payload))
+        if method == "getUpdates":
+            out = list(inbox)
+            inbox.clear()
+            return {"ok": True, "result": out}
+        return {"ok": True, "result": {"message_id": 500 + len(calls)}}
+    return TelegramApi("123:abc", post=post), calls
+
+
+def test_telegram_adapter_drives_the_real_bot_through_a_preview():
+    bot, _, st, _ = make_bot()
+    inbox = [{"update_id": 1, "message": {"message_id": 9, "chat": {"id": bot.owner, "type": "private"}, "from": {"id": bot.owner},
+                                          "date": 1700000000, "text": "yarın saat 15:00 diş hekimi ekle"}}]
+    bot.api, calls = _telegram_with_fake_transport(inbox)
+    bot.step(poll_timeout=0)
+    sends = [p for m, p in calls if m == "sendMessage"]
+    assert sends and "diş hekimi" in sends[-1]["text"].lower()
+    assert sends[-1]["reply_markup"]["inline_keyboard"][0][0]["callback_data"].startswith("k")
+    assert st.open_pending(bot.owner) is not None              # a preview, nothing written yet
+
+
+def test_telegram_adapter_ignores_unknown_senders():
+    bot, _, st, _ = make_bot()
+    inbox = [{"update_id": 1, "message": {"message_id": 9, "chat": {"id": 999, "type": "private"}, "from": {"id": 999},
+                                          "date": 1700000000, "text": "yarın saat 15:00 diş hekimi ekle"}}]
+    bot.api, calls = _telegram_with_fake_transport(inbox)
+    bot.step(poll_timeout=0)
+    assert not [1 for m, _ in calls if m == "sendMessage"] and st.open_pending(bot.owner) is None
+
+
+def test_telegram_adapter_splits_long_text_and_keeps_the_keyboard_on_the_last_chunk():
+    api, calls = _telegram_with_fake_transport([])
+    kb = {"inline_keyboard": [[{"text": "Kaydet", "callback_data": "k:1:abcdef12"}]]}
+    api.send(1, "x " * 4000, kb)
+    sends = [p for m, p in calls if m == "sendMessage"]
+    assert len(sends) > 1 and "reply_markup" in sends[-1] and not any("reply_markup" in p for p in sends[:-1])
+    api.remove_keyboard(1, 5)
+    assert calls[-1][0] == "editMessageReplyMarkup" and calls[-1][1]["reply_markup"] == {"inline_keyboard": []}

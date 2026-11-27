@@ -1,6 +1,6 @@
 # 0002. Multi-channel through adapters (proposed)
 
-Status: accepted (owner, 2026-11-23). Slice 1 done: `channels/base.py` contract, `ConsoleChannel`, contract tests. Slice 2: Slack adapter.
+Status: accepted (owner, 2026-11-23), implemented. Slice 1: `channels/base.py` contract, `ConsoleChannel`, contract tests. Slice 2: Slack adapter (Socket Mode). Slice 3: Telegram verified as an adapter behind the same contract (fake-transport tests, setup guide); `[channel] kind` selects any of the three. Not built: Discord, Matrix, email, web (later, each an adapter).
 
 ## Context
 The assistant must be reachable from several platforms (Telegram, Slack, and others), not tied to one.

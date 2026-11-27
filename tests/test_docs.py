@@ -35,3 +35,12 @@ def test_no_secrets_or_real_ids_in_repo_files():
         t = p.read_text()
         for b in bad:
             assert b not in t, (p.name, b)
+
+
+def test_channel_setup_guides_exist_and_are_linked():
+    readme = (ROOT / "README.md").read_text()
+    for name, needles in (("TELEGRAM-SETUP.md", ("BotFather", "telegram.token", "SEBASTIAN_OWNER_CHAT_ID", "kind = \"telegram\"")),
+                          ("SLACK-SETUP.md", ("Socket Mode",))):
+        t = (ROOT / "docs" / name).read_text()
+        assert all(n in t for n in needles), name
+        assert name in readme

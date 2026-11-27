@@ -12,7 +12,7 @@ python -m venv .venv && .venv/bin/pip install -e .
 .venv/bin/sebastian init          # write your own config (timezone, how it addresses you)
 .venv/bin/sebastian doctor        # what is missing before connecting a channel
 ```
-Connect a channel (Telegram, Slack or the console) in `[channel]` of your config; run on a VM with [docs/VM.md](docs/VM.md).
+Connect a channel (Telegram: [docs/TELEGRAM-SETUP.md](docs/TELEGRAM-SETUP.md), Slack: [docs/SLACK-SETUP.md](docs/SLACK-SETUP.md), or the console) in `[channel]` of your config; run on a VM with [docs/VM.md](docs/VM.md).
 Fork-and-run, container and model choice: [docs/QUICKSTART.md](docs/QUICKSTART.md).
 
 ## Principles
