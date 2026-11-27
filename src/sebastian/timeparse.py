@@ -78,6 +78,9 @@ def find_date(text: str, today: date) -> tuple[date, list[Span]] | None:
             continue
         wd = WEEKDAYS[m[1]]
         hit(m, today + timedelta(days=(wd - today.weekday()) % 7 or 7))
+    if result is None:
+        from . import english            # additive English fallback (ADR 0008): only when the Turkish reader found nothing
+        return english.find_date(text, today)
     return (result, sorted(spans)) if result else None
 
 
@@ -88,7 +91,10 @@ def names_today_weekday(text: str, today: date) -> bool:
     f = fold(text)
     if re.search(r"\d{1,2}[./]\d{1,2}|\bbugun|\bbu\s+(?:" + _WD + r")|\bhaftaya|\bgelecek\s+hafta|\bonumuzdeki|\bsonraki", f):
         return False
-    return any(WEEKDAYS[m[1]] == today.weekday() for m in re.finditer(rf"\b({_WD})\w*", f))
+    if any(WEEKDAYS[m[1]] == today.weekday() for m in re.finditer(rf"\b({_WD})\w*", f)):
+        return True
+    from . import english
+    return english.names_today_weekday(text, today)
 
 
 _DAYPART_PM = re.compile(r"\b(aksam|ogleden sonra|ikindi)")
@@ -105,6 +111,13 @@ def _adjust(h: int, f: str) -> int:
 
 
 def find_time(text: str) -> tuple[time, list[Span]] | None:
+    from . import english                # English am/pm and "noon" are read first (ADR 0008): "10:30 pm" is not 10:30
+    if english.has_clock_marker(text) and (et := english.find_time(text)):
+        return et
+    return _find_time_tr(text) or english.find_time(text)
+
+
+def _find_time_tr(text: str) -> tuple[time, list[Span]] | None:
     f = fold(text)
     cands: list[tuple[int, int, int, Span]] = []  # (start, hour, minute, span)
 
@@ -150,7 +163,8 @@ def find_reminder(text: str) -> tuple[int, list[Span]] | None:
     f = fold(text)
     m = re.search(rf"({_NUMRE}|yarim)\s*(saat|dakika|dk|gun)\w*\s+once\w*(?:\s+hatirlat\w*)?", f)
     if not m:
-        return None
+        from . import english
+        return english.find_reminder(text)
     n = _num(m[1])
     unit = {"saat": 60, "dakika": 1, "dk": 1, "gun": 1440}[m[2]]
     return int(n * unit), [m.span()]
@@ -163,19 +177,23 @@ def find_duration(text: str, skip: list[Span] = ()) -> tuple[int, list[Span]] | 
             continue
         n = _num(m[1])
         return int(n * (60 if m[2] == "saat" else 1)), [m.span()]
-    return None
+    from . import english
+    return english.find_duration(text, skip)
 
 
 def mentions_time(text: str) -> bool:
     """Could the text contain a clock time? Used to reject a time the model made up out of nothing."""
     f = fold(text)
+    from . import english
     return bool(re.search(r"\d", f) or re.search(r"\b(on iki|on bir|iki|uc|dort|bes|alti|yedi|sekiz|dokuz|on|bir)\s*['’]?(te|ta|de|da)\b", f)
-                or re.search(r"\bsaat\s+\w+", f) or re.search(r"\bogle(n|yin|de)\b", f))
+                or re.search(r"\bsaat\s+\w+", f) or re.search(r"\bogle(n|yin|de)\b", f) or english.mentions_time(text))
 
 
 def mentions_date(text: str) -> bool:
     f = fold(text)
-    return bool(re.search(r"\d", f) or re.search(rf"\b(bugun|yarin|obur gun|ertesi gun|haftaya|gelecek hafta|bu aksam|bu gece|{_WD}|{_MON})", f))
+    from . import english
+    return bool(re.search(r"\d", f) or re.search(rf"\b(bugun|yarin|obur gun|ertesi gun|haftaya|gelecek hafta|bu aksam|bu gece|{_WD}|{_MON})", f)
+                or english.mentions_date(text))
 
 
 def strip_spans(text: str, spans: list[Span]) -> str:

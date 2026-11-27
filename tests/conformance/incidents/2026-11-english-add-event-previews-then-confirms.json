@@ -1,0 +1,47 @@
+{
+  "name": "an English add-event message previews, asks the missing time in English, and saves only after the confirmation",
+  "incident": "ADR 0008: English inbound wording is read by the same pipeline; the preview + confirm gate is unchanged. The replies stay in the configured language (Turkish here).",
+  "setup": {
+    "provider": "rules",
+    "now": "2026-11-18T10:00"
+  },
+  "steps": [
+    {
+      "say": "add dentist tomorrow at 3pm",
+      "kind": "free",
+      "preview": true,
+      "saved_total": 0,
+      "preview_has": [
+        {
+          "start": "2026-11-19T15:00:00+03:00",
+          "end": "2026-11-19T15:30:00+03:00"
+        }
+      ]
+    },
+    {
+      "say": "confirm",
+      "kind": "confirm",
+      "saved_total": 1
+    },
+    {
+      "say": "add team meeting on Friday",
+      "kind": "free",
+      "preview": false,
+      "saved_total": 1,
+      "contains": [
+        "Saat kaçta"
+      ]
+    },
+    {
+      "say": "4:30pm",
+      "kind": "free",
+      "preview": true,
+      "saved_total": 1,
+      "preview_has": [
+        {
+          "start": "2026-11-20T16:30:00+03:00"
+        }
+      ]
+    }
+  ]
+}

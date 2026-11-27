@@ -169,7 +169,7 @@ def cmd_doctor(a, c):
     """Check the setup and say what to do next. Read-only: no network, nothing is changed."""
     secrets = _secrets_dir()
     rows = [("config", True, f"{_config_path(a)} loaded"), ("timezone", True, c.timezone),
-            ("language", True, f"{c.language} (replies); free-text commands are Turkish-first, see docs/LANGUAGES.md")]
+            ("language", True, f"{c.language} (replies); free-text understanding: Turkish in full, English for adding events, questions and lists, see docs/LANGUAGES.md")]
     kind = c.channel.kind
     rows.append(("channel", True, kind))
     if kind == "telegram":

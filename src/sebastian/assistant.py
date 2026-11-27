@@ -13,7 +13,7 @@ from dataclasses import asdict
 from datetime import date, datetime, time, timedelta
 from zoneinfo import ZoneInfo
 
-from . import birthdays, clauses as clausemod, dialogue, fuzzytime, health, i18n, lists as listmod, nl as nlmod, planread, purchase as purchasemod, readytime, rules, tasks as taskmod
+from . import birthdays, clauses as clausemod, dialogue, english, fuzzytime, health, i18n, lists as listmod, nl as nlmod, planread, purchase as purchasemod, readytime, rules, tasks as taskmod
 from .http import WriteAccessDenied
 from .merge import merge
 from .models import Event, EventDraft
@@ -251,6 +251,10 @@ class Assistant(PlanningMixin, StatementsMixin):
             return self._command(low, now)
         if (out := self._plugin_gate(text, now)) is not None:
             return out                       # a wording for a switched-off plugin gets the friendly refusal (ADR 0005)
+        if english.is_help(text):
+            return [i18n.t("help_short")]    # plain 'help', like /help: a read, an open preview or question stays (ADR 0008)
+        if (rel := english.resolve_relative(text, now)) != text:
+            text, low = rel, fold(rel).strip(" .!?,;")      # 'in 2 hours' names a moment: becomes 'today at 15:40' (ADR 0008)
         if (recalled := self._recall(low, now)) is not None:
             return recalled                  # reading back changes nothing: an open preview or question stays
         if (ref := self._task_number_ref(text)) is not None:
@@ -1301,9 +1305,9 @@ class Assistant(PlanningMixin, StatementsMixin):
         if aw == "ampm":
             h, m = map(int, draft["time"].split(":"))
             tm = find_time(text)
-            if re.fullmatch(r"\s*1\s*[).]?\s*", f) or re.search(r"\bsabah\b", f) or (tm and tm[0] == time(h, m)):
+            if re.fullmatch(r"\s*1\s*[).]?\s*", f) or re.search(r"\b(sabah|morning|am)\b", f) or (tm and tm[0] == time(h, m)):
                 draft["time"] = f"{h:02d}:{m:02d}"
-            elif re.fullmatch(r"\s*2\s*[).]?\s*", f) or re.search(r"\b(aksam|ogleden|ikindi|gece)\b", f) or (tm and tm[0] == time(h + 12, m)):
+            elif re.fullmatch(r"\s*2\s*[).]?\s*", f) or re.search(r"\b(aksam|ogleden|ikindi|gece|afternoon|evening|night|pm)\b", f) or (tm and tm[0] == time(h + 12, m)):
                 draft["time"] = f"{h + 12}:{m:02d}"
             else:
                 conv["turns"] = turns
@@ -1318,13 +1322,13 @@ class Assistant(PlanningMixin, StatementsMixin):
             d = find_date(text, now.date())
             if not d and (m := re.fullmatch(r"\s*([123])\s*[).]?\s*", f)):      # the numbered choices of the day question
                 n = int(m[1])
-                if n == 3 or re.search(r"\bbaska\b", f):
+                if n == 3 or re.search(r"\bbaska\b|\banother\b|\bother\b", f):
                     q = i18n.t("ask_date_other")
                     self.store.set_conversation(self.owner, {"awaiting": "date", "draft": draft, "turns": turns,
                                                              "at": now.isoformat(), "question": q})
                     return [q]
                 d = (now.date() + timedelta(days=n - 1), [])
-            elif not d and re.search(r"\bbaska gun\b", f):
+            elif not d and re.search(r"\bbaska gun\b|\banother day\b|\bother day\b", f):
                 q = i18n.t("ask_date_other")
                 self.store.set_conversation(self.owner, {"awaiting": "date", "draft": draft, "turns": turns,
                                                          "at": now.isoformat(), "question": q})
@@ -1334,8 +1338,12 @@ class Assistant(PlanningMixin, StatementsMixin):
                 draft["_orig"] = f"{draft.get('_orig', '')} {text}".strip()
                 got.append("date")
         elif aw == "time":
-            if re.search(r"\b(tum gun|gun boyu)\b", f):
+            if re.search(r"\b(tum gun|gun boyu|all day|all-day)\b", f):
                 draft["all_day"] = True
+            elif (ep := english.daypart_only(text)) and (tm := find_time(draft.get("_src", ""))):
+                hh = tm[0].hour + 12 if ep == "pm" and tm[0].hour < 12 else tm[0].hour       # 'evening' after 'Did you mean 03:00?'
+                draft["time"], draft["_ampm"], draft["_ans_time"] = f"{hh:02d}:{tm[0].minute:02d}", True, text
+                got.append("time")
             elif (fz := fuzzytime.find(text)) and (fz.start or fz.duration):
                 self._fuzzy_fill(draft, text)
                 if fz.start:

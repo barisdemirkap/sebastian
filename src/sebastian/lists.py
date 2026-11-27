@@ -102,7 +102,8 @@ def parse(text: str) -> dict | None:
     if (m := CHECK.match(f)) and not find_date(text, date(2000, 1, 3)) and not find_time(text):
         match = _cap(text.strip()[m.start("m"):m.end("m")])
         return {"kind": "check", "match": match} if match else None
-    return None
+    from . import english
+    return english.parse_list(text)                      # English wordings, only when nothing Turkish matched (ADR 0008)
 
 
 def numbers(match: str) -> list[int] | None:

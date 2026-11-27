@@ -26,3 +26,4 @@ class Pack:
     agent_note: str                        # appended to the agent-mode system prompt (e.g. "reply in English"); "" for the base language
     strip_forms: tuple[str, ...] = ()      # extra forms of address removed from model text (never produced); keeps one form per message
     gendered_forms: tuple[str, ...] = ()   # forms in address_forms that assume the owner; replaced by a custom owner_title (not by the default)
+    list_aliases: dict[str, tuple[str, ...]] = field(default_factory=dict)   # inbound: folded names of each named list (read by sebastian.english)

@@ -5,7 +5,7 @@ from __future__ import annotations
 import re
 from datetime import date, timedelta
 from .textutil import fold
-from . import fuzzytime
+from . import english, fuzzytime
 from .timeparse import blank, find_date, find_duration, find_reminder, find_time, strip_spans
 
 FILLER = {"ekle", "ekler", "eklermisin", "koy", "kaydet", "olustur", "hatirlat", "hatirlatir", "misin", "mi", "bana",
@@ -37,6 +37,8 @@ def _title(text: str, spans, birthday: bool = False) -> str | None:
 
 
 def parse(text: str, today: date) -> dict:
+    if (en := english.parse(text, today)) is not None:     # an unmistakably English opening (ADR 0008); Turkish text never matches
+        return en
     text = re.sub(r"(?i)\b(yar[i\u0131]n|bug[u\u00fc]n)(?:[i\u0131u\u00fc]n|ki)\b", r"\1", text)       # 'yarinin programi' -> 'yarin programi'
     f = fold(text)
     rm = find_reminder(text)

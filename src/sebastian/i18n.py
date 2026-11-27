@@ -128,11 +128,11 @@ YES_CORE = {"evet", "he", "tamam", "tamamdir", "olur", "ok", "okey", "kaydet", "
             "onay", "onayla", "onaylandi", "dogru", "dogrudur", "yap", "tabii", "tabi", "aynen", "yes", "kabul", "peki",
             "yaz", "yazin", "kaydetsin", "kaydedelim", "tm", "evt",
             "confirm", "confirmed", "aprove", "aproved", "sure", "yeah", "yep", "yup", "save", "correct"}
-YES_FILLER = {"lutfen", "simdi", "hemen", "bunu", "bu", "hepsini", "hepsi", "de", "da", "ya", "abi", "kardesim", "kardes", "oyle", "iyi", "please", "it", "that"}
+YES_FILLER = {"lutfen", "simdi", "hemen", "bunu", "bu", "hepsini", "hepsi", "de", "da", "ya", "abi", "kardesim", "kardes", "oyle", "iyi", "please", "it", "that", "thanks", "thank", "you"}
 NO_CORE = {"hayir", "yok", "vazgec", "vazgectim", "vazgeciyorum", "iptal", "istemiyorum", "olmaz", "birak", "bosver",
            "bos", "ver", "dur", "no", "kaydetme", "kaydetmeyin", "yazma", "yazmayin", "ekleme", "kalsin",
            "cancel", "nope", "stop", "abort", "discard"}
-NO_FILLER = {"et", "gerek", "simdilik", "lutfen", "bunu", "ya", "hepsini", "hepsi", "abi", "kardes", "kardesim"}
+NO_FILLER = {"et", "gerek", "simdilik", "lutfen", "bunu", "ya", "hepsini", "hepsi", "abi", "kardes", "kardesim", "please", "thanks", "thank", "you"}
 DELETE_WORDS = {"sil", "silin", "silsin", "delete", "remove"}                         # a delete needs one of these or an explicit approval
 EXPLICIT_APPROVAL = {"onayliyorum", "onay", "onayla", "onaylandi", "kabul", "confirm", "confirmed", "aprove", "aproved"}
 EDIT_FILLER = {"olsun", "yap", "yapalim", "al", "alalim", "saati", "saat", "tarihi", "tarih", "gunu", "gune", "degistir",
