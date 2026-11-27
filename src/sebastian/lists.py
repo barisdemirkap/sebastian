@@ -113,4 +113,4 @@ def numbers(match: str) -> list[int] | None:
 
 def digest_rows(store, chat_id: int) -> list[tuple[str, list[str]]]:
     """(display title, open item texts) of every list of the owner, for the scheduler's morning digest."""
-    return [(v["title"], [r["text"] for r in store.list_items(chat_id, k)]) for k, v in i18n.LISTS.items()]
+    return [(i18n.list_title(k), [r["text"] for r in store.list_items(chat_id, k)]) for k in i18n.LISTS]

@@ -240,9 +240,9 @@ class AgentMode:
         if lines[-1] != "(calendar unavailable)":
             lines += rows or ["(none)"]
         lines.append("OPEN LISTS:")
-        for key, meta in i18n.LISTS.items():
+        for key in i18n.LISTS:
             items = [r["text"] for r in st.list_items(a.owner, key)]
-            lines.append(f"{meta['title']} (list={key}): " + ("; ".join(f"{i}. {x}" for i, x in enumerate(items, 1)) or "(empty)"))
+            lines.append(f"{i18n.list_title(key)} (list={key}): " + ("; ".join(f"{i}. {x}" for i, x in enumerate(items, 1)) or "(empty)"))
         tasks = st.open_tasks(a.owner)
         lines.append("OPEN TASKS: " + ("; ".join(f"{i}. {r['title']}" for i, r in enumerate(tasks[:20], 1)) or "(none)"))
         notes = st.notes(a.owner)

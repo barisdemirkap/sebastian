@@ -40,3 +40,16 @@ def test_doctor_reports_missing_pieces(tmp_path, monkeypatch):
 def test_missing_config_message_points_to_init(tmp_path):
     with pytest.raises(SystemExit, match="sebastian init"):
         run(["--config", str(tmp_path / "nope.toml"), "accounts"])
+
+
+def test_init_language_flag_writes_the_pack_and_its_default_title(tmp_path):
+    path = tmp_path / "config.toml"
+    run(["--config", str(path), "init", "--language", "en"])
+    c = cfg.load(path)
+    assert (c.language, c.owner_title) == ("en", "Mr. Smith")
+
+
+def test_doctor_shows_the_language(tmp_path):
+    path = tmp_path / "config.toml"
+    run(["--config", str(path), "init", "--language", "en"])
+    assert "[ok] language: en" in run(["--config", str(path), "doctor"])

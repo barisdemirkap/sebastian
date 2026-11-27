@@ -11,8 +11,10 @@ from . import i18n
 from .textutil import fold
 from .timeparse import find_date, find_time
 
-LIST = re.compile(r"\b(gorevlerim|gorev listem|gorevleri goster|gorevler|yapilacaklar\w*|yapilacak listem)\b")
-ADD = re.compile(r"^(?:gorev|yapilacak)\s+ekle\w*\s*[:,-]?\s*(.+)$|^(?:gorev|yapilacak)\s*[:,-]\s*(.+)$")
+LIST = re.compile(r"\b(gorevlerim|gorev listem|gorevleri goster|gorevler|yapilacaklar\w*|yapilacak listem"
+                  r"|(?:show )?(?:my )?(?:open )?(?:tasks|to-?do(?: list)?|task list))\b")
+ADD = re.compile(r"^(?:gorev|yapilacak)\s+ekle\w*\s*[:,-]?\s*(.+)$|^(?:gorev|yapilacak)\s*[:,-]\s*(.+)$"
+                 r"|^(?:add\s+(?:a\s+|new\s+)?(?:task|to-?do)|new\s+(?:task|to-?do))\s*[:,-]?\s*(.+)$|^(?:task|to-?do)\s*[:,-]\s*(.+)$")
 NEED = re.compile(r"^(.+?)\s+([a-z]+)m[ae]m\s+(?:lazim|gerek\w*)$")          # 'camasir yapmam lazim', 'X gitmem lazim'
 DONE = re.compile(r"^(.+?)\s+(bitti|yapildi|bitirdim|bitirdik|yaptim|tamamlandi|tamamladim|halloldu|hallettim|tamam)$")
 FUTURE = re.compile(r"^(.+?)\s+[a-z]*(?:acak|ecek|acagim|ecegim|acagiz|ecegiz)$")      # 'cop aksam cikacak'
@@ -56,10 +58,10 @@ def parse(text: str) -> dict | None:
     if not f or "?" in f:
         return None
     n = len(f.split())
-    if LIST.search(f) and n <= 5 and not DEL.search(f):
+    if LIST.search(f) and n <= 5 and not DEL.search(f) and not ADD.match(f):
         return {"kind": "list"}
     if (m := ADD.match(f)):
-        i = 1 if m[1] else 2
+        i = next(g for g in (1, 2, 3, 4) if m[g])
         title = _cap(text.strip()[m.start(i):m.end(i)])
         return {"kind": "add", "title": title} if title else None
     if re.search(r"\bgorev\w*", f) and (d := DEL.search(f)):

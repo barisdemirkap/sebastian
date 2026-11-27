@@ -6,7 +6,7 @@ import time
 from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
-from . import i18n, config as cfg
+from . import i18n, languages, config as cfg
 from .digest import morning_digest, evening_digest
 from .oauth import ClientCredentials, TokenStore, build_auth_request, exchange_code, ENDPOINTS
 from .samples import sample_events, sample_mail
@@ -17,7 +17,7 @@ REDIRECT = "http://127.0.0.1:8765/callback"
 
 def _load(a) -> cfg.Config:
     c = cfg.load(Path(a.config)) if a.config else cfg.load()
-    i18n.configure(c.owner_title, c.assistant_name)        # [persona] in the config file
+    i18n.configure(c.owner_title, c.assistant_name, c.language)        # [persona] in the config file
     return c
 
 
@@ -120,7 +120,7 @@ def cmd_init(a, c=None):
         raise SystemExit(f"{path} already exists (use --force to overwrite).")
     path.parent.mkdir(parents=True, exist_ok=True, mode=0o700)
     tz = a.timezone or "UTC"
-    path.write_text(STARTER.format(tz=tz, title=a.title, name=a.name))
+    path.write_text(STARTER.format(tz=tz, title=a.title or languages.get(a.language).default_owner_title, name=a.name, lang=a.language))
     path.chmod(0o600)
     print(f"Wrote {path}. Try it now (offline, fixture calendar):  sebastian chat\nThen check your setup:  sebastian doctor")
 
@@ -133,6 +133,7 @@ evening = "20:00"
 [persona]
 owner_title = "{title}"
 assistant_name = "{name}"
+language = "{lang}"          # reply language: tr | en (docs/LANGUAGES.md)
 
 [channel]
 kind = "console"        # console | telegram | slack  (see README: Connect a channel)
@@ -167,7 +168,8 @@ def _model_rows(env=None, cwd=None) -> list:
 def cmd_doctor(a, c):
     """Check the setup and say what to do next. Read-only: no network, nothing is changed."""
     secrets = _secrets_dir()
-    rows = [("config", True, f"{_config_path(a)} loaded"), ("timezone", True, c.timezone)]
+    rows = [("config", True, f"{_config_path(a)} loaded"), ("timezone", True, c.timezone),
+            ("language", True, f"{c.language} (replies); free-text commands are Turkish-first, see docs/LANGUAGES.md")]
     kind = c.channel.kind
     rows.append(("channel", True, kind))
     if kind == "telegram":
@@ -335,7 +337,9 @@ def main(argv=None) -> None:
     p.add_argument("--config", help="config path (default ~/.config/sebastian/config.toml)")
     sub = p.add_subparsers(dest="cmd", required=True)
     ini = sub.add_parser("init", help="write a starter config so a fresh fork runs offline")
-    ini.add_argument("--timezone"); ini.add_argument("--title", default="Ahmet Bey"); ini.add_argument("--name", default="Sebastian")
+    ini.add_argument("--timezone"); ini.add_argument("--title", default=None, help="how the assistant addresses you (default: the language pack's fictional one)")
+    ini.add_argument("--name", default="Sebastian")
+    ini.add_argument("--language", default="tr", choices=sorted(languages.PACKS), help="reply language pack")
     ini.add_argument("--force", action="store_true"); ini.set_defaults(fn=cmd_init, no_config=True)
     sub.add_parser("doctor", help="check the setup and print what is missing").set_defaults(fn=cmd_doctor)
     sub.add_parser("accounts").set_defaults(fn=cmd_accounts)
@@ -366,6 +370,8 @@ def main(argv=None) -> None:
         return a.fn(a)
     try:
         c = _load(a)
+    except cfg.ConfigError as e:
+        raise SystemExit(f"Config error: {e}")
     except FileNotFoundError:
         if a.fn is cmd_chat:                                  # a fresh fork can try the assistant before writing any config
             i18n.configure()

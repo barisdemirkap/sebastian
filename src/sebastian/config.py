@@ -4,6 +4,7 @@ from dataclasses import dataclass, field
 from datetime import time
 from pathlib import Path
 from zoneinfo import ZoneInfo
+from . import languages
 from .models import Account
 from .plugins import Plugins, PluginConfigError
 
@@ -53,6 +54,7 @@ class Config:
     owner_title: str = "Ahmet Bey"       # [persona] owner_title: how the assistant addresses you
     assistant_name: str = "Sebastian"    # [persona] assistant_name
     plugins: Plugins = field(default_factory=Plugins)   # [plugins]: name = false switches a feature off (ADR 0005)
+    language: str = "tr"                 # [persona] language: the reply language pack, "tr" | "en" (ADR 0006)
 
 
 def _t(s: str) -> time:
@@ -100,6 +102,10 @@ def parse(raw: dict) -> Config:
         plugins = Plugins.from_raw(raw.get("plugins"))
     except PluginConfigError as e:
         raise ConfigError(str(e)) from e
+    persona = raw.get("persona", {})
+    language = str(persona.get("language", languages.DEFAULT_LANGUAGE)).strip().lower()
+    if language not in languages.PACKS:
+        raise ConfigError(f"persona.language {language!r} is not available (choose one of: {', '.join(sorted(languages.PACKS))})")
     return Config(tz, _t(raw.get("morning", "08:30")), _t(raw.get("evening", "20:00")), tuple(accounts), lead,
                   TelegramConfig(bool(tg.get("enabled", False)), str(tg.get("chat_id", "")), tg.get("token_file", "")),
                   {k: v.get("client_id", "") for k, v in raw.get("oauth", {}).items()},
@@ -107,7 +113,8 @@ def parse(raw: dict) -> Config:
                   _t(raw.get("plan", "22:00")), _t(rem.get("allday_at", "09:00")), bool(raw.get("birthdays", True)),
                   Path(raw.get("db_path", CONFIG_DIR / "sebastian.db")), Path(raw.get("heartbeat_path", CONFIG_DIR / "heartbeat")),
                   _channel(raw.get("channel", {})),
-                  str(raw.get("persona", {}).get("owner_title", "Ahmet Bey")), str(raw.get("persona", {}).get("assistant_name", "Sebastian")), plugins)
+                  str(persona.get("owner_title", languages.get(language).default_owner_title)),
+                  str(persona.get("assistant_name", "Sebastian")), plugins, language)
 
 
 def load(path: Path = DEFAULT_PATH) -> Config:

@@ -11,3 +11,4 @@ def _pinned_address():
     yield
     i18n.pin(None)
     i18n.set_rotation(0)
+    i18n.configure()        # back to the default language pack and persona, whatever a test selected

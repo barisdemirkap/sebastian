@@ -32,7 +32,7 @@ DEFAULT_DURATION = 60
 CHORE_DURATION = 15
 ITEM_BUTTONS_MAX = 20     # per-item tap buttons under a task or list view (ADR 0025); the rest stay in the text
 ITEM_LABEL_MAX = 40
-CANCEL_WORDS = {"hayir", "vazgec", "iptal", "bos ver", "bosver", "vazgectim"}
+CANCEL_WORDS = {"hayir", "vazgec", "iptal", "bos ver", "bosver", "vazgectim", "cancel"}
 RECALL_AT = re.compile(r"\bsaat\s*(\d{1,2})(?:[:.](\d{2}))?\s*(?:te|ta|de|da)?(?:ki)?\s*mesaj\w*\s*(?:i\s*)?(?:oku|goster|tekrar)")
 RECALL_LAST = re.compile(r"\baz once ne (?:ded|yazd|gonderd)\w*|\bson mesaj\w*\s*(?:i\s*)?(?:oku|goster|tekrar)\w*|\bson yazdigin\w*")
 DAYPART = re.compile(r"\b(sabah|gece|ogle|ogleden|aksam|ikindi)")
@@ -292,7 +292,7 @@ class Assistant(PlanningMixin, StatementsMixin):
             # list mode: the list is its own topic; a calendar/plan wording leaves it, anything else is list content
             p = rules.parse(text, today)
             if p["intent"] in ("list_events", "birthdays") or find_time(text) or self._is_new_intent(text) \
-                    or planread.is_plan_read(text) or fold(text).split()[:1] in (["iptal"], ["vazgectim"]):
+                    or planread.is_plan_read(text) or fold(text).split()[:1] in (["iptal"], ["vazgectim"], ["cancel"]):
                 self.store.clear_conversation(self.owner)
                 conv = None
             else:
@@ -552,6 +552,7 @@ class Assistant(PlanningMixin, StatementsMixin):
     # ------------------------------------------------------------------ commands
     def _command(self, low: str, now: datetime) -> list[str]:
         cmd = low.split()[0].split("@")[0]
+        cmd = i18n.COMMAND_ALIASES.get(cmd, cmd)          # English spellings of the commands map to the canonical ones
         if (off := self.plugins.blocked("commands", cmd)):
             return self._off(off)
         if cmd in ("/start",):
@@ -1982,7 +1983,7 @@ class Assistant(PlanningMixin, StatementsMixin):
 
     # ------------------------------------------------------------------ named lists (ADR 0016)
     def _list_title(self, key: str) -> str:
-        return i18n.LISTS[key]["title"]
+        return i18n.list_title(key)
 
     def _done_today(self, key: str, now: datetime) -> list:
         return [r for r in self.store.list_items(self.owner, key, "done")
