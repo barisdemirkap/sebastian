@@ -46,6 +46,7 @@ digests = true           # the morning, evening and plan digests
 [persona]
 owner_title = "Ahmet Bey"     # how the assistant addresses you
 assistant_name = "Sebastian"  # the name it uses for itself
+language = "tr"               # reply language: "tr" (default) | "en"; see docs/LANGUAGES.md (what is and is not translated)
 
 [channel]
 kind = "telegram"          # telegram | slack | console
