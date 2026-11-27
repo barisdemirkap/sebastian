@@ -14,7 +14,7 @@ Python 3.11 or newer. The project has no runtime dependencies on purpose; think 
 ## Rules that never bend
 1. **Preview + confirm.** Anything that writes (calendar, messages, bulk list changes) is rendered as a preview by code and needs an explicit confirmation on every channel. A new feature must not add a path around that gate. See ADR 0001 and 0004.
 2. **No live network in tests.** Tests use fake transports, the fixture calendar, fake model providers and `tests/cassettes`. A test that needs a real account, token or internet is rejected. Live access in the product is behind `SEBASTIAN_ALLOW_LIVE=1`.
-3. **No private data.** Fictional names, ids, domains and phone numbers only (`example.com`, `1000000001`). Secrets never go in the repo; see [SECURITY.md](SECURITY.md).
+3. **No private data.** Fictional names, ids, domains and phone numbers only (`example.com`, `corp.example`). Secrets never go in the repo; see [SECURITY.md](SECURITY.md).
 
 ## ADR-first process
 If a change alters behaviour, a boundary or a default, write a short ADR in `docs/adr/` (next number, Context / Decision / Consequences, see the existing ones) and link it from [docs/ROADMAP.md](docs/ROADMAP.md) when it is a roadmap step. Open an issue to discuss first. Bug fixes, docs and tests need no ADR. Add tests with the change; keep the suite green.

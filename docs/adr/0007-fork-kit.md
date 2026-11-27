@@ -12,7 +12,7 @@ Sebastian is meant to be forked by one person who runs it for themselves. A fork
 - **Two rules that never bend.** Every write (calendar, tasks that need a preview, messages) is shown as a preview and needs an explicit confirmation. Tests never touch the live network or a real account; transports are faked and the suite runs offline.
 - **Trust model written down.** `SECURITY.md` states what Sebastian protects (one owner, local data, secrets outside the repo, nothing sent to a provider without consent), where secrets live, and how to report a problem privately.
 - **CI without secrets.** `.github/workflows/ci.yml` runs `uv sync --extra dev` and `pytest` on push and pull request, offline, with read-only permissions and no secrets. Issue and pull-request templates repeat the two rules above.
-- **No private data in the tree.** Examples, tests and docs use fictional names, ids and domains (`example.com`, `me@corp.example`, `1000000001`). References to the original owner's private projects were removed from the code, config example and docs. The legacy design notes in `docs/legacy/` keep the former assistant name but no personal data.
+- **No private data in the tree.** Examples, tests and docs use fictional names, ids and domains (`example.com`, `corp.example`). References to the original owner's private projects were removed from the code, config example and docs. The legacy design notes in `docs/legacy/` keep the former assistant name but no personal data.
 
 ## Consequences
 - Contributors have one place to start and a short checklist; reviewers can point to the rules.
