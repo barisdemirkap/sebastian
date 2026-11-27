@@ -8,6 +8,7 @@ from dataclasses import dataclass
 from datetime import datetime, timedelta, time
 from pathlib import Path
 from typing import Callable
+from .plugins import Plugins
 from .digest import morning_digest, evening_digest, plan_digest
 from . import i18n
 from .mail import MailMessage
@@ -46,6 +47,7 @@ class Scheduler:
     tasks: Callable[[], list[str]] | None = None   # open to-do titles for the morning and evening digests (ADR 0013)
     lists: Callable[[], list[tuple[str, list[str]]]] | None = None   # (list title, open items) for shopping days (ADR 0016)
     nag: Callable[[datetime], tuple[time, list[str]] | None] | None = None   # (start, open task lines) while an hourly task nag is on
+    plugins: Plugins = Plugins()        # ADR 0005: a switched-off plugin drops out of the digests, reminders and nag
 
     def _due_digests(self, now: datetime) -> list[str]:
         out = []
@@ -65,13 +67,13 @@ class Scheduler:
 
     def _tasks(self) -> list[str]:
         try:
-            return self.tasks() if self.tasks else []
+            return self.tasks() if self.tasks and self.plugins.enabled("tasks") else []
         except Exception:  # noqa: BLE001 - the to-do list must never block a digest
             return []
 
     def _lists(self) -> list[tuple[str, list[str]]]:
         try:
-            return self.lists() if self.lists else []
+            return self.lists() if self.lists and self.plugins.enabled("lists") else []
         except Exception:  # noqa: BLE001 - the lists must never block a digest
             return []
 
@@ -87,7 +89,7 @@ class Scheduler:
     def _nag(self, now: datetime, sent: list[str]) -> None:
         """Hourly task nag: from the owner's start time on the hour, until the open tasks are closed or the day ends (22:xx last)."""
         try:
-            got = self.nag(now) if self.nag else None
+            got = self.nag(now) if self.nag and self.plugins.enabled("tasks") else None
         except Exception:  # noqa: BLE001
             return
         if not got or not got[1]:
@@ -106,16 +108,22 @@ class Scheduler:
     def tick(self, now: datetime) -> list[str]:
         """Run everything due at `now`. Returns the messages sent."""
         sent: list[str] = []
-        due = self._due_digests(now)
-        events = self.fetch(now)
+        cal = self.plugins.enabled("calendar")
+        due = self._due_digests(now) if self.plugins.enabled("digests") else []
+        events = self.fetch(now) if cal else []
         messages = self._mail(now) if due and self.mail_fetch else None
         for kind in due:
             if kind == "plan":
-                text = plan_digest(events, now)
+                text = plan_digest(events, now) if cal else ""
             else:
                 args = (events, now, messages, self.owners, self._tasks())
-                text = morning_digest(*args, self._lists()) if kind == "morning" else evening_digest(*args)
-            errs = list(getattr(self.fetch, "errors", []))
+                text = (morning_digest(*args, self._lists(), calendar=cal) if kind == "morning"
+                        else evening_digest(*args, calendar=cal))
+            errs = list(getattr(self.fetch, "errors", [])) if cal else []
+            if not text.strip():
+                self.state.data["digests"][f"{kind}:{now.date().isoformat()}"] = now.isoformat()   # nothing to say: done for today
+                self.state.save()
+                continue
             if errs:
                 text += "\n" + i18n.t("unavailable", names=", ".join(errs))
             if self._deliver(text, sent):
@@ -123,7 +131,7 @@ class Scheduler:
                 self.state.save()          # saved right after each send: a later failure never resends this one
         self._nag(now, sent)
         already = set(self.state.data["reminded"])
-        for e in due_reminders(events, now, self.lead, already, self.allday_at):
+        for e in (due_reminders(events, now, self.lead, already, self.allday_at) if self.plugins.enabled("reminders") else []):
             if self._deliver(format_reminder(e, now), sent):
                 already.add(reminder_key(e))
                 self.state.data["reminded"] = sorted(already)[-500:]

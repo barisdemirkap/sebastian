@@ -116,6 +116,8 @@ class AgentTools:
         fn = getattr(self, "t_" + name, None) if name in TOOL_SPECS else None
         if fn is None:
             return f"UNKNOWN_TOOL: {name}", True
+        if (off := self.a.plugins.blocked("tools", name)):
+            return f"PLUGIN_DISABLED: the {off} plugin is switched off in the config; tell the owner it is off and do nothing.", True
         self.effects.calls.append(name)
         try:
             return fn(args), False

@@ -265,6 +265,7 @@ TR: dict[str, str] = {
     "agent_status_unavailable": "Ajan kipi bu kurulumda etkin değil (SEBASTIAN_NL=agent gerekir).",
     "agent_turned_off": "Pekâlâ{s}, ajan kipini kapattım; klasik düzene döndüm. Bekleyen bir önizleme varsa olduğu gibi duruyor.",
     "agent_turned_on": "Pekâlâ{s}, ajan kipini açtım. Bekleyen bir önizleme varsa olduğu gibi duruyor.",
+    "plugin_off": "{name} özelliği ayarlarda kapalı{s}, o yüzden bu isteği yapmıyorum. Açmak için config.toml dosyasındaki [plugins] bölümüne {plugin} = true yazabilirsiniz.",
     "readonly_mode": "Şu an yazamıyorum{s}; yalnızca takvime bakabilirim. Biraz sonra tekrar deneyiniz.",
     # simple mode and the retry queue (ADR 0021)
     "outage_notice": "Dil modeli şu an kullanılamıyor{why}; basit kipteyim{s}. Yalnızca açık ve tek işlemli isteklerinizi anlarım, karmaşık olanları saklayıp model dönünce okurum.{eta}",
@@ -423,6 +424,9 @@ YES_NO_QUESTION = (r"ister\s*mis(?:in|iniz)|(?:eyim|ayim)\s+mi\b|(?:sem|sam)\s+m
 def is_recall(text: str) -> bool:
     """True for a reply made by the read-back feature (so reading back never reads back itself)."""
     return "şunu yazmıştım:\n" in text[:60]
+
+
+PLUGIN_TITLES = {"calendar": "Takvim", "tasks": "Görev", "lists": "Liste", "reminders": "Hatırlatma", "digests": "Özet"}
 
 
 def t(key: str, **kw) -> str:

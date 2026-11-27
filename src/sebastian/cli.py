@@ -25,8 +25,11 @@ def _now(c: cfg.Config) -> datetime:
     return datetime.now(ZoneInfo(c.timezone))
 
 
-def _digest(kind: str, events, now, messages=None, owners=()) -> str:
-    return (morning_digest if kind == "morning" else evening_digest)(events, now, messages, owners)
+def _digest(kind: str, events, now, messages=None, owners=(), plugins=None) -> str:
+    plugins = plugins or cfg.Plugins()
+    if not plugins.enabled("digests"):
+        return "The digests plugin is switched off in the config ([plugins] digests = true to turn it on)."
+    return (morning_digest if kind == "morning" else evening_digest)(events, now, messages, owners, calendar=plugins.enabled("calendar"))
 
 
 def _need_live(c: cfg.Config) -> None:
@@ -43,7 +46,7 @@ def cmd_accounts(a, c):
 
 def cmd_demo(a, c):
     now = _now(c)
-    print(_digest(a.kind, sample_events(now), now, sample_mail(now), ("me@example.com",)))
+    print(_digest(a.kind, sample_events(now), now, sample_mail(now), ("me@example.com",), c.plugins))
 
 
 def cmd_digest(a, c):
@@ -51,7 +54,7 @@ def cmd_digest(a, c):
     fetch, notifier = build_live(c, dry_run=not a.send)
     now = _now(c)
     mail = build_mail_fetcher(c)
-    text = _digest(a.kind, fetch(now), now, mail(now) if mail else None, tuple(x.address for x in c.accounts))
+    text = _digest(a.kind, fetch(now), now, mail(now) if mail else None, tuple(x.address for x in c.accounts), c.plugins)
     print(text)
     if a.send:
         notifier.send(text)
@@ -178,6 +181,7 @@ def cmd_doctor(a, c):
     live = os.environ.get("SEBASTIAN_ALLOW_LIVE") == "1"
     rows.append(("live access", live, "SEBASTIAN_ALLOW_LIVE=1 is needed for real accounts and channels (off = offline only)"))
     rows.extend(_model_rows())
+    rows.append(("plugins", True, ", ".join(f"{n} {'on' if on else 'off'}" for n, on in c.plugins.summary())))
     rows.append(("accounts", True, f"{sum(1 for x in c.accounts if x.enabled)} enabled of {len(c.accounts)}"))
     bad = 0
     for name, ok, note in rows:
@@ -195,7 +199,7 @@ def cmd_chat(a, c):
     from .store import Store
     tz = ZoneInfo(c.timezone)
     hub = FixtureProvider(sample_events(_now(c)))
-    asst = Assistant(hub, Store(), nlmod.NLService.from_env(), tz, 1, default_lead=c.reminder_lead_minutes)
+    asst = Assistant(hub, Store(), nlmod.NLService.from_env(), tz, 1, default_lead=c.reminder_lead_minutes, plugins=c.plugins)
     print("Sebastian demo chat (fixture calendar, nothing is saved). Ctrl+D to quit.")
     for line in _lines():
         for r in asst.handle(1, line):
@@ -231,7 +235,7 @@ def cmd_import_plan(a, c):
         print(f"skipped: {p}")
     if not plan.drafts:
         raise SystemExit("Nothing to import.")
-    asst = Assistant(FixtureProvider([]), Store(c.db_path), nlmod.NLService("off"), tz, owner, lambda: now)
+    asst = Assistant(FixtureProvider([]), Store(c.db_path), nlmod.NLService("off"), tz, owner, lambda: now, plugins=c.plugins)
     preview = "\n".join(asst.propose_import(plan.drafts, now, timedelta(minutes=a.ttl_minutes)))
     text = i18n.t("import_preview_note", n=len(plan.drafts)) + "\n" + preview
     print(text)
@@ -275,7 +279,7 @@ def cmd_list_add(a, c):
     except ConfigurationError as exc:
         raise SystemExit(str(exc))
     now = _now(c)
-    asst = Assistant(FixtureProvider([]), Store(c.db_path), nlmod.NLService("off"), ZoneInfo(c.timezone), owner, lambda: now)
+    asst = Assistant(FixtureProvider([]), Store(c.db_path), nlmod.NLService("off"), ZoneInfo(c.timezone), owner, lambda: now, plugins=c.plugins)
     text = "\n".join(asst.propose_list_add(key, items, now, timedelta(minutes=a.ttl_minutes)))
     print(text)
     if a.send:

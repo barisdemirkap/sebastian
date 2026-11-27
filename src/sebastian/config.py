@@ -5,6 +5,7 @@ from datetime import time
 from pathlib import Path
 from zoneinfo import ZoneInfo
 from .models import Account
+from .plugins import Plugins, PluginConfigError
 
 CONFIG_DIR = Path.home() / ".config" / "sebastian"
 DEFAULT_PATH = CONFIG_DIR / "config.toml"
@@ -51,6 +52,7 @@ class Config:
     channel: ChannelConfig = field(default_factory=ChannelConfig)
     owner_title: str = "Ahmet Bey"       # [persona] owner_title: how the assistant addresses you
     assistant_name: str = "Sebastian"    # [persona] assistant_name
+    plugins: Plugins = field(default_factory=Plugins)   # [plugins]: name = false switches a feature off (ADR 0005)
 
 
 def _t(s: str) -> time:
@@ -94,6 +96,10 @@ def parse(raw: dict) -> Config:
     lead = int(rem.get("lead_minutes", 30))
     if lead < 1:
         raise ConfigError("reminders.lead_minutes must be >= 1")
+    try:
+        plugins = Plugins.from_raw(raw.get("plugins"))
+    except PluginConfigError as e:
+        raise ConfigError(str(e)) from e
     return Config(tz, _t(raw.get("morning", "08:30")), _t(raw.get("evening", "20:00")), tuple(accounts), lead,
                   TelegramConfig(bool(tg.get("enabled", False)), str(tg.get("chat_id", "")), tg.get("token_file", "")),
                   {k: v.get("client_id", "") for k, v in raw.get("oauth", {}).items()},
@@ -101,7 +107,7 @@ def parse(raw: dict) -> Config:
                   _t(raw.get("plan", "22:00")), _t(rem.get("allday_at", "09:00")), bool(raw.get("birthdays", True)),
                   Path(raw.get("db_path", CONFIG_DIR / "sebastian.db")), Path(raw.get("heartbeat_path", CONFIG_DIR / "heartbeat")),
                   _channel(raw.get("channel", {})),
-                  str(raw.get("persona", {}).get("owner_title", "Ahmet Bey")), str(raw.get("persona", {}).get("assistant_name", "Sebastian")))
+                  str(raw.get("persona", {}).get("owner_title", "Ahmet Bey")), str(raw.get("persona", {}).get("assistant_name", "Sebastian")), plugins)
 
 
 def load(path: Path = DEFAULT_PATH) -> Config:

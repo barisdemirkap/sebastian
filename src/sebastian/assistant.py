@@ -13,10 +13,11 @@ from dataclasses import asdict
 from datetime import date, datetime, time, timedelta
 from zoneinfo import ZoneInfo
 
-from . import birthdays, dialogue, fuzzytime, health, i18n, lists as listmod, nl as nlmod, planread, purchase as purchasemod, readytime, rules, tasks as taskmod
+from . import birthdays, clauses as clausemod, dialogue, fuzzytime, health, i18n, lists as listmod, nl as nlmod, planread, purchase as purchasemod, readytime, rules, tasks as taskmod
 from .http import WriteAccessDenied
 from .merge import merge
 from .models import Event, EventDraft
+from .plugins import Plugins
 from .providers import WriteDisabled
 from .planning import PlanningMixin
 from .statements import StatementsMixin
@@ -54,8 +55,9 @@ def dict_to_draft(x: dict) -> EventDraft:
 
 class Assistant(PlanningMixin, StatementsMixin):
     def __init__(self, hub, store: Store, nl: nlmod.NLService, tz: ZoneInfo, owner_chat: int, clock=None,
-                 default_lead: int = 30, agent=None, readonly: bool = False):
+                 default_lead: int = 30, agent=None, readonly: bool = False, plugins: Plugins | None = None):
         self.hub, self.store, self.nl, self.tz, self.owner = hub, store, nl, tz, owner_chat
+        self.plugins = plugins or Plugins()   # ADR 0005: which features are switched on (all by default)
         self.agent = agent                 # optional AgentMode (ADR 0019); None keeps the dialogue manager alone
         self.readonly = readonly           # SEBASTIAN_NL=readonly: answers reads only, never writes
         self.turn_no = 0                   # owner messages handled so far (the scripted eval model keys its steps on it)
@@ -129,6 +131,29 @@ class Assistant(PlanningMixin, StatementsMixin):
         if p["intent"] in ("list_events", "birthdays", "help", "chitchat"):
             return self._dispatch(p, text, now)
         return [i18n.t("readonly_mode")]
+
+    def _off(self, plugin: str) -> list[str]:
+        """The friendly refusal for a switched-off plugin (ADR 0005)."""
+        self._read = self._acted = True
+        return [i18n.t("plugin_off", name=i18n.PLUGIN_TITLES[plugin], plugin=plugin)]
+
+    def _plugin_gate(self, text: str, now: datetime) -> list[str] | None:
+        """Wording-level refusal. Only runs when something is switched off, so the default path is untouched. Best effort: the
+        writes themselves are also refused at confirm time (`_confirm`) and in the agent tools."""
+        if not self.plugins.disabled:
+            return None
+        if not self.plugins.enabled("tasks"):
+            cl = clausemod.interpret(text, now.date()) or []
+            if (taskmod.parse(text) or taskmod.parse(planread.fix(text)) or taskmod.is_remaining(text)
+                    or planread.is_missing_tasks_question(text) or any(c["kind"] in ("done", "partial", "add") for c in cl)):
+                return self._off("tasks")
+        if not self.plugins.enabled("lists") and listmod.parse(text):
+            return self._off("lists")
+        if not self.plugins.enabled("calendar") and (
+                planread.is_plan_read(text) or rules.parse(text, now.date())["intent"] in (
+                    "add_event", "edit_event", "delete_event", "move_event", "list_events", "birthdays")):
+            return self._off("calendar")
+        return None
 
     def _rotate_address(self) -> None:
         """Persona (ADR 0018): the form of address rotates once per owner message; the counter lives in the store."""
@@ -224,6 +249,8 @@ class Assistant(PlanningMixin, StatementsMixin):
         low = fold(text).strip(" .!?,;")
         if low.startswith("/"):
             return self._command(low, now)
+        if (out := self._plugin_gate(text, now)) is not None:
+            return out                       # a wording for a switched-off plugin gets the friendly refusal (ADR 0005)
         if (recalled := self._recall(low, now)) is not None:
             return recalled                  # reading back changes nothing: an open preview or question stays
         if (ref := self._task_number_ref(text)) is not None:
@@ -525,6 +552,8 @@ class Assistant(PlanningMixin, StatementsMixin):
     # ------------------------------------------------------------------ commands
     def _command(self, low: str, now: datetime) -> list[str]:
         cmd = low.split()[0].split("@")[0]
+        if (off := self.plugins.blocked("commands", cmd)):
+            return self._off(off)
         if cmd in ("/start",):
             return [i18n.t("start")]
         if cmd in ("/yardim", "/help"):
@@ -799,6 +828,8 @@ class Assistant(PlanningMixin, StatementsMixin):
 
     def _dispatch(self, intent: dict, text: str, now: datetime) -> list[str]:
         name = intent["intent"]
+        if (off := self.plugins.blocked("intents", name)):
+            return self._off(off)
         if name == "list_events":
             return self._list(intent, now)
         if name == "birthdays":
@@ -1780,6 +1811,10 @@ class Assistant(PlanningMixin, StatementsMixin):
             self.store.close_pending(row["id"], state)
             self.store.audit("pending_" + state, {"id": row["id"]}, now, self.owner)
             return [i18n.t("pending_expired" if state == "expired" else "pending_tampered")]
+        if (off := self.plugins.blocked("intents", row["intent"])):
+            self.store.close_pending(row["id"], "blocked")          # the plugin was switched off after the preview was shown
+            self.store.audit("write_blocked", {"id": row["id"], "intent": row["intent"], "plugin": off}, now, self.owner)
+            return self._off(off)
         if row["intent"] == "delete_event" and low != "evet sil":
             return [i18n.t("need_evet_sil")]
         args = json.loads(row["args_json"])               # the STORED parameters, never re-derived from the chat
@@ -1934,10 +1969,14 @@ class Assistant(PlanningMixin, StatementsMixin):
 
     # ------------------------------------------------------------------ bulk import (CLI)
     def propose_import(self, drafts: list[EventDraft], now: datetime, ttl: timedelta | None = None) -> list[str]:
+        if not self.plugins.enabled("calendar"):
+            return self._off("calendar")
         """One pending bulk add (same preview + 'evet' gate). `ttl` lets the owner answer later than 10 minutes."""
         return self._propose("add_event", {"drafts": [draft_to_dict(d) for d in drafts]}, drafts, now, ttl)
 
     def propose_list_add(self, key: str, items: list[str], now: datetime, ttl: timedelta | None = None) -> list[str]:
+        if not self.plugins.enabled("lists"):
+            return self._off("lists")
         """One pending add of items to a named list (operator seeding, `sebastian list-add`): same preview + confirm gate."""
         return self._propose("list_add", {"list": key, "items": items}, [], now, ttl)
 

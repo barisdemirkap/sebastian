@@ -137,7 +137,7 @@ def build_notifier(cfg: Config, store: TokenStore, transport: Transport, dry_run
 def build_scheduler(cfg: Config, fetch, notifier: Notifier, state_path: Path | None = None, mail_fetch=None, tasks=None, lists=None, nag=None) -> Scheduler:
     return Scheduler(cfg.morning, cfg.evening, fetch, notifier, State(state_path or cfg.state_path),
                      timedelta(minutes=cfg.reminder_lead_minutes), mail_fetch, tuple(a.address for a in cfg.accounts),
-                     cfg.plan, cfg.allday_reminder, tasks, lists, nag)
+                     cfg.plan, cfg.allday_reminder, tasks, lists, nag, cfg.plugins)
 
 
 def build_live(cfg: Config, dry_run: bool = True, store: TokenStore | None = None, transport: Transport | None = None):

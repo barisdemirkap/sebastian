@@ -53,16 +53,19 @@ def _list_sections(lists: list[tuple[str, list[str]]] | None, today: list[Event]
 
 def morning_digest(events: list[Event], now: datetime, messages: list[MailMessage] | None = None,
                    owners: tuple[str, ...] = (), tasks: list[str] | None = None,
-                   lists: list[tuple[str, list[str]]] | None = None) -> str:
-    today = day_events(events, now)
-    if not today:
+                   lists: list[tuple[str, list[str]]] | None = None, calendar: bool = True) -> str:
+    """`calendar=False` (plugin off, ADR 0005): no events, birthdays or shopping-day lists; the rest still shows."""
+    today = day_events(events, now) if calendar else []
+    if not calendar:
+        lines = []
+    elif not today:
         lines = [i18n.t("morning_empty")]
     else:
         lines = [i18n.t("morning_head", date=i18n.fmt_date(now, True), n=len(today))] + [_line(e, now.tzinfo) for e in today]
         n = sum("conflict" in e.flags for e in today)
         if n:
             lines.append(i18n.t("conflict_warn", n=n))
-    lines += birthdays.section(events, now.date(), (0, birthdays.LEAD_DAYS))
+    lines += birthdays.section(events, now.date(), (0, birthdays.LEAD_DAYS)) if calendar else []
     lines += _task_section(tasks)
     lines += _list_sections(lists, today)
     lines = lines + _mail_sections(messages, now, owners, today)
@@ -70,16 +73,19 @@ def morning_digest(events: list[Event], now: datetime, messages: list[MailMessag
 
 
 def evening_digest(events: list[Event], now: datetime, messages: list[MailMessage] | None = None,
-                   owners: tuple[str, ...] = (), tasks: list[str] | None = None) -> str:
+                   owners: tuple[str, ...] = (), tasks: list[str] | None = None, calendar: bool = True) -> str:
     tomorrow = now + timedelta(days=1)
-    items = day_events(events, tomorrow)
-    missed = [e for e in day_events(events, now) if e.end <= now and not e.all_day]
-    if items:
+    items = day_events(events, tomorrow) if calendar else []
+    missed = [e for e in day_events(events, now) if e.end <= now and not e.all_day] if calendar else []
+    if not calendar:
+        lines = []
+    elif items:
         lines = [i18n.t("evening_head", date=i18n.fmt_date(tomorrow, True), n=len(items))] + [_line(e, now.tzinfo) for e in items]
     else:
         lines = [i18n.t("evening_empty")]
-    lines.append(i18n.t("recap", n=len(missed)))
-    lines += birthdays.section(events, now.date(), (1,))
+    if calendar:
+        lines.append(i18n.t("recap", n=len(missed)))
+        lines += birthdays.section(events, now.date(), (1,))
     lines += _task_section(tasks)
     lines = lines + _mail_sections(messages, now, owners)
     return "\n".join(lines + ([i18n.t("digest_close_evening")] if items else []))

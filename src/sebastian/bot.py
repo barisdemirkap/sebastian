@@ -351,7 +351,7 @@ def build_bot(cfg, env, api, hub, fetcher, mail_fetch=None, clock=None, store: S
     owner = owner_from_env(env)
     store = store or Store(cfg.db_path)
     assistant = Assistant(hub, store, nlmod.NLService.from_env(env), tz, owner, clock, cfg.reminder_lead_minutes,
-                          readonly=env.get("SEBASTIAN_NL", "").strip().lower() == "readonly")
+                          readonly=env.get("SEBASTIAN_NL", "").strip().lower() == "readonly", plugins=cfg.plugins)
     assistant.assist = assistmod.AssistService.from_env(env, assistant.nl)      # ADR 0023: shadow by default, off without the consent
     assistant.agent = AgentMode.from_env(assistant, env)       # None unless SEBASTIAN_NL=agent and the owner's consent (ADR 0019)
     voice = voice_mod.Voice(env) if voice_mod.enabled(env) else None
