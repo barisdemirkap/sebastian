@@ -36,6 +36,13 @@ enabled = false          # delivery goes to the owner's chat only, via the Cimci
 chat_id = ""
 token_file = "telegram.token"   # inside ~/.config/sebastian/secrets/
 
+[plugins]                # switch a feature off with false; everything is on by default (ADR 0005)
+calendar = true          # events, birthdays, calendar commands and the calendar part of the digests
+tasks = true             # to-dos, task commands, the digest task section and the hourly nag
+lists = true             # named lists such as shopping
+reminders = true         # event reminders (needs calendar)
+digests = true           # the morning, evening and plan digests
+
 [persona]
 owner_title = "Ahmet Bey"     # how the assistant addresses you
 assistant_name = "Sebastian"  # the name it uses for itself

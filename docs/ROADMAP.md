@@ -3,7 +3,7 @@
 Each step gets its own ADR and the owner's approval before it starts.
 
 1. **Core extraction**: split the generic core from owner-specific data; one config file for persona, language, timezone, providers and permissions.
-2. **Plugin architecture**: calendar, tasks, lists first; each plugin can be switched on or off. Writes stay preview + confirm.
+2. **Plugin architecture** (ADR 0005, done): calendar, tasks, lists, reminders and digests are registry entries, each switched on or off in `[plugins]` (all on by default). Writes stay preview + confirm. Not built: a loader for third-party plugin code.
 2b. **Channel adapters** (ADR 0002): Telegram, Slack (Socket Mode), CLI first; same preview + confirm gate on every channel.
 3. **Language packs**: Turkish first, English next.
 4. **Fork kit**: install guide, example config with fictional data, tests, contribution notes.

@@ -29,4 +29,4 @@ See [docs/ROADMAP.md](docs/ROADMAP.md) and the decisions in [docs/adr](docs/adr)
 MIT. See [LICENSE](LICENSE).
 
 ## Current state
-The first code drop is an anonymized copy of the generic parts of a private assistant (calendar with preview-gated writes, tasks, lists, reminders, digests, Telegram, optional model agent mode, ~3900 offline tests). Names and identifiers in the test data are fictional. Next: one config file for persona and language, then channel adapters (ADR 0002). Design notes from the private assistant are in `docs/legacy/`.
+The first code drop is an anonymized copy of the generic parts of a private assistant (calendar with preview-gated writes, tasks, lists, reminders, digests, Telegram, optional model agent mode, ~3900 offline tests). Names and identifiers in the test data are fictional. Features (calendar, tasks, lists, reminders, digests) are plugins you can switch off in the `[plugins]` config section (ADR 0005). Next: finish the channel adapters (ADR 0002), then language packs and the fork kit. Design notes from the private assistant are in `docs/legacy/`.
