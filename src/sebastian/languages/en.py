@@ -268,7 +268,7 @@ MESSAGES: dict[str, str] = {
     "outage_why_other": "",
     "outage_eta": " It should be back around {time}.",
     "outage_saved": "I saved your message and added nothing; when the model is back I will read it again and bring it to you. (Waiting: {n})",
-    "retry_intro": "Sir, I have now read the message you sent earlier: {text}",
+    "retry_intro": "I have now read the message you sent earlier: {text}",
     "queue_head": "Your waiting messages ({n}); when the model is back I will read them in turn and bring each as a preview:",
     "queue_row": "{n}. {x}",
     "queue_tail": "To delete them all: /queue clear",
@@ -282,7 +282,8 @@ PACK = Pack(
     name="English",
     messages=MESSAGES,
     default_owner_title="Mr. Smith",
-    address_forms=("sir", "Mr. Smith", "sir", "Mr. Smith", "sir"),
+    address_forms=("Mr. Smith",),            # every form follows [persona] owner_title: no hard-coded "sir" (the owner may be addressed otherwise)
+    strip_forms=("sir", "madam"),            # still removed when a model writes them, so at most one form of address per message
     acks=("Certainly{s}.", "Right away{s}.", "Of course{s}."),
     repeat_leads=("We are in the same spot again. ", "We are still in the same place. ", "Allow me to say it once more. "),
     ask_variants={
@@ -302,5 +303,6 @@ PACK = Pack(
     list_titles={"alinacaklar": "Shopping"},
     recall_marker="I wrote this:\n",
     agent_note="LANGUAGE: The owner reads English. Write every reply to the owner in English (formal, butler-like). "
+               "Address the owner only as {owner_title}; never use \"sir\", \"madam\", \"efendim\" or \"Master\". "
                "The owner's messages may be English or Turkish; titles keep the owner's own words.",
 )

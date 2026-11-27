@@ -282,6 +282,7 @@ PACK = Pack(
     # persona: forms of address rotate, at most one per message; {s} in a template is ", <form>"
     default_owner_title="Ahmet Bey",
     address_forms=("efendim", "Ahmet Bey", "efendim", "Ahmet Bey", "efendim", "Sir", "efendim", "Ahmet Bey", "efendim", "Master"),
+    gendered_forms=("Sir", "Master"),        # English forms of address: with a custom owner_title they follow it instead of assuming "sir"
     acks=("Emredersiniz{s}.", "Hemen{s}.", "Elbette{s}."),
     repeat_leads=("Yine aynı durumdayız. ", "Hâlâ aynı yerdeyiz. ", "Bir kez daha arz edeyim. "),
     ask_variants={

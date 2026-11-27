@@ -1,7 +1,7 @@
 """The shape every language pack fills in (ADR 0006). `tests/test_language_packs.py` checks that all packs agree on it."""
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
 
 @dataclass(frozen=True)
@@ -24,3 +24,5 @@ class Pack:
     list_titles: dict[str, str]            # display title of each named list key
     recall_marker: str                     # text that identifies a read-back reply (so reading back never reads back itself)
     agent_note: str                        # appended to the agent-mode system prompt (e.g. "reply in English"); "" for the base language
+    strip_forms: tuple[str, ...] = ()      # extra forms of address removed from model text (never produced); keeps one form per message
+    gendered_forms: tuple[str, ...] = ()   # forms in address_forms that assume the owner; replaced by a custom owner_title (not by the default)

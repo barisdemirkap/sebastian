@@ -67,13 +67,14 @@ def configure(owner_title: str | None = None, assistant_name: str = DEFAULT_ASSI
     use_pack(pack)
     owner_title = (owner_title or "").strip() or pack.default_owner_title
     assistant_name = (assistant_name or "").strip() or DEFAULT_ASSISTANT_NAME
-    ADDRESS_FORMS = tuple(owner_title if f == pack.default_owner_title else f for f in _BASE_FORMS)
-    forms = sorted({*ADDRESS_FORMS, *pack.address_forms}, key=len, reverse=True)
+    custom = owner_title != pack.default_owner_title
+    ADDRESS_FORMS = tuple(owner_title if f == pack.default_owner_title or (custom and f in pack.gendered_forms) else f for f in _BASE_FORMS)
+    forms = sorted({*ADDRESS_FORMS, *pack.address_forms, *pack.strip_forms}, key=len, reverse=True)
     alt = "|".join(re.escape(f) for f in forms)
     _ADDR_RE = re.compile(r", (?:%s)(?=[\s.,!?;:]|$)" % alt)
     _LOOSE_ADDR = re.compile(r"(?<!\w)(?:%s)(?!\w)" % alt.lower(), re.I)
     AGENT_SYSTEM = (_BASE_AGENT_SYSTEM.replace("Ahmet Bey", owner_title).replace("Sen Sebastian'sin", f"Sen {assistant_name}'sin")
-                    + (f"\n\n{pack.agent_note}" if pack.agent_note else ""))
+                    + (f"\n\n{pack.agent_note.replace('{owner_title}', owner_title)}" if pack.agent_note else ""))
 
 
 
